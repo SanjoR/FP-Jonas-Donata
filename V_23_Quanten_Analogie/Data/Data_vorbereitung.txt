@@ -1,0 +1,5 @@
+# Immer erste dann zweite Resonanz
+#Frequenz kHz, Amplitude V, Phasenverschiebung Grad
+6.87    2.78    44.7
+10.28   1.45    136.7
+
