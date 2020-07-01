@@ -43,10 +43,10 @@ kann die Schallgeschwindigkeit bestimmt werden.
 \end{figure}
 \FloatBarrier
 Die Parameter der Funktion sind:
-\begin{equation*}
-    a= \num{169.9(3)}\\
-    b= \num{0.013(3)}
-\end{equation*}
+\begin{align*}
+    a&= \num{169.9(3)}\\
+    b&= \num{0.013(3)}
+\end{align*}
 Daraus kann der Wert $c=\SI{339.8(7)}{\meter\per\second}$ bestimmt werden.
 
 \subsubsection{Vergleich der Datennahme}
@@ -174,3 +174,217 @@ Die Resonanzen können auch mittels des Frequnezspektrometers dargestellt werden
 \includegraphics[width = \textwidth]{figure/Kugelresonanzspektrum.png}
 \end{figure}
 
+\subsubsection{Vermessung der Kugelflächenfunktion}
+In dieser Messreihe werden für drei verschiedene Resonazen die Druckamplitude in Abhängigkeit des Drehwinkels $\alpha$ vermessen.
+Es werden die Resonanzen der Ordnung 2,4 und 6 aus Tabelle \ref{tab:Resonanzfrequenzen} verwendet.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{Messwertte für die Bestimmung der Ordnung der Kugelflächenfunktion}
+    \label{tab:Amplituden_Kugelflächenfunktion}
+    \begin{tabular}{c c c c c}
+        \toprule
+        Winkel $\alpha$ /\SI{}{\degree}&Winkel $\theta$ /\SI{}{\degree}&Amplitude 2 /\SI{}{\milli\volt}&Amplitude 4 /\SI{}{\milli\volt}& Amplitude 6 /\SI{}{\milli\volt}\\
+        \midrule
+        $\num{0}$  &$\num{90.0}$  &$\num{160}$&$\num{0.12}$&$\num{1.37}$\\
+        $\num{10}$ &$\num{90.4}$ &$\num{160}$&$\num{0.68}$&$\num{1.45}$\\
+        $\num{20}$ &$\num{91.7}$ &$\num{160}$&$\num{1.1}$&$\num{1.29}$\\
+        $\num{30}$ &$\num{93.8}$ &$\num{160}$&$\num{1.4}$&$\num{1.05}$\\
+        $\num{40}$ &$\num{96.7}$ &$\num{160}$&$\num{1.6}$&$\num{1.37}$\\
+        $\num{50}$ &$\num{100.3}$ &$\num{160}$&$\num{2.0}$&$\num{1.21}$\\
+        $\num{60}$ &$\num{104.5}$ &$\num{160}$&$\num{2.37}$&$\num{0.88}$\\
+        $\num{70}$ &$\num{109.2}$ &$\num{160}$&$\num{2.61}$&$\num{0.8}$\\
+        $\num{80}$ &$\num{114.4}$ &$\num{160}$&$\num{2.77}$&$\num{0.72}$\\
+        $\num{90}$ &$\num{120.0}$ &$\num{160}$&$\num{2.7}$&$\num{0.84}$\\
+        $\num{100}$&$\num{125.9}$&$\num{160}$&$\num{2.21}$&$\num{1.13}$\\
+        $\num{110}$&$\num{132.1}$&$\num{160}$&$\num{1.45}$&$\num{1.37}$\\
+        $\num{120}$&$\num{138.6}$&$\num{160}$&$\num{0.4}$&$\num{1.69}$\\
+        $\num{130}$&$\num{145.2}$&$\num{160}$&$\num{1.29}$&$\num{2.01}$\\
+        $\num{140}$&$\num{152.0}$&$\num{160}$&$\num{2.69}$&$\num{2.29}$\\
+        $\num{150}$&$\num{158.9}$&$\num{160}$&$\num{4.34}$&$\num{2.61}$\\
+        $\num{160}$&$\num{165.9}$&$\num{160}$&$\num{5.3}$&$\num{2.85}$\\
+        $\num{170}$&$\num{172.9}$&$\num{160}$&$\num{6.03}$&$\num{3.34}$\\
+        $\num{180}$&$\num{180.0}$&$\num{160}$&$\num{6.43}$&$\num{3.26}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+In der Tabelle \ref{tab:Amplituden_Kugelflächenfunktion} wird der Winkel $\theta$ mit der Funktion \eqref{eq:Theta_alpha} aus $\alpha$ bestimmt.
+\begin{equation}
+    \label{eq:Theta_alpha}
+    \theta(\alpha) = \arccos\left( \frac{1}{2} \cos\left( \alpha \right) -\frac{1}{2} \right)
+\end{equation}
+Wie aus Tabelle \ref{tab:Amplituden_Kugelflächenfunktion} abzulesen ist, ist die Druckamplitude der zweiten Resonanz 
+unabhängig von dem Winkel, daher müssen die Quantenzahlen $n=m=0$ sein.\\
+Die Druckamplitude wird gegen $\theta$ in einem Polarplot aufgetragen. Dazu werden verschiedene Kugelflächenfunktionen 
+geplottet, um diese miteinander vergleichen zu können. Da ohne Zwischenring keine Aufspaltung in $m$ zu sehen ist, wird $m=0$ gesetzt,
+um die Kugelflächenfunktion nur in Abhängigkeit von $\theta$ zu plotten.
+\FloatBarrier
+\begin{figure}
+    \hspace*{2cm}
+    \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_4_n1.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{5.0074}{\kilo\hertz} und \\ Kugelflächenfunktion der ersten Ordnung.}
+        \label{fig:Resonanz_Drewinkel_Amplitude_4_n1}
+     \end{minipage}
+     \hspace{.1\linewidth}% Abstand zwischen Bilder
+     \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_4_n2.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{5.0074}{\kilo\hertz} und \\ Kugelflächenfunktion der zweiten Ordnung.}
+     \end{minipage}
+\end{figure}
+\begin{figure}
+    \hspace*{2cm}
+    \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_4_n3.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{5.0074}{\kilo\hertz} und \\ Kugelflächenfunktion der dritten Ordnung.}
+     \end{minipage}
+     \hspace{.1\linewidth}% Abstand zwischen Bilder
+     \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_4_n4.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{5.0074}{\kilo\hertz} und \\ Kugelflächenfunktion der vierten Ordnung.}
+        \label{fig:fig:Resonanz_Drewinkel_Amplitude_4_n4}
+     \end{minipage}
+\end{figure}
+
+
+\begin{figure}
+    \hspace*{2cm}
+    \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_6_n4.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{6.5908}{\kilo\hertz} und \\ Kugelflächenfunktion der vierten Ordnung.}
+        \label{fig:fig:Resonanz_Drewinkel_Amplitude_6_n4}
+     \end{minipage}
+     \hspace{.1\linewidth}% Abstand zwischen Bilder
+     \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_6_n5.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{6.5908}{\kilo\hertz} und \\ Kugelflächenfunktion der fünften Ordnung.}
+     \end{minipage}
+\end{figure}
+\begin{figure}
+    \hspace*{2cm}
+    \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_6_n6.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{6.5908}{\kilo\hertz} und \\ Kugelflächenfunktion der sechsten Ordnung.}
+     \end{minipage}
+     \hspace{.1\linewidth}% Abstand zwischen Bilder
+     \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/Resonanz_Drewinkel_Amplitude_6_n7.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{6.5908}{\kilo\hertz} und \\ Kugelflächenfunktion der siebten Ordnung.}
+        \label{fig:Resonanz_Drewinkel_Amplitude_6_n7}
+     \end{minipage}
+\end{figure}
+\FloatBarrier
+Bei Betrachtung von Abbildung \ref{fig:Resonanz_Drewinkel_Amplitude_4_n1} bis (??)[muss manuel eingefühgt werden] kann gesagt werden, 
+dass die gemessene Verteilung der Kugelflächenfunktion mit $n=4$ ähnelt. \\
+Da die Verteilung bei Abbildung (??)[auch hier manuel] bis \ref{fig:Resonanz_Drewinkel_Amplitude_6_n7}  keiner der Kugelflächenfunktion ähnelt, aber
+$n>4$ sein muss, kann die Kugelflächenfunktion nicht bestimmt werden.
+\subsubsection{Peakaufspaltung}
+Bei dieser Messreihe wird die Peakaufspaltung der Resonanzfrequenz von \SI{2.3}{\kilo\hertz} vermessen, indem verschieden dicke 
+Zwischenringe zwischen den Halbkugeln des Kugelresonators eigefühgt werden.
+Die dafür benötigten Messdaten sind in Tabelle  aufgelistet.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{Messwerte für die Bestimmung des Zusammenhangs zwischen der Dicke des Zwischerings und der Aufspaltung der Resonanzfrequenz}
+    %\label{tab:Peakaufspaltung}
+    \begin{tabular}{c c c c}
+        \toprule
+        Dicke / \SI{}{\milli\meter}& erster Resonanz / \SI{}{\kilo\hertz}& zweite Resonanz / \SI{}{\kilo\hertz}& Differenz / \SI{}{\kilo\hertz}\\
+        \midrule
+        $\num{3}$ &$\num{2239}$&$\num{2302}$&$\num{63}$\\
+        $\num{9}$ &$\num{2173}$&$\num{2286}$&$\num{113}$\\
+        $\num{12}$&$\num{2103}$&$\num{2277}$&$\num{174}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+Aufgrund der wenigen Kombinationsmöglichkeiten der beiden Zwischenring, können für diesen Versuch nur drei Messwerte aufgenommen werden.
+Da aus drei Punkten nicht auf komplexe Funktionen geschlossen werden kann wird der Zusammenhang linear angenommen.
+Dafür wird die Funktion \eqref{eq:linear} durch die Daten gefittet.
+\begin{equation}
+    f\left(x\right) = ax +b
+    \label{eq:linear}
+\end{equation}
+\FloatBarrier
+\begin{figure}
+    \centering
+    \caption{Messdaten und Fit für den Zusammenhang zwischen Zwischenringdicke und Peakaufspaltung}
+    \label{fig:Peakaufspaltung}
+    \includegraphics[width=0.7\textwidth]{figure/Peak_Aufspaltung.pdf}
+\end{figure}
+\FloatBarrier
+In der Abbildung \ref{fig:Peakaufspaltung} sind die Parameter auf 
+\begin{align*}
+    a&= \num{12(3)}\\
+    b&= \num{23(26)}
+\end{align*}
+bestimmt worden
+\subsubsection{Bestimmung des Quantenzustandes}
+Um die Quantenzahlen des Zustandes zu bestimmen, wird ein Zwischenring der Dicke von $d=\SI{9}{\milli\meter}$ eigefühgt.
+Da der Zwischenring die Symmetrie der Kugel bricht gibt es jetzt eine Vorzugsrichtung. Dadurch ist der $\alpha$-Winkel der $\Phi$ Winkel 
+der Kugelflächenfunktion und die Ausrichtung des Mikrofons ist der $\theta$-Winkel.
+Bei einer Frequenzen von \SI{2.3}{\kilo\hertz} wird die winkelabhängige Druckamplitude vermessen. Die Messdaten sind in Tabelle
+\ref{tab:Messdaten_9mmZwischenring} aufgelistet.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{Messwerte für die Bestimmung des Quantenzustandes bei einer Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und einem Zwischenring der Dick $d=\SI{9}{\milli\meter}$.}
+    \label{tab:Messdaten_9mmZwischenring}
+    \begin{tabular}{c c c c c}
+        \toprule
+        Winkel $\phi$ /\SI{}{\degree}&Amplitude  /\SI{}{\milli\volt}\\
+        \midrule
+        $\num{0}$  &$\num{640}$ \\
+        $\num{10}$ &$\num{640}$ \\
+        $\num{20}$ &$\num{600}$ \\
+        $\num{30}$ &$\num{560}$ \\
+        $\num{40}$ &$\num{480}$ \\
+        $\num{50}$ &$\num{400}$\\
+        $\num{60}$ &$\num{320}$\\
+        $\num{70}$ &$\num{220}$\\
+        $\num{80}$ &$\num{125}$\\
+        $\num{90}$ &$\num{120}$\\
+        $\num{100}$&$\num{233}$\\
+        $\num{110}$&$\num{350}$\\
+        $\num{120}$&$\num{440}$\\
+        $\num{130}$&$\num{520}$\\
+        $\num{140}$&$\num{590}$\\
+        $\num{150}$&$\num{675}$\\
+        $\num{160}$&$\num{700}$\\
+        $\num{170}$&$\num{760}$\\
+        $\num{180}$&$\num{780}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+\begin{figure}
+    \hspace*{2cm}
+    \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/9mmZwischenring_n0.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und \\ Kugelflächenfunktionen der nullten Ordnung.}
+     \end{minipage}
+     \hspace{.1\linewidth}% Abstand zwischen Bilder
+     \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
+        \hspace*{-2cm}
+        \includegraphics[width=\linewidth]{figure/9mmZwischenring_n1.pdf}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und \\ Kugelflächenfunktionen der erste Ordnung.}
+     \end{minipage}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figure/9mmZwischenring_n2.pdf}
+    \caption{Winkelabhängigkeit der Druckamplitude bei einer Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und Kugelflächenfunktionen der zweiten Ordnung.}
+    \label{fig:9mmZwischenring_n2}
+\end{figure}
+\FloatBarrier
+Wie an der Abbildung \ref{fig:9mmZwischenring_n2} zu sehen ist, ähnelt der Zustand am meisten dem $n=2,m=0$ Kugelflächenfunktion.
