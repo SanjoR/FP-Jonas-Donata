@@ -387,4 +387,92 @@ Bei einer Frequenzen von \SI{2.3}{\kilo\hertz} wird die winkelabhängige Druckam
     \label{fig:9mmZwischenring_n2}
 \end{figure}
 \FloatBarrier
-Wie an der Abbildung \ref{fig:9mmZwischenring_n2} zu sehen ist, ähnelt der Zustand am meisten dem $n=2,m=0$ Kugelflächenfunktion.
+Wie an der Abbildung \ref{fig:9mmZwischenring_n2} zu sehen ist, ähnelt der Zustand am meisten der $n=2,m=0$ Kugelflächenfunktion.
+\subsection{Das Wasserstoffmolekül}
+Für die folgenden Versuchsteilen werden zwei Kugelresonatoren übereinander gesteckt und mit einem Loch in der Mitte in Verbindung gebracht.
+\subsubsection{Resonanzfrequenz in Abhängigkeit des Blendendurchmessers}
+Da nur zwei Blenden zu Verfügung standen, kann auch hier nur ein linearer Zusammenhang in erwägung gezogen werden.
+Die beiden Spektren werden mit einer Blende mit einem Durchmesser von $d=\SI{10}{\milli\meter}$ und
+$d=\SI{16}{\milli\meter}$ aufgenommen. Die Spektren sind in Abbildung \ref{fig:Spektren_WM_Blende} zu sehen.
+\FloatBarrier
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.7\textwidth , keepaspectratio]{figure/WM_Blenden.pdf}
+    \caption{Spektren für den Zusammenhang zwischen den Resonanzfrequenzen und dem Blendendurchmesser.}
+    \label{fig:Spektren_WM_Blende}
+\end{figure}
+\FloatBarrier
+Die Resonanzen sind in Tabelle \ref{tab:Resonanz_WM_Blenden} aufgelistet.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{Resonanzen für den Zusammenhang zwischen Resonanzfrequenz und Blendendurchmesser.}
+    \label{tab:Resonanz_WM_Blenden}
+    \begin{tabular}{c c c}
+        \toprule
+        Durchmesser $d=\SI{10}{\milli\meter}$ &Durchmesser $d=\SI{16}{\milli\meter}$& \\
+        Frequenz $f /\SI{}{\hertz}$& Frequenz $f /\SI{}{\hertz}$&Differenz $\Delta f /\SI{}{\hertz}$\\
+        \midrule
+        $\num{280}$ &$\num{370}$ &$\num{90}$\\
+        $\num{2320}$&$\num{2320}$&$\num{0}$\\
+        $\num{3730}$&$\num{3730}$&$\num{0}$\\
+        $\num{4980}$&$\num{5040}$&$\num{60}$\\
+        $\num{6230}$&$\num{6200}$&$\num{-30}$\\
+        $\num{6600}$&$\num{6640}$&$\num{40}$\\
+        $\num{7440}$&$\num{7400}$&$\num{-40}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+Wie an den den Differenzen aus Tabelle \ref{tab:Resonanz_WM_Blenden} zu erkennen ist, kann an diesen Daten kein 
+Zusammenhang zwischen Blendendurchmesser und Resonanz gezogen werden.
+
+\subsubsection{Quantenzustand des Wasserstoffmolekül}
+Für die Bestimmung des Quantenzustandes des Wasserstoffmoleküls wird die Druckamplitude in Abhängigkeit des Drehwinkels 
+vermessen. Hierbei ist die Frequenz auf \SI{2.3}{\kilo\hertz} eingestellt.
+Die gemessenen Daten sind in Tabelle \ref{tab:WMQZ} aufgelistet.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{Daten für die Bestimmung des Quantenzustandes des Wasserstoffmoleküls.}
+    \label{tab:WMQZ}
+    \begin{tabular}{c c}
+        \toprule
+        Drehwinkel $\alpha / \SI{}{\degree}$ & Druckamplitude / \SI{}{\volt}\\
+        \midrule
+        $\num{0}$  &$\num{1.05}$\\
+        $\num{10}$ &$\num{1.05}$\\
+        $\num{20}$ &$\num{0.96}$\\
+        $\num{30}$ &$\num{0.96}$\\
+        $\num{40}$ &$\num{0.96}$\\
+        $\num{50}$ &$\num{0.88}$\\
+        $\num{60}$ &$\num{0.88}$\\
+        $\num{70}$ &$\num{0.88}$\\
+        $\num{80}$ &$\num{0.84}$\\
+        $\num{90}$ &$\num{0.84}$\\
+        $\num{100}$&$\num{0.8}$\\
+        $\num{110}$&$\num{0.8}$\\
+        $\num{120}$&$\num{0.8}$\\
+        $\num{130}$&$\num{0.72}$\\
+        $\num{140}$&$\num{0.72}$\\
+        $\num{150}$&$\num{0.72}$\\
+        $\num{160}$&$\num{0.72}$\\
+        $\num{170}$&$\num{0.72}$\\
+        $\num{180}$&$\num{0.72}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+Die Daten werden in Abbildung \ref{fig:WMQZ} dargestellt.
+\FloatBarrier
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.7\textwidth, keepaspectratio]{figure/WMQZ.pdf}
+    \caption{Messdaten und verschiedene Kugelflächenfunktionen, für die Bestimmung des Quantenzustandes.}
+    \label{fig:WMQZ}
+\end{figure}
+\FloatBarrier
+Wie in der Abbildung \ref{fig:WMQZ} zu sehen ist, ähnelt der Vermessene Zustand der Kugelflächenfunktion mit 
+$n=m=0$, $n=1 m=-1$ oder $n=2 m=2$. Da die zweite Resonanz verwendet wurde kann davon ausgegangen werden, das der 
+$n=1 m=-1$ Zustand zutrifft. Das ist der $1\pi$ Zustand. Allerdings kann nicht gesagt werden ob dieser bindend oder antibindend 
+ist.
