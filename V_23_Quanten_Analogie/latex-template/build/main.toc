@@ -1,0 +1,24 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\selectlanguage *{german}
+\contentsline {section}{\numberline {1}Motivation}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}akustische Modelle}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}quantenmechanische Modelle}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Modell des eindimensionalen Festkörpers}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Analogien zwischen den Modellen}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Durchführung}{5}{section.3}%
+\contentsline {section}{\numberline {4}Auswertung}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Vorbereitende Versuche}{5}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Bestimmung der Schallgeschwindigkeit}{5}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Vergleich der Datennahme}{8}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Das Wasserstoffmodel}{10}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Vermessung der Kugelflächenfunktion}{10}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Peakaufspaltung}{14}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Bestimmung des Quantenzustandes}{15}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Das Wasserstoffmolekül}{17}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Resonanzfrequenz in Abhängigkeit des Blendendurchmessers}{17}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Quantenzustand des Wasserstoffmolekül}{18}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}1D-Festkörper}{20}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Austausch der Zylinder}{22}{subsubsection.4.4.1}%
+\contentsline {section}{\numberline {5}Diskussion}{24}{section.5}%
+\contentsline {section}{\nonumberline Literatur}{24}{section*.30}%
