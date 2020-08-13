@@ -6,19 +6,27 @@
 \contentsline {subsection}{\numberline {2.2}quantenmechanische Modelle}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Modell des eindimensionalen Festkörpers}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Analogien zwischen den Modellen}{5}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Durchführung}{5}{section.3}%
-\contentsline {section}{\numberline {4}Auswertung}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Vorbereitende Versuche}{5}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Bestimmung der Schallgeschwindigkeit}{5}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Vergleich der Datennahme}{8}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}Das Wasserstoffmodel}{10}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Vermessung der Kugelflächenfunktion}{10}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Peakaufspaltung}{14}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Bestimmung des Quantenzustandes}{15}{subsubsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.3}Das Wasserstoffmolekül}{17}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Resonanzfrequenz in Abhängigkeit des Blendendurchmessers}{17}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Quantenzustand des Wasserstoffmolekül}{18}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}1D-Festkörper}{20}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Austausch der Zylinder}{22}{subsubsection.4.4.1}%
-\contentsline {section}{\numberline {5}Diskussion}{24}{section.5}%
-\contentsline {section}{\nonumberline Literatur}{24}{section*.30}%
+\contentsline {section}{\numberline {3}Versuchsaufbau}{5}{section.3}%
+\contentsline {section}{\numberline {4}Versuchsdurchführung}{6}{section.4}%
+\contentsline {section}{\numberline {5}Auswertung}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Vorbereitende Versuche}{6}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Bestimmung der Schallgeschwindigkeit}{6}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Vergleich der Datennahme}{8}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Das Wasserstoffmodel}{10}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Vermessung der Kugelflächenfunktion}{12}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Peakaufspaltung}{15}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Bestimmung des Quantenzustandes}{16}{subsubsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.3}Das Wasserstoffmolekül}{18}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Resonanzfrequenz in Abhängigkeit des Blendendurchmessers}{18}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Quantenzustand des Wasserstoffmolekül}{19}{subsubsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.4}1D-Festkörper}{21}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Austausch der Zylinder}{23}{subsubsection.5.4.1}%
+\contentsline {section}{\numberline {6}Diskussion}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Das Wasserstoffmodel}{25}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Vermessung der Kugelflächenfunktionen}{26}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Peakaufspaltung}{26}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Bestimmung des Quantenzustandes}{26}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Das Wasserstoffmolekül}{26}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Bestimmung des Quantenzustandes}{26}{subsubsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.3}1D-Festkörper}{26}{subsection.6.3}%
+\contentsline {section}{\nonumberline Literatur}{27}{section*.28}%
