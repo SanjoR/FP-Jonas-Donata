@@ -3,17 +3,17 @@ import uncertainties.unumpy as unp
 import matplotlib.pyplot as plt
 
 
-Freq_2,Amp_2= np.genfromtxt( "../Bilder/2_Zylinder_mitBlende10mm.dat"   ,unpack = True)
-Freq_3, Amp_3= np.genfromtxt("../Bilder/3_Zylinder_mitBlende10mm.dat"  ,unpack = True)
-Freq_4, Amp_4= np.genfromtxt("../Bilder/4_Zylinder_mitBlende10mm.dat"  ,unpack = True)
-Freq_5, Amp_5= np.genfromtxt("../Bilder/5_Zylinder_mitBlende10mm.dat"  ,unpack = True)
-Freq_6, Amp_6= np.genfromtxt("../Bilder/6_Zylinder_mitBlende10mm.dat"  ,unpack = True)
-Freq_7, Amp_7= np.genfromtxt("../Bilder/7_Zylinder_mitBlende10mm.dat"  ,unpack = True)
-Freq_8, Amp_8= np.genfromtxt("../Bilder/8_Zylinder_mitBlende10mm.dat"  ,unpack = True)
-Freq_9, Amp_9= np.genfromtxt("../Bilder/9_Zylinder_mitBlende10mm.dat"  ,unpack = True)
-Freq_10,Amp_10= np.genfromtxt("../Bilder/10_Zylinder_mitBlende10mm.dat",unpack = True)
-Freq_11,Amp_11= np.genfromtxt("../Bilder/11_Zylinder_mitBlende10mm.dat",unpack = True)
-Freq_12,Amp_12= np.genfromtxt("../Bilder/12_Zylinder_mitBlende10mm.dat",unpack = True)
+Freq_2,Amp_2= np.genfromtxt( "../Bilder/2_Zylinder_mitBlende13mm.dat"   ,unpack = True)
+Freq_3, Amp_3= np.genfromtxt("../Bilder/3_Zylinder_mitBlende13mm.dat"  ,unpack = True)
+Freq_4, Amp_4= np.genfromtxt("../Bilder/4_Zylinder_mitBlende13mm.dat"  ,unpack = True)
+Freq_5, Amp_5= np.genfromtxt("../Bilder/5_Zylinder_mitBlende13mm.dat"  ,unpack = True)
+Freq_6, Amp_6= np.genfromtxt("../Bilder/6_Zylinder_mitBlende13mm.dat"  ,unpack = True)
+Freq_7, Amp_7= np.genfromtxt("../Bilder/7_Zylinder_mitBlende13mm.dat"  ,unpack = True)
+Freq_8, Amp_8= np.genfromtxt("../Bilder/8_Zylinder_mitBlende13mm.dat"  ,unpack = True)
+Freq_9, Amp_9= np.genfromtxt("../Bilder/9_Zylinder_mitBlende13mm.dat"  ,unpack = True)
+Freq_10,Amp_10= np.genfromtxt("../Bilder/10_Zylinder_mitBlende13mm.dat",unpack = True)
+Freq_11,Amp_11= np.genfromtxt("../Bilder/11_Zylinder_mitBlende13mm.dat",unpack = True)
+Freq_12,Amp_12= np.genfromtxt("../Bilder/12_Zylinder_mitBlende13mm.dat",unpack = True)
 
 fig,axis = plt.subplots(3,4,figsize=(21,13))
 axis[0,0].plot(Freq_2,Amp_2, label="2 Zylinder")
@@ -52,7 +52,7 @@ axis[2,2].legend(loc="best")
 for ax in fig.get_axes():
     ax.label_outer()
 
-plt.savefig("../latex-template/figure/Zylinder_Ketten.pdf")
+plt.savefig("../latex-template/figure/Zylinder_Ketten_13mm.pdf")
 plt.show()
 plt.close()
 
