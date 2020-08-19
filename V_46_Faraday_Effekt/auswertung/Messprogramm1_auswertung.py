@@ -24,6 +24,9 @@ Theta = np.pi *Theta/180
 
 Theta = Theta/L_1
 
+for i in Theta:
+    print(round(10000*i, 2))
+
 t_1_Rein *= 1/60
 t_2_Rein *= 1/60
 
@@ -37,15 +40,19 @@ Theta_Rein = np.pi *Theta_Rein/180
 Theta_Rein = Theta_Rein/L_Rein
 
 Theta_diff = Theta-Theta_Rein
+print()
+for i in Theta_Rein:
+    print(round(10000*i, 2))
 
-print(Theta_diff)
 
 
-
-plt.figure()
+plt.figure(figsize=(13,8))
 plt.plot(Lambda,Theta,"rx",label="n-dotiert")
 plt.plot(Lambda,Theta_Rein,"bx",label="Rein")
+plt.xlabel(r"$\lambda$ / $µm$")
+plt.ylabel(r"$\theta_{frei}\, /\, \frac{rad}{µm}$")
 plt.legend(loc="best")
+plt.savefig("../latex-template/figure/Theta1_plot.pdf")
 plt.show()
 plt.close()
 
@@ -58,9 +65,13 @@ params,cov_matrix = curve_fit(linear,Lambda**2, Theta_diff,p0=(29))
 
 x_plot=np.linspace(Lambda.min()**2, Lambda.max()**2,50)
 
+plt.figure(figsize=(13,8))
 plt.plot(Lambda**2, Theta_diff,"kx",label="Differenz")
 plt.plot(x_plot,linear(x_plot,*params),"b-",label="Fit")
+plt.ylabel(r"$\theta_{frei}\, /\, \frac{rad}{µm}$")
+plt.xlabel(r"$\lambda^2$ / $µm^2$")
 plt.legend(loc="best")
+plt.savefig("../latex-template/figure/Theta1_diff_plot.pdf")
 plt.show()
 plt.close() 
 N=1.2*10**24
@@ -68,8 +79,9 @@ B=0.41
 n=3.57
 error = np.sqrt(np.diag(cov_matrix))
 a = ufloat(params[0],error[0]) 
-print(a)
+
 a *= 1/(10**-18)
+print(a)
 m_eff = unp.sqrt(const.e**3 /(8*np.pi**2 *const.epsilon_0 *const.c**3) *1/a *N*B/n) 
 print(m_eff)
 

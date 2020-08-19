@@ -1,0 +1,61 @@
+Frage 1:
+    Mit welchen Prozessen wechselwirken Photonen und Materie?
+        Photonen wechselwirken mittels Photoeffekt
+        Compton Streuung
+        Paar bildung
+    Welcher Prozess dominiert bei kleinen/großen Energien?
+        bei kleinen Energien Photoeffekt
+        bei großen Energien Paarbildung
+    Welche Materialeigenschaften haben Einfluss auf die WWwahrscheinlichkeit?
+        Aus welchen Atomen ist das Material aufgebaut
+        Wie ist das Material aufgebaut
+        Temperatur
+    Wie hängt diese mit dem Extinktionskoeffizienten zusammen?
+        Der Extinktionskoeffizienten ist der imaginäre Anteil des Brechungsindexes.
+        Dieser kann durch die oben genannten größen verändert werden.
+    Wie hängt dieser von der Energie ab?
+    Der Brechungsindex hängt von der Frequent der Strahlung ab. diese ist mit der Energie verknüpft
+
+Frage 2:
+    Wie lautet die Vorhersage für den differentiellen Wirkungsquerschnitt als
+    Funktion der Energie für die Compton-Streuung?
+        Klein-Nishina Wirkungsquerschnitt https://de.wikipedia.org/wiki/Klein-Nishina-Wirkungsquerschnitt
+
+Frage 3:
+    Durch welche physikalische Größe des Halbleiters ist die Linienbreite von
+    Gammalinien begrenzt?
+        Die Linienbreite ist durch die Energieauflösung des Detektors begrenzt
+        Vergleich direkt indirekt:
+    Welche experimentellen Effekte führen zu einer weiteren Linienverbreiterung?
+        Digitale Auflösung : Anzahl der Kanäle für die Aufnahme des Spektrums
+    
+Frage 4:
+    Wie werden die Signale aus einem Germaniumdetektor verstärkt? 
+    Mittels Feldeffekttransistoren
+    Was ist der Unterschied zwischen Ladungs- und Stromverstärker?
+            Bei einem Ladungsverstärker wird die im Detektor deponierte Ladung verstärkt
+            und bei einem Stromverstärker wird das elektrische Signal verstärkt
+
+Frage 5:
+    Wie werden energiemessende Detektoren kalibriert?
+        Die Energie-Kalibrierung erfolgt mit Hilfe der Gammaenergien bekannter Nuklide eines Präparates
+    
+Frage 6:
+    Wie kann die Vollenergienachweiswahrscheinlichkeit von
+    Germaniumdetektoren mithilfe einer punktförmigen Quelle in großem Abstand
+    bestimmt werden?
+
+Frage 7:
+    Welche charakteristischen Strukturen können in einem monochromatischen Gammaspektrum beobachtet werden?
+        Es können Spektrallinien gemessen werden, welche es möglich machen Atome zu bestimmen
+
+Frage 8:
+    Welches ist die Photonenenergie mit der größten Emissionswahrscheinlichkeit für 152Eu, 137Cs, 133Ba und 125Sb?
+        152Eu -> 40.1186 keV
+        137Cs -> 661.657 (3) keV
+        133Ba -> 30.9731 keV 
+        125Sb -> 27.4726
+        
+
+
+    

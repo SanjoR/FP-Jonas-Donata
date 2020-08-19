@@ -1,0 +1,75 @@
+Welche Quantenzahlen definieren den Zustand des Elektrons im
+Wasserstoffatom?
+    Vier Quantenzahlen:
+        n   : Hauptquantenzahl, beschreibt Energieniveau 
+
+        l   : Nebenquantenzahl, kennzeichnet die Form des Atomorbital l < n
+              Aka. Drehimpulsquantenzahl
+
+        m_l : Magnetische Quantenzahl des Bahndrehimpulses, beschreibt räumliche Orientierung des 
+              Elektronen-Bahndrehimpulses, bzw. Größe der z-Komponente, daher auch l_z
+              Werte im Bereich von -l bis l
+        
+        m_s : magnetische Spinquantenzahl, beschreibt Orientierung des Spins zur z-Achse 
+              m_s = +-1/2 
+
+
+Was ist die Feinstruktur (Spin-Bahn-Kopplung)?
+        Bei gebundenen Teilchen führt die Spin-Bahn-Kopplung zu einer Aufspaltung der Energieniveaus. Das ist zu sehen,
+        da die Spektrallinien dadurch aufgespalten werden.
+
+Beschreiben Sie die Elektronenkonfigurationen und Drehimpulskopplungen in Mehrelektronenatomen (LS-Kopplung
+und jj-Kopplung).
+    LS-Kopplung:
+        Aus Bahndrehimpulse der einzelnen Teilchen wird Gesamtdrehimpuls L bestimmt. Das gleiche auch mit den Gesammtspin
+        S. Daraus kann Gesammtdrehimpuls J der Elektronenhülle bestimmt werden.
+        LS-Kopplung tritt auf, wenn Spin-Bahn-Kopplung vernachlässigt werden kann.
+        Wenn mindestens zwei Elektronen in der selben Unterschale sind, können L und S mehrere unterschieldiche Werte annehmen.
+        Diese gehören alle zur selben Energie.
+        L S Kmbinationen nur zulässig, wenn sie das Pauli-Prinzip entsprechen
+        Ort und Spin-Wellenfunktion benötigen gegensätzige Symmetiren
+        Energieniveaus leichter Atome können L und S zugeordent werden
+    
+    jj-Kopplung:
+        Spin und Bahndrehimpulse werden für jedes Teilchen i addiert zu j_i.
+        Gesammtdrehimpuls der Elektronenhülle J wird gebildet
+        jj-Kopplung ergibt Zustande, die bei starker Spin-Bahn-Kopplung eine gute Näherung an die Energiezustände darstellen.
+        Stärke der Spin-Bahn-Kopplung nimmt mit höherem n ab, mit steigendem Z zu.
+        J wird bei vollen Schalen 0, daher wird Gesammtdrehimpuls der Atomhülle nur durch die Elektronen in nicht voll 
+        bestezten Schalen bestimmt.
+
+
+Wie ist der Zusammenhang zwischen dem magnetischen Moment eines Elektrons und seinen Drehimpulsquantenzahlen?
+    magnetischen Moment mu_z = -m_l * Bohrsches Magneton
+
+
+Was ist der Unterschied zwischen
+dem gyromagnetischen Verhältnis für den Elektronenspin und demjenigen für den Drehimpuls?
+    gamma_l = 1/2 * e/m_0
+    gamma_s = 1,00116 * e/m_0
+
+
+In wie viele Niveaus spaltet sich der Zustand mit Gesamtdrehimpuls J?
+    (2J +1)
+
+ Wie ändert sich die Aufspaltung mit der Magnetfeldstärke?
+    bei schwacher Feldstärke in (2J+1) äquidistante Niveaus
+    bei starken Feldstärgen nicht mehr äquidistant sodass weniger Linien sichtbar sind. Das Wird Paschen-Back-Effekt genannt.
+
+
+Zwischen welchen Zuständen sind die optischen Übergänge erlaubt?
+    delta l = +-1
+    delta m_l = 0,+-1
+
+Wie viele Spektrallinien beobachtet man im normalen und anormalen Zeeman-Effekt?
+    normal (2L+1) annormal (2J+1)
+
+Wie sind die Spektrallinien polarisiert?
+    Parallel zum Magnetfeld sind die Linien gegenläufig zirkular polarisiert
+    transversal zum Magnetfeld lineare Polarisation
+
+
+Wie viele Linien erwarten Sie im Magnetfeld?
+    jeweils drei
+
+
