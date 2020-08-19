@@ -88,6 +88,7 @@
 % Seite drehen für breite Tabellen: landscape Umgebung
 \usepackage{pdflscape}
 
+
 % Captions schöner machen.
 \usepackage[
   labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
@@ -96,7 +97,8 @@
 ]{caption}
 % subfigure, subtable, subref
 \usepackage{subcaption}
-
+\captionsetup[subfigure]{list=true, font=large, labelfont=bf, 
+labelformat=brace, position=top}
 % Grafiken können eingebunden werden
 \usepackage{graphicx}
 % größere Variation von Dateinamen möglich

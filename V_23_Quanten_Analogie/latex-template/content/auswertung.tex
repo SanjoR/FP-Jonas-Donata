@@ -1,11 +1,11 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Vorbereitende Versuche}
-Als Vorbereitende Versuche wird die Schallgeschwindigkeit über die Resonanzfrequenzen bestimmt und es wird ein Vergleich gezogen
-zwischen der Datennahme mittels Osziloskop und mittels dem Programm \texttt{SpectrumSLC}.
+Zur Vorbereitung werden zwei Versuche durchgeführt. Als erstes wird die Schallgeschwindigkeit über die Resonanzfrequenzen bestimmt. Danach wird ein Vergleich
+zwischen der Datennahme mittels Oszilloskop und mit Hilfe des Programms \texttt{SpectrumSLC} gezogen.
 \subsubsection{Bestimmung der Schallgeschwindigkeit}
-Aus \eqref{??}[$\lambda$ abhängig von d] kann die Schallgeschwindigkeit über die Differenz der Resonanzfrequenzen
-bestimmt werden. Hierfür werden diese gegen die Länge der Röhren aufgetragen. Die Länge der Röhren ist bekannt, da immer Röhren 
+Aus \eqref{bragg} kann die Schallgeschwindigkeit über die Differenz der Resonanzfrequenzen
+bestimmt werden. Hierfür werden die Frequenzen gegen die Länge der Röhren aufgetragen. Die Länge der Röhren ist bekannt, da nur Röhren 
 der gleichen Länge hinzugefühgt werden.
 \FloatBarrier
 \begin{table}
@@ -38,7 +38,7 @@ Mit der Gleichung
 kann die Schallgeschwindigkeit bestimmt werden.
 \FloatBarrier
 \begin{figure}
-    \includegraphics[width = \textwidth]{figure/Schallgeschwindigkeit.pdf}
+    \includegraphics[width = 0.6\textwidth]{figure/Schallgeschwindigkeit.pdf}
     \caption{Messwerte und Fitfunktion für die Bestimmung der Schallgeschwindigkeit}
 \end{figure}
 \FloatBarrier
@@ -54,46 +54,70 @@ Um die beiden Methoden der Datennahme zu testen wird das Spektrum des Zylinders 
 Hierbei wird die Anzahl der Zylinder schrittweise von eins auf sechs erhöht.
 \FloatBarrier
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/1Zylinder.png}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/1_Zylinder.png}}
-    \caption{Spektrum von einem Zylinder mittels (a) Osziloskop, (b) \texttt{SpectrumSLC}}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/1Zylinder.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/1_Zylinder.png}
+    \end{subfigure}
+    \caption{Spektrum von einem Zylinder mittels (a) Oszilloskop, (b) \texttt{SpectrumSLC}}
 \end{figure}
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/2Zylinder.png}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/2_Zylinder.png}}
-    \caption{Spektrum von zwei Zylindern mittels (a) Osziloskop, (b) \texttt{SpectrumSLC}}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/2Zylinder.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/2_Zylinder.png}
+    \end{subfigure}
+    \caption{Spektrum von zwei Zylindern mittels (a) Oszilloskop, (b) \texttt{SpectrumSLC}}
 \end{figure}
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/3Zylinder.png}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/3_Zylinder.png}}
-    \caption{Spektrum von drei Zylindern mittels (a) Osziloskop, (b) \texttt{SpectrumSLC}}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/3Zylinder.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/3_Zylinder.png}
+    \end{subfigure}
+    \caption{Spektrum von drei Zylindern mittels (a) Oszilloskop, (b) \texttt{SpectrumSLC}}
 \end{figure}
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/4Zylinder.png}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/4_Zylinder.png}}
-    \caption{Spektrum von vier Zylindern mittels (a) Osziloskop, (b) \texttt{SpectrumSLC}}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=0\textwidth]{figure/4Zylinder.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=0\textwidth]{figure/4_Zylinder.png}
+    \end{subfigure}
+    \caption{Spektrum von vier Zylindern mittels (a) Oszilloskop, (b) \texttt{SpectrumSLC}}
 \end{figure}
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/5Zylinder.png}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/5_Zylinder.png}}
-    \caption{Spektrum von fünf Zylindern mittels (a) Osziloskop, (b) \texttt{SpectrumSLC}}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/5Zylinder.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=\textwidth]{figure/5_Zylinder.png}
+    \end{subfigure}
+    \caption{Spektrum von fünf Zylindern mittels (a) Oszilloskop, (b) \texttt{SpectrumSLC}}
 \end{figure}
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/6Zylinder.png}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/6_Zylinder.png}}
-    \caption{Spektrum von sechs Zylindern mittels (a) Osziloskop, (b) \texttt{SpectrumSLC}}
+    \begin{subfigure}[c]{width=0.45\textwidth}
+        \includegraphics[width=0.45\textwidth]{figure/6Zylinder.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{width=0.45\textwidth} 
+        \includegraphics[width=0.45\textwidth]{figure/6_Zylinder.png}
+    \end{subfigure}
+    \caption{Spektrum von sechs Zylindern mittels (a) Oszilloskop, (b) \texttt{SpectrumSLC}}
 \end{figure}
 \FloatBarrier
-Wie an den Bildern erkannt werden kann, ist das Programm \texttt{SpectrumSLC} präzieser. Dazu kommt noch, dass das Programm die 
-Daten abspeichert. Das kann die Auswertung der folgenden Messreihen vereinfachen.
+Wie an den Bildern erkannbar ist, misst das Programm \texttt{SpectrumSLC} präziser. Außerdem kann das Programm die 
+Daten abspeichern. Das vereinfacht die Auswertung der folgenden Messreihen.
 
-\subsection{Das Wasserstoffmodel}
-Für den ersten Versuch dieser Messreihe, sollen die Frequenzen von \SI{100}{\hertz} bis \SI{10}{\kilo\hertz} vermessen werden.
+\subsection{Das Wasserstoffatom}
+Für den ersten Versuch dieser Messreihe, werden die Frequenzen von \SI{100}{\hertz} bis \SI{10}{\kilo\hertz} vermessen.
 Die Resonanzfrequenzen sind in Tabelle \ref{tab:Resonanzfrequenzen} aufgelistet.
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Messwertte für die Bestimmung der Ordnung der Resonanzfrequenz}
+    \caption{Messwerte für die Bestimmung der Ordnung der Resonanzfrequenz}
     \label{tab:Resonanzfrequenzen}
     \begin{tabular}{c c c c}
         \toprule
@@ -114,20 +138,20 @@ Die Resonanzfrequenzen sind in Tabelle \ref{tab:Resonanzfrequenzen} aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
-Die Resonanzen können auch mittels des Frequnezspektrometers dargestellt werden.
+Die Resonanzen können auch mittels des Frequenzspektrometers dargestellt werden.
 \FloatBarrier
 \begin{figure}
-    \caption{Frequnezspektrum des Kugelresonators}
+    \caption{Frequenzspektrum des Kugelresonators}
 \includegraphics[width = \textwidth]{figure/Kugelresonanzspektrum.png}
 \end{figure}
 
 \subsubsection{Vermessung der Kugelflächenfunktion}
-In dieser Messreihe werden für drei verschiedene Resonazen die Druckamplitude in Abhängigkeit des Drehwinkels $\alpha$ vermessen.
-Es werden die Resonanzen der Ordnung 2,4 und 6 aus Tabelle \ref{tab:Resonanzfrequenzen} verwendet.
+In dieser Messreihe werden für drei verschiedene Resonazen die Druckamplituden in Abhängigkeit des Drehwinkels $\alpha$ vermessen.
+Es werden die Resonanzen der zweiten, vierten und sechsten Ordnung aus Tabelle \ref{tab:Resonanzfrequenzen} verwendet.
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Messwertte für die Bestimmung der Ordnung der Kugelflächenfunktion}
+    \caption{Messwerte für die Bestimmung der Ordnung der Kugelflächenfunktion}
     \label{tab:Amplituden_Kugelflächenfunktion}
     \begin{tabular}{c c c c c}
         \toprule
@@ -161,37 +185,38 @@ In der Tabelle \ref{tab:Amplituden_Kugelflächenfunktion} wird der Winkel $\thet
     \label{eq:Theta_alpha}
     \theta(\alpha) = \arccos\left( \frac{1}{2} \cos\left( \alpha \right) -\frac{1}{2} \right)
 \end{equation}
-Wie aus Tabelle \ref{tab:Amplituden_Kugelflächenfunktion} abzulesen ist, ist die Druckamplitude der zweiten Resonanz 
-unabhängig von dem Winkel, daher müssen die Quantenzahlen $n=m=0$ sein.\\
-Die Druckamplitude wird gegen $\theta$ in einem Polarplot aufgetragen. Dazu werden verschiedene Kugelflächenfunktionen 
-geplottet, um diese miteinander vergleichen zu können. Da ohne Zwischenring keine Aufspaltung in $m$ zu sehen ist, wird $m=0$ gesetzt,
-um die Kugelflächenfunktion nur in Abhängigkeit von $\theta$ zu plotten.
+Wie aus Tabelle \ref{tab:Amplituden_Kugelflächenfunktion} abzulesen werden kann, ist die Druckamplitude der zweiten Resonanz 
+winkelunabhängig, daher müssen die Quantenzahlen $n=m=0$ sein.\\
+Die Druckamplitude wird in einem Polarplot gegen $\theta$ aufgetragen. Dazu werden verschiedene Kugelflächenfunktionen 
+geplottet, um diese miteinander vergleichen zu können. Da ohne Zwischenring keine Aufspaltung in $m$ zu sehen ist, wird $m=0$ gesetzt.
+Die Kugelflächenfunktion werden somit nur in Abhängigkeit von $\theta$ geplottet.
 \FloatBarrier
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n1.pdf}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n2.pdf}}\\
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n3.pdf}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n4.pdf}}
-    \caption{Winkelabhängigkeit der Druckamplitude bei einer Resonanzfrequenz von \SI{5.0074}{\kilo\hertz} und Kugelflächenfunktion der $n$ Ordnung.}
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n1.pdf}}
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n2.pdf}}\\
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n3.pdf}}
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_4_n4.pdf}}
+    \caption{Winkelabhängigkeit der Druckamplitude bei einer Resonanzfrequenz von \SI{5.0074}{\kilo\hertz} und einer Kugelflächenfunktion der $n$-ten Ordnung.}
     \label{fig:Amplitude_4}
 \end{figure}
 \begin{figure}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n4.pdf}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n5.pdf}}\\
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n6.pdf}}
-    \subfloat[][]{\includegraphics[width=0.5\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n7.pdf}}
-    \caption{Winkelabhängigkeit der Druckamplitude bei einer Resonanzfrequenz von \SI{6.5908}{\kilo\hertz} und Kugelflächenfunktion der $n$ Ordnung.}
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n4.pdf}}
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n5.pdf}}\\
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n6.pdf}}
+    \subfloat[][]{\includegraphics[width=0.45\textwidth]{figure/Resonanz_Drewinkel_Amplitude_6_n7.pdf}}
+    \caption{Winkelabhängigkeit der Druckamplitude bei einer Resonanzfrequenz von \SI{6.5908}{\kilo\hertz} und einer Kugelflächenfunktion der $n$-ten Ordnung.}
     \label{fig:Amplitude_6}
 \end{figure}
 \FloatBarrier
-Bei Betrachtung der Abbildungen \ref{fig:Amplitude_4} kann gesagt werden, 
+Bei Betrachtung der Abbildungen \ref{fig:Amplitude_4} kann geschlussfolgert werden, 
 dass die gemessene Verteilung der Kugelflächenfunktion mit $n=4$ ähnelt. \\
-Da die Verteilungen bei Abbildung \ref{fig:Amplitude_6} keiner der Kugelflächenfunktion ähnelt, aber
+Da die Verteilungen bei Abbildung \ref{fig:Amplitude_6} keiner der Kugelflächenfunktionen ähnlich sind, aber
 $n>4$ sein muss, kann die Kugelflächenfunktion nicht bestimmt werden.
+
 \subsubsection{Peakaufspaltung}
-Bei dieser Messreihe wird die Peakaufspaltung der Resonanzfrequenz von \SI{2.3}{\kilo\hertz} vermessen, indem verschieden dicke 
-Zwischenringe zwischen den Halbkugeln des Kugelresonators eigefühgt werden.
-Die dafür benötigten Messdaten sind in Tabelle  aufgelistet.
+Bei dieser Messreihe wird die Peakaufspaltung der Resonanzfrequenz von $\SI{2.3}{\kilo\hertz}$ vermessen, indem verschieden dicke 
+Ringe zwischen den Halbkugeln des Kugelresonators eingefügt werden.
+Die dafür benötigten Messdaten sind in der folgenden Tabelle  aufgelistet.
 \FloatBarrier
 \begin{table}
     \centering
@@ -199,7 +224,7 @@ Die dafür benötigten Messdaten sind in Tabelle  aufgelistet.
     %\label{tab:Peakaufspaltung}
     \begin{tabular}{c c c c}
         \toprule
-        Dicke / \SI{}{\milli\meter}& erster Resonanz / \SI{}{\kilo\hertz}& zweite Resonanz / \SI{}{\kilo\hertz}& Differenz / \SI{}{\kilo\hertz}\\
+        Dicke / \SI{}{\milli\meter}& erste Resonanz / \SI{}{\kilo\hertz}& zweite Resonanz / \SI{}{\kilo\hertz}& Differenz / \SI{}{\kilo\hertz}\\
         \midrule
         $\num{3}$ &$\num{2239}$&$\num{2302}$&$\num{63}$\\
         $\num{9}$ &$\num{2173}$&$\num{2286}$&$\num{113}$\\
@@ -208,8 +233,8 @@ Die dafür benötigten Messdaten sind in Tabelle  aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
-Aufgrund der wenigen Kombinationsmöglichkeiten der beiden Zwischenring, können für diesen Versuch nur drei Messwerte aufgenommen werden.
-Da aus drei Punkten nicht auf komplexe Funktionen geschlossen werden kann wird der Zusammenhang linear angenommen.
+Aufgrund der wenigen Kombinationsmöglichkeiten der beiden Zwischenringe, können für diesen Versuch nur drei Messwerte aufgenommen werden.
+Da aus drei Punkten nicht auf komplexe Funktionen geschlossen werden kann, wird der Zusammenhang als linear angenommen.
 Dafür wird die Funktion \eqref{eq:linear} durch die Daten gefittet.
 \begin{equation}
     f\left(x\right) = ax +b
@@ -228,17 +253,18 @@ In der Abbildung \ref{fig:Peakaufspaltung} sind die Parameter auf
     a&= \num{12(3)}\\
     b&= \num{23(26)}
 \end{align*}
-bestimmt worden
+bestimmt worden.
+
 \subsubsection{Bestimmung des Quantenzustandes}
-Um die Quantenzahlen des Zustandes zu bestimmen, wird ein Zwischenring der Dicke von $d=\SI{9}{\milli\meter}$ eigefühgt.
-Da der Zwischenring die Symmetrie der Kugel bricht gibt es jetzt eine Vorzugsrichtung. Dadurch ist der $\alpha$-Winkel der $\Phi$ Winkel 
-der Kugelflächenfunktion und die Ausrichtung des Mikrofons ist der $\theta$-Winkel.
-Bei einer Frequenzen von \SI{2.3}{\kilo\hertz} wird die winkelabhängige Druckamplitude vermessen. Die Messdaten sind in Tabelle
+Um die Quantenzahlen des Zustandes zu bestimmen, wird ein Zwischenring der Dicke $d=\SI{9}{\milli\meter}$ eingefügt.
+Da der Zwischenring die Symmetrie der Kugel bricht, gibt es jetzt eine Vorzugsrichtung. Dadurch ist der $\alpha$-Winkel der $\Phi$-Winkel 
+der Kugelflächenfunktion und die Ausrichtung des Mikrofons wird durch den $\theta$-Winkel charakterisiert.
+Bei einer Frequenzen von $\SI{2.3}{\kilo\hertz}$ wird die winkelabhängige Druckamplitude vermessen. Die Messdaten sind in Tabelle
 \ref{tab:Messdaten_9mmZwischenring} aufgelistet.
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Messwerte für die Bestimmung des Quantenzustandes bei einer Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und einem Zwischenring der Dick $d=\SI{9}{\milli\meter}$.}
+    \caption{Messwerte für die Bestimmung des Quantenzustandes bei einer Resonanzfrequenz von $\SI{2.3}{\kilo\hertz}$ und einem Zwischenring der Dicke $d=\SI{9}{\milli\meter}$}
     \label{tab:Messdaten_9mmZwischenring}
     \begin{tabular}{c c c c c}
         \toprule
@@ -272,27 +298,29 @@ Bei einer Frequenzen von \SI{2.3}{\kilo\hertz} wird die winkelabhängige Druckam
     \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
         \hspace*{-2cm}
         \includegraphics[width=\linewidth]{figure/9mmZwischenring_n0.pdf}
-        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und \\ Kugelflächenfunktionen der nullten Ordnung.}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von $\SI{2.3}{\kilo\hertz}$ und \\ Kugelflächenfunktionen der nullten Ordnung.}
      \end{minipage}
      \hspace{.1\linewidth}% Abstand zwischen Bilder
      \begin{minipage}[b]{.4\linewidth} % [b] => Ausrichtung an \caption
         \hspace*{-2cm}
         \includegraphics[width=\linewidth]{figure/9mmZwischenring_n1.pdf}
-        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und \\ Kugelflächenfunktionen der erste Ordnung.}
+        \caption{Winkelabhängigkeit der\\ Druckamplitude bei einer \\ Resonanzfrequenz von $\SI{2.3}{\kilo\hertz}$ und \\ Kugelflächenfunktionen der ersten Ordnung.}
      \end{minipage}
 \end{figure}
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{figure/9mmZwischenring_n2.pdf}
-    \caption{Winkelabhängigkeit der Druckamplitude bei einer Resonanzfrequenz von \SI{2.3}{\kilo\hertz} und Kugelflächenfunktionen der zweiten Ordnung.}
+    \caption{Winkelabhängigkeit der Druckamplitude bei einer Resonanzfrequenz von $\SI{2.3}{\kilo\hertz}$ und Kugelflächenfunktionen der zweiten Ordnung.}
     \label{fig:9mmZwischenring_n2}
 \end{figure}
 \FloatBarrier
-Wie an der Abbildung \ref{fig:9mmZwischenring_n2} zu sehen ist, ähnelt der Zustand am meisten der $n=2,m=0$ Kugelflächenfunktion.
+Wie in Abbildung \ref{fig:9mmZwischenring_n2} zu sehen ist, ähnelt der Zustand am meisten der $n=2,m=0$ Kugelflächenfunktion.
+
 \subsection{Das Wasserstoffmolekül}
 Für die folgenden Versuchsteilen werden zwei Kugelresonatoren übereinander gesteckt und mit einem Loch in der Mitte in Verbindung gebracht.
+
 \subsubsection{Resonanzfrequenz in Abhängigkeit des Blendendurchmessers}
-Da nur zwei Blenden zu Verfügung standen, kann auch hier nur ein linearer Zusammenhang in erwägung gezogen werden.
+Da nur zwei Blenden zu Verfügung standen, kann auch hier nur ein linearer Zusammenhang in Erwägung gezogen werden.
 Die beiden Spektren werden mit einer Blende mit einem Durchmesser von $d=\SI{10}{\milli\meter}$ und
 $d=\SI{16}{\milli\meter}$ aufgenommen. Die Spektren sind in Abbildung \ref{fig:Spektren_WM_Blende} zu sehen.
 \FloatBarrier
@@ -325,17 +353,17 @@ Die Resonanzen sind in Tabelle \ref{tab:Resonanz_WM_Blenden} aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
-Wie an den den Differenzen aus Tabelle \ref{tab:Resonanz_WM_Blenden} zu erkennen ist, kann an diesen Daten kein 
+Wie an den den Differenzen aus Tabelle \ref{tab:Resonanz_WM_Blenden} zu erkennen ist, kann aus diesen Daten kein 
 Zusammenhang zwischen Blendendurchmesser und Resonanz gezogen werden.
 
-\subsubsection{Quantenzustand des Wasserstoffmolekül}
+\subsubsection{Quantenzustand des Wasserstoffmoleküls}
 Für die Bestimmung des Quantenzustandes des Wasserstoffmoleküls wird die Druckamplitude in Abhängigkeit des Drehwinkels 
-vermessen. Hierbei ist die Frequenz auf \SI{2.3}{\kilo\hertz} eingestellt.
+vermessen. Hierbei ist die Frequenz auf $\SI{2.3}{\kilo\hertz}$ eingestellt.
 Die gemessenen Daten sind in Tabelle \ref{tab:WMQZ} aufgelistet.
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Daten für die Bestimmung des Quantenzustandes des Wasserstoffmoleküls.}
+    \caption{Daten für die Bestimmung des Quantenzustandes des Wasserstoffmoleküls}
     \label{tab:WMQZ}
     \begin{tabular}{c c}
         \toprule
@@ -369,47 +397,48 @@ Die Daten werden in Abbildung \ref{fig:WMQZ} dargestellt.
 \begin{figure}
     \centering
     \includegraphics[width = 0.7\textwidth, keepaspectratio]{figure/WMQZ.pdf}
-    \caption{Messdaten und verschiedene Kugelflächenfunktionen, für die Bestimmung des Quantenzustandes.}
+    \caption{Messdaten und verschiedene Kugelflächenfunktionen, für die Bestimmung des Quantenzustandes}
     \label{fig:WMQZ}
 \end{figure}
 \FloatBarrier
-Wie in der Abbildung \ref{fig:WMQZ} zu sehen ist, ähnelt der Vermessene Zustand der Kugelflächenfunktion mit 
-$n=m=0$, $n=1 m=-1$ oder $n=2 m=2$. Da die zweite Resonanz verwendet wurde kann davon ausgegangen werden, das der 
-$n=1 m=-1$ Zustand zutrifft. Das ist der $1\pi$ Zustand. Allerdings kann nicht gesagt werden ob dieser bindend oder antibindend 
+Wie in der Abbildung \ref{fig:WMQZ} zu sehen ist, ähnelt der vermessene Zustand der Kugelflächenfunktion mit 
+$n=m=0$, $n=1 m=-1$ oder $n=2 m=2$. Da die zweite Resonanz verwendet wurde, kann davon ausgegangen werden, dass der 
+$n=1 m=-1$ Zustand zutrifft. Das ist der $1\pi$ Zustand. Allerdings kann nicht gesagt werden, ob dieser Zustand bindend oder antibindend 
 ist.
-\subsection{1D-Festkörper}
-Für die Simulation eines 1D-Festkörper werden Zylinder mit einer 
-Länge von \SI{50}{\milli\meter} verwendet. Diese werden durch verschiedene Blenden voneinander getrennt.
+
+\subsection{Der eindimensionale Festkörper}
+Für die Simulation eines eindimensionalen Festkörpers werden Zylinder mit einer 
+Länge von $\SI{50}{\milli\meter}$ verwendet. Diese werden durch verschiedene Blenden voneinander getrennt.
 \FloatBarrier
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth,keepaspectratio]{figure/Zylinder_Ketten.pdf}
-    \caption{Resonanzen der Zylinderketten mit unterschiedlichen Längen und jeweils einer \SI{10}{\milli\meter} Blende.}
+    \caption{Resonanzen der Zylinderketten mit unterschiedlichen Längen und jeweils einer $\SI{10}{\milli\meter}$ Blende}
     \label{fig:Zylinder_Ketten}
 \end{figure}
 \FloatBarrier
-Wie Abbildung \ref{fig:Zylinder_Ketten} vermuten lässt, werden die Resonanzen aufgespalten durch mehr Zylinder. Die 
+Wie Abbildung \ref{fig:Zylinder_Ketten} vermuten lässt, werden die Resonanzen durch mehr Zylinder aufgespalten. Die 
 Aufspaltung entspricht der Anzahl an Zylindern.
 
-Diese Versuchsreihe wird wiederholt, wobei die Blenden einen Durchmesser von \SI{13}{\milli\meter} haben.
+Diese Versuchsreihe wird wiederholt, wobei die Blenden einen Durchmesser von $\SI{13}{\milli\meter}$ haben.
 \FloatBarrier
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth,keepaspectratio]{figure/Zylinder_Ketten_13mm.pdf}
-    \caption{Resonanzen der Zylinderketten mit unterschiedlichen Längen und jeweils einer \SI{13}{\milli\meter} Blende.}
+    \caption{Resonanzen der Zylinderketten mit unterschiedlichen Längen und jeweils einer $\SI{13}{\milli\meter}$ Blende}
     \label{fig:Zylinder_Ketten_13}
 \end{figure}
 \FloatBarrier
 Wenn die Abbildungen \ref{fig:Zylinder_Ketten} und \ref{fig:Zylinder_Ketten_13} verglichen werden, ist zu sehen, dass die Aufspaltungen 
-bei einem Blenden von \SI{13}{\milli\meter} weiter auseinander sind.
+bei Blenden von $\SI{13}{\milli\meter}$ weiter auseinander sind.
 \subsubsection{Austausch der Zylinder}
-Im Folgenden werden einzelne Zylinder ausgetauscht, einmal wird ein Zylinder der Länge \SI{75}{\milli\meter} eingesetzt und
-einmal werden zwei Zylinder der Länge \SI{12.5}{\milli\meter} hintereinander gesetzt ohne Blende.
+Im Folgenden werden einzelne Zylinder ausgetauscht. Einmal wird ein Zylinder der Länge $\SI{75}{\milli\meter}$ eingesetzt und
+einmal werden zwei Zylinder der Länge $\SI{12.5}{\milli\meter}$ hintereinander gesetzt, wobei zwischen ihnen keine Blende verwendet wird.
 \FloatBarrier
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth,keepaspectratio]{figure/Austausch_75mm.pdf}
-    \caption{Resonanzen der Zylinderketten mit 10 Zylindern, wobei bei ein Zlyinder ausgetauscht wird mit einem Zylinder der Länge \SI{75}{\milli\meter}.}
+    \caption{Resonanzen der Zylinderketten mit 10 Zylindern, wobei ein Zylinder mit einem Zylinder der Länge $\SI{75}{\milli\meter}$ ausgetauscht wird}
     \label{fig:Austausch_75}
 \end{figure}
 \FloatBarrier
@@ -418,10 +447,10 @@ Wie an der Abbildung \ref{fig:Austausch_75} zu sehen ist, sind die Resonanzen we
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth,keepaspectratio]{figure/Austausch_25mm.pdf}
-    \caption{Resonanzen der Zylinderketten mit 10 Zylindern, wobei bei ein Zlyinder ausgetauscht wird mit zwei Zylinder der Länge \SI{12.5}{\milli\meter}.}
+    \caption{Resonanzen der Zylinderketten mit 10 Zylindern, wobei bei ein Zlyinder mit zwei Zylinder der Länge $\SI{12.5}{\milli\meter}$ ausgetauscht wird}
     \label{fig:Austausch_25}
 \end{figure}
 \FloatBarrier
-In Abbildung \ref{fig:Austausch_25} ist zu sehen, dass die erste Resonanz erhöht ist, die weiteren, aber wieder weniger ausgeprägt sind.
+In Abbildung \ref{fig:Austausch_25} ist zu sehen, dass die erste Resonanz erhöht ist. Die anderen sind allerdings wieder weniger ausgeprägt.
 
 
