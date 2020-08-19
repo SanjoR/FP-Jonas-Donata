@@ -40,8 +40,11 @@ Theta_Rein = np.pi *Theta_Rein/180
 Theta_Rein = Theta_Rein/L_Rein
 
 Theta_diff = Theta-Theta_Rein
+print()
+for i in Theta_diff:
+    print(round(10000*i, 2))
 
-print(Theta_diff)
+
 
 
 plt.figure(figsize=(13,8))
@@ -83,3 +86,5 @@ print(a)
 m_eff = unp.sqrt(const.e**3 /(8*np.pi**2 *const.epsilon_0 *const.c**3) *1/a *N*B/n) 
 print(m_eff)
 
+lit = 6.103*10**-32
+print((m_eff-lit)/lit)

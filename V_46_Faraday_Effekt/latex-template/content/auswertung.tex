@@ -69,3 +69,81 @@ Die Messwerte sind in Tablle \ref{tab:Drehwinkel} notiert.
   \label{tab:Drehwinkel}
 \end{table}
 \FloatBarrier
+Die Daten aus Tablle \ref{tab:Drehwinkel} werden in Abbildung \ref{fig:Drehwinkel_1} und \ref{fig:Drehwinkel_2} 
+dargestellt.
+\FloatBarrier
+\begin{figure}
+  \centering
+  \includegraphics[width = \textwidth,keepaspectratio]{figure/Theta1_plot.pdf}
+  \caption{Graphische Darstellung der normierten Drehwinkel, in Abhängigkeit der Wellenlänge, von der Probe 1 mit einer Dicke von $d=\SI{1360}{\micro\meter}$ und 
+  der reinen Probe.}
+  \label{fig:Drehwinkel_1}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width = \textwidth,keepaspectratio]{figure/Theta2_plot.pdf}
+  \caption{Graphische Darstellung der normierten Drehwinkel, in Abhängigkeit der Wellenlänge, von der Probe 2 mit einer Dicke von $d=\SI{1296}{\micro\meter}$ und 
+  der reinen Probe.}
+  \label{fig:Drehwinkel_2}
+\end{figure}
+\FloatBarrier
+Um die  Effektive Masse der Leitungselektronen bestimmen zu können, wird die Differenz der normierten Drehwinkel ermittelt
+und gegen das Quadrat der Wellenlänge aufgetragen. Die Differenzen sind in Tablle \ref{tab:Differenzen} aufgelistet.
+\FloatBarrier
+\begin{table}
+  \centering
+  \begin{tabular}{c c c}
+    \toprule
+    $\lambda^2$ / \SI{}{\micro\meter\square}&$\Delta_{\text{1}}$ / $\frac{\SI{}{\radian}}{\SI{}{\micro\meter}}$&$\Delta_{\text{2}}$ / $\frac{\SI{}{\radian}}{\SI{}{\micro\meter}}$\\
+    \midrule 
+    $\num{1.1}$&$\num{3.05e-4}$&$ \num{0.77e-4}$\\
+    $\num{1.7}$&$\num{1.43e-4}$&$ \num{0.66e-4}$\\
+    $\num{2.1}$&$\num{-0.04e-4}$&$\num{0.77e-4}$\\
+    $\num{3.0}$&$\num{0.07e-4}$&$ \num{0.96e-4}$\\
+    $\num{3.8}$&$\num{1.04e-4}$&$ \num{1.21e-4}$\\
+    $\num{4.6}$&$\num{0.77e-4}$&$ \num{1.44e-4}$\\
+    $\num{5.5}$&$\num{1.47e-4}$&$ \num{1.58e-4}$\\
+    $\num{6.3}$&$\num{3.41e-4}$&$ \num{1.93e-4}$\\
+    $\num{7.0}$&$\num{0.9e-4}$&$  \num{1.65e-4}$\\
+    \bottomrule
+  \end{tabular}
+  \caption{Messwerte zur Bestimmung der effektiven Masse von Ladungselektronen.}
+  \label{tab:Differenzen}
+\end{table}
+\FloatBarrier
+Die Daten werden gegeneinander aufgetragen und die Funktion \eqref{eq:fit} wird an die Daten gefittet.
+\begin{equation}
+  \label{eq:fit}
+  \theta_{\text{frei}} = f(\lambda^2) = a\cdot \lambda^2
+\end{equation}
+Die Daten aus Tablle \ref{tab:Differenzen} und der dazugehörige Fit sind in den Abbildungen \ref{fig:fit1} und \ref{fig:fit2} 
+dargestellt.
+\FloatBarrier
+\begin{figure}
+  \centering
+  \includegraphics[width = \textwidth]{figure/Theta1_diff_plot.pdf}
+  \caption{Plot zur Bestimmung der effektiven Masse mittels Probe 1.}
+  \label{fig:fit1}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width = \textwidth]{figure/Theta2_diff_plot.pdf}
+  \caption{Plot zur Bestimmung der effektiven Masse mittels Probe 2.}
+  \label{fig:fit2}
+\end{figure}
+\FloatBarrier
+Die Fitparameter der beiden funktionen sind:
+\begin{align*}
+  a_{\text{1}} =& \num{3(1)e13}  \,\frac{\SI{}{\radian}}{\SI{}{\cubic\meter}}\\
+  a_{\text{2}} =& \num{2.9(1)e13}\,\frac{\SI{}{\radian}}{\SI{}{\cubic\meter}}.
+\end{align*}
+Der Wert $a$ kann in die folgende Gleichung eingesetzt werden um die effektive Masse zu bestimmen.
+\begin{align*}
+  &\theta_{\text{frei}} = \frac{\symup{e}_0^3}{8\pi^2\epsilon_0\symup{c}^3 \left(m^*\right)^2}\lambda^2\frac{NB}{n}\\
+  &\implies \left(m^*\right)=\sqrt{\frac{\symup{e}_0^3}{8\pi^2\epsilon_0\symup{c}^3} \left(\frac{\lambda^2}{\theta_{\text{frei}}}\right)\frac{NB}{n} }\\
+  &\implies \left(m^*\right)=\sqrt{\frac{\symup{e}_0^3}{8\pi^2\epsilon_0\symup{c}^3} \left(\frac{1}{a}\right)\frac{NB}{n} }
+\end{align*}
+Die effektive Masse beträgt:
+\begin{equation*}
+  m^*_1 = \SI{3.2(6)e-32}{\kilo\gram}\qquad m^*_2 = \SI{4.9(1)e-32}{\kilo\gram}
+\end{equation*}

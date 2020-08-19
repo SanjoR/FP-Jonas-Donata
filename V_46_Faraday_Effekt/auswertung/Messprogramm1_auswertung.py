@@ -24,8 +24,6 @@ Theta = np.pi *Theta/180
 
 Theta = Theta/L_1
 
-for i in Theta:
-    print(round(10000*i, 2))
 
 t_1_Rein *= 1/60
 t_2_Rein *= 1/60
@@ -40,8 +38,11 @@ Theta_Rein = np.pi *Theta_Rein/180
 Theta_Rein = Theta_Rein/L_Rein
 
 Theta_diff = Theta-Theta_Rein
+
+for i in Lambda:
+    print(round(i**2,1))
 print()
-for i in Theta_Rein:
+for i in Theta_diff:
     print(round(10000*i, 2))
 
 
@@ -83,5 +84,8 @@ a = ufloat(params[0],error[0])
 a *= 1/(10**-18)
 print(a)
 m_eff = unp.sqrt(const.e**3 /(8*np.pi**2 *const.epsilon_0 *const.c**3) *1/a *N*B/n) 
+
 print(m_eff)
 
+lit = 6.103*10**-32
+print((m_eff-lit)/lit)
