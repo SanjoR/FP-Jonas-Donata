@@ -125,6 +125,7 @@ for i in range(len(K_plot)):
         
         axs[n,m].plot(x_plot,potenz(x_plot,*params),"b-")
         axs[n,m].plot(a,b,"rx", label = f"Peaknummer {i}")
+        axs[n,m].grid()
         axs[n,m].legend(loc="best")
         n+=1
         if n > 3:
@@ -197,6 +198,7 @@ plt.figure()
 plt.plot(E_plot,eta_fit(E_plot,*params_2),"b-",label = "Fit")
 plt.errorbar( E_n, eta_n , xerr=E_s,yerr=eta_s,  fmt="rx", label ="Messwerte")
 plt.xlabel("E / keV")
+plt.grid()
 plt.ylabel(r"Vollenergienachweiswahrscheinlichkeit $\eta$")
 plt.legend(loc="best")
 plt.savefig("../latex-template/figure/Vollenergienachweiswahrscheinlichkeit.pdf")
