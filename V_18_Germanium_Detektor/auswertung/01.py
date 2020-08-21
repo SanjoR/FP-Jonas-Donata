@@ -123,12 +123,12 @@ for i in range(len(K_plot)):
         x_plot =np.linspace(a.min(),a.max(),1000)
     
         
-        axs[n,m].plot(x_plot,potenz(x_plot,*params),"b-")
-        axs[n,m].plot(a,b,"rx", label = f"Peaknummer {i}")
-        axs[n,m].grid()
-        axs[n,m].legend(loc="best")
+        axs[m,n].plot(x_plot,potenz(x_plot,*params),"b-")
+        axs[m,n].plot(a,b,"rx", label = f"Peaknummer {i}")
+        axs[m,n].grid()
+        axs[m,n].legend(loc="best")
         n+=1
-        if n > 3:
+        if n > 2:
             n = 0 
             m+=1
 
@@ -186,6 +186,9 @@ def eta_fit(e,Amp,z):
     return(Amp*e**z)
 
 params_2,cov_matrix_2 = curve_fit(eta_fit,E_n,eta_n)
+
+for i in range(3):
+    print(params_2[i], np.sqrt(np.diag(cov_matrix_2))[i] )
 
 
 

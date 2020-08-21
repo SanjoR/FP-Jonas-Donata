@@ -8,7 +8,7 @@ from time import time
 from scipy.signal import find_peaks
 import pandas as pd
 from scipy.optimize import newton
-
+import sympy
 
 A = np.genfromtxt("../Data/02.txt", unpack=True)
 
@@ -26,6 +26,9 @@ def linear_value(x):
 def linear(x):
     return(m*x +b)
 
+def umkehr_lin(y):
+    return((y-b)/m)
+
 E = linear(Kanal)
 
 for i in range(len(E)):
@@ -41,7 +44,7 @@ peaks,_ = find_peaks(A, height= 200)
 
 E_gamma = E[peaks][0]
 
-epsilon = E_gamma / (511)
+epsilon = (E_gamma / (511))
 
 E_rückstreu = E_gamma * 1/(1+2*epsilon)
 
@@ -130,6 +133,76 @@ plt.ylabel("Zählrate")
 plt.legend(loc="best")
 plt.grid()
 plt.savefig("../latex-template/figure/02_peak_fit.pdf")
-plt.show()
+#plt.show()
 plt.close()
 
+b=ufloat(-2.72,0.18)
+Kanal_Comp = (T_max-b)/m
+
+
+
+
+
+
+Kanal_Comp_Spek = Kanal[Kanal< Kanal_Comp.n]
+A_Comp_Spek = A[Kanal< Kanal_Comp.n]
+
+
+
+
+Kanal_Comp_Spek = Kanal_Comp_Spek.astype('float64') 
+A_Comp_Spek = A_Comp_Spek.astype('float64') 
+Kanal_Gamma = Kanal[peaks][0].astype('float64')
+
+
+while len(Kanal_Comp_Spek)>600:
+    Kanal_Comp_Spek = Kanal_Comp_Spek[1:]
+    A_Comp_Spek = A_Comp_Spek[1:]
+
+print(len(Kanal_Comp_Spek))
+def Compton_diff(T,B):
+    return(B*( 2 + ((T/Kanal_Gamma)**2 /(epsilon.n**2 *(1 - T/Kanal_Gamma)**2 )) + (T/Kanal_Gamma) * (T/Kanal_Gamma - 2/epsilon.n) / (1-T/Kanal_Gamma)   ))
+
+
+
+
+params_Comp, cov_matrix_Comp = curve_fit(Compton_diff,Kanal_Comp_Spek,A_Comp_Spek)
+B_param = ufloat(params[0], np.sqrt(np.diag(cov_matrix_Comp))[0])
+
+K_test = np.linspace(Kanal_Comp_Spek.min(),Kanal_Comp_Spek.max(),1000)
+
+
+print("B_param ", B_param)
+
+N_Comp =np.sum(Compton_diff(Kanal_Comp_Spek, B_param))
+print("N_Comp ",N_Comp)
+print("N_Comp/N ",N_Comp/N)
+
+
+sig_Th = 0.665 #b
+sigma_Comp = 3/4 *sig_Th * (
+    (1+epsilon)/epsilon**2 *
+    (2*(1+epsilon)/(1+2*epsilon) - 1/epsilon * unp.log(1+2*epsilon))+
+    (1/(2*epsilon)  *unp.log(1+2*epsilon)- (1+3*epsilon) /(1+2*epsilon)**2  ) 
+)
+gamma  = epsilon +1
+alpha = 1/137
+sigma_Phot = 3/2 * sig_Th * alpha**4 *32**5 / epsilon**5 *(gamma -1)**(3/2) * (
+    4/3 + (gamma - 2)/(gamma +1)*gamma* (1- 1/(2*gamma *unp.sqrt(gamma**2 - 1) )*unp.log((gamma + unp.sqrt(gamma**2 -1))/(gamma - unp.sqrt(gamma **2 -1)) )) )
+
+print(sigma_Phot)
+print(32*sigma_Comp)
+
+rho = 5.323 #g/cm^3
+u = 1.66*10**-24 #g
+A= 74 
+
+mu_Phot = (sigma_Phot)*10**-24 * rho /(u * A) 
+mu_Comp = (32*sigma_Comp)*10**-24 * rho /(u * A) 
+
+l= 3.9
+print(mu_Phot)
+print(mu_Comp)
+print(1- unp.exp(-l * mu_Phot))
+print(1- unp.exp(-l * mu_Comp))
+print((1- unp.exp(-l * mu_Comp))/(1- unp.exp(-l * mu_Phot)))
