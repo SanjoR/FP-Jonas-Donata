@@ -1,4 +1,171 @@
+\section{Motivation}
+\label{sec:Motivation}
+
 \section{Theorie}
 \label{sec:Theorie}
 
+\subsection{Bandstruktur und Dotierung von Halbleitern}
+Ein Festkörper, dessen elektrische Leitfähigkeit sich zwischen $\SI{10^{-8}}{\siemens\per\centi\meter}$
+und $\SI{10^{4}}{\siemens\per\centi\meter}$ befindet und bei steigender Temperatur 
+zunimmt, wird als Halbleiter bezeichnet. 
+Es wird zwischen direkten und indirekten Halbleitern unterschieden.
+Diese Unterscheidung wird über die Bandstruktur des Festkörpers getroffen.
+Die Bandstruktur wird im Impulsraum angegeben und beschreibt die 
+Dispersionsreation von Elektronen in einem Festkörper bzw. Halbleiter. 
+Das heißt, sie beschreibt den Zusammenhang zwischen der Energie und dem Wellenvektor.
+Sie ist eine Darstellungsform des quantenmechanischen Energiebändermodells, welches 
+die energetischen Zustände von Elektronen in einem Einkristall beschreiben kann.
+Dabei wird von der quantenmechanischen Grundannahme ausgegangen, dass Elektronen, die 
+im Potential eines Atomkerns gebunden sind, nur auf diskreten Energieniveaus 
+(bzw. Atomorbitalen) existieren können. Werden Atome einander nah genug angenähert,
+dann überschneiden sich ihre Atomorbitale, sodass sich die möglichen Energiezustände 
+nach unten und oben verschieben, weil nach dem Pauli-Prinzip jeder mögliche Zustand nur 
+einfach besetzt sein darf. Elektronen die sich besonders nah
+am Atomkern bewegen, also auf den unteren 
+Energieniveaus, sind stärker gebunden als Elektronen, die sich auf hohen 
+Energieniveaus befinden und weiter vom Atomkern und seinem Potential entfernt sind. 
+Diese schwächer gebundenen Elektronen können die Kernpotentiale leichter überwinden 
+und können so keinem Atom mehr eindeutig zugeordnet werden. Sie können sich also von einem 
+Atom zum anderen bewegen, während sie sich auf einem Energiebereich befinden, der sich über 
+den gesamten Kristall erstreckt und daher auch von anderen Elektronen besetzt ist.
+Dieser Energiebereich wird Valenzband genannt. Er ist das höchste besetzte Energieniveau 
+eines nicht angeregten Festkörpers. Wenn Elektronen im Valenzband angeregt werden, können 
+sie in das Leitungsband übergehen. Für Halbeiter befindet es sich energetisch über 
+dem Valenzband. Das heißt, Elektronen müssen eine Mindestenergie aufbringen um das 
+Band wechseln zukönnen. Der Energiebereich zwischen Valenz- und Leitungsband 
+wird Bandlücke genannt. Bei Isolatoren ist er im gegnsatz zu halbleitern unüberwindbar.
+Bei Metallen gibt es dagegen gar keine 
+Bandlücke. Das heißt, die Bänder überschneiden sich. 
+Der Unterschied zwischen direkten und indirekten Halbleitern besteht darin, dass Elektronen 
+bei einem direkten Halbleiter lediglich ihre Energie hinreichend erhöhen müssen, um in 
+das Leitungsband überzugehen. Indirekte Halbeiter müssen zusätzlich eine Änderung 
+des Elektronimpulses realisieren, damit ein entsprechender Übergang stattfinden kann.
+Um die Leitfähigkeit eines Halbleiters zu erhöhen können Fremdatome in den Einkristall 
+eingebracht werden. Dieser Vorgang wird Dotierung genannt.
+Es wird zwischen n- und p-Dotierung unterschieden. Bei der n-Doterirung (negativ) werden 
+Elektronendonatoren in den Hableiter eingefügt. Dabei handelt es sich um Fremdatome, die
+Elektronen zur Verfügung stellen. Dadurch, dass die Elektronenanzahl erhöht wird, 
+steigt die Leitfähigkeit durch Elektronentransport.
+Bei der p-Dotierung (positiv) werden hingegen Elektronenakzeptoren hinzugefügt. 
+Dabei handelt es sich um Fremdatome, die Elektronenlöcher zur Verfügung stellen. 
+Dadurch wird umgegkehrt die Leitfähigkeit durch Löcherleitung erhöht. 
+generell bietet es sich an für die Dotierung Fremdatome zu verwenden, deren 
+Energieniveaus sich im Bereich der Bandlücke des Trägermaterial befinden, da so die 
+notwendige Energiehöhe zum Übergang zwischen Valenz- und Leitungsband verringert wird, 
+weil die Fremdatome Zwischenniveaus erzeugen.
+
+\subsection{Definition und Eigenschaften der effektiven Masse}
+Die Masse eines Elektrons in einem Kristall wird durch die effektive Masse beschrieben, 
+da sie von der tatsächlichen Masse abweichen kann. 
+Für ein Elektron in einem Einkristall gilt nach dem zweiten Newton´schen Gesetz die 
+Bewegungsgleichung:
+
+\begin{equation}
+    a = \frac{1}{\hbar} \frac{d^2\epsilon}{dk^2}\cdot eE.
+    \label{eq1}
+\end{equation}
+
+In Gleichung \ref{eq1} bezeichnet $a$ die Beschleunigung, $\epsilon$ die 
+Dispersionsrelation, $k$ die Wellenzahl, $e$ die Elektronenladung und $E$ das
+äußere elektrische Feld.
+Im Gegensatz zu einem freien Elektron im Vakuum ist die Dispersionsrelation eines 
+Elektrons im Leitungsband eines Festkörpers im allgemeinen nicht quadratisch
+sondern geschwindigkeitsabhängig. 
+
+\begin{equation}
+    m^* = \hbar^2 \left( \frac{d^2\epsilon}{dk^2} \right)^{-1}
+    \label{eq2}
+\end{equation}
+
+Im Bereich von Extremstellen kann die Dispersionrelation jedoch quadratisch angenäert 
+werden, sodass das Modell einer effektiven Masse (Gleichung \ref{eq2}) in diesen 
+Energiebereichen besonders nützlich ist.
+
+\subsection{Polarisation und zirkulare Doppelbrechung}
+Unter Polarisation wird in der Physik im Bezug auf Wellen die Richtung der 
+Schwingungsamplitude im Vergleich zur Ausbreitungsrichtung der Gesamtwelle 
+verstanden. 
+Longitudinale Wellen sind nicht polarisiert bzw. longitudinal polarisiert.
+Transversale Wellen können linear, zirkular oder elliptisch polarisiert sein. 
+Bei der linearen Polarisation ist die Schwingungrichtung konstant, während die 
+Auslenkung aus der Ruhelage periodisch ihren Betrag und ihr Vorzeichen ändert.
+Sie kann als überlagerung zweier zirkular Polarisierter Wellen interpretiert werden
+Bei der zirkularen Polarisation ist hingegen die Auslenkung konstant, während sich die 
+Schwingungsrichtung mit einer konstanten Winkelgeschwindigkeit ändert.
+Unter elliptischer Polarisation wird eine Mischform der linearen und zirkularen 
+Polarisation verstanden.
+Optisch anisotrope Medien haben einen Brechungsindex, welcher von der 
+Ausbreitungsrichtung und Polarisation abhängt. 
+Wenn ein Lichtstrahl auf ein entsprechendes Medium trifft, wird er in zwei 
+senkrecht zueinander polarisierte Teilbündel aufgespalten.
+Das heißt, wenn ein Medium die Eigenschaft aufweist, Licht in einen 
+links- und rechts-zirkular polarisierten Anteil zu spalten, dann wird von 
+zirkularer Dopplebrechung gesprochen.
+Aufgrund der verschiedenen Brechungsindices ($n_r$, $n_l$) der Teilstrahlen, setzt sich der 
+Drehwinkel $\theta$ auch aus den zugehörigen Phasengeschwindigkeiten $\nu_r$ und $\nu_l$ 
+für den links- und rechts-polarisierten Strahl zusammen.
+
+\begin{equation}
+    \theta = \frac{L\omega}{2c} \left(\frac{1}{\nu_r} - \frac{1}{\nu_l} \right) = \frac{L\omega}{2} (n_r - n_l )
+    \label{eq3}
+\end{equation}
+
+In Gleichung \ref{eq3} entspricht $\omega$ der Kreisfrequen des einfalenden Lichtstrahles, 
+$L$ der Länge des Mediums und $c$ der Lichtgeschwindigkeit im Vakuum.
+Für isotrope Medien ergibt sich der Drehwinkel $\theta$ mit dem Brechungsindex $n$ und 
+der dielektrischen Suszeptibilität $\chi$ des Mediums über Gleichung \ref{eq4}.
+
+\begin{equation}
+    \theta = \frac{L\omega}{2cn} \chi
+    \label{eq4}
+\end{equation}
+
+\subsection{Faraday Effekt}
+Unter dem Faraday-Effekt wird die Drehung der Polarisationsebene von linear 
+polarisierter
+elektromagnetischer Strahlung unter dem Einfluss eines Magnetfeldes verstanden.
+In einem anisotropen Material unterscheiden sich die Brechungsindizes der 
+zirkular polarisierten Anteile, wenn ein Magnetfeld mit Feldlinien, welche 
+parallel zur Ausbreitungsrichtung sind, angelegt ist. Somit 
+unterscheiden sich auch die Wellenlängen für den im Uhrzeigersinn polarisierten 
+Anteil ($\lamba_{r}$) und den Anteil, der entgegen des Uhrzeigersinns polarisiert 
+ist ($\lamba_{r}$).
+
+\begin{align}
+    \lamba_{r} = \frac{c}{f\cdot n_{r}}\\
+    \lamba_{l} = \frac{c}{f\cdot n_{l}}
+    \label{eq5}
+\end{align}
+
+In den Gleichungen \ref{eq5} entspricht $f$ der inversen Schwingungsdauer.
+Während einer Schwingungsdauer wird die Polarisatinosebene also um den Winkel 
+$\delta \beta$ weiter gedreht. Der Zusammenhang zu den Brechungsindices wird aus 
+Gleichung \ref{eq6} ersichtlich.
+
+\begin{equation}
+    \delta \beta = \pi \left( \frac{n_r}{n_l} -1 \right)
+    \label{eq6}
+\end{equation}
+
+Der Drehwinkel kann allerdings auch mit Hilfe der Verdet-Konstante $V$, die sich 
+über den Zusammenhang in Gleichung \ref{eq7} ergibt, berechnet werden.
+Dabei entspricht $e$ der Elementarladung, $m_e$ der Elektronenmasse und 
+$\frac{dn}{d\lambda}$ der 
+Dispersion des betrachteten Materials.
+
+\begin{equation}
+    V = \frac{-e}{m_e} \frac{\lambda}{2c} \frac{dn}{d\lambda}
+    \label{eq7}
+\end{equation}
+
+Der Drehwinkel wird dann über Gleichung \ref{eq8} bestimmt, wobei 
+$B$ der magnetischen Flussdichte und $d$ der zurückgelegten Strecke 
+im Medium entspricht.
+
+\begin{equation}
+    \beta = V \cdot d \cdot B
+    \label{eq8}
+\end{equation}
+
 \cite{sample}
+
