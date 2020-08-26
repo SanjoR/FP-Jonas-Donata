@@ -26,7 +26,7 @@ ax.plot(Winkel, Amplitude, "rx", lw = 5 )
 for n in range (3):
     for m in range(-2,3):
         if abs(m) <= n:
-            ax.plot(Winkel_plot,2*np.absolute(np.real(sph_harm(m,n,np.pi/4,Winkel_plot)))   , label= f"m={m}, l={n}")
+            ax.plot(Winkel_plot,2*np.absolute(np.real(sph_harm(m,n,Winkel_plot,np.pi/4)))   , label= f"m={m}, l={n}")
 ax.set_rmax(1.5)
 #ax.set_rticks([0.5, 1, 1.5, 2])  # less radial ticks
 ax.set_rlabel_position(-22.5)  # get radial labels away from plotted line

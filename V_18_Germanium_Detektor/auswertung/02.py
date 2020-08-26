@@ -190,8 +190,8 @@ alpha = 1/137
 sigma_Phot = 3/2 * sig_Th * alpha**4 *32**5 / epsilon**5 *(gamma -1)**(3/2) * (
     4/3 + (gamma - 2)/(gamma +1)*gamma* (1- 1/(2*gamma *unp.sqrt(gamma**2 - 1) )*unp.log((gamma + unp.sqrt(gamma**2 -1))/(gamma - unp.sqrt(gamma **2 -1)) )) )
 
-print(sigma_Phot)
-print(32*sigma_Comp)
+print("sigma_Phot",sigma_Phot,"b")
+print("sigma_Comp",32*sigma_Comp,"b")
 
 rho = 5.323 #g/cm^3
 u = 1.66*10**-24 #g
@@ -201,8 +201,8 @@ mu_Phot = (sigma_Phot)*10**-24 * rho /(u * A)
 mu_Comp = (32*sigma_Comp)*10**-24 * rho /(u * A) 
 
 l= 3.9
-print(mu_Phot)
-print(mu_Comp)
-print(1- unp.exp(-l * mu_Phot))
-print(1- unp.exp(-l * mu_Comp))
-print((1- unp.exp(-l * mu_Comp))/(1- unp.exp(-l * mu_Phot)))
+print("mu_Phot",mu_Phot)
+print("mu_Comp",mu_Comp)
+print("P_Phot",1- unp.exp(-l * mu_Phot))
+print("P_Comp",1- unp.exp(-l * mu_Comp))
+print("P_Comp/P_Phot",(1- unp.exp(-l * mu_Comp))/(1- unp.exp(-l * mu_Phot)))

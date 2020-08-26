@@ -35,14 +35,14 @@ def linear(x):
 
 E = linear_value(Kanal)
 
+
 peaks,_ = find_peaks(A, height = 143)
 peaks = peaks[1:]
-print(len(peaks))
+
 plt.figure(figsize = (13,8))
 plt.plot(E[E<1000],A[E<1000],"b-",label = r"Spektrum")
 plt.plot(E[peaks],A[peaks],"rx")
 for i in range(len(E_Ba_133)):
-#    plt.plot([E_125_Sb[i],E_125_Sb[i]],[0,A.max()], "k--" )
     plt.plot([E_Ba_133[i],E_Ba_133[i]],[0,A.max()], "r--" )
 plt.legend(loc="best")
 plt.xlabel("E / keV")
@@ -52,8 +52,14 @@ plt.savefig("../latex-template/figure/03_peaks.pdf")
 plt.show()
 plt.close()
 
-for i in E[peaks]:
+E_fehl = linear(Kanal[peaks])
+print("E_fehl")
+for i in E_fehl:
     print(i)
+print()
+
+
+
 
 
 Amp_eta= ufloat(0.22290932272721348, 0.04012126575134311)
@@ -103,12 +109,36 @@ for i in range(len(K_plot)):
     if m > 2:
         m = 0 
         n+=1
-axs[1,2].set_visible(False)
+#axs[1,2].set_visible(False)
 plt.show()
 plt.close()
 
-E_Ba_133, I_Ba_133 = zip(*sorted(zip(E_Ba_133,I_Ba_133)))
+uparams_array = unp.uarray(params_array, error_array)
 
+
+print("Amp fit")
+for i in uparams_array[:,0]:
+    print(i)
+print()
+print("k fit")
+for i in uparams_array[:,1]:
+    print(i)
+print()
+print("b fit")
+for i in uparams_array[:,2]:
+    print(i)
+print()
+
+
+E_Ba_133, I_Ba_133 = zip(*sorted(zip(E_Ba_133,I_Ba_133)))
+print()
+print("E_lit")
+for i in E_Ba_133:
+    print(i)
+print()
+print("I_lit")
+for i in I_Ba_133:
+    print(i)
 
 Omega = 0.23467106406199312
 t = 3770.3771
