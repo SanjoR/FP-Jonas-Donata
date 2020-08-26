@@ -36,6 +36,21 @@ for n in range (2):
     ax.set_rlabel_position(-22.5)  # get radial labels away from plotted line
     ax.grid(True)
     plt.legend(loc = "best")
-    plt.show()
     plt.savefig(f"../latex-template/figure/9mmZwischenring_n{n}.pdf")
+    plt.show()
     plt.close()
+
+n=1
+for m in range(-1,2):
+    ax = plt.subplot(111, projection='polar')
+    ax.set_title(f"l={n}")
+    ax.plot(Winkel, Amplitude, "rx", lw = 5 ,label = "Messdaten")
+    ax.plot(Winkel_plot,Amplitude.max()*np.absolute(np.real(sph_harm(m,n,np.pi/4,Winkel_plot)))   , label= f"m={m}")
+    ax.set_rmax(1)
+    ax.set_rlabel_position(-22.5)  # get radial labels away from plotted line
+    ax.grid(True)
+    plt.legend(loc = "best")
+    plt.savefig(f"../latex-template/figure/9mmZwischenring_m{m}.pdf")
+    plt.show()
+    plt.close()
+
