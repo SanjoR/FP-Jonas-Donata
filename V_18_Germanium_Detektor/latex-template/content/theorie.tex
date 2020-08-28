@@ -33,6 +33,7 @@ Unter dem Photoeffekt werden drei verschiedene Mechanismen zusammengefasst.
 In diesem Fall ist der äußere Photoeffekt von Relevanz.
 Beim äußeren Photoeffekt werden Elektronen aus einer Halbleiter- oder Metalloberfläche 
 durch Strahleneinwirkung herausgelöst. 
+Er dominiert bei Energien bis zu $\SI{1}{\Mega\electronvolt}$
 Die einfallende Gammastrahlung muss dafür eine Energie aufweisen, die größer als die 
 Bindungsenergie des Elektrons ist. Wenn das Gammaquant auf das Elektroon trifft wird es 
 annihiliert, während das Elektron frei wird. Der zugehörige 
@@ -52,6 +53,8 @@ Gamma-Faktor des Elektrons nachdem es mit dem Photon wechselgewirkt hat.
 Wenn ein Photon, bspw. Gammastrahlung auf ein Teilchen, bspw. ein Elektron trifft
 und an ihm gestreut wird, dann wird seine Wellenlänge vergrößert. 
 Dieser Prozess wird Compton-Effekt genannt.
+Er tritt vorwiegend bei Energien zwischen $\SI{1}{\Mega\electronvolt}$ und 
+$\SI{10}{\Mega\electronvolt}$ auf.
 Im Gegensatz zum Photoeffekt wird beim Comptoneffekt nicht die 
 gesamte Photonenenergie übertragen, sondern nur ein Teil, sodass das Elektron an 
 Energie gewinnt und das Photon die seine verringert, sodass es eine längere 
@@ -76,8 +79,52 @@ Ordnungszahl $Z$, wie es in Gleichung \ref{eq3} dargestellt ist.
 \end{equation}
 
 \subsection{Paarbildung}
+Allgemein wird unter Paarbildung ein teilchenphysikalischer Prozess verstanden bei dem 
+ein Teilchen und sein Antiteilchen erzeugt werden. In diesem Versuch, bezieht sich die 
+Paarbildung jedoch nur auf die Erzeugung von Elektron-Positron-Paaren. 
+Sie entsteht bei Wechselwikrung von Photonen mit Materie, genauer bei der 
+Wechselwirkung eines Photons mit dem elektrischen Feld des Atomkerns oder der 
+Hüllenelektronen. 
+Sie ist der überwiegende Wechselwikrungsprozess bei Photonen die eine Energei 
+über $\SI{10}{\Mega\electronvolt}$ aufweisen
+Bei ersterem wird die gesamte Photonenergie an den die 
+entstehenden Teilchen und deren kinetische Energie abgegeben. Außerdem erfährt 
+der Atomkern aufgrund der Impulserhaltung einen Rückstoß.
+Die Paarbildung dominiert bei hohen Photonenergien und kann über den 
+Wirkungsquerschnitt, der in Gleichung \ref{eq3} aufgeführt ist, beschrieben werden.
+
+\begin{equation}
+    \sigma_{paar} = \alpha \frac{3 \sigma_{Th}}{2 \pi} \frac{7}{9} \left( \left( Z^2 (L_{rad} - f(Z)) + Z L^'_{rad}) \right) + \frac{1}{42} \left(Z^2 + Z \right) \right)
+    \label{eq3}
+\end{equation}
+
+Da es sich um geladene Teilchen handelt, müssen Bremsstarhlugseffekte berücksichtigt 
+werden. Das wird über die $L_{rad}$ und $L^'_{rad}$ Funktionen berücksichtigt. 
+$f(Z)$ ist dabei eine Funktion die, die Compton-Korrektur miteinbezieht
 
 
 \subsection{Halbleiterdetektoren}
+Da Gammastrahlung ungeladen ist, kann sie übere ihre Wechsewlwirkung mit materie 
+nachgewiesen werden. Wenn geladene Teilchen frei werden, kann bspw. eine 
+Spannung gemessen werden. Dies ist die Grundlage eine Halbleiterdetektors.
+Halbleiter definieren sich über ihre für Elektronene überwindbare 
+Bandlücke zwischen ihrem Valenz- und Leitungsband. DAher können sie durch die 
+angeregten Elektronen durch Gammabestrahlung leitfähiger werden. 
+Die erzeugten Elektron-Loch Paare, die dabei entstehen benötigen im Vergleich zu einer 
+Ionisationskammer eine Anregungsenergie die um 10 Größenordnungen kleiner ist. 
+Das führt zu einer höheren Aflösung von Halbleitern im Vergleich zu Ionisationskammern.
+Für einen solchen Halbleiterdetekotr wird häufig das Material germanium verwendet.
+pro Messdurchlauf ergeben sich allerdings statistische Scheangungen der Anzahl an 
+erzeugten Elektron-Loch-Paaren. Außerdem ergeben sich bei der Erzeugung Energieverluste,
+da sich die Gammastrahlung statistisch auf die Atome des Materials verteilt.
+Dies führt dazu, dass die Standardabweichung, die in Gleichung \ref{eq4} dragestellt ist,
+um den Fano-Faktor $F$ ergänzt werden muss.
+
+\begin{equation}
+    \sigma = \sqrt{F \frac{E_{gamma}}{E}}
+    \label{eq4}
+\end{equation}
+
+Für Germanium hat der Fano-Faktor den Wert $\num{0,1}$
 
 \cite{sample}
