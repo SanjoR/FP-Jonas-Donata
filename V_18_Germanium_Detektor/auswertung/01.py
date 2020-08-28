@@ -132,7 +132,7 @@ for i in range(len(K_plot)):
             n = 0 
             m+=1
 
-axs[2,2].set_visible(False)
+#axs[2,2].set_visible(False)
 axs[3,1].set_visible(False)
 axs[3,2].set_visible(False)
 for ax in axs.flat:
@@ -144,9 +144,20 @@ plt.close()
 
 
 
+
+
+
+
 Amp_array = unp.uarray(np.around(params_array[:,0],0), np.around(error_array[:,0],0))
-k_array = unp.uarray(np.around(params_array[:,1],0), np.around(error_array[:,1],0))
+k_array = unp.uarray(np.around(params_array[:,1],3), np.around(error_array[:,1],3))
 b_array = unp.uarray(np.around(params_array[:,2],0), np.around(error_array[:,2],0))
+
+
+N_array = Amp_array*unp.sqrt(np.pi/k_array)
+print()
+print("N")
+for i in N_array:
+    print(i)
 
 print("Amp")
 for i in Amp_array:
@@ -187,7 +198,8 @@ def eta_fit(e,Amp,z):
 
 params_2,cov_matrix_2 = curve_fit(eta_fit,E_n,eta_n)
 
-for i in range(3):
+print("params")
+for i in range(2):
     print(params_2[i], np.sqrt(np.diag(cov_matrix_2))[i] )
 
 

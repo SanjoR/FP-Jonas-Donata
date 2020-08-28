@@ -10,14 +10,7 @@ import pandas as pd
 from scipy.optimize import newton
 import sympy
 
-A = np.genfromtxt("../Data/03.txt", unpack=True)
-E_125_Sb, I_125_Sb = np.genfromtxt("../Data/Sb_125.txt", unpack = True)
-E_Ba_133, I_Ba_133 = np.genfromtxt("../Data/Ba_133.txt", unpack = True)
-
-
-
-
-
+A = np.genfromtxt("../Data/04.txt", unpack=True)
 
 Kanal = np.arange(0,len(A))
 
@@ -29,37 +22,42 @@ b = ufloat(-2.72,0.18)
 def linear_value(x):
     return(0.40312*x -2.72)
 
+E = linear_value(Kanal)
+
+peaks1,_ = find_peaks(A[E<634],height = 1000)
+peaks2,_ = find_peaks(A[E>=634] , height = 75)
+
+
 
 def linear(x):
     return(m*x +b)
 
-E = linear_value(Kanal)
+
+E_peaks = np.append(E[E<634][peaks1],E[E>=634][peaks2])
+Kanal_peaks = np.append(Kanal[E<634][peaks1],Kanal[E>=634][peaks2])
+A_peaks = np.append(A[E<634][peaks1],A[E>=634][peaks2])
 
 
-peaks,_ = find_peaks(A, height = 143)
-peaks = peaks[1:]
+identifiziert = np.array([4,5,6,7,8,11,17,18,21])
+Kanal_ident = Kanal_peaks[identifiziert]
+E_ident=E_peaks[identifiziert]
+A_ident=A_peaks[identifiziert]
+for i in E_ident:
+    print(i)
 
+print(len(E_ident))
 plt.figure(figsize = (13,8))
-plt.plot(E[E<1000],A[E<1000],"b-",label = r"Spektrum")
-plt.plot(E[peaks],A[peaks],"rx")
-for i in range(len(E_Ba_133)):
-    plt.plot([E_Ba_133[i],E_Ba_133[i]],[0,A.max()], "r--" )
+plt.plot(E,A,"b-",label="Spektrum")
+plt.plot(E[E<634][peaks1],A[E<634][peaks1],"rx",label="Peaks")
+plt.plot(E[E>=634][peaks2],A[E>=634][peaks2],"rx")
+plt.plot(E_ident,A_ident, "k*",label = "Identifiziert")
 plt.legend(loc="best")
 plt.xlabel("E / keV")
 plt.ylabel("Zählrate")
 plt.grid()
-plt.savefig("../latex-template/figure/03_peaks.pdf")
+plt.savefig("../latex-template/figure/04_peaks.pdf")
 plt.show()
 plt.close()
-
-E_fehl = linear(Kanal[peaks])
-print("E_fehl")
-for i in E_fehl:
-    print(i)
-print()
-
-
-
 
 
 Amp_eta= ufloat(0.22290932272721348, 0.04012126575134311)
@@ -75,23 +73,18 @@ def get_PeakArrays(k):
         A_r=np.append(A_r,A[Kanal == i])
     return(K_r,A_r)
 
-
-
-
-
 def potenz(c,Amp, k,b):
     return(Amp*np.exp(-k*(c-c_0)**2) +b)
 
-K_plot = Kanal[peaks]
 
 N = []
 K_plot_2 = []
-fig,axs = plt.subplots(2,3,figsize = (16,13))
+fig,axs = plt.subplots(3,3,figsize = (16,13))
 n=0
 m=0
-for i in range(len(K_plot)):
-    c_0 = K_plot[i]
-    a,b=get_PeakArrays(K_plot[i])
+for i in range(len(Kanal_ident)):
+    c_0 = Kanal_ident[i]
+    a,b=get_PeakArrays(Kanal_ident[i])
     params,cov_matrix = curve_fit(potenz,a,b)
     if i == 0:
         params_array = [params]
@@ -110,56 +103,6 @@ for i in range(len(K_plot)):
         m = 0 
         n+=1
 #axs[1,2].set_visible(False)
-plt.savefig("../latex-template/figure/03_subplot.pdf")
 plt.show()
+plt.savefig("../latex-template/figure/04_subplot.pdf")
 plt.close()
-
-uparams_array = unp.uarray(params_array, error_array)
-
-
-print("Amp fit")
-for i in uparams_array[:,0]:
-    print(i)
-print()
-print("k fit")
-for i in uparams_array[:,1]:
-    print(i)
-print()
-print("b fit")
-for i in uparams_array[:,2]:
-    print(i)
-print()
-
-
-E_Ba_133, I_Ba_133 = zip(*sorted(zip(E_Ba_133,I_Ba_133)))
-print()
-print("E_lit")
-for i in E_Ba_133:
-    print(i)
-print()
-print("I_lit")
-for i in I_Ba_133:
-    print(i)
-
-Omega = 0.23467106406199312
-t = 3770.3771
-
-for i in range(len(peaks)):
-    if i == 0:
-        Akti = N[i] *4 *np.pi /(eta_fit(E[peaks][i]) * t * I_Ba_133[i] * Omega)
-    else:
-        Akti = np.append(Akti, N[i] *4 *np.pi /(eta_fit(E[peaks][i]) * t * I_Ba_133[i] * Omega))
-
-
-print()
-for i in Akti:
-    print(i)
-
-    
-Akti = np.delete(Akti,1)
-print()
-for i in Akti:
-    print(i)
-
-print()
-print(sum(Akti)/len(Akti))

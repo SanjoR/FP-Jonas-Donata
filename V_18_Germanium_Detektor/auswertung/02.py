@@ -50,9 +50,16 @@ E_rückstreu = E_gamma * 1/(1+2*epsilon)
 
 T_max = E_gamma * 2*epsilon/(1+2*epsilon)
 
+E_test = E_value[Kanal>=450]
+A_test = A[Kanal>=450]
+
+A_test = A_test[E_test<=linear_value(1190)]
+E_test = E_test[E_test<=linear_value(1190)]
+print(len(A_test))
 
 plt.figure(figsize = (13,8))
 plt.plot(E_value,A,"b-",label = r"$Cs^{137}$ Spektrum")
+plt.plot(E_test,A_test,"g-")
 plt.plot(E_value[peaks],A[peaks], "rx",label = f"Photonpeak bei {np.around(E_value[peaks],1)[0]}$\pm${np.around(E_s[peaks], 1)[0]}  keV")
 plt.plot([T_max.n,T_max.n],[0,A.max()], "k--", alpha = 0.7 ,label = "Comptonkante")
 plt.plot([E_rückstreu.n,E_rückstreu.n],[0,A.max()], "g--", alpha = 0.7 ,label = "Rückstreupeak")
@@ -61,7 +68,7 @@ plt.xlabel("E / keV")
 plt.ylabel("Zählrate")
 plt.grid()
 plt.savefig("../latex-template/figure/02_peaks.pdf")
-#plt.show()
+plt.show()
 plt.close()
 
 
@@ -102,6 +109,11 @@ params,cov_matrix = curve_fit(potenz,a,b)
 
 uparams = unp.uarray(params, np.sqrt(np.diag(cov_matrix)))
 
+print()
+print("uparams")
+for i in uparams:
+    print(i)
+print()
 bruch=2
 def potenz_prozent(c):
     return(upotenz(c,*uparams) - b.max()/bruch)
@@ -117,6 +129,9 @@ T_10 = np.array([newton(potenz_prozent,660), newton(potenz_prozent,664)])
 print()
 print("Zehntelwertsbreite")
 print(T_10[1]-T_10[0])
+print()
+print("Verhältniss")
+print((T_10[1]-T_10[0])/(T_2[1]-T_2[0]))
 
 T_2_plot = np.array([T_2[0].n,T_2[1].n])
 T_10_plot = np.array([T_10[0].n,T_10[1].n])
@@ -155,11 +170,12 @@ A_Comp_Spek = A_Comp_Spek.astype('float64')
 Kanal_Gamma = Kanal[peaks][0].astype('float64')
 
 
-while len(Kanal_Comp_Spek)>600:
+while len(Kanal_Comp_Spek)>741:
     Kanal_Comp_Spek = Kanal_Comp_Spek[1:]
     A_Comp_Spek = A_Comp_Spek[1:]
 
-print(len(Kanal_Comp_Spek))
+print(Kanal_Comp_Spek.min(),Kanal_Comp_Spek.max())
+
 def Compton_diff(T,B):
     return(B*( 2 + ((T/Kanal_Gamma)**2 /(epsilon.n**2 *(1 - T/Kanal_Gamma)**2 )) + (T/Kanal_Gamma) * (T/Kanal_Gamma - 2/epsilon.n) / (1-T/Kanal_Gamma)   ))
 
@@ -175,6 +191,7 @@ K_test = np.linspace(Kanal_Comp_Spek.min(),Kanal_Comp_Spek.max(),1000)
 print("B_param ", B_param)
 
 N_Comp =np.sum(Compton_diff(Kanal_Comp_Spek, B_param))
+print("N",N)
 print("N_Comp ",N_Comp)
 print("N_Comp/N ",N_Comp/N)
 
