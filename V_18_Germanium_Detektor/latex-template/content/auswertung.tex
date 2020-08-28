@@ -61,6 +61,7 @@ die Fitparameter der Funktion aus \ref{fig:Lin_Fit:01} sind:
 \end{equation*}
 Dadurch kann das Spektrum auch gegen die Energie aufgetragen werden.
 \subsection{Vollenergienachweiswahrscheinlichkeit}
+\label{cap:Vollenergienachweiswahrscheinlichkeit}
 Die Europium-152 Probe hatte am 01.10.2000 eine Aktivität von $\SI{4130(60)}{\becquerel}$. Mit einer 
 Halbwertszeit von $T_{1/2} = \SI{13.52}{yr}$ kann über das Zerfallsgesetzt die Aktivität 
 am Messtag bestimmt werden, diese liegt bei $\SI{1552(20)}{\becquerel}$.
@@ -228,15 +229,15 @@ Die verwendeten Gamma Peaks der beiden potentiellen Proben sind in Tabelle \ref{
     \cmidrule(lr){2-3}\cmidrule(lr){4-5}
     Peaknummer & E / \SI{}{\kilo\eV} & Intensität / \%& E / \SI{}{\kilo\eV} & Intensität / \%\\
     \midrule
-    &$\num{427.874}$&$\num{29.55}$&$\num{356.0129}$&$\num{62.05}$\\
-    &$\num{600.597}$&$\num{17.76}$&$\num{80.9979}$&$\num{33.31}$\\
-    &$\num{635.950}$&$\num{11.32}$&$\num{302.8508}$&$\num{18.31}$\\
-    &$\num{463.365}$&$\num{10.48}$&$\num{383.8485}$&$\num{8.94}$\\
-    &$\num{176.314}$&$\num{6.82}$ &$\num{276.3989}$&$\num{7.13}$\\
-    &$\num{35.489}$&$\num{5.79}$  &\textcolor{orange}{$\num{79.6142}$}&\textcolor{orange}{$\num{2.63}$}\\
-    &$\num{606.713}$&$\num{5.02}$ &\textcolor{orange}{$\num{53.1622}$}&\textcolor{orange}{$\num{2.14}$}\\
-    &$\num{671.441}$&$\num{1.783}$&$\num{160.6121}$&$\num{0.638}$\\
-    &$\num{380.452}$&$\num{1.520}$&\textcolor{orange}{$\num{223.2368}$}&\textcolor{orange}{$\num{0.450}$}\\
+    0&$\num{427.874}$&$\num{29.55}$&$\num{356.0129}$&$\num{62.05}$\\
+    1&$\num{600.597}$&$\num{17.76}$&$\num{80.9979}$&$\num{33.31}$\\
+    2&$\num{635.950}$&$\num{11.32}$&$\num{302.8508}$&$\num{18.31}$\\
+    3&$\num{463.365}$&$\num{10.48}$&$\num{383.8485}$&$\num{8.94}$\\
+    4&$\num{176.314}$&$\num{6.82}$ &$\num{276.3989}$&$\num{7.13}$\\
+    5&$\num{35.489}$&$\num{5.79}$  &\textcolor{orange}{$\num{79.6142}$}&\textcolor{orange}{$\num{2.63}$}\\
+    6&$\num{606.713}$&$\num{5.02}$ &\textcolor{orange}{$\num{53.1622}$}&\textcolor{orange}{$\num{2.14}$}\\
+    7&$\num{671.441}$&$\num{1.783}$&$\num{160.6121}$&$\num{0.638}$\\
+    8&$\num{380.452}$&$\num{1.520}$&\textcolor{orange}{$\num{223.2368}$}&\textcolor{orange}{$\num{0.450}$}\\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -248,3 +249,66 @@ Um die Probe zu identifizieren werden die Peaks im gemessenen Spektrum markiert,
   \includegraphics[width = \textwidth, keepaspectratio]{figure/03_peaks.pdf}
   \caption{Aufgenommenes Spektrum mit den Literaturwerten der Gamma-Peaks, hierbei konnten alle Peaks von Barium-133 (außer die orange markierten) aus Tabelle \ref{tab:Ba_133Sb_125} identifiziert werden.}
 \end{figure}
+\FloatBarrier
+Um die Aktivität zu bestimmen, wird die Gleichung \eqref{eq:eta_N} verwendet. Hierbei ist die Messzeit $t=\SI{3770.3771}{\second}$, 
+$\Omega$ ist wie in vorherigen Teilen bestimmt worden und die Intensitäten werden aus Tabelle \ref{tab:Ba_133Sb_125} abgelesen.
+Die Funktion für die Vollenergienachweiswahrscheinlichkeit wurde bereits in Kapitel \ref{cap:Vollenergienachweiswahrscheinlichkeit}
+bestimmt.
+Der Linieninhalt wird bestimmt wie in den vorherigen Kapitel.
+Die Fits für die Bestimmung der Linieninhalt, sowie die Linieninhalte selbst, sind in Tabelle \ref{tab:params_Linieninhalt} aufgelistet.
+\FloatBarrier
+\begin{table}
+  \centering
+  \caption{Fitparameter für die Bestimmung der Linieninhalte.}
+  \label{tab:params_Linieninhalt}
+  \begin{tabular}{c c c c c}
+    \toprule
+    Peaknummer&$A_0$&$c$&$b$&$N$\\
+    \midrule
+    0&$\num{2.32(10)e+03}$&$\num{0.311(31)}$   &$\num{102(20)}$&$\num{2.34(26)e+04}$\\
+    1&$\num{0(3)e+08}$   &$\num{-0.0000(29)}$&$\num{0(3)e+08}$&$---$\\
+    2&$\num{286(15)}$     &$\num{0.226(27)}$  &$\num{21(3)}$&$\num{4.0(5)e+03}$\\
+    3&$\num{682(10)}$     &$\num{0.218(8)}$   &$\num{17(2)}$&$\num{9.8(4)e+03}$\\
+    4&$\num{1769(9)}$     &$\num{0.1834(22)}$ &$\num{9.7(21)}$&$\num{3.03(4)e+04}$\\
+    7&$\num{230(5)}$      &$\num{0.186(9)}$   &$\num{6.3(12)}$&$\num{3.90(21)e+03}$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\FloatBarrier
+Die Fits für die Bestimmung der Lineninhalte sind in Abbildung \ref{fig:Linieninhalt_03} dargestellt.
+\FloatBarrier
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth,keepaspectratio]{figure/03_subplot.pdf}
+  \caption{Fits für die Bestimmung der Lineninhalte.}
+  \label{fig:Linieninhalt_03}
+\end{figure}
+Mit den berechneten Linieninhalten kann mit der Gleichung \eqref{eq:eta_N} die Aktivität am Messtag bestimmt werden. 
+Diese sind in Tabelle \ref{tab:Akti_03} aufgelistet.
+\FloatBarrier
+\begin{table}
+  \centering
+  \caption{Aktivität der Barium-133 Probe. Bestimmt über die einzelnen Peaks und gemittelt.}
+  \label{tab:Akti_03}
+  \begin{tabular}{c c}
+    \toprule
+    Peaknummer & Aktivität / $\SI{}{\becquerel}$\\
+    \midrule
+    0&$\num{6.3(15)e+02}$\\
+    2&$\num{1.22(32)e+03}$\\
+    3&$\num{1.25(33)e+03}$\\
+    4&$\num{1.20(32)e+03}$\\
+    7&$\num{1.15(31)e+03}$\\
+    \midrule
+    mittel& $\num{1.09(28)e+03}$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+
+
+
+

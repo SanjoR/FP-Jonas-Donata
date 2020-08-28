@@ -43,7 +43,12 @@ plt.figure(figsize = (13,8))
 plt.plot(E[E<1000],A[E<1000],"b-",label = r"Spektrum")
 plt.plot(E[peaks],A[peaks],"rx")
 for i in range(len(E_Ba_133)):
-    plt.plot([E_Ba_133[i],E_Ba_133[i]],[0,A.max()], "r--" )
+    if i == 0:
+        plt.plot([E_125_Sb[i],E_125_Sb[i]], [0,A.max()], "k--",label="Antimon-125")
+        plt.plot([E_Ba_133[i],E_Ba_133[i]],[0,A.max()], "r--" ,label="Barium-133")
+    else:
+        plt.plot([E_125_Sb[i],E_125_Sb[i]], [0,A.max()], "k--")
+        plt.plot([E_Ba_133[i],E_Ba_133[i]],[0,A.max()], "r--" )
 plt.legend(loc="best")
 plt.xlabel("E / keV")
 plt.ylabel("Zählrate")
@@ -83,7 +88,7 @@ def potenz(c,Amp, k,b):
     return(Amp*np.exp(-k*(c-c_0)**2) +b)
 
 K_plot = Kanal[peaks]
-
+Peaknummer = np.array([0,1,2,3,4,7])
 N = []
 K_plot_2 = []
 fig,axs = plt.subplots(2,3,figsize = (16,13))
@@ -102,7 +107,7 @@ for i in range(len(K_plot)):
     N = np.append(N,params[0]*np.sqrt(np.pi/params[1]))
     x_plot =np.linspace(a.min(),a.max(),1000)
     axs[n,m].plot(x_plot,potenz(x_plot,*params),"b-")
-    axs[n,m].plot(a,b,"rx", label = f"Peaknummer {i}")
+    axs[n,m].plot(a,b,"rx", label = f"Peaknummer {Peaknummer[i]}")
     axs[n,m].grid()
     axs[n,m].legend(loc="best")
     m+=1
@@ -130,6 +135,13 @@ for i in uparams_array[:,2]:
     print(i)
 print()
 
+uparams_array = np.delete(uparams_array,1,0)
+
+N_err = uparams_array[:,0]*(np.pi/uparams_array[:,1])
+
+print("N")
+for i in N_err:
+    print(i)
 
 E_Ba_133, I_Ba_133 = zip(*sorted(zip(E_Ba_133,I_Ba_133)))
 print()
