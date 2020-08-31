@@ -153,13 +153,25 @@ Das gemessene Spektrum ist in Abbildung \ref{fig:Cs137} dargestellt.
   \label{fig:Cs137}
   \includegraphics[width= \textwidth,keepaspectratio]{figure/02_peaks.pdf}
 \end{figure}
+\begin{figure}
+\centering
+\caption{Spektrum der Cäsium-137 Probe im Bereich des Comptonkontinuums, hierbei wird der Kanal direkt in eine Energie umgerechnet.}
+\label{fig:Cs137_log}
+\includegraphics[width= \textwidth,keepaspectratio]{figure/02_peaks_Log.pdf}
+\end{figure}
+
 \FloatBarrier
-Der Photonpeak liegt bei $E_{\gamma}\SI{661.6(2)}{\kilo\eV}$. Mit den Gleichungen \eqref{3.1} und \eqref{2.9} kann 
+Der Photonpeak liegt bei $E_{\gamma}\SI{661.6(2)}{\kilo\eV}$. Mit den Gleichungen aus \eqref{eq:Comp} kann 
 die Comptonkante und die Rückstreuenergie bestimmt werden.
 \begin{equation*}
-  T_{\text{max}} = \SI{477.3(2)}{\kilo\eV} \quad E_{\text{rückstreu}} = \SI{184.32(1)}{\kilo\eV}
+  \epsilon = \frac{E_{\gamma}}{m_{\symup{e}}c^2}
 \end{equation*}
-Wie an Abbildung \ref{fig:Cs137} zu sehen ist, stimmen die gemessenen und die berechneten Werte überein.
+\begin{align}
+  T_{\text{max}} &= E_{\gamma}\frac{2\epsilon}{1+2\epsilon} \quad &E_{\text{rückstreu}} =&{\gamma}\frac{1}{1+2\epsilon} \label{eq:Comp}\\
+  T_{\text{max}} &= \SI{477.3(2)}{\kilo\eV} \quad &E_{\text{rückstreu}} =& \SI{184.32(1)}{\kilo\eV}
+\end{align}
+Wie an Abbildung \ref{fig:Cs137_log} zu sehen ist, weichen die gemessenen Daten etwas von den theoretischen Werten ab, allerdings 
+kann kein exakter Wert bestimmt werden, da die beiden Werte verrauscht sind.
 Für die Bestimmung der Halbwertsbreite und der Zehntelwertsbreite, wird um den Photonenpeak eine Gaußglocke der Form 
 \eqref{eq:Gauß} gefittet.
 Die Fitparameter aus der Abbildung \ref{fig:02_fit} sind 
@@ -192,13 +204,13 @@ Um den Inhalt des Comptonkontinuums zu bestimmen wird eine Ausgleichskurve der G
 Hierbei wird nur der Ausdruck vor der Klammer an den grün markierten Bereich aus \ref{fig:Cs137} angepasst.
 Der bestimmte Parameter lautet $B=\num{1617.8(3)}$. Um den Inhalt der Funktion \ref{ludwig/mirjam 2.12} zu erhalten,
 werden alle Werte bis zur Comptonkante aufaddiert. Der Inhalt ist damit $N_{\text{Comp}} = \num{2.2495(5)e6}$.
-Mit der Photonenenergien $E_{\gamma}\SI{661.6(2)}{\kilo\eV}$ und der Hilfe der Gleichungen \eqref{ludwig/mirjam 2.4} und 
-\eqref{ludwig/mirjam 2.10} kann der Wirkungsquerschnitt des Compoton-Effekts und des Photoeffekts bestimmt werden.
+Mit der Photonenenergien $E_{\gamma}\SI{661.6(2)}{\kilo\eV}$ und der Hilfe der Gleichungen \eqref{eq1} und 
+\eqref{eq2} kann der Wirkungsquerschnitt des Compoton-Effekts und des Photoeffekts bestimmt werden.
 Diese liegen bei 
 \begin{equation*}
   \sigma_{\text{Comp}}=\SI{8.196(1)}{b} \quad \sigma_{\text{Photo}}=\SI{0.05674(6)}{b}.
 \end{equation*} 
-Mit der Annahme das die Dichte von Germanium im Detektor bei $\rho = \SI{5.323}{\gram\per\cubic\centi\meter}$ [Quelle suchen] liegt und der
+Mit der Annahme das die Dichte von Germanium im Detektor bei $\rho = \SI{5.323}{\gram\per\cubic\centi\meter}$ \cite{Germanium_rho} liegt und der
 Gleichung \eqref{ludwig/mirjam 2.3} kann der Extinktionskoeffizient bestimmt werden.
 Diese liegen bei 
 \begin{equation*}
@@ -221,7 +233,7 @@ Die verwendeten Gamma Peaks der beiden potentiellen Proben sind in Tabelle \ref{
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Energie und Intensität der beiden potenteillen Proben.}
+  \caption{Energie und Intensität der beiden potenteillen Proben \cite{Gamma_lit}.}
   \label{tab:Ba_133Sb_125}
   \begin{tabular}{c c c c c}
     \toprule
@@ -248,6 +260,7 @@ Um die Probe zu identifizieren werden die Peaks im gemessenen Spektrum markiert,
   \centering
   \includegraphics[width = \textwidth, keepaspectratio]{figure/03_peaks.pdf}
   \caption{Aufgenommenes Spektrum mit den Literaturwerten der Gamma-Peaks, hierbei konnten alle Peaks von Barium-133 (außer die orange markierten) aus Tabelle \ref{tab:Ba_133Sb_125} identifiziert werden.}
+  \label{fig:03_peaks}
 \end{figure}
 \FloatBarrier
 Um die Aktivität zu bestimmen, wird die Gleichung \eqref{eq:eta_N} verwendet. Hierbei ist die Messzeit $t=\SI{3770.3771}{\second}$, 
@@ -308,12 +321,12 @@ Diese sind in Tabelle \ref{tab:Akti_03} aufgelistet.
 Bei diesem Versuchsteil wird nur  das Material der Probe bestimmt, da aufgrund der Ausdehnung der Probe diese nicht als Punktförmig 
 angesehen werden kann und damit $\Omega$ nicht berechnet werden kann, was eine notwendige Größe für die Bestimmung der Aktivität ist.
 Das Spektrum ist in Abbildung \ref{fig:Peaks_04} zu sehen.
-Von den gefundenen Peaks können neun Peaks identifiziert werden. Diese sind in Tabelle \ref{tab:ident_Peaks} 
+Von den gefundenen Peaks können 16 Peaks identifiziert werden. Diese sind in Tabelle \ref{tab:ident_Peaks} 
 aufgelistet.
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Energien der identifizierten Peaks aus dem Spektrum und die dazugehörigen Literaturwerte \cite{}[Nuklid Karte].}
+  \caption{Energien der identifizierten Peaks aus dem Spektrum und die dazugehörigen Literaturwerte \cite{Gamma_lit}.}
   \label{tab:ident_Peaks}
   \begin{tabular}{c c c c}
     \midrule
