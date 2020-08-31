@@ -11,7 +11,7 @@ Das gemessene Spektrum ist in folgender Abbildung dargestellt.
 \begin{figure}
   \centering
   \includegraphics[width = \textwidth,keepaspectratio]{figure/Peaks_01.pdf}
-  \caption{Spektrum des Europium-152 Strahlers für die Kalibration des Detektors.}
+  \caption{Spektrum des Europium-152 Strahlers für die Kalibration des Detektors}
   \label{fig:Peaks_01}
 \end{figure}
 \FloatBarrier
@@ -21,7 +21,7 @@ Die identifizierten Peaks sind in Tabelle \ref{tab:peaks_01} aufgelistet.
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Identifizierte Peaks für die Kalibration des Detektors.}
+  \caption{Identifizierte Peaks für die Kalibration des Detektors}
   \label{tab:peaks_01}
   \begin{tabular}{c c c c}
     \toprule
@@ -41,7 +41,7 @@ Die identifizierten Peaks sind in Tabelle \ref{tab:peaks_01} aufgelistet.
     \bottomrule
   \end{tabular}
 \end{table}
-Aus Tabelle \ref{tab:peaks_01} wird die Energie gegen den Kanal geplottet und eine lineare Funktion wird an die Daten 
+Aus Tabelle \ref{tab:peaks_01} wird die Energie gegen den Kanal geplottet und eine lineare Funktion an die Daten 
 angepasst.
 \begin{equation*}
   \label{eq:linear}
@@ -51,26 +51,28 @@ angepasst.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth,keepaspectratio]{figure/Lin_Fit_01.pdf}
-  \caption{Messdaten und Fitfunktion für die Kalibration des Detektors.}
+  \caption{Messdaten und Fitfunktion für die Kalibration des Detektors}
   \label{fig:Lin_Fit:01}
 \end{figure}
 \FloatBarrier
-die Fitparameter der Funktion aus \ref{fig:Lin_Fit:01} sind:
+Die Fitparameter der Funktion aus \ref{fig:Lin_Fit:01} sind:
 \begin{equation*}
   m = \SI{0.40312(9)}{\kilo\eV} \quad b = \SI{-2.7(1)}{\kilo\eV}
 \end{equation*}
 Dadurch kann das Spektrum auch gegen die Energie aufgetragen werden.
+
 \subsection{Vollenergienachweiswahrscheinlichkeit}
 \label{cap:Vollenergienachweiswahrscheinlichkeit}
+
 Die Europium-152 Probe hatte am 01.10.2000 eine Aktivität von $\SI{4130(60)}{\becquerel}$. Mit einer 
-Halbwertszeit von $T_{1/2} = \SI{13.52}{yr}$ kann über das Zerfallsgesetzt die Aktivität 
+Halbwertszeit von $T_{1/2} = \SI{13.52}{yr}$ kann über das Zerfallsgesetz die Aktivität 
 am Messtag bestimmt werden, diese liegt bei $\SI{1552(20)}{\becquerel}$.
 Um die Vollenergienachweiswahrscheinlichkeit $\eta(E)$ bestimmen zu können, wird folgende Formel benötigt.
 \begin{equation}
   \label{eq:eta_N}
   N = tA_{\text{Messtag}}I\frac{\Omega}{4\pi}\eta(E)
 \end{equation}
-Hierbei ist $t=\SI{4109.4111}{\second}$ die Messzeit, $I$ die Intensität  des Peaks und $\Omega$ der vom Detektor abgedeckter
+Hierbei ist $t=\SI{4109.4111}{\second}$ die Messzeit, $I$ die Intensität  des Peaks und $\Omega$ der vom Detektor abgedeckte
 Raumwinkel.
 Da die Probe als punktförmig angesehen werden kann, kann $\Omega$ mithilfe der Formel \eqref{eq:Omega} bestimmt werden.
 \begin{equation}
@@ -128,7 +130,7 @@ kann der Linieninhalt bestimmt werden. Bei Peaknummer 3 ist der Fitparameter $c$
   \end{tabular}
 \end{table}
 \FloatBarrier
-Mit der Gleichung \eqref{eq:eta_N} können $\eta$-Werte bestimmt werden, an diese wird die Funktion 
+Mit der Gleichung \eqref{eq:eta_N} können $\eta$-Werte bestimmt werden. An diese wird die Funktion 
 \begin{equation*}
   \eta(E) = A\cdot E ^z
 \end{equation*}
@@ -181,28 +183,28 @@ Die Fitparameter aus der Abbildung \ref{fig:02_fit} sind
 \FloatBarrier
 \begin{figure}
   \centering
-  \caption{Messdaten um den Photonenpeak und Gaußglockenfit für die Bestimmung der Halb-, Zehntelwertsbreite und den Linieninhalt des Peaks.}
+  \caption{Messdaten um den Photonenpeak und Gaußglockenfit für die Bestimmung der Halb-, Zehntelwertsbreite und den Linieninhalt des Peaks}
   \label{fig:02_fit}
   \includegraphics[width=\textwidth,keepaspectratio]{figure/02_peak_fit.pdf}
 \end{figure}
 \FloatBarrier
-Die beiden Breiten werden bestimmt, indem die Kurve um die Hälfte, ein Zehntel des Maximalen Wertes verringert wird und auf Nullstellen 
+Die beiden Breiten werden bestimmt, indem die Kurve um die Hälfte und um ein Zehntel des maximalen Wertes verringert wird und auf Nullstellen 
 untersucht wird.
 Die Differenzen der beiden Nullstellen sind die Breiten.
 \begin{equation*}
   \Gamma_{1/2} = \SI{2.17(6)}{\kilo\eV}\quad \Gamma_{1/10} = \SI{4.0(1)}{\kilo\eV}
 \end{equation*}
-Das Verhältnis der beiden Breiten ist $\num{1.85(2)}$, das Verhältnis der beiden Breiten bei einer Gaußglocke wird 
+Das Verhältnis der beiden Breiten ist $\num{1.85(2)}$. Das Verhältnis der beiden Breiten bei einer Gaußglocke wird 
 mit der Formel
 \begin{equation*}
   \frac{\Gamma_{1/10}}{\Gamma_{1/2}}= \sqrt{\frac{\ln{10}}{\ln{2}}} \approx \num{1.82}
 \end{equation*}
 bestimmt.
-Mit der Fitkurve aus Abbildung \ref{fig:02_fit} kann der Linieninhalt bestimmt werden. Hierbei ist darauf zu achten, dass der Fit ein zweites mal gemacht wird 
+Mit der Fitkurve aus Abbildung \ref{fig:02_fit} kann der Linieninhalt bestimmt werden. Hierbei ist darauf zu achten, dass der Fit ein zweites Mal gemacht wird 
 und hierbei nicht die Energie sondern der Kanal verwendet wird. Damit lässt sich der Lineninhalt des Peaks auf $N=\num{9.3(2)e3}$ bestimmen.
-Um den Inhalt des Comptonkontinuums zu bestimmen wird eine Ausgleichskurve der Gleichung \eqref{ludwig/mirjam 2.12} berechnet.
+Um den Inhalt des Comptonkontinuums zu bestimmen wird eine Ausgleichskurve der Gleichung \ref{2.12} berechnet.
 Hierbei wird nur der Ausdruck vor der Klammer an den grün markierten Bereich aus \ref{fig:Cs137} angepasst.
-Der bestimmte Parameter lautet $B=\num{1617.8(3)}$. Um den Inhalt der Funktion \ref{ludwig/mirjam 2.12} zu erhalten,
+Der bestimmte Parameter lautet $B=\num{1617.8(3)}$. Um den Inhalt der Funktion \ref{2.12} zu erhalten,
 werden alle Werte bis zur Comptonkante aufaddiert. Der Inhalt ist damit $N_{\text{Comp}} = \num{2.2495(5)e6}$.
 Mit der Photonenenergien $E_{\gamma}\SI{661.6(2)}{\kilo\eV}$ und der Hilfe der Gleichungen \eqref{eq1} und 
 \eqref{eq2} kann der Wirkungsquerschnitt des Compoton-Effekts und des Photoeffekts bestimmt werden.
@@ -211,12 +213,12 @@ Diese liegen bei
   \sigma_{\text{Comp}}=\SI{8.196(1)}{b} \quad \sigma_{\text{Photo}}=\SI{0.05674(6)}{b}.
 \end{equation*} 
 Mit der Annahme das die Dichte von Germanium im Detektor bei $\rho = \SI{5.323}{\gram\per\cubic\centi\meter}$ \cite{Germanium_rho} liegt und der
-Gleichung \eqref{ludwig/mirjam 2.3} kann der Extinktionskoeffizient bestimmt werden.
+Gleichung \eqref{2.3} kann der Extinktionskoeffizient bestimmt werden.
 Diese liegen bei 
 \begin{equation*}
   \mu_{\text{Comp}} = \SI{0.35514(6)}{cm^{-1}} \quad \mu_{\text{Photo}} = \SI{0.002459(2)}{cm^{-1}}.
 \end{equation*}
-Mit diesen Werten und der Gleichung \eqref{ludwig/mirjam 2.2} kann die Wechselwirkungswahrscheinlichkeit bestimmt werden.
+Mit diesen Werten und der Gleichung \eqref{2.2} kann die Wechselwirkungswahrscheinlichkeit bestimmt werden.
 Hierbei ist $l=\SI{3.9}{\centi\meter}$ die Länge des Germanium-Kristalls.
 Die Wechselwirkungswahrscheinlichkeiten sind 
 \begin{equation*}
@@ -226,14 +228,15 @@ Das Verhältnis der beiden Größen ist
 \begin{equation*}
   \frac{P_{\text{Comp}} }{P_{\text{Photo}}} = \num{78.56(8)}.
 \end{equation*}
+
 \subsection{Aktivitätsbestimmung}
 Bei diesem Versuchsteil wird zunächst, anhand der Gamma-Linien, das untersuchte Material bestimmt.
 Möglich sind Antimon-125 oder Barium-133.
-Die verwendeten Gamma Peaks der beiden potentiellen Proben sind in Tabelle \ref{tab:Ba_133Sb_125} aufgelistet.
+Die verwendeten Gamma-Peaks der beiden potentiellen Proben sind in Tabelle \ref{tab:Ba_133Sb_125} aufgelistet.
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Energie und Intensität der beiden potenteillen Proben \cite{Gamma_lit}.}
+  \caption{Energie und Intensität der beiden potentiellen Proben \cite{Gamma_lit}.}
   \label{tab:Ba_133Sb_125}
   \begin{tabular}{c c c c c}
     \toprule
@@ -267,12 +270,12 @@ Um die Aktivität zu bestimmen, wird die Gleichung \eqref{eq:eta_N} verwendet. H
 $\Omega$ ist wie in vorherigen Teilen bestimmt worden und die Intensitäten werden aus Tabelle \ref{tab:Ba_133Sb_125} abgelesen.
 Die Funktion für die Vollenergienachweiswahrscheinlichkeit wurde bereits in Kapitel \ref{cap:Vollenergienachweiswahrscheinlichkeit}
 bestimmt.
-Der Linieninhalt wird bestimmt wie in den vorherigen Kapitel.
-Die Fits für die Bestimmung der Linieninhalt, sowie die Linieninhalte selbst, sind in Tabelle \ref{tab:params_Linieninhalt} aufgelistet.
+Der Linieninhalt wird wie in den vorherigen Kapiteln bestimmt.
+Die Fits für die Bestimmung des Linieninhalts, sowie die Linieninhalte selbst, sind in Tabelle \ref{tab:params_Linieninhalt} aufgelistet.
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Fitparameter für die Bestimmung der Linieninhalte.}
+  \caption{Fitparameter für die Bestimmung der Linieninhalte}
   \label{tab:params_Linieninhalt}
   \begin{tabular}{c c c c c}
     \toprule
@@ -293,7 +296,7 @@ Die Fits für die Bestimmung der Lineninhalte sind in Abbildung \ref{fig:Linieni
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth,keepaspectratio]{figure/03_subplot.pdf}
-  \caption{Fits für die Bestimmung der Lineninhalte.}
+  \caption{Fits für die Bestimmung der Linieninhalte}
   \label{fig:Linieninhalt_03}
 \end{figure}
 Mit den berechneten Linieninhalten kann mit der Gleichung \eqref{eq:eta_N} die Aktivität am Messtag bestimmt werden. 
@@ -301,7 +304,7 @@ Diese sind in Tabelle \ref{tab:Akti_03} aufgelistet.
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Aktivität der Barium-133 Probe. Bestimmt über die einzelnen Peaks und gemittelt.}
+  \caption{Aktivität der Barium-133 Probe, bestimmt über die einzelnen Peaks und gemittelt.}
   \label{tab:Akti_03}
   \begin{tabular}{c c}
     \toprule
@@ -318,7 +321,7 @@ Diese sind in Tabelle \ref{tab:Akti_03} aufgelistet.
   \end{tabular}
 \end{table}
 \subsection{Bestimmung einer unbekannten Probe}
-Bei diesem Versuchsteil wird nur  das Material der Probe bestimmt, da aufgrund der Ausdehnung der Probe diese nicht als Punktförmig 
+Bei diesem Versuchsteil wird nur  das Material der Probe bestimmt, da aufgrund der Ausdehnung der Probe diese nicht als punktförmig 
 angesehen werden kann und damit $\Omega$ nicht berechnet werden kann, was eine notwendige Größe für die Bestimmung der Aktivität ist.
 Das Spektrum ist in Abbildung \ref{fig:Peaks_04} zu sehen.
 Von den gefundenen Peaks können 16 Peaks identifiziert werden. Diese sind in Tabelle \ref{tab:ident_Peaks} 
@@ -362,7 +365,7 @@ aufgelistet.
 \FloatBarrier
 Die Isotope aus Tabelle \ref{tab:ident_Peaks} gehören alle zu der natürlichen Zerfallsreihe des Uran Isotop Uran-238, 
 außer der Peak von Uran-235 bei einer Energie von $\SI{185.94(18)}{\kilo\eV}$. Dieser Peak kann allerdings einem anderen 
-Isotop zugeordnet werden Radium-226, welches zu der Zerfalls von Uran-238 gehört.
+Isotop zugeordnet werden Radium-226, welches zu dem Zerfalls von Uran-238 gehört.
 
 
 

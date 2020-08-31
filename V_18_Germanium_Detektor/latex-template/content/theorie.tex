@@ -17,16 +17,42 @@ Gammastrahlung wird vorallem beim Zerfall von Atomkernen radioaktiver Nuklide fr
 wenn angeregte Atomkerne nach bspw. einem Alpha- oder Betazerfall wieder in ihren 
 Grundzustand zurückkehren.
 Daher ist das Gammaspektrum ein diskretes Linienspektrum, das für jede Substanz 
-speziefisch ist. Daher kann mit der Gammaspektroskopie eine unbekannte Substanz über 
-ihr Linienspektrum erkannt werden.
+spezifisch ist. Deshalb kann mit der Gammaspektroskopie eine unbekannte Substanz über 
+ihr Linienspektrum ezugeordnet werden.
 Die Intensität von geladener Strahlung hängt exponentiell von der 
 Eindringtiefe ab. Bei Gammastrahlung ist die Halbwertsdicke hingegen 
 von der Wellenlänge und der Ordnungszahl des Materials abhängig.
+Die Anzahl $N(l)$ der Teilchen, die nach der Materialtiefe $l$ noch nicht mit dem 
+Gammastrahl wechselgewirkt haben, ist gegeben durch:
+
+\begin{equation}
+    N(l) = N_0 e^{-l\mu}.
+    \label{2.1}
+\end{equation}
+
+In Gleichung \ref{2.1} gilt $N_0 = N(0)$ und $\mu$ entspricht dem Extinktionskoeffizienten:
+
+\begin{equation}
+    \mu = \sigma n = \frac{\sigma \rho}{uA}.
+    \label{2.3}
+\end{equation}
+
+In Gleichung \ref{2.3} beschreibt $n$ die Teilchendichte, die ungefähr der 
+Dichte $\rho$, dividiert durch das Produkt aus dem Gewicht eines Nukleons $u$
+und der atomaren Massenzahl $A$  entspricht.
+In diesem Zusammenhang, ergibt sich schließlich die 
+Wechselwirkungswahrscheinlichkeit:
+
+\begin{equation}
+    P(l) = 1 - e^{-l\mu}.
+    \label{2.2}
+\end{equation}
+
 Gammastrahlung kann auf drei verschiedene Arten mit Materie wechselwirken.
-Diese Arten werden Photoeffekt, Compton-Effekt und Paarbildung genannt.
+Sie werden Photoeffekt, Compton-Effekt und Paarbildung genannt.
 Der Photoeffekt tritt in diesem Zusammenhang eher bei niedrigeren, der 
-Compton-Effekt dominanater bei mittleren und die Paarbildung vorrangig
-bei hochen Gammaenergien auf.
+Compton-Effekt dominanter bei mittleren und die Paarbildung vorrangig
+bei hohen Gammaenergien auf.
 
 \subsection{Der Photoeffekt}
 Unter dem Photoeffekt werden drei verschiedene Mechanismen zusammengefasst.
@@ -35,7 +61,7 @@ Beim äußeren Photoeffekt werden Elektronen aus einer Halbleiter- oder Metallob
 durch Strahleneinwirkung herausgelöst. 
 Er dominiert bei Energien bis zu $\SI{1}{\mega\eV}$
 Die einfallende Gammastrahlung muss dafür eine Energie aufweisen, die größer als die 
-Bindungsenergie des Elektrons ist. Wenn das Gammaquant auf das Elektron trifft wird es 
+Bindungsenergie des Elektrons ist. Wenn das Gammaquant auf das Elektron trifft, wird es 
 annihiliert, während das Elektron frei wird. Der zugehörige 
 Wirkungsquerschnitt des Photoeffekts ist in Gleichung \ref{eq1} beschrieben.
 
@@ -47,17 +73,17 @@ Wirkungsquerschnitt des Photoeffekts ist in Gleichung \ref{eq1} beschrieben.
 In Gleichung \ref{eq1} entspricht $\epsilon$ der Energie des Photons, $\sigma_{Th}$
 ist der Wirkungsquerschnitt der Thompson-Streuung, $\alpha$ ist die 
 Sommerfeld´sche Feinstrukturkonstante und $\gamma$ entspricht dem relativistischen 
-Gamma-Faktor des Elektrons nachdem es mit dem Photon wechselgewirkt hat.
+Gamma-Faktor des Elektrons, nachdem es mit dem Photon wechselgewirkt hat.
 
 \subsection{Der Compton-Effekt}
 Wenn ein Photon bspw. Gammastrahlung, auf ein Teilchen bspw. ein Elektron trifft
 und an ihm gestreut wird, dann wird seine Wellenlänge vergrößert. 
 Dieser Prozess wird Compton-Effekt genannt.
-Er tritt vorwiegend bei Energien zwischen $\SI{1}{\mega\electronvolt}$ und 
+Er tritt vorwiegend bei Photonenergien zwischen $\SI{1}{\mega\electronvolt}$ und 
 $\SI{10}{\mega\electronvolt}$ auf.
 Im Gegensatz zum Photoeffekt wird beim Compton-Effekt nicht die 
 gesamte Photonenenergie übertragen, sondern nur ein Teil, sodass das Elektron an 
-Energie gewinnt und das Photon die Seine verringert, sodass es eine längere 
+Energie gewinnt und das Photon seine Energie verringert, sodass es eine längere 
 Wellenlänge bekommt. Das führt dazu, dass die Energie der Elektronen nach dem 
 Stoß einem kontinuierlichen Spektrum entspricht.
 Der maximale Energieübertrag wird dabei durch einen Frontalstoß erzeugt.
@@ -76,17 +102,26 @@ Ordnungszahl $Z$, wie es in Gleichung \ref{eq3} dargestellt ist.
 
 \begin{equation}
     \sigma^A_{com} = Z \sigma_{com}
+    \label{eq3}
+\end{equation}
+
+Alternativ kann der Compton-Wirkungsquerschnitt auch über die kinetische 
+Energie $T$ ausgedrückt werden:
+
+\begin{equation}
+    \frac{d \sigma_{com}}{dT} = \frac{3\sigma_{Th}}{8 m_e c^2 \epsilon^2} \left(2+ \frac{t^2}{\epsilon^2(1-t)^2} + \fra¢{t(t-\frac{2}{\epsilon})}{1-t} \right) \cdot \Theta( \frac{2 \epsilon}{1+ 2 \epsilon}-t).
+    \label{2.12}
 \end{equation}
 
 \subsection{Paarbildung}
 Allgemein wird unter Paarbildung ein teilchenphysikalischer Prozess verstanden, bei dem 
 ein Teilchen und sein Antiteilchen erzeugt werden. In diesem Versuch bezieht sich die 
 Paarbildung jedoch nur auf die Erzeugung von Elektron-Positron-Paaren. 
+Sie ist der überwiegende Wechselwikrungsprozess bei Photonen die eine Energie
+über $\SI{10}{\mega\electronvolt}$ aufweisen.
 Sie entsteht bei Wechselwirkung von Photonen mit Materie, genauer bei der 
 Wechselwirkung eines Photons mit dem elektrischen Feld des Atomkerns oder der 
 Hüllenelektronen. 
-Sie ist der überwiegende Wechselwikrungsprozess bei Photonen die eine Energie
-über $\SI{10}{\mega\electronvolt}$ aufweisen.
 Bei ersterem wird die gesamte Photonenergie an die 
 entstehenden Teilchen und deren kinetische Energie abgegeben. Außerdem erfährt 
 der Atomkern aufgrund der Impulserhaltung einen Rückstoß.
@@ -98,15 +133,15 @@ Wirkungsquerschnitt, der in Gleichung \ref{eq3} aufgeführt ist, beschrieben wer
     \label{eq3}
 \end{equation}
 
-Da es sich um geladene Teilchen handelt, müssen Bremsstarhlugseffekte berücksichtigt 
-werden. Das wird über die $L_{rad}$ und $L'_{rad}$ Funktionen durchgeführt. 
+Da es sich um geladene Teilchen handelt, müssen Bremsstrahlungseffekte berücksichtigt 
+werden. Das wird über die $L_{rad}$ und $L'_{rad}$ Funktionen realisiert. 
 $f(Z)$ ist dabei eine Funktion, die die Compton-Korrektur miteinbezieht.
 
 \subsection{Halbleiterdetektoren}
 Da Gammastrahlung ungeladen ist, kann sie über ihre Wechselwirkung mit Materie 
 nachgewiesen werden. Wenn geladene Teilchen frei werden, kann bspw. eine 
 Spannung gemessen werden. Dies ist die Grundlage eines Halbleiterdetektors.
-Halbleiter definieren sich über ihre für Elektronen überwindbare 
+Halbleiter definieren sich über ihre, für Elektronen überwindbare,
 Bandlücke zwischen ihrem Valenz- und Leitungsband. Daher können sie durch die 
 angeregten Elektronen durch Gammabestrahlung leitfähiger werden. 
 Die erzeugten Elektron-Loch-Paare, die dabei entstehen, benötigen im Vergleich zu einer 
