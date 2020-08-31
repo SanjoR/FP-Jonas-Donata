@@ -12,6 +12,7 @@ import sympy
 
 A = np.genfromtxt("../Data/04.txt", unpack=True)
 
+
 Kanal = np.arange(0,len(A))
 
 
@@ -24,6 +25,8 @@ def linear_value(x):
 
 E = linear_value(Kanal)
 
+E_err = m*Kanal +b
+
 peaks1,_ = find_peaks(A[E<634],height = 1000)
 peaks2,_ = find_peaks(A[E>=634] , height = 75)
 
@@ -34,22 +37,29 @@ def linear(x):
 
 
 E_peaks = np.append(E[E<634][peaks1],E[E>=634][peaks2])
+E_peaks_err = np.append(E_err[E<634][peaks1],E_err[E>=634][peaks2])
 Kanal_peaks = np.append(Kanal[E<634][peaks1],Kanal[E>=634][peaks2])
 A_peaks = np.append(A[E<634][peaks1],A[E>=634][peaks2])
-
-
-identifiziert = np.array([4,5,6,7,8,11,17,18,21])
+identifiziert = np.array([3,4,5,6,7,8,10,11,12,13,14,17,18,21,22,24])
+E_ident_err = E_peaks_err[identifiziert]
 Kanal_ident = Kanal_peaks[identifiziert]
 E_ident=E_peaks[identifiziert]
 A_ident=A_peaks[identifiziert]
 for i in E_ident:
     print(i)
+print()
+for i in E_ident_err:
+    print(i)
+print()
+for i in range(len(E_peaks_err)):
+    if i not in identifiziert:
+        print(i, E_peaks_err[i])
 
 print(len(E_ident))
+print(len(E_peaks))
 plt.figure(figsize = (13,8))
 plt.plot(E,A,"b-",label="Spektrum")
-plt.plot(E[E<634][peaks1],A[E<634][peaks1],"rx",label="Peaks")
-plt.plot(E[E>=634][peaks2],A[E>=634][peaks2],"rx")
+plt.plot(E_peaks,A_peaks,"rx",label="Peaks")
 plt.plot(E_ident,A_ident, "k*",label = "Identifiziert")
 plt.legend(loc="best")
 plt.xlabel("E / keV")
@@ -103,6 +113,6 @@ for i in range(len(Kanal_ident)):
         m = 0 
         n+=1
 #axs[1,2].set_visible(False)
-plt.show()
+#plt.show()
 plt.savefig("../latex-template/figure/04_subplot.pdf")
 plt.close()

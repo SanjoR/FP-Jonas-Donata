@@ -6,6 +6,8 @@ from uncertainties import ufloat
 import scipy.constants as const
 
 
+plt.rcParams.update({'font.size': 17.5})
+
 Lambda,phi_1,t_1,phi_2,t_2 = np.genfromtxt("../Data/Messprogramm1_Data.txt", unpack =True)
 Lambda_Rein,phi_1_Rein,t_1_Rein,phi_2_Rein,t_2_Rein = np.genfromtxt("../Data/Rein_Data.txt", unpack =True)
 
@@ -18,8 +20,21 @@ t_2 *= 1/60
 Theta_1 = phi_1 + t_1
 Theta_2 = phi_2 + t_2
 
-Theta = Theta_1 - Theta_2
+print("Theta1")
+for i in Theta_1:
+    print(round(i,2))
+print()
+print("Theta2")
+for i in Theta_2:
+    print(round(i,2))
+print()
 
+Theta = (Theta_1 - Theta_2)/2
+
+print("Theta")
+for i in Theta:
+    print(round(i,2))
+print()
 Theta = np.pi *Theta/180
 
 Theta = Theta/L_1
@@ -31,11 +46,17 @@ t_2_Rein *= 1/60
 Theta_1_Rein = phi_1_Rein + t_1_Rein
 Theta_2_Rein = phi_2_Rein + t_2_Rein
 
-Theta_Rein = Theta_1_Rein - Theta_2_Rein
+Theta_Rein = (Theta_1_Rein - Theta_2_Rein)/2
 
 Theta_Rein = np.pi *Theta_Rein/180
 
 Theta_Rein = Theta_Rein/L_Rein
+
+
+print("Theta_rein")
+for i in Theta_Rein:
+    print(i)
+print()
 
 Theta_diff = Theta-Theta_Rein
 
@@ -51,7 +72,7 @@ plt.figure(figsize=(13,8))
 plt.plot(Lambda,Theta,"rx",label="n-dotiert")
 plt.plot(Lambda,Theta_Rein,"bx",label="Rein")
 plt.xlabel(r"$\lambda$ / $µm$")
-plt.ylabel(r"$\theta_{frei}\, /\, \frac{rad}{µm}$")
+plt.ylabel(r"$\theta_{norm}\, /\, \frac{rad}{µm}$")
 plt.legend(loc="best")
 plt.savefig("../latex-template/figure/Theta1_plot.pdf")
 plt.show()
@@ -77,7 +98,7 @@ plt.show()
 plt.close() 
 N=1.2*10**24
 B=0.41
-n=3.57
+n=3.35
 error = np.sqrt(np.diag(cov_matrix))
 a = ufloat(params[0],error[0]) 
 
@@ -89,3 +110,4 @@ print(m_eff)
 
 lit = 6.103*10**-32
 print((m_eff-lit)/lit)
+print((m_eff + ufloat(7.12,22)*10**-32)/2)
