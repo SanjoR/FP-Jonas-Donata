@@ -40,6 +40,11 @@ Theta = np.pi *Theta/180
 Theta = Theta/L_1
 
 
+print("Theta")
+for i in Theta:
+    print(round(10000*i,2))
+print()
+
 t_1_Rein *= 1/60
 t_2_Rein *= 1/60
 
@@ -63,6 +68,7 @@ Theta_diff = Theta-Theta_Rein
 for i in Lambda:
     print(round(i**2,1))
 print()
+print("Diff")
 for i in Theta_diff:
     print(round(10000*i, 2))
 
