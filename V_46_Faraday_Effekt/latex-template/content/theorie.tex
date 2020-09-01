@@ -77,7 +77,8 @@ Dispersionsrelation, $k$ die Wellenzahl, $e$ die Elektronenladung und $E$ das
 äußere elektrische Feld.
 Im Gegensatz zu einem freien Elektron im Vakuum ist die Dispersionsrelation eines 
 Elektrons im Leitungsband eines Festkörpers im allgemeinen nicht quadratisch
-sondern geschwindigkeitsabhängig. 
+sondern richtungsabhängig. Für den Fall eines hinreichend symmetrischen Kristalls
+(bspw. GaAs) ist die effektive Masse somit in allen Richtungen gleich. 
 
 \begin{equation}
     m^* = \hbar^2 \left( \frac{d^2\epsilon}{dk^2} \right)^{-1}
@@ -117,13 +118,14 @@ für den links- und rechts-polarisierten Strahl zusammen.
     \label{eq3}
 \end{equation}
 
-In Gleichung \ref{eq3} entspricht $\omega$ der Kreisfrequen des einfalenden Lichtstrahles, 
+In Gleichung \ref{eq3} entspricht $\omega$ der Kreisfrequenz des einfallenden Lichtstrahles, 
 $L$ der Länge des Mediums und $c$ der Lichtgeschwindigkeit im Vakuum.
-Für isotrope Medien ergibt sich der Drehwinkel $\theta$ mit dem Brechungsindex $n$ und 
-der dielektrischen Suszeptibilität $\chi$ des Mediums über Gleichung \ref{eq4}.
+Für isotrope Medien gilt $n_{r} = n_{l}$, was dazu führt, dass $\theta$ verschwindet.
+Bei anisotropen Medien ergibt sich Geichung \ref{eq4}, wobei $n$ den Brechungsindex und 
+$\chi_{xy}$ ein Nebendiagonalelement des Suszeptibilitätstensors beschreibt.
 
 \begin{equation}
-    \theta = \frac{L\omega}{2cn} \chi
+    \theta = \frac{L\omega}{2cn} \chi_{xy}
     \label{eq4}
 \end{equation}
 
@@ -136,7 +138,7 @@ zirkular polarisierten Anteile, wenn ein Magnetfeld mit Feldlinien, welche
 parallel zur Ausbreitungsrichtung sind, angelegt ist. Somit 
 unterscheiden sich auch die Wellenlängen für den im Uhrzeigersinn polarisierten 
 Anteil ($\lambda_{r}$) und den Anteil, der entgegen des Uhrzeigersinns polarisiert 
-ist ($\lambda_{r}$).
+ist ($\lambda_{l}$).
 
 \begin{align}
     \lambda_{r} = \frac{c}{f\cdot n_{r}}\\
@@ -145,7 +147,7 @@ ist ($\lambda_{r}$).
 \end{align}
 
 In den Gleichungen \ref{eq5} entspricht $f$ der inversen Schwingungsdauer.
-Während einer Schwingungsdauer wird die Polarisatinosebene also um den Winkel 
+Während einer Schwingungsdauer wird die Polarisationsebene also um den Winkel 
 $\delta \beta$ weiter gedreht. Der Zusammenhang zu den Brechungsindices wird aus 
 Gleichung \ref{eq6} ersichtlich.
 
@@ -154,26 +156,19 @@ Gleichung \ref{eq6} ersichtlich.
     \label{eq6}
 \end{equation}
 
-Der Drehwinkel kann allerdings auch mit Hilfe der Verdet-Konstante $V$, die sich 
-über den Zusammenhang in Gleichung \ref{eq7} ergibt, berechnet werden.
-Dabei entspricht $e$ der Elementarladung, $m_e$ der Elektronenmasse und 
-$\frac{dn}{d\lambda}$ der 
-Dispersion des betrachteten Materials.
+Zur Bestimmung des Drehwinkels $\theta$ ergibt sich für freie Ladungsträger,
+die Gleichung:
 
 \begin{equation}
-    V = \frac{-e}{m_e} \frac{\lambda}{2c} \frac{dn}{d\lambda}
-    \label{eq7}
+    \theta \approx \frac{e_0^3 N B L}{2 \epsilon_0 c m^2 \omega^2 n} = \frac{e_0^3 \lambda NBL}{8 \pi^2 \epsilon c^3 m^2 n}
+    \label{dreh}
 \end{equation}
 
-Der Drehwinkel wird dann über Gleichung \ref{eq8} bestimmt, wobei 
-$B$ der magnetischen Flussdichte und $d$ der zurückgelegten Strecke 
-im Medium entspricht.
-
-\begin{equation}
-    \beta = V \cdot d \cdot B
-    \label{eq8}
-\end{equation}
-
+wobei $B$ der magnetischen Flussdichte und $N$ der Elektronenanzahl pro 
+Volumeneinheit entspricht. Um die Elektronen in einem 
+Kristall zu beschreiben kann in Gleichung \ref{dreh}, die Masse $m$ durch die 
+effektive Masse $m^*$ ersetzt werden, sodass der Drehwinkel der Polarisationsebene 
+proportional zu $\frac{1}{m^2}$ ist.
 Dieses Kapitel wurde mit den Literaturquellen
 \cite{sample}, \cite{demt}, \cite{exp}, \cite{switch} und \cite{eng}.
 
