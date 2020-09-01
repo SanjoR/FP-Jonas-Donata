@@ -66,7 +66,7 @@ annihiliert, während das Elektron frei wird. Der zugehörige
 Wirkungsquerschnitt des Photoeffekts ist in Gleichung \ref{eq1} beschrieben.
 
 \begin{equation}
-    \sigma_{ph} = \frac{3}{2} \sigma_{Th} \alpha \frac{Z^5}{\epsilon^5} (\gamma^2 -1)^{\frac{3}{2}} \left(\frac{4}{3} + \gamma\frac{\gamma -2}{\gamma+1} \left(1 - \frac{1}{2 \gamma \sqrt{\gamma^2 -1}} \ln\left(\frac{\gamma + \sqrt{\gamma^2 - 1}}{\gamma - \sqrt{\gamma^2 -1}} \right) \right) \right)
+    \sigma_{\text{ph}} = \frac{3}{2} \sigma_{\text{Th}} \alpha \frac{Z^5}{\epsilon^5} (\gamma^2 -1)^{\frac{3}{2}} \left(\frac{4}{3} + \gamma\frac{\gamma -2}{\gamma+1} \left(1 - \frac{1}{2 \gamma \sqrt{\gamma^2 -1}} \ln\left(\frac{\gamma + \sqrt{\gamma^2 - 1}}{\gamma - \sqrt{\gamma^2 -1}} \right) \right) \right)
     \label{eq1}
 \end{equation}
 
@@ -93,7 +93,7 @@ eines Elektrons angibt. Der totale Wirkungsquerschnitt ergibt sich, wenn diese
 Formel über den Raumwinkel integriert wird.
 
 \begin{equation}
-    \sigma_{com} = \frac{3}{4}\sigma_{TH} \left(\frac{1 + \epsilon}{\epsilon^2} \left(\frac{2(1+\epsilon)}{1+2\epsilon} - \frac{1}{\epsilon} \ln(1+2\epsilon) \right) + \frac{1}{2\epsilon} \ln(1+2\epsilon) - \frac{1+3\epsilon}{(1+2\epsilon)^2} \right)
+    \sigma_{\text{com}} = \frac{3}{4}\sigma_{\text{Th}} \left(\frac{1 + \epsilon}{\epsilon^2} \left(\frac{2(1+\epsilon)}{1+2\epsilon} - \frac{1}{\epsilon} \ln(1+2\epsilon) \right) + \frac{1}{2\epsilon} \ln(1+2\epsilon) - \frac{1+3\epsilon}{(1+2\epsilon)^2} \right)
     \label{eq2}
 \end{equation}
 
@@ -101,7 +101,7 @@ Für ein Atom ist der Compton-Wirkungsquerschnitt entsprechent proportional zur
 Ordnungszahl $Z$, wie es in Gleichung \ref{eq3} dargestellt ist.
 
 \begin{equation}
-    \sigma^A_{com} = Z \sigma_{com}
+    \sigma^A_{\text{com}} = Z \sigma_{\text{com}}
     \label{eq3}
 \end{equation}
 
@@ -109,7 +109,7 @@ Alternativ kann der Compton-Wirkungsquerschnitt auch über die kinetische
 Energie $T$ ausgedrückt werden:
 
 \begin{equation}
-    \frac{d \sigma_{com}}{dT} = \frac{3\sigma_{Th}}{8 m_e c^2 \epsilon^2} \left(2+ \frac{t^2}{\epsilon^2(1-t)^2} + \fra¢{t(t-\frac{2}{\epsilon})}{1-t} \right) \cdot \Theta( \frac{2 \epsilon}{1+ 2 \epsilon}-t).
+    \frac{\symup{d} \sigma_{\text{com}}}{\symup{d}T} = \frac{3\sigma_{\text{Th}}}{8 m_{\text{e}} c^2 \epsilon^2} \left(2+ \frac{t^2}{\epsilon^2(1-t)^2} + \frac{t(t-\frac{2}{\epsilon})}{1-t} \right) \cdot \Theta( \frac{2 \epsilon}{1+ 2 \epsilon}-t).
     \label{2.12}
 \end{equation}
 
@@ -129,12 +129,12 @@ Die Paarbildung kann über den
 Wirkungsquerschnitt, der in Gleichung \ref{eq3} aufgeführt ist, beschrieben werden.
 
 \begin{equation}
-    \sigma_{paar} = \alpha \frac{3 \sigma_{Th}}{2 \pi} \frac{7}{9} \left( \left( Z^2 (L_{rad} - f(Z)) + Z L'_{rad}) \right) + \frac{1}{42} \left(Z^2 + Z \right) \right)
+    \sigma_{\text{paar}} = \alpha \frac{3 \sigma_{\text{Th}}}{2 \pi} \frac{7}{9} \left( \left( Z^2 (L_{\text{rad}} - f(Z)) + Z L'_{\text{rad}}) \right) + \frac{1}{42} \left(Z^2 + Z \right) \right)
     \label{eq3}
 \end{equation}
 
 Da es sich um geladene Teilchen handelt, müssen Bremsstrahlungseffekte berücksichtigt 
-werden. Das wird über die $L_{rad}$ und $L'_{rad}$ Funktionen realisiert. 
+werden. Das wird über die $L_{\text{rad}}$ und $L'_{\text{rad}}$ Funktionen realisiert. 
 $f(Z)$ ist dabei eine Funktion, die die Compton-Korrektur miteinbezieht.
 
 \subsection{Halbleiterdetektoren}
@@ -155,7 +155,7 @@ Dies führt dazu, dass die Standardabweichung, die in Gleichung \ref{eq4} drages
 um den Fano-Faktor $F$ ergänzt werden muss.
 
 \begin{equation}
-    \sigma = \sqrt{F \frac{E_{gamma}}{E}}
+    \sigma = \sqrt{F \frac{E_{\gamma}}{E}}
     \label{eq4}
 \end{equation}
 

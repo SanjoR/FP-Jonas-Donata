@@ -1,9 +1,9 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 Im Folgenden werden die einzelnen Messreihen ausgewertet. Dazu zählt die Kalibration des Detektors, die Bestimmung der Vollenergienachweiswahrscheinlichkeit,
-die Untersuchung einer Cäsium-137 Probe und die Untersuchung von zwei unbekannten Proben.
+die Untersuchung einer \ce{^137Cs} Probe und die Untersuchung von zwei unbekannten Proben.
 \subsection{Kalibration des Detektors}
-Um den Detektor zu kalibrieren, wird eine Europium-152 Spektrum untersucht. Hierfür wird das Spektrum in Abhängigkeit des 
+Um den Detektor zu kalibrieren, wird eine \ce{^152Eu} Spektrum untersucht. Hierfür wird das Spektrum in Abhängigkeit des 
 Kanals geplottet und die Photonenpeaks werden herrausgesucht. Da zwischen den Kanälen des Detektor und der Energie 
 der gemessenen Photonen ein linearer Zusammenhang besteht, kann eine lineare Ausgleichskurve bestimmt werden.
 Das gemessene Spektrum ist in folgender Abbildung dargestellt.
@@ -11,7 +11,7 @@ Das gemessene Spektrum ist in folgender Abbildung dargestellt.
 \begin{figure}
   \centering
   \includegraphics[width = \textwidth,keepaspectratio]{figure/Peaks_01.pdf}
-  \caption{Spektrum des Europium-152 Strahlers für die Kalibration des Detektors}
+  \caption{Spektrum des \ce{^152Eu} Strahlers für die Kalibration des Detektors}
   \label{fig:Peaks_01}
 \end{figure}
 \FloatBarrier
@@ -64,7 +64,7 @@ Dadurch kann das Spektrum auch gegen die Energie aufgetragen werden.
 \subsection{Vollenergienachweiswahrscheinlichkeit}
 \label{cap:Vollenergienachweiswahrscheinlichkeit}
 
-Die Europium-152 Probe hatte am 01.10.2000 eine Aktivität von $\SI{4130(60)}{\becquerel}$. Mit einer 
+Die \ce{^152Eu} Probe hatte am 01.10.2000 eine Aktivität von $\SI{4130(60)}{\becquerel}$. Mit einer 
 Halbwertszeit von $T_{1/2} = \SI{13.52}{yr}$ kann über das Zerfallsgesetz die Aktivität 
 am Messtag bestimmt werden, diese liegt bei $\SI{1552(20)}{\becquerel}$.
 Um die Vollenergienachweiswahrscheinlichkeit $\eta(E)$ bestimmen zu können, wird folgende Formel benötigt.
@@ -146,18 +146,18 @@ Die Fitparameter für den Fit aus Abbildung \ref{fig:Vollenergienachweiswahrsche
   \includegraphics[width = \textwidth, keepaspectratio]{figure/Vollenergienachweiswahrscheinlichkeit.pdf}
 \end{figure}
 \FloatBarrier
-\subsection{Untersuchung der Cäsium-137 Probe}
+\subsection{Untersuchung der \ce{^137Cs} Probe}
 Das gemessene Spektrum ist in Abbildung \ref{fig:Cs137} dargestellt.
 \FloatBarrier
 \begin{figure}
   \centering
-  \caption{Spektrum der Cäsium-137 Probe, hierbei wird der Kanal direkt in eine Energie umgerechnet.}
+  \caption{Spektrum der \ce{^137Cs} Probe, hierbei wird der Kanal direkt in eine Energie umgerechnet.}
   \label{fig:Cs137}
   \includegraphics[width= \textwidth,keepaspectratio]{figure/02_peaks.pdf}
 \end{figure}
 \begin{figure}
 \centering
-\caption{Spektrum der Cäsium-137 Probe im Bereich des Comptonkontinuums, hierbei wird der Kanal direkt in eine Energie umgerechnet.}
+\caption{Spektrum der \ce{^137Cs} Probe im Bereich des Comptonkontinuums, hierbei wird der Kanal direkt in eine Energie umgerechnet.}
 \label{fig:Cs137_log}
 \includegraphics[width= \textwidth,keepaspectratio]{figure/02_peaks_Log.pdf}
 \end{figure}
@@ -231,7 +231,7 @@ Das Verhältnis der beiden Größen ist
 
 \subsection{Aktivitätsbestimmung}
 Bei diesem Versuchsteil wird zunächst, anhand der Gamma-Linien, das untersuchte Material bestimmt.
-Möglich sind Antimon-125 oder Barium-133.
+Möglich sind \ce{^125Sb} oder \ce{^133Ba}.
 Die verwendeten Gamma-Peaks der beiden potentiellen Proben sind in Tabelle \ref{tab:Ba_133Sb_125} aufgelistet.
 \FloatBarrier
 \begin{table}
@@ -240,7 +240,7 @@ Die verwendeten Gamma-Peaks der beiden potentiellen Proben sind in Tabelle \ref{
   \label{tab:Ba_133Sb_125}
   \begin{tabular}{c c c c c}
     \toprule
-    & \multicolumn{2}{c}{Antimon-125} & \multicolumn{2}{c}{Barium-133} \\
+    & \multicolumn{2}{c}{\ce{^125Sb}} & \multicolumn{2}{c}{\ce{^133Ba}} \\
     \cmidrule(lr){2-3}\cmidrule(lr){4-5}
     Peaknummer & E / \SI{}{\kilo\eV} & Intensität / \%& E / \SI{}{\kilo\eV} & Intensität / \%\\
     \midrule
@@ -262,7 +262,7 @@ Um die Probe zu identifizieren werden die Peaks im gemessenen Spektrum markiert,
 \begin{figure}
   \centering
   \includegraphics[width = \textwidth, keepaspectratio]{figure/03_peaks.pdf}
-  \caption{Aufgenommenes Spektrum mit den Literaturwerten der Gamma-Peaks, hierbei konnten alle Peaks von Barium-133 (außer die orange markierten) aus Tabelle \ref{tab:Ba_133Sb_125} identifiziert werden.}
+  \caption{Aufgenommenes Spektrum mit den Literaturwerten der Gamma-Peaks, hierbei konnten alle Peaks von \ce{^133Ba} (außer die orange markierten) aus Tabelle \ref{tab:Ba_133Sb_125} identifiziert werden.}
   \label{fig:03_peaks}
 \end{figure}
 \FloatBarrier
@@ -304,7 +304,7 @@ Diese sind in Tabelle \ref{tab:Akti_03} aufgelistet.
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Aktivität der Barium-133 Probe, bestimmt über die einzelnen Peaks und gemittelt.}
+  \caption{Aktivität der \ce{^133Ba} Probe, bestimmt über die einzelnen Peaks und gemittelt.}
   \label{tab:Akti_03}
   \begin{tabular}{c c}
     \toprule

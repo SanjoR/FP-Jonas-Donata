@@ -57,8 +57,8 @@ Kugelflächenfunktionen setzten sich aus zwei Teilen zusammen. Der eine ist von 
 abhängig und der andere von $\phi$:
 
 \begin{align}
-    \Theta_{lm}(\theta) = \sqrt{\frac{2l+1}{2}\cdot \frac{(l-m)!}{(l+m)!}} P_{lm}(cos(\theta)),\\
-    \Phi_{m}(\phi) = \frac{1}{\sqrt{2\pi}} exp(im\phi).
+    \Theta_{lm}(\theta) =& \sqrt{\frac{2l+1}{2}\cdot \frac{(l-m)!}{(l+m)!}} P_{lm}(cos(\theta)),\\
+    \Phi_{m}(\phi) =& \frac{1}{\sqrt{2\pi}} exp(im\phi).
 \end{align}
 
 Die Beschreibung der Druckverteilung innerhalb eines Kugelresonators wird durch die 
@@ -66,7 +66,7 @@ dreidimensionale Helmholtzgleichung \ref{helm} realisiert. In dieser Gleichung
 entspricht $p$ dem Druck, $\kappa$ der Kompressibilität des Gases und $\rho$ der Dichte.
 
 \begin{equation}
-    \frac{\dell^2 p(\vec{r},t)}{\dell t^2} = \frac{1}{\rho \kappa}  \Laplace p(\vec{r},t)
+    \frac{\partial^2 p(\vec{r},t)}{\partial t^2} = \frac{1}{\rho \kappa}  \Delta p(\vec{r},t)
     \label{helm}
 \end{equation}
 
@@ -92,7 +92,7 @@ es möglich, für bestimmte Wellenfunktionen Energieeigenwerte zu den
 entsprechenden Frequenzen zu finden. 
 
 \begin{equation}
-    i \hbar \fra{\del \phi(\vec{r},t)}{\dell t} = ( - \frac{\hbar^2}{2m} \Laplace + V) \phi(\vec{r},t)
+    i \hbar \frac{\partial \phi(\vec{r},t)}{\partial t} = ( - \frac{\hbar^2}{2m} \Delta + V) \phi(\vec{r},t)
     \label{schroed}
 \end{equation}
 
