@@ -33,6 +33,10 @@ error = np.sqrt(np.diag(covar_matrix))
 a= ufloat(params[0], error[0])
 b= ufloat(params[1], error[1])
 
+
+print("params")
+print("m",a)
+print("b",b)
 def Umrechner(x):
     return( (x-b)/a )
 
@@ -40,7 +44,12 @@ print(Umrechner(B_berech(2) *1000 ))
 I_plot = np.linspace(np.min(I),np.max(I), 100)
 
 plt.figure()
-plt.plot(I,B,"rx")
-plt.plot(I_plot, linear(I_plot,*params) , "b-")
+plt.plot(I,B,"rx",label="Messdaten")
+plt.plot(I_plot, linear(I_plot,*params) , "b-",label="Ausgleichsgrade")
+plt.xlabel("I / A")
+plt.ylabel("B / mT")
+plt.grid()
+plt.legend(loc="best")
+plt.savefig("../latex-template/figure/B_plot.pdf")
 plt.show()
 plt.close() 
