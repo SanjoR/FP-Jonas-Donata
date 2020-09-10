@@ -3,19 +3,20 @@
 Im Folgenden werden die einzelnen Messreihen ausgewertet. Dazu zählt die Kalibration des Detektors, die Bestimmung der Vollenergienachweiswahrscheinlichkeit,
 die Untersuchung einer \ce{^137Cs} Probe und die Untersuchung von zwei unbekannten Proben.
 \subsection{Kalibration des Detektors}
-Um den Detektor zu kalibrieren, wird eine \ce{^152Eu} Spektrum untersucht. Hierfür wird das Spektrum in Abhängigkeit des 
-Kanals geplottet und die Photonenpeaks werden herrausgesucht. Da zwischen den Kanälen des Detektor und der Energie 
-der gemessenen Photonen ein linearer Zusammenhang besteht, kann eine lineare Ausgleichskurve bestimmt werden.
+Um den Detektor zu kalibrieren, wird das Spektrum eines \ce{^152Eu}-Strahlers untersucht. Hierfür wird das Spektrum in Abhängigkeit des 
+Kanals geplottet und die Peaks der Gammaquanten werden bestimmt. Da zwischen den Kanälen des Detektor und der Energie 
+der gemessenen Gammaquanten ein linearer Zusammenhang besteht, kann eine lineare Ausgleichskurve bestimmt werden.
 Das gemessene Spektrum ist in folgender Abbildung dargestellt.
 \FloatBarrier
 \begin{figure}
   \centering
   \includegraphics[width = \textwidth,keepaspectratio]{figure/Peaks_01.pdf}
-  \caption{Spektrum des \ce{^152Eu} Strahlers für die Kalibration des Detektors}
+  \caption{Spektrum des \ce{^152Eu} Strahlers für die Kalibration des Detektors. Abgeschnitten bei Kanal 4000 von 8192, da 
+  in diesem Bereich der Untergrund dominiert.}
   \label{fig:Peaks_01}
 \end{figure}
 \FloatBarrier
-Um die Peaks eindeutig zu bestimmen helfen charakteristische nahe beieinander liegende Peaks.
+Um die Peaks eindeutig bestimmen zu können, helfen charakteristische nahe beieinander liegende Peaks.
 Die Literaturwerte der einzelnen Photonenenergien werden in Quelle \cite{Gamma_lit} dargestellt.
 Die identifizierten Peaks sind in Tabelle \ref{tab:peaks_01} aufgelistet.
 \FloatBarrier
@@ -57,7 +58,7 @@ angepasst.
 \FloatBarrier
 Die Fitparameter der Funktion aus \ref{fig:Lin_Fit:01} sind:
 \begin{equation*}
-  m = \SI{0.40312(9)}{\kilo\eV} \quad b = \SI{-2.7(1)}{\kilo\eV}
+  m = \SI{0.40312(9)}{\kilo\eV} \quad b = \SI{-2.72(18)}{\kilo\eV}
 \end{equation*}
 Dadurch kann das Spektrum auch gegen die Energie aufgetragen werden.
 
@@ -66,13 +67,13 @@ Dadurch kann das Spektrum auch gegen die Energie aufgetragen werden.
 
 Die \ce{^152Eu} Probe hatte am 01.10.2000 eine Aktivität von $\SI{4130(60)}{\becquerel}$. Mit einer 
 Halbwertszeit von $T_{1/2} = \SI{13.52}{yr}$ kann über das Zerfallsgesetz die Aktivität 
-am Messtag bestimmt werden, diese liegt bei $\SI{1552(20)}{\becquerel}$.
+am Messtag bestimmt werden, diese liegt bei $\SI{1552(23)}{\becquerel}$.
 Um die Vollenergienachweiswahrscheinlichkeit $\eta(E)$ bestimmen zu können, wird folgende Formel benötigt.
 \begin{equation}
   \label{eq:eta_N}
   N = tA_{\text{Messtag}}I\frac{\Omega}{4\pi}\eta(E)
 \end{equation}
-Hierbei ist $t=\SI{4109.4111}{\second}$ die Messzeit, $I$ die Intensität  des Peaks und $\Omega$ der vom Detektor abgedeckte
+Hierbei ist $t=\SI{4109}{\second}$ die Messzeit, $I$ die Intensität  des Peaks und $\Omega$ der vom Detektor abgedeckte
 Raumwinkel.
 Da die Probe als punktförmig angesehen werden kann, kann $\Omega$ mithilfe der Formel \eqref{eq:Omega} bestimmt werden.
 \begin{equation}
@@ -84,15 +85,17 @@ Mit der Winkelbeziehung
 \begin{equation*}
   \tan\left(\frac{\theta}{2}\right) = \frac{r}{d} \implies \frac{\theta}{2} = \arctan\left(\frac{r}{d}\right)
 \end{equation*}
-und den Werten $d = \SI{8}{\centi\meter}$ und $r = \SI{2.25}{\centi\meter}$ kann $\Omega$ bestimmt werden.
+und den Werten $d = \SI{8}{\centi\meter}+\SI{1.5}{\centi\meter}=\SI{9.5}{\centi\meter}$ und $r = \SI{2.25}{\centi\meter}$ kann $\Omega$ bestimmt werden.
+Der Abstand $d$ ergibt sich aus dem Abstand der Probe und der Schutzhaube und dem Abstand von Schutzhaube und Detektor.
 \begin{equation*}
-  \Omega = 2\pi \left(1-\cos\left(\frac{\theta}{2}\right)\right) = 2\pi\left(1- \frac{1}{\sqrt{\left(\frac{r}{d}\right)^2+1}}\right) \approx \num{0.23}
+  \Omega = 2\pi \left(1-\cos\left(\frac{\theta}{2}\right)\right) = 2\pi\left(1- \frac{1}{\sqrt{\left(\frac{r}{d}\right)^2+1}}\right) \approx \num{0.17}
 \end{equation*}
-Um den Linieninhalt $N$ zu bestimmen wird eine Gaußglocke \eqref{eq:Gauß} an die Daten angepasst.
+Um den Linieninhalt $N$ zu bestimmen, wird eine Gaußglocke \eqref{eq:Gauß} an die Daten angepasst.
 \begin{equation}
   \label{eq:Gauß}
   n(k)= A_0 \symup{e}^{-c(k-k_0)^2} + b
 \end{equation}
+Hierbei ist $k_0$ kein Fitparameter sondern der Kanal des zu fittenden Peaks.
 Die Fits sind in Abbildung \ref{fig:subplots_01} zu sehen.
 \FloatBarrier
 \begin{figure}
@@ -106,7 +109,7 @@ Die Fitparameter sind in Tabelle \ref{tab:fit_params} aufgelistet. Mit der Gleic
 \begin{equation*}
   N = A_0\sqrt{\frac{\pi}{c}}
 \end{equation*}
-kann der Linieninhalt bestimmt werden. Bei Peaknummer 3 ist der Fitparameter $c$ negativ und wird daher verworfen.
+kann der Linieninhalt bestimmt werden. Bei dem Peak der Nummer 3 ist der Fitparameter $c$ negativ und wird daher verworfen.
 \FloatBarrier
 \begin{table}
   \centering
@@ -116,10 +119,10 @@ kann der Linieninhalt bestimmt werden. Bei Peaknummer 3 ist der Fitparameter $c$
     \toprule
     Peaknummer&$A_0$&$c$&$b$&$N$\\
     \midrule
-    0   &$\num{3.45(7)e+03} $&$\num{0.277(14)}$ &$\num{105(10)}$&$\num{1.16(4)e+04}$\\
-    1   &$\num{530(10)}     $&$\num{0.235(13)}$ &$\num{45(3)}$&$\num{1.94(7)e+03}$\\  
+    0   &$\num{3.45(7)e+03} $&$\num{0.277(14)}$ &$\num{105(16)}$&$\num{1.16(4)e+04}$\\
+    1   &$\num{530(13)}     $&$\num{0.235(13)}$ &$\num{45(3)}$&$\num{1.94(7)e+03}$\\  
     2   &$\num{1121(30)}    $&$\num{0.175(11)}$ &$\num{24(7)}$&$\num{4.75(20)e+03}$\\
-    4   &$\num{95.0(3)}     $&$\num{0.153(12)}$ &$\num{16(1)}$&$\num{430(20)}$\\
+    4   &$\num{95(3)}     $&$\num{0.153(12)}$ &$\num{16(1)}$&$\num{430(22)}$\\
     5   &$\num{140(6)}      $&$\num{0.066(6)}$  &$\num{12(2)}$&$\num{9.7(6)e+02}$\\
     6   &$\num{39(4)}       $&$\num{0.047(11)}$ &$\num{11(1)}$&$\num{3.2(5)e+02}$\\
     7   &$\num{117(6)}      $&$\num{0.054(6)}$  &$\num{8(2)}$&$\num{8.9(7)e+02}$\\
@@ -130,18 +133,41 @@ kann der Linieninhalt bestimmt werden. Bei Peaknummer 3 ist der Fitparameter $c$
   \end{tabular}
 \end{table}
 \FloatBarrier
-Mit der Gleichung \eqref{eq:eta_N} können $\eta$-Werte bestimmt werden. An diese wird die Funktion 
+Mit der Gleichung \eqref{eq:eta_N} können die $\eta$-Werte bestimmt werden, diese sind in Tabelle \ref{tab:eta_Werte} aufgelistet.
+\FloatBarrier
+\begin{table}
+  \centering
+  \caption{$\eta$-Werte bestimmt aus den Daten der Tabelle \ref{tab:fit_params}.}
+  \label{tab:eta_Werte}
+  \begin{tabular}{c c}
+    \toprule
+    Peaknummer& $\eta$\\
+    \midrule
+    0   &$\num{0.476(7)}$\\
+    1   &$\num{0.299(4)}$\\
+    2   &$\num{0.2081(30)}$\\
+    4   &$\num{0.1601(23)}$\\
+    5   &$\num{0.0863(13)}$\\
+    6   &$\num{0.0865(13)}$\\
+    7   &$\num{0.0719(10)}$\\
+    8   &$\num{0.0728(11)}$\\
+    9   &$\num{0.0656(10)}$\\
+    10  &$\num{0.0472(7)}$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+An die Werte aus Tabelle \ref{tab:eta_Werte} und dazugehörigen Energien aus Tabelle \ref{tab:peaks_01}, wird die Funktion
 \begin{equation*}
-  \eta(E) = A\cdot E ^z
+  \eta(E) = A\cdot \left(\frac{E}{\SI{1}{\kilo\eV}}\right)^z
 \end{equation*}
 angepasst. 
 Die Fitparameter für den Fit aus Abbildung \ref{fig:Vollenergienachweiswahrscheinlichkeit} sind 
 \begin{equation*}
-  A = \num{0.22(4)} \quad z = \num{-0.86(3)}.
+  A = \num{80(9)} \quad z = \num{-1.02(2)}.
 \end{equation*}
 \begin{figure}
   \centering
-  \caption{Messwerte und Fitfunktion für die Bestimmung der Vollenergienachweiswahrscheinlichkeit.}
+  \caption{Messwerte und Fitfunktion für die Bestimmung der Vollenergienachweiswahrscheinlichkeit. Der schwarz markierte Messwert wird nicht für die Bestimmung der Fitfunktion verwendet.}
   \label{fig:Vollenergienachweiswahrscheinlichkeit}
   \includegraphics[width = \textwidth, keepaspectratio]{figure/Vollenergienachweiswahrscheinlichkeit.pdf}
 \end{figure}
@@ -151,7 +177,7 @@ Das gemessene Spektrum ist in Abbildung \ref{fig:Cs137} dargestellt.
 \FloatBarrier
 \begin{figure}
   \centering
-  \caption{Spektrum der \ce{^137Cs} Probe, hierbei wird der Kanal direkt in eine Energie umgerechnet.}
+  \caption{Spektrum der \ce{^137Cs} Probe, hierbei wird der Kanal direkt in eine Energie umgerechnet. Das Spektrum wird nur bis zur einer Energie von $\SI{1000}{\kilo\eV}$ angegeben, da bei höheren Energien der Untergrund dominiert.}
   \label{fig:Cs137}
   \includegraphics[width= \textwidth,keepaspectratio]{figure/02_peaks.pdf}
 \end{figure}
@@ -163,19 +189,44 @@ Das gemessene Spektrum ist in Abbildung \ref{fig:Cs137} dargestellt.
 \end{figure}
 
 \FloatBarrier
-Der Photonpeak liegt bei $E_{\gamma}\SI{661.6(2)}{\kilo\eV}$. Mit den Gleichungen aus \eqref{eq:Comp} kann 
+Der Photonpeak liegt bei $E_{\gamma}=\SI{661.6(2)}{\kilo\eV}$. Mit den Gleichungen aus \eqref{eq:Comp} kann 
 die Comptonkante und die Rückstreuenergie bestimmt werden.
 \begin{equation*}
   \epsilon = \frac{E_{\gamma}}{m_{\symup{e}}c^2}
 \end{equation*}
 \begin{align}
-  T_{\text{max}} &= E_{\gamma}\frac{2\epsilon}{1+2\epsilon} \quad &E_{\text{rückstreu}} =&{\gamma}\frac{1}{1+2\epsilon} \label{eq:Comp}\\
-  T_{\text{max}} &= \SI{477.3(2)}{\kilo\eV} \quad &E_{\text{rückstreu}} =& \SI{184.32(1)}{\kilo\eV}
+  T_{\text{max}_{\text{theo}}} &= E_{\gamma}\frac{2\epsilon}{1+2\epsilon} \quad &E_{\text{rückstreu}_{\text{theo}}} =&{\gamma}\frac{1}{1+2\epsilon} \label{eq:Comp}\\
+  T_{\text{max}_{\text{theo}}} &= \SI{477.3(2)}{\kilo\eV} \quad &E_{\text{rückstreu}_{\text{theo}}} =& \SI{184.32(1)}{\kilo\eV}\\
+  T_{\text{max}_{\text{exp}}} &= \SI{470(6)}{\kilo\eV} \quad & E_{\text{rückstreu}_{\text{exp}}} =& \SI{190(6)}{\kilo\eV}
 \end{align}
-Wie an Abbildung \ref{fig:Cs137_log} zu sehen ist, weichen die gemessenen Daten etwas von den theoretischen Werten ab, allerdings 
-kann kein exakter Wert bestimmt werden, da die beiden Werte verrauscht sind.
-Für die Bestimmung der Halbwertsbreite und der Zehntelwertsbreite, wird um den Photonenpeak eine Gaußglocke der Form 
-\eqref{eq:Gauß} gefittet.
+Die experimentell bestimmten Werte können aus Abbildung \ref{fig:Cs137_log} abgelesen und eine Unsicherheit 
+kann abgeschätzt werden.
+Um die Halbwertsbreite und die Zehntelwertsbreite zu bestimmen werden die Messwerte ermittelt, die am nächsten an der 
+Hälfte beziehungsweise an dem Zehntel des Maximalwertes liegen.
+\begin{align*}
+  \text{Treffer}_{\text{Suchwert}}&=824\\
+  \text{Treffer}_{\text{min:gefunden}} &= 764 \rightarrow E_{\text{min}} = \SI{660.41(23)}{\kilo\eV}\\
+  \text{Treffer}_\text{{max:gefunden}} &= 1000 \rightarrow E_{\text{max}} = \SI{662.43(23)}{\kilo\eV}\\
+  \Gamma_{1/2} &= \SI{2.0156(5)}{\kilo\eV}
+\end{align*}
+\begin{align*}
+  \text{Treffer}_{\text{Suchwert}}&=\num{164.8}\\
+  \text{Treffer}_{\text{min:gefunden}} &= 133 \rightarrow E_{\text{min}} = \SI{659.20(23)}{\kilo\eV}\\
+  \text{Treffer}_{\text{max:gefunden}} &=  \rightarrow E_{\text{max}} = \SI{663.64(23)}{\kilo\eV}\\
+  \Gamma_{1/10} &= \SI{4.4343(10)}{\kilo\eV}
+\end{align*}
+\begin{equation*}
+  \frac{\Gamma_{1/10}}{\Gamma_{1/2}}=\num{2.2}
+\end{equation*}
+Die Unsicherheit des Verhältnisses ist nicht vorhanden, da beide Unsicherheiten der Breiten in der selben Größenordnung sind 
+und durch die Division sich gegenseitig eliminieren. Dazu muss gesagt werden, dass die Unsicherheiten von $E_{\text{min}}$ und
+$E_{max}$ nur durch die lineare Ausgleichsgraden kommen, da aber schon die Treffer stark von dem gesuchten Wert abweichen müssten die 
+Unsicherheiten einiges größer sein.
+Bei einer Gaußglocke ist das Verhältnis von $\Gamma_{1/2}$ und $\Gamma_{1/10}$ 
+\begin{equation*}
+  \frac{\Gamma_{1/10}}{\Gamma_{1/2}}= \sqrt{\frac{\ln{10}}{\ln{2}}} \approx \num{1.82}.
+\end{equation*}
+Daher kann der Peak als Gaußglocke \eqref{eq:Gauß} approximiert werden. 
 Die Fitparameter aus der Abbildung \ref{fig:02_fit} sind 
 \begin{equation*}
   A_0 = \num{1618(30)}\quad c = \num{0.58(2)} \quad b = \num{8(9)}
@@ -183,7 +234,8 @@ Die Fitparameter aus der Abbildung \ref{fig:02_fit} sind
 \FloatBarrier
 \begin{figure}
   \centering
-  \caption{Messdaten um den Photonenpeak und Gaußglockenfit für die Bestimmung der Halb-, Zehntelwertsbreite und den Linieninhalt des Peaks}
+  \caption{Messdaten um den Peak des Gammaquants und Gaußglockenfit für die Bestimmung des Linieninhalt des Peaks. Zusätzlich sind die 
+  Linien für die Bestimmung der Halbwertsbreite und Zehntelwertsbreite mit den Messdaten und des Fits eingezeichnet.}
   \label{fig:02_fit}
   \includegraphics[width=\textwidth,keepaspectratio]{figure/02_peak_fit.pdf}
 \end{figure}
@@ -194,12 +246,7 @@ Die Differenzen der beiden Nullstellen sind die Breiten.
 \begin{equation*}
   \Gamma_{1/2} = \SI{2.17(6)}{\kilo\eV}\quad \Gamma_{1/10} = \SI{4.0(1)}{\kilo\eV}
 \end{equation*}
-Das Verhältnis der beiden Breiten ist $\num{1.85(2)}$. Das Verhältnis der beiden Breiten bei einer Gaußglocke wird 
-mit der Formel
-\begin{equation*}
-  \frac{\Gamma_{1/10}}{\Gamma_{1/2}}= \sqrt{\frac{\ln{10}}{\ln{2}}} \approx \num{1.82}
-\end{equation*}
-bestimmt.
+Das Verhältnis der beiden Breiten ist $\num{1.85(2)}$. 
 Mit der Fitkurve aus Abbildung \ref{fig:02_fit} kann der Linieninhalt bestimmt werden. Hierbei ist darauf zu achten, dass der Fit ein zweites Mal gemacht wird 
 und hierbei nicht die Energie sondern der Kanal verwendet wird. Damit lässt sich der Lineninhalt des Peaks auf $N=\num{9.3(2)e3}$ bestimmen.
 Um den Inhalt des Comptonkontinuums zu bestimmen wird eine Ausgleichskurve der Gleichung \ref{2.12} berechnet.
