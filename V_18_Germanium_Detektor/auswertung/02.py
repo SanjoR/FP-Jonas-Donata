@@ -9,6 +9,7 @@ from scipy.signal import find_peaks
 import pandas as pd
 from scipy.optimize import newton
 import sympy
+from scipy.integrate import quad
 
 A = np.genfromtxt("../Data/02.txt", unpack=True)
 
@@ -63,12 +64,13 @@ plt.plot(E_test,A_test,"g-")
 plt.plot(E_value[peaks],A[peaks], "rx",label = f"Photonpeak bei {np.around(E_value[peaks],1)[0]}$\pm${np.around(E_s[peaks], 1)[0]}  keV")
 plt.plot([T_max.n,T_max.n],[0,A.max()], "k--", alpha = 0.7 ,label = "Comptonkante")
 plt.plot([E_rückstreu.n,E_rückstreu.n],[0,A.max()], "g--", alpha = 0.7 ,label = "Rückstreupeak")
+plt.xlim(0,1000)
 plt.legend(loc="best")
 plt.xlabel("E / keV")
-plt.ylabel("Zählrate")
+plt.ylabel("Anzahl Treffer")
 plt.grid()
 plt.savefig("../latex-template/figure/02_peaks.pdf")
-plt.show()
+#plt.show()
 plt.close()
 
 plt.figure(figsize = (13,8))
@@ -81,10 +83,10 @@ plt.legend(loc="best")
 plt.xlim(100,550)
 plt.yscale("log")
 plt.xlabel("E / keV")
-plt.ylabel("Zählrate")
+plt.ylabel("Anzahl Treffer")
 plt.grid()
 plt.savefig("../latex-template/figure/02_peaks_Log.pdf")
-plt.show()
+#plt.show()
 plt.close()
 
 
@@ -135,6 +137,63 @@ def potenz_prozent(c):
     return(upotenz(c,*uparams) - b.max()/bruch)
 
 
+print("Halbwertsbreite gemessen")
+
+suchwert = A.max()/2
+
+
+
+index_min=abs(A[Kanal<Kanal[A==A.max()]]-suchwert).argmin()
+index_max=abs(A[Kanal>Kanal[A==A.max()]]-suchwert).argmin()
+
+T_2_gemessen = E[Kanal>Kanal[A==A.max()]][index_max]-E[Kanal<Kanal[A==A.max()]][index_min]
+
+print(suchwert)
+
+print(A[Kanal<Kanal[A==A.max()]][index_min])
+print(A[Kanal>Kanal[A==A.max()]][index_max])
+
+print(E[Kanal<Kanal[A==A.max()]][index_min])
+print(E[Kanal>Kanal[A==A.max()]][index_max])
+
+print(E[Kanal>Kanal[A==A.max()]][index_max]-E[Kanal<Kanal[A==A.max()]][index_min])
+
+
+test_2_A = [A[Kanal<Kanal[A==A.max()]][index_min],A[Kanal>Kanal[A==A.max()]][index_max]]
+test_2_E = [E_value[Kanal<Kanal[A==A.max()]][index_min],E_value[Kanal>Kanal[A==A.max()]][index_max]]
+test_2_E_f = [E[Kanal<Kanal[A==A.max()]][index_min],E[Kanal>Kanal[A==A.max()]][index_max]]
+print(test_2_E)
+print(test_2_E_f)
+print("zehtelwertsbreite gemessen")
+
+suchwert = A.max()/10
+
+
+
+index_min_10=abs(A[Kanal<Kanal[A==A.max()]]-suchwert).argmin()
+index_max_10=abs(A[Kanal>Kanal[A==A.max()]]-suchwert).argmin()
+
+T_10_gemessen = E[Kanal>Kanal[A==A.max()]][index_max_10]-E[Kanal<Kanal[A==A.max()]][index_min_10]
+
+print(suchwert)
+print(A[Kanal<Kanal[A==A.max()]][index_min_10])
+print(A[Kanal>Kanal[A==A.max()]][index_max_10])
+
+print(E[Kanal<Kanal[A==A.max()]][index_min_10])
+print(E[Kanal>Kanal[A==A.max()]][index_max_10])
+
+print(E[Kanal>Kanal[A==A.max()]][index_max_10]-E[Kanal<Kanal[A==A.max()]][index_min_10])
+
+test_10_A = [A[Kanal<Kanal[A==A.max()]][index_min_10],A[Kanal>Kanal[A==A.max()]][index_max_10]]
+test_10_E = [E_value[Kanal<Kanal[A==A.max()]][index_min_10],E_value[Kanal>Kanal[A==A.max()]][index_max_10]]
+test_10_E_f = [E[Kanal<Kanal[A==A.max()]][index_min_10],E[Kanal>Kanal[A==A.max()]][index_max_10]]
+print(test_10_E)
+print(test_10_E_f)
+
+print()
+print("Verhältnis gemessen")
+print(T_10_gemessen/T_2_gemessen)
+
 T_2 = np.array([newton(potenz_prozent,660), newton(potenz_prozent,662)])
 print()
 print("Halbwertsbreite")
@@ -156,15 +215,17 @@ T_10_plot = np.array([T_10[0].n,T_10[1].n])
 a_plot = np.linspace(a.min(),a.max(),1000)
 plt.figure(figsize=(13,8))
 plt.plot(a,b,"rx",label = "Messwerte")
+plt.plot(test_10_E,test_10_A,label="Zehntelwertsbreite gemessen")
+plt.plot(test_2_E,test_2_A,label="Halbwertsbreite gemessen")
 plt.plot(T_2_plot, potenz(T_2_plot,*params),"k--", alpha=0.7,label="Halbwertsbreite")
 plt.plot(T_10_plot, potenz(T_10_plot,*params),"k--", alpha=0.7,label="Zehntelwertsbreite")
 plt.plot(a_plot,potenz(a_plot,*params),"b-",label="Fit")
 plt.xlabel("E / keV")
-plt.ylabel("Zählrate")
+plt.ylabel("Anzahl Treffer")
 plt.legend(loc="best")
 plt.grid()
 plt.savefig("../latex-template/figure/02_peak_fit.pdf")
-#plt.show()
+plt.show()
 plt.close()
 
 b=ufloat(-2.72,0.18)
@@ -199,17 +260,42 @@ def Compton_diff(T,B):
 
 
 params_Comp, cov_matrix_Comp = curve_fit(Compton_diff,Kanal_Comp_Spek,A_Comp_Spek)
-B_param = ufloat(params[0], np.sqrt(np.diag(cov_matrix_Comp))[0])
+B_param = ufloat(params_Comp[0], np.sqrt(np.diag(cov_matrix_Comp))[0])
 
 K_test = np.linspace(Kanal_Comp_Spek.min(),Kanal_Comp_Spek.max(),1000)
 
 
 print("B_param ", B_param)
 
+def Compton_diff_B(T):
+    return(B_param.n*( 2 + ((T/Kanal_Gamma)**2 /(epsilon.n**2 *(1 - T/Kanal_Gamma)**2 )) + (T/Kanal_Gamma) * (T/Kanal_Gamma - 2/epsilon.n) / (1-T/Kanal_Gamma)   ))
+
+print(quad(Compton_diff_B,0,Kanal_Comp_Spek.max()))
+
 N_Comp =np.sum(Compton_diff(Kanal_Comp_Spek, B_param))
 print("N",N)
 print("N_Comp ",N_Comp)
 print("N_Comp/N ",N_Comp/N)
+
+test_plot = np.linspace(Kanal_Comp_Spek.min(),Kanal_Comp_Spek.max(),1000)
+
+plt.figure(figsize = (13,8))
+plt.plot(Kanal,A,"b-",label = r"$Cs^{137}$ Spektrum")
+#plt.plot(E_test,A_test,"g-")
+#plt.plot(E_value[peaks],A[peaks], "rx",label = f"Photonpeak bei {np.around(E_value[peaks],1)[0]}$\pm${np.around(E_s[peaks], 1)[0]}  keV")
+#plt.plot([T_max.n,T_max.n],[0,A.max()], "k--", alpha = 0.7 ,label = "Comptonkante")
+#plt.plot([E_rückstreu.n,E_rückstreu.n],[0,A.max()], "g--", alpha = 0.7 ,label = "Rückstreupeak")
+plt.plot(test_plot,Compton_diff_B(test_plot))
+plt.legend(loc="best")
+plt.xlim(Kanal_Comp_Spek.min(),Kanal_Comp_Spek.max())
+plt.yscale("log")
+plt.xlabel("E / keV")
+plt.ylabel("Anzahl Treffer")
+plt.grid()
+#plt.savefig("../latex-template/figure/02_peaks_Log.pdf")
+#plt.show()
+plt.close()
+
 
 
 sig_Th = 0.665 #b

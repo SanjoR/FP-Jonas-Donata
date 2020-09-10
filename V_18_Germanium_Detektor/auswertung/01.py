@@ -12,8 +12,10 @@ start_time = time()
 A = np.genfromtxt("../Data/01.txt", unpack=True)
 P,I,K_plot= np.genfromtxt("../Data/01_peaks.txt", unpack=True)
 
-Kanal = np.arange(0,len(A))
+I*=1/100
 
+Kanal = np.arange(0,len(A))
+print(Kanal.max())
 
 def linear(x,m,b):
     return(m*x +b)
@@ -43,11 +45,12 @@ plt.figure(figsize=(13,5))
 plt.plot(Kanal,A,label= "Messdaten")
 plt.plot(K_plot,A_plot, "rx",label="Peaks")
 plt.grid()
+plt.xlim(0,4000)
 plt.xlabel("Kanal")
-plt.ylabel("Zählrate")
+plt.ylabel("Anzahl Treffer")
 plt.legend(loc = "best")
 plt.savefig("../latex-template/figure/Peaks_01.pdf")
-#plt.show()
+plt.show()
 plt.close()
 
 plt.figure(figsize=(13,5))
@@ -81,9 +84,9 @@ T = 19 + (1/12)
 print("Aktivität am Messtag")
 print(Akti(T))
 print()
-t = 4109.4111 #/(60*60*24*365)
+t = 4109 #/(60*60*24*365)
 r = 22.5 
-d = 80
+d = 95
 Omega = 2*np.pi*(1-np.sqrt(1/((r/d)**2 +1 )))
 print("Omega")
 print(Omega)
@@ -136,7 +139,7 @@ for i in range(len(K_plot)):
 axs[3,1].set_visible(False)
 axs[3,2].set_visible(False)
 for ax in axs.flat:
-    ax.set(xlabel='Kanal', ylabel='Zählrate')
+    ax.set(xlabel='Kanal', ylabel='Anzahl Treffer')
 
 plt.savefig("../latex-template/figure/Subplot_01.pdf")
 plt.show()
@@ -196,9 +199,12 @@ for i in range(len(eta)) :
 def eta_fit(e,Amp,z):
     return(Amp*e**z)
 
-params_2,cov_matrix_2 = curve_fit(eta_fit,E_n,eta_n)
 
-print("params")
+
+
+params_2,cov_matrix_2 = curve_fit(eta_fit,E_n[1:],eta_n[1:])
+
+print("params eta")
 for i in range(2):
     print(params_2[i], np.sqrt(np.diag(cov_matrix_2))[i] )
 
@@ -211,7 +217,8 @@ E_plot = np.linspace(E_n.min(),E_n.max(),1000)
 
 plt.figure()
 plt.plot(E_plot,eta_fit(E_plot,*params_2),"b-",label = "Fit")
-plt.errorbar( E_n, eta_n , xerr=E_s,yerr=eta_s,  fmt="rx", label ="Messwerte")
+plt.errorbar( E_n[1:], eta_n[1:] , xerr=E_s[1:],yerr=eta_s[1:],  fmt="rx", label ="Messwerte")
+plt.errorbar( E_n[:1], eta_n[:1] , xerr=E_s[:1],yerr=eta_s[:1],  fmt="kx")
 plt.xlabel("E / keV")
 plt.grid()
 plt.ylabel(r"Vollenergienachweiswahrscheinlichkeit $\eta$")

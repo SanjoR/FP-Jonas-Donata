@@ -17,6 +17,10 @@ E_Ba_133, I_Ba_133 = np.genfromtxt("../Data/Ba_133.txt", unpack = True)
 
 
 
+I_Ba_133 *= 1/100
+
+
+
 
 
 Kanal = np.arange(0,len(A))
@@ -51,7 +55,7 @@ for i in range(len(E_Ba_133)):
         plt.plot([E_Ba_133[i],E_Ba_133[i]],[0,A.max()], "r--" )
 plt.legend(loc="best")
 plt.xlabel("E / keV")
-plt.ylabel("Zählrate")
+plt.ylabel("Anzahl Treffer")
 plt.grid()
 plt.savefig("../latex-template/figure/03_peaks.pdf")
 plt.show()
@@ -67,8 +71,8 @@ print()
 
 
 
-Amp_eta= ufloat(0.22290932272721348, 0.04012126575134311)
-z_eta= ufloat(-0.8633735220461703, 0.03372217903685505)
+Amp_eta= ufloat(80.1762193917669,9.673022872821827)
+z_eta= ufloat(-1.017561375907761,0.02042884054132594)
 def eta_fit(e):  #Vollenergienachweißwahrscheinlichkeit
     return(Amp_eta*e**z_eta)
 
@@ -115,6 +119,8 @@ for i in range(len(K_plot)):
         m = 0 
         n+=1
 #axs[1,2].set_visible(False)
+for ax in axs.flat:
+    ax.set(xlabel='Kanal', ylabel='Anzahl Treffer')
 plt.savefig("../latex-template/figure/03_subplot.pdf")
 plt.show()
 plt.close()
@@ -122,10 +128,16 @@ plt.close()
 uparams_array = unp.uarray(params_array, error_array)
 
 
+print()
+
+
 print("Amp fit")
 for i in uparams_array[:,0]:
     print(i)
 print()
+
+
+
 print("k fit")
 for i in uparams_array[:,1]:
     print(i)
@@ -135,15 +147,25 @@ for i in uparams_array[:,2]:
     print(i)
 print()
 
+
+
+
 uparams_array = np.delete(uparams_array,1,0)
 
-N_err = uparams_array[:,0]*(np.pi/uparams_array[:,1])
+
+
+
+N_err = uparams_array[:,0]*unp.sqrt((np.pi/uparams_array[:,1]))
 
 print("N")
 for i in N_err:
     print(i)
 
 E_Ba_133, I_Ba_133 = zip(*sorted(zip(E_Ba_133,I_Ba_133)))
+print()
+for i in K_plot:
+    print(i)
+    print(linear_value(i))
 print()
 print("E_lit")
 for i in E_Ba_133:
@@ -153,8 +175,8 @@ print("I_lit")
 for i in I_Ba_133:
     print(i)
 
-Omega = 0.23467106406199312
-t = 3770.3771
+Omega = 0.16914154211627208
+t = 3770
 
 for i in range(len(peaks)):
     if i == 0:
@@ -164,6 +186,7 @@ for i in range(len(peaks)):
 
 
 print()
+print("Aktivität")
 for i in Akti:
     print(i)
 

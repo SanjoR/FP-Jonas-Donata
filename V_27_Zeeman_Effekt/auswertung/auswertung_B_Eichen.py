@@ -20,7 +20,7 @@ def B_berech(n):
     X = const.hbar * 2 *np.pi * const.c
     return((X *del_Lam) / (lam **2 * del_m *  9.274 *10 **-24 * 4 ))
 
-print(B_berech(2))
+print(B_berech(1))
 
 def linear(x,a,b):
     return(a*x +b)
@@ -32,7 +32,9 @@ error = np.sqrt(np.diag(covar_matrix))
 
 a= ufloat(params[0], error[0])
 b= ufloat(params[1], error[1])
-
+print("B")
+print(a*5.02 +b)
+print(a*3.96 +b)
 
 print("params")
 print("m",a)
