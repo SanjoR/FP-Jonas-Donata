@@ -92,7 +92,7 @@ def potenz(c,Amp, k,b):
     return(Amp*np.exp(-k*(c-c_0)**2) +b)
 
 K_plot = Kanal[peaks]
-Peaknummer = np.array([0,1,2,3,4,7])
+Peaknummer = np.array([2,3,5,6,7,8])
 N = []
 K_plot_2 = []
 fig,axs = plt.subplots(2,3,figsize = (16,13))

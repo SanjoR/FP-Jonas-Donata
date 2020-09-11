@@ -17,7 +17,7 @@ Das gemessene Spektrum ist in folgender Abbildung dargestellt.
 \end{figure}
 \FloatBarrier
 Um die Peaks eindeutig bestimmen zu können, helfen charakteristische nahe beieinander liegende Peaks.
-Die Literaturwerte der einzelnen Photonenenergien werden in Quelle \cite{Gamma_lit} dargestellt.
+Die Literaturwerte der einzelnen Energien der Gammaquanten werden in Quelle \cite{Gamma_lit} dargestellt.
 Die identifizierten Peaks sind in Tabelle \ref{tab:peaks_01} aufgelistet.
 \FloatBarrier
 \begin{table}
@@ -58,7 +58,7 @@ angepasst.
 \FloatBarrier
 Die Fitparameter der Funktion aus \ref{fig:Lin_Fit:01} sind:
 \begin{equation*}
-  m = \SI{0.40312(9)}{\kilo\eV} \quad b = \SI{-2.72(18)}{\kilo\eV}
+  m = \SI{0.40312(9)}{\kilo\eV\per Kanal} \quad b = \SI{-2.72(18)}{\kilo\eV}
 \end{equation*}
 Dadurch kann das Spektrum auch gegen die Energie aufgetragen werden.
 
@@ -189,7 +189,7 @@ Das gemessene Spektrum ist in Abbildung \ref{fig:Cs137} dargestellt.
 \end{figure}
 
 \FloatBarrier
-Der Photonpeak liegt bei $E_{\gamma}=\SI{661.6(2)}{\kilo\eV}$. Mit den Gleichungen aus \eqref{eq:Comp} kann 
+Der Peak des Gammaquants liegt bei $E_{\gamma}=\SI{661.6(2)}{\kilo\eV}$. Mit den Gleichungen aus \eqref{eq:Comp} kann 
 die Comptonkante und die Rückstreuenergie bestimmt werden.
 \begin{equation*}
   \epsilon = \frac{E_{\gamma}}{m_{\symup{e}}c^2}
@@ -212,7 +212,7 @@ Hälfte beziehungsweise an dem Zehntel des Maximalwertes liegen.
 \begin{align*}
   \text{Treffer}_{\text{Suchwert}}&=\num{164.8}\\
   \text{Treffer}_{\text{min:gefunden}} &= 133 \rightarrow E_{\text{min}} = \SI{659.20(23)}{\kilo\eV}\\
-  \text{Treffer}_{\text{max:gefunden}} &=  \rightarrow E_{\text{max}} = \SI{663.64(23)}{\kilo\eV}\\
+  \text{Treffer}_{\text{max:gefunden}} &= 90  \rightarrow E_{\text{max}} = \SI{663.64(23)}{\kilo\eV}\\
   \Gamma_{1/10} &= \SI{4.4343(10)}{\kilo\eV}
 \end{align*}
 \begin{equation*}
@@ -220,7 +220,7 @@ Hälfte beziehungsweise an dem Zehntel des Maximalwertes liegen.
 \end{equation*}
 Die Unsicherheit des Verhältnisses ist nicht vorhanden, da beide Unsicherheiten der Breiten in der selben Größenordnung sind 
 und durch die Division sich gegenseitig eliminieren. Dazu muss gesagt werden, dass die Unsicherheiten von $E_{\text{min}}$ und
-$E_{max}$ nur durch die lineare Ausgleichsgraden kommen, da aber schon die Treffer stark von dem gesuchten Wert abweichen müssten die 
+$E_{\text{max}}$ nur durch die lineare Ausgleichsgraden kommen, da aber schon die Treffer stark von dem gesuchten Wert abweichen müssten die 
 Unsicherheiten einiges größer sein.
 Bei einer Gaußglocke ist das Verhältnis von $\Gamma_{1/2}$ und $\Gamma_{1/10}$ 
 \begin{equation*}
@@ -248,12 +248,13 @@ Die Differenzen der beiden Nullstellen sind die Breiten.
 \end{equation*}
 Das Verhältnis der beiden Breiten ist $\num{1.85(2)}$. 
 Mit der Fitkurve aus Abbildung \ref{fig:02_fit} kann der Linieninhalt bestimmt werden. Hierbei ist darauf zu achten, dass der Fit ein zweites Mal gemacht wird 
-und hierbei nicht die Energie sondern der Kanal verwendet wird. Damit lässt sich der Lineninhalt des Peaks auf $N=\num{9.3(2)e3}$ bestimmen.
+und hierbei nicht die Energie sondern der Kanal verwendet wird. Damit lässt sich der Lineninhalt des Peaks auf $N=\num{9.33(28)e3}$ bestimmen.
 Um den Inhalt des Comptonkontinuums zu bestimmen wird eine Ausgleichskurve der Gleichung \ref{2.12} berechnet.
 Hierbei wird nur der Ausdruck vor der Klammer an den grün markierten Bereich aus \ref{fig:Cs137} angepasst.
-Der bestimmte Parameter lautet $B=\num{1617.8(3)}$. Um den Inhalt der Funktion \ref{2.12} zu erhalten,
-werden alle Werte bis zur Comptonkante aufaddiert. Der Inhalt ist damit $N_{\text{Comp}} = \num{2.2495(5)e6}$.
-Mit der Photonenenergien $E_{\gamma}\SI{661.6(2)}{\kilo\eV}$ und der Hilfe der Gleichungen \eqref{eq1} und 
+Der bestimmte Parameter lautet $B=\SI{20.5(4)}{\barn\per Kanal}$. Um den Inhalt der Funktion \ref{2.12} zu erhalten,
+wird diese,  mit der Bibliothek scipy \cite{scipy}, integriert. Der Inhalt ist damit $N_{\text{Comp}} = \num{2.85(5)e4}$.
+Das Verhältnis der beiden Inhalte ist $N_{\text{Comp}}/N=\num{3.05(10)}$.
+Mit der Energie des Gammaquants $E_{\gamma}=\SI{661.6(2)}{\kilo\eV}$ und der Hilfe der Gleichungen \eqref{eq1} und 
 \eqref{eq2} kann der Wirkungsquerschnitt des Compoton-Effekts und des Photoeffekts bestimmt werden.
 Diese liegen bei 
 \begin{equation*}
@@ -291,15 +292,15 @@ Die verwendeten Gamma-Peaks der beiden potentiellen Proben sind in Tabelle \ref{
     \cmidrule(lr){2-3}\cmidrule(lr){4-5}
     Peaknummer & E / \SI{}{\kilo\eV} & Intensität / \%& E / \SI{}{\kilo\eV} & Intensität / \%\\
     \midrule
-    0&$\num{427.874}$&$\num{29.55}$&$\num{356.0129}$&$\num{62.05}$\\
-    1&$\num{600.597}$&$\num{17.76}$&$\num{80.9979}$&$\num{33.31}$\\
-    2&$\num{635.950}$&$\num{11.32}$&$\num{302.8508}$&$\num{18.31}$\\
-    3&$\num{463.365}$&$\num{10.48}$&$\num{383.8485}$&$\num{8.94}$\\
-    4&$\num{176.314}$&$\num{6.82}$ &$\num{276.3989}$&$\num{7.13}$\\
-    5&$\num{35.489}$&$\num{5.79}$  &\textcolor{orange}{$\num{79.6142}$}&\textcolor{orange}{$\num{2.63}$}\\
-    6&$\num{606.713}$&$\num{5.02}$ &\textcolor{orange}{$\num{53.1622}$}&\textcolor{orange}{$\num{2.14}$}\\
-    7&$\num{671.441}$&$\num{1.783}$&$\num{160.6121}$&$\num{0.638}$\\
-    8&$\num{380.452}$&$\num{1.520}$&\textcolor{orange}{$\num{223.2368}$}&\textcolor{orange}{$\num{0.450}$}\\
+    0&$\num{35.489}$&$\num{5.79}$&\textcolor{orange}{$\num{53.1622}$}  &\textcolor{orange}{$\num{2.14}$}\\
+    1&$\num{176.314}$&$\num{6.82}$&\textcolor{orange}{$\num{79.6142}$}  &\textcolor{orange}{$\num{2.63}$}\\
+    2&$\num{380.452}$&$\num{1.52}$&$\num{80.9979}$  &$\num{33.31}$\\
+    3&$\num{427.874}$&$\num{29.55}$&$\num{160.6121}$ &$\num{0.638}$\\
+    4&$\num{463.365}$&$\num{10.48}$ &\textcolor{orange}{$\num{223.2368}$} &\textcolor{orange}{$\num{0.45}$}\\
+    5&$\num{600.597}$&$\num{17.76}$  &$\num{276.3989}$ &$\num{7.13}$\\
+    6&$\num{606.713}$&$\num{5.02}$ &$\num{302.8508}$ &$\num{18.31}$\\
+    7&$\num{635.95}$&$\num{11.32}$&$\num{356.0129}$ &$\num{62.05}$\\
+    8&$\num{671.441}$&$\num{1.783}$&$\num{383.8485}$ &$\num{8.94}$\\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -313,7 +314,7 @@ Um die Probe zu identifizieren werden die Peaks im gemessenen Spektrum markiert,
   \label{fig:03_peaks}
 \end{figure}
 \FloatBarrier
-Um die Aktivität zu bestimmen, wird die Gleichung \eqref{eq:eta_N} verwendet. Hierbei ist die Messzeit $t=\SI{3770.3771}{\second}$, 
+Um die Aktivität zu bestimmen, wird die Gleichung \eqref{eq:eta_N} verwendet. Hierbei ist die Messzeit $t=\SI{3770}{\second}$, 
 $\Omega$ ist wie in vorherigen Teilen bestimmt worden und die Intensitäten werden aus Tabelle \ref{tab:Ba_133Sb_125} abgelesen.
 Die Funktion für die Vollenergienachweiswahrscheinlichkeit wurde bereits in Kapitel \ref{cap:Vollenergienachweiswahrscheinlichkeit}
 bestimmt.
@@ -328,12 +329,12 @@ Die Fits für die Bestimmung des Linieninhalts, sowie die Linieninhalte selbst, 
     \toprule
     Peaknummer&$A_0$&$c$&$b$&$N$\\
     \midrule
-    0&$\num{2.32(10)e+03}$&$\num{0.311(31)}$   &$\num{102(20)}$&$\num{2.34(26)e+04}$\\
-    1&$\num{0(3)e+08}$   &$\num{-0.0000(29)}$&$\num{0(3)e+08}$&$---$\\
-    2&$\num{286(15)}$     &$\num{0.226(27)}$  &$\num{21(3)}$&$\num{4.0(5)e+03}$\\
-    3&$\num{682(10)}$     &$\num{0.218(8)}$   &$\num{17(2)}$&$\num{9.8(4)e+03}$\\
-    4&$\num{1769(9)}$     &$\num{0.1834(22)}$ &$\num{9.7(21)}$&$\num{3.03(4)e+04}$\\
-    7&$\num{230(5)}$      &$\num{0.186(9)}$   &$\num{6.3(12)}$&$\num{3.90(21)e+03}$\\
+    2&$\num{2.32(10)e+03}$&$\num{0.311(31)}$   &$\num{102(20)}$&$\num{7.4(5)e+3}$\\
+    3&$\num{0.0(34)e+08}$   &$\num{-0.0000(29)}$&$\num{0(34)e+08}$&$---$\\
+    5&$\num{286(15)}$     &$\num{0.226(27)}$  &$\num{21.1(33)}$&$\num{1.07(8)e+3}$\\
+    6&$\num{682(10)}$     &$\num{0.218(8)}$   &$\num{16.8(24)}$&$\num{2.59(6)e+3}$\\
+    7&$\num{1769(9)}$     &$\num{0.1834(22)}$ &$\num{9.7(21)}$&$\num{7.32(6)e+3}$\\
+    8&$\num{230(5)}$      &$\num{0.186(9)}$   &$\num{6.3(12)}$&$\num{948(31)}$\\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -357,13 +358,13 @@ Diese sind in Tabelle \ref{tab:Akti_03} aufgelistet.
     \toprule
     Peaknummer & Aktivität / $\SI{}{\becquerel}$\\
     \midrule
-    0&$\num{6.3(15)e+02}$\\
-    2&$\num{1.22(32)e+03}$\\
-    3&$\num{1.25(33)e+03}$\\
-    4&$\num{1.20(32)e+03}$\\
-    7&$\num{1.15(31)e+03}$\\
+    2&$\num{4.8(7)e+2}$\\
+    5&$\num{1.12(19)e+3}$\\
+    6&$\num{1.16(20)e+3}$\\
+    7&$\num{1.14(19)e+3}$\\
+    8&$\num{1.11(19)e+3}$\\
     \midrule
-    mittel& $\num{1.09(28)e+03}$\\
+    mittel& $\num{1.99(17)e+03}$\\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -411,8 +412,8 @@ aufgelistet.
 \end{figure}
 \FloatBarrier
 Die Isotope aus Tabelle \ref{tab:ident_Peaks} gehören alle zu der natürlichen Zerfallsreihe des Uran Isotop Uran-238, 
-außer der Peak von Uran-235 bei einer Energie von $\SI{185.94(18)}{\kilo\eV}$. Dieser Peak kann allerdings einem anderen 
-Isotop zugeordnet werden Radium-226, welches zu dem Zerfalls von Uran-238 gehört.
+außer der Peak von Uran-235 bei einer Energie von $\SI{185.94(18)}{\kilo\eV}$.
+Dieser Peak kann allerdings Radium-226 zugeordnet werden, welches ebenfalls zur Zerfallsreihe von Uran-238 gehört.
 
 
 
