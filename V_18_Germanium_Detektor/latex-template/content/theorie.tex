@@ -13,20 +13,19 @@ Im Gegensatz zu Alpha- und Betastrahlung ist Gammastrahlung elektrisch neutral.
 Deshalb ist ihre Wechselwirkung mit Materie verhältnismäßig gering und sie 
 kann tiefer als geladene Strahlung in feste Substanzen eindringen.
 Es handelt sich um hochenergetische elektromagnetische Strahlung.
-Gammastrahlung wird vorallem beim Zerfall von Atomkernen radioaktiver Nuklide frei, 
+Gammastrahlung wird vor allem beim Zerfall von Atomkernen radioaktiver Nuklide frei, 
 wenn angeregte Atomkerne nach bspw. einem Alpha- oder Betazerfall wieder in ihren 
 Grundzustand zurückkehren.
 Daher ist das Gammaspektrum ein diskretes Linienspektrum, das für jede Substanz 
 spezifisch ist. Deshalb kann mit der Gammaspektroskopie eine unbekannte Substanz über 
-ihr Linienspektrum ezugeordnet werden.
-Die Intensität von geladener Strahlung hängt exponentiell von der 
-Eindringtiefe ab. Bei Gammastrahlung ist die Halbwertsdicke hingegen 
-von der Wellenlänge und der Ordnungszahl des Materials abhängig.
-Die Anzahl $N(l)$ der Teilchen, die nach der Materialtiefe $l$ noch nicht mit dem 
-Gammastrahl wechselgewirkt haben, ist gegeben durch:
+ihr Linienspektrum zugeordnet werden.
+Die Intensität von Strahlung wird allgemein als exponentiell von der 
+Eindringtiefe abhängig bezeichnet. 
+Die Anzahl $N(l)$ der Gammaquanten, die nach der Materialtiefe $l$ noch nicht mit dem 
+Material wechselgewirkt haben, ist gegeben durch:
 
 \begin{equation}
-    N(l) = N_0 e^{-l\mu}.
+    N(l) = N_0 \symup{e}^{-l\mu}.
     \label{2.1}
 \end{equation}
 
@@ -40,11 +39,11 @@ In Gleichung \ref{2.1} gilt $N_0 = N(0)$ und $\mu$ entspricht dem Extinktionskoe
 In Gleichung \ref{2.3} beschreibt $n$ die Teilchendichte, die ungefähr der 
 Dichte $\rho$, dividiert durch das Produkt aus dem Gewicht eines Nukleons $u$
 und der atomaren Massenzahl $A$  entspricht.
-In diesem Zusammenhang, ergibt sich schließlich die 
+In diesem Zusammenhang ergibt sich schließlich die 
 Wechselwirkungswahrscheinlichkeit:
 
 \begin{equation}
-    P(l) = 1 - e^{-l\mu}.
+    P(l) = 1 - \symup{e}^{-l\mu}.
     \label{2.2}
 \end{equation}
 
@@ -59,7 +58,7 @@ Unter dem Photoeffekt werden drei verschiedene Mechanismen zusammengefasst.
 In diesem Fall ist der äußere Photoeffekt von Relevanz.
 Beim äußeren Photoeffekt werden Elektronen aus einer Halbleiter- oder Metalloberfläche 
 durch Strahleneinwirkung herausgelöst. 
-Er dominiert bei Energien bis zu $\SI{1}{\mega\eV}$
+Er dominiert bei Energien bis zu $\SI{1}{\mega\eV}$.
 Die einfallende Gammastrahlung muss dafür eine Energie aufweisen, die größer als die 
 Bindungsenergie des Elektrons ist. Wenn das Gammaquant auf das Elektron trifft, wird es 
 annihiliert, während das Elektron frei wird. Der zugehörige 
@@ -70,7 +69,7 @@ Wirkungsquerschnitt des Photoeffekts ist in Gleichung \ref{eq1} beschrieben.
     \label{eq1}
 \end{equation}
 
-In Gleichung \ref{eq1} entspricht $\epsilon$ der Energie des Photons, $\sigma_{Th}$
+In Gleichung \ref{eq1} entspricht $\epsilon$ der Energie des Photons, $\sigma_{\symup{Th}}$
 ist der Wirkungsquerschnitt der Thompson-Streuung, $\alpha$ ist die 
 Sommerfeld´sche Feinstrukturkonstante und $\gamma$ entspricht dem relativistischen 
 Gamma-Faktor des Elektrons, nachdem es mit dem Photon wechselgewirkt hat.
@@ -98,7 +97,7 @@ Formel über den Raumwinkel integriert wird.
 \end{equation}
 
 Für ein Atom ist der Compton-Wirkungsquerschnitt entsprechent proportional zur 
-Ordnungszahl $Z$, wie es in Gleichung \ref{eq3} dargestellt ist.
+Ordnungszahl $Z$, wie es in Gleichung \eqref{eq3} dargestellt ist.
 
 \begin{equation}
     \sigma^A_{\text{com}} = Z \sigma_{\text{com}}
@@ -117,7 +116,7 @@ Energie $T$ ausgedrückt werden:
 Allgemein wird unter Paarbildung ein teilchenphysikalischer Prozess verstanden, bei dem 
 ein Teilchen und sein Antiteilchen erzeugt werden. In diesem Versuch bezieht sich die 
 Paarbildung jedoch nur auf die Erzeugung von Elektron-Positron-Paaren. 
-Sie ist der überwiegende Wechselwikrungsprozess bei Photonen die eine Energie
+Sie ist der überwiegende Wechselwikrungsprozess bei Photonen, die eine Energie
 über $\SI{10}{\mega\electronvolt}$ aufweisen.
 Sie entsteht bei Wechselwirkung von Photonen mit Materie, genauer bei der 
 Wechselwirkung eines Photons mit dem elektrischen Feld des Atomkerns oder der 
@@ -139,26 +138,40 @@ $f(Z)$ ist dabei eine Funktion, die die Compton-Korrektur miteinbezieht.
 
 \subsection{Halbleiterdetektoren}
 Da Gammastrahlung ungeladen ist, kann sie über ihre Wechselwirkung mit Materie 
-nachgewiesen werden. Wenn geladene Teilchen frei werden, kann bspw. eine 
-Spannung gemessen werden. Dies ist die Grundlage eines Halbleiterdetektors.
-Halbleiter definieren sich über ihre, für Elektronen überwindbare,
-Bandlücke zwischen ihrem Valenz- und Leitungsband. Daher können sie durch die 
-angeregten Elektronen durch Gammabestrahlung leitfähiger werden. 
+nachgewiesen werden. Dieser Nachweis kann mit Hilfe eines Halbleiterdetektors 
+durchgeführt werden. Halbleiter definieren sich im Gegensatz zu Isolatoren über 
+ihre für Elektronen überwindbare Bandlücke zwischen ihrem Valenz- und Leitungsband. 
+Metalle weisen hingegen keine Bandlücke auf und werden somit als Leiter bezeichnet. 
+Durch das Prinzip der Dotierung kann die Leitfähigkeit von Halbleitern verändert werden.
+Dabei werden Ionen eines anderen Materials in die Gitterstruktur des Halbleiters eingefügt,
+sodass entweder einer Erhöhung der Elektronenanzahl (negativ-Dotierung, auch n-Dotierung)
+oder der Lochanzahl (positiv-Dotierung, auch p-Dotierung) erzeugt wird. 
+Werden zwei entgegengesetzt dotierte Bereiche aneinander gefügt, ergibt sich in dem Gebiet, 
+in welchem ein Übergang zwischen n- und p-Dotierung entsteht, eine sogenannte Raumladungszone.
+Der Bereich der Raumladungszone, welcher sich im p-dotierten Halbleitergitter befindet, ist 
+negativ geladen. Analog ist der Bereich der Raumladungszone, welcher sich im n-dotierten 
+Halbleitergitter befindet, positiv geladen. Diese Konstellation kommt zustande, da die freien 
+Ladungsträger in einem Material in den Bereich diffundieren, in welchem ihre Konzentration 
+geringer ist. Die somit entstandene Ladungsverteilung im Halbleiter entspricht einer Diode.
+Stehen ein Halbleiter und ein Metall in Kontakt, wird von Metall-Halbleiterkontakt gesprochen. 
+Eine entsprechende Konstruktion weist ebenfalls Eigenschaften einer Diode auf und wird 
+häufig innerhalb eines Halbleiterdetektors verwendet.
+Aufgrund dieser besonderen Strukturierung sind Halbleiterdetektoren ortssensitiv. Das bedeutet 
+ihr Detektionsvermögen ist positionsabhängig. 
+Wenn ein Halbleiter dieser Form mit elektromagnetischer Strahlung, bspw. Gammaquanten 
+bestrahlt wird, dann werden aufgrund der Energieabsorption durch das Material
+Elektronen vom Valenz- in das Leitungsband angeregt. 
+Die diodenähnliche Struktur des Halbleiters führt dann zur Entstehung einer
+Spannung mit einem messbaren Anstieg seiner Leitfähigkeit.
 Die erzeugten Elektron-Loch-Paare, die dabei entstehen, benötigen im Vergleich zu einer 
 Ionisationskammer eine Anregungsenergie die um 10 Größenordnungen kleiner ist. 
-Das führt zu einer höheren Aflösung von Halbleitern im Vergleich zu Ionisationskammern.
+Das führt zu einer höheren Auflösung von Halbleitern im Vergleich zu Ionisationskammern.
 Für einen solchen Halbleiterdetektor wird häufig das Material Germanium verwendet.
+Ein Germaniumhalbleiterdetektor muss bei Inbetriebnahme jedoch auf die Temperatur von 
+flüssigem Stickstoff heruntergekühlt werden, da die notwendige Betriebsspannung bei 
+Raumtemperatur sonst zu einem Leckstrom führen würde, der den Detektor zerstört.
 Pro Messdurchlauf ergeben sich allerdings statistische Schwankungen der Anzahl an 
 erzeugten Elektron-Loch-Paaren. Außerdem ergeben sich bei der Erzeugung Energieverluste,
 da sich die Gammastrahlung statistisch auf die Atome des Materials verteilt.
-Dies führt dazu, dass die Standardabweichung, die in Gleichung \ref{eq4} dragestellt ist,
-um den Fano-Faktor $F$ ergänzt werden muss.
-
-\begin{equation}
-    \sigma = \sqrt{F \frac{E_{\gamma}}{E}}
-    \label{eq4}
-\end{equation}
-
-Für Germanium hat der Fano-Faktor den Wert $\num{0,1}$.
 Dieser Abschnitt wurde mittels der Literaturverzeichnisse \cite{lit1},
 \cite{lit2}, \cite{lit3} und \cite{lit4} erzeugt.
