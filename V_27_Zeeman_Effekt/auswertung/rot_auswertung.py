@@ -1,8 +1,13 @@
 import numpy as np
 from uncertainties import ufloat
 import scipy.constants as const
-Ds = np.genfromtxt("../Data/95_Abstand.txt", unpack=True)
-ds = np.genfromtxt("../Data/97_Abstand.txt", unpack=True)
+Ds = np.genfromtxt("../Data/95_Abstand_new.txt", unpack=True)
+ds = np.genfromtxt("../Data/97_Abstand_new.txt", unpack=True)
+
+
+print("Verhältnis")
+for i in range(len(Ds)):
+    print(Ds[i]/ds[i])
 
 DLambda = 48.9 #pm
 
