@@ -38,13 +38,13 @@ plt.close()
 for n in range (1,5):
     ax = plt.subplot(111, projection='polar')
     ax.plot(new_Winkel(Winkel), Amplitude_4, "rx", lw= 3,label = "Messwerte")
-    ax.plot(Winkel_plot,np.absolute(np.real(Amplitude_4.max()*sph_harm(0,n,0,Winkel_plot))),"b", label= f"l={n} m=0")
+    ax.plot(Winkel_plot,np.absolute(np.real(Amplitude_4.max()*sph_harm(0,n,0,Winkel_plot))),"b", label= f"l={n} m=0test")
 #ax.set_rmax(2)
 #ax.set_rticks([0.5, 1, 1.5, 2])  # less radial ticks
     ax.set_rlabel_position(-22.5)  # get radial labels away from plotted line
     ax.grid(True)
     plt.legend(loc= "best")
-    plt.savefig(f"../latex-template/figure/Resonanz_Drewinkel_Amplitude_4_n{n}.pdf")
+    #plt.savefig(f"../latex-template/figure/Resonanz_Drewinkel_Amplitude_4_n{n}.pdf")
     plt.show()
     plt.close()
 
