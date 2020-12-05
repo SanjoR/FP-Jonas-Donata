@@ -14,27 +14,26 @@ wird.
 Wird ein äußeres Magnetfeld $\vec{B}_{\text{0}} = B_{\text{0}} \vec{e}_{\text{B}}$
 um die Probe angelegt, führt dies zu einer
 Aufspaltung der Kernspinzustände in $m = 2S+1$ Unterniveaus, wobei $S$ die Spinquantenzahl
-und $m$ magnetische Quantenzahl darstellt. Für Protonen ($S=\frac{1}{2}$) ergibt sich  unter
-der Annahme $m\gamma B_{\text{0}} \ll k_{\text{B}}T$ in linearer Näherung die 
-$z$-Komponente der Kernspinpolarisation als 
-\begin{equation}
-    \left< I_{\text{z}} \right> = - \frac{\hbar^2 \gamma B_0}{4 k_{\text{B}} T}.
-    \label{eq1}
-\end{equation}
-Hierbei ist $\hbar$ das reduzierte Planck´sche Wirkungsquantum, $\gamma$ das 
-gyromagnetische Verhältnis des Kerns, $k_{B}$ die Boltzmannkonstante und $T$ die 
-Temperatur. Für den Erwartungswert der makroskopischen Magnetisierung folgt dann 
-\begin{equation}
-    M_0 = \frac{1}{4} \mu_0 \gamma^2 N \frac{\hbar^2 B_0}{k_\text{B} T},
-    \label{eq2}
-\end{equation}
-wobei $\mu_{\text{0}}$ die permeabilität des Vakuums und $N$ die Anzahl der 
-magnetischen Momente pro Volumeneinheit beschreibt. 
+und $m$ magnetische Quantenzahl darstellt. 
+%Für Protonen ($S=\frac{1}{2}$) ergibt sich  unter
+%der Annahme $m\gamma B_{\text{0}} \ll k_{\text{B}}T$ in linearer Näherung die 
+%$z$-Komponente des Kernspins als 
+%\begin{equation}
+%    \left< I_{\text{z}} \right> = - \frac{\hbar^2 \gamma B_0}{4 k_{\text{B}} T}.
+%    \label{eq1}
+%\end{equation}
+%Hierbei ist $\hbar$ das reduzierte Planck´sche Wirkungsquantum, $\gamma$ das 
+%gyromagnetische Verhältnis des Kerns, $k_{B}$ die Boltzmannkonstante und $T$ die 
+%Temperatur. 
+%Für den Erwartungswert der makroskopischen Magnetisierung folgt dann 
+%\begin{equation}
+%    M_0 = \frac{1}{4} \mu_0 \gamma^2 N \frac{\hbar^2 B_0}{k_\text{B} T},
+%    \label{eq2}
+%\end{equation}
+%wobei $\mu_{\text{0}}$ die permeabilität des Vakuums und $N$ die Anzahl der 
+%magnetischen Momente pro Volumeneinheit beschreibt. 
 Die Präzession der Momente um $\vec{B}_{\text{0}}$ kann mittels der Larmorfrequenz 
-\begin{equation}
-    \omega_{\text{L}}= \gamma B_{\text{0}}
-    \label{eq3}
-\end{equation}
+$\omega_{\text{L}}= \gamma B_{\text{0}}$
 beschrieben werden.
 Nach Abschalten von $\vec{B}_{\text{0}}$ bewegen sich die Momente wieder zurück in 
 ihre Ausgangslagen (Relaxation). 
@@ -49,6 +48,39 @@ werden die Bloch-Gleichungen verwendet
     - \vec{e}_{\text{x}} \frac{M_{\text{x}}}{T_{\text{2}}} 
     - \vec{e}_{\text{y}} \frac{M_{\text{y}}}{T_{\text{2}}} 
     - \vec{e}_{\text{z}} \frac{M_{\text{z}}-M_{\text{0}}}{T_{\text{1}}}.
-  \label{eq4}
+  \label{eq3}
 \end{equation}
+
+\subsection{Hochfrequenzfeld}
+\label{sec:Hochfrequenzfeld}
+
+Um die magnetischen Momente aus ihrer Ruhelage auszulenken wird ein Hochfrequenzfeld  
+$\vec{B}_{\text{H}} = 2 \vec{B}_{\text{1}} \cos{\omega t}$ ($\vec{B}_{\text{1}} 
+\perp \vec{e}_{\text{B}}$) anglegt.
+%sodass die Komponenten durch 
+%\begin{align}
+%    B_{\text{x}} = B_{\text{1}} \cos{\omega t} \qquad B_{\text{y}} = B_{\text{1}} \sin{\omega t}
+%    \label{eq5}
+%\end{align}
+%gegeben sind. 
+Die Lösung der Bloch-Gleicheungen vereinfacht sich durch Transformation 
+in ein mit der Frequenz $\omega$ um $\vec{B}_{\text{0}}$ rotierendes 
+Koordinatensystem. $\sphericalangle\!\left(\vec{M}, \vec{B}_1\right) = \SI{90}{\degree}$
+Das äußere Magnetfeld transformiert sich dann zu 
+$\vec{B}_\text{eff} = \vec{B}_0 + \vec{B}_1 + \frac{\vec{\omega}}{\gamma}$.
+Das Einschalten eines Hochfrequenzfeldes für die Zeit 
+\begin{equation}
+    \Delta t_{\text{90}} = \frac{\pi}{2 \gamma B_{\text{1}}}
+    \label{eq4}
+\end{equation}
+während $\vec{B}_{\text{eff}} = \vec{B}_{\text{1}}$ und 
+$\sphericalangle\!\left(\vec{M}, \vec{B}_1\right) = \SI{90}{\degree}$ gilt, 
+realisiert eine Drehung der Magnetierung von der $z$- in die $y$-Richtung
+(90°-Puls). Analoges gilt für einen 180°-Puls.
+
+
+\subsection{freier Induktionszerfall}
+\label{sec:Induktionszerfall}
+
+
 \cite{sample}
