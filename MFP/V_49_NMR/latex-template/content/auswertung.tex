@@ -136,5 +136,21 @@ Die Fitparameter sind
   U_{\text{1}} =& \SI{0.16(27)}{\volt}\\
   T_{\text{2}} =& \SI{1.4(18)}{\second}.
 \end{align*}
-
-
+\FloatBarrier
+Mit der Carr-Purcell-Methode hätte die Relaxationszeit $T_{\text{2}}$ auch bestimmt werden können, wenn die Pulslänge 
+für den $\SI{180}{\degree}$-Puls exakt eingestellt wäre. Da dies aber nicht der Fall ist, kommt er zu einem systematischen
+Fehler, dadurch würde die damit bestimmte Relaxationszeit fehlerhaft sein.
+Dieser Fehler hebt sich bei der vorherigen Meiboom-Gill_Methode durch die Phasenverschiebung weg.
+Das Bild mit dem $T_{\text{2}}$ bestimmt werden 
+soll ist die Abbildung \ref{fig:CPM}. 
+\begin{figure}
+  \centering
+  \includegraphics[width = \textwidth,keepaspectratio]{../Bilder/scope_2.png}
+  \caption{Bild des Oszilloskopen für die Carr-Purcell-Methode.}
+  \label{fig:CPM}
+\end{figure}
+\FloatBarrier
+\subsection{Diffusionsmessung}
+Bei diesem Versuchsteil muss der z-Gradient umgepolt und maximiert werden. Die anderen Shim-Parameter bleiben unverändert. 
+Um die Diffusionskonstante zu messen wird der A-Puls auf $\SI{90}{\degree}$ und der B-Puls auf $\SI{180}{\degree}$ eingestellt.
+Die Anzahl der Pulsewiederholungen von B ist $N=1$. Die Periodendauer
