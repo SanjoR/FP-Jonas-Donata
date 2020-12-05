@@ -37,10 +37,13 @@ x_plot = np.linspace(t_peaks.min(),t_peaks.max(),1000)
 error = np.sqrt(np.diag(cov_ma))
 
 m = ufloat(params[1],error[1])
-
+M0 = ufloat(params[0],error[0])
+M1 = ufloat(params[2],error[2])
 T = 1/m
 
-print(T)
+print("M0: ",M0)
+print("M1: ",M1)
+print("T2: ",T)
 
 plt.figure()
 plt.plot(t,V1,label="V1")

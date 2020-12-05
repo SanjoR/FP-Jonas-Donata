@@ -24,11 +24,16 @@ x_plot = np.linspace(Tau.min(),Tau.max(),1000)
 
 errors = np.sqrt(np.diag(cov_matrix))
 
+amp = ufloat(params[0], errors[0])
+b = ufloat(params[2], errors[2])
 m = ufloat(params[1],errors[1])
 
 T1 = 1/m
+print("M0: ", amp )
+print("M1: ", b)
+print ("M0 = -2M1: ",-2*b)
 
-print(T1)
+print("T1:", T1)
 
 plt.plot(x_plot,exp_fit(x_plot,*params),"b-")
 plt.plot(Tau,A,"rx")
