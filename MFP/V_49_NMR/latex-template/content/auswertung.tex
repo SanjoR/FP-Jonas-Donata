@@ -78,7 +78,7 @@ Die Messdaten und der Fit sind in Abbildung \ref{fig:T1_Data_fit} zu sehen.
 \subsection{Bestimmung der Relaxationszeit $T_{\text{2}}$}
 In diesem Versuchsteil wird der A-Puls auf $\SI{90}{\degree}$ und der B-Puls auf $\SI{180}{degree}$ eingestellt. Der B-Puls
 soll 100 mal wiederholt werden.
-Die Periodendauer wird auf den Wert $3T_{\text{1}}\approx \SI{6.0}{\second}$ eingestellt. Die damit aufgenommenen Daten sind in 
+Die Periodendauer wird auf den Wert $P=3T_{\text{1}}\approx \SI{6.0}{\second}$ eingestellt. Die damit aufgenommenen Daten sind in 
 Abbildung \ref{fig:T2_Data_Fit} dargestellt.
 \begin{figure}
   \centering
@@ -153,4 +153,33 @@ soll ist die Abbildung \ref{fig:CPM}.
 \subsection{Diffusionsmessung}
 Bei diesem Versuchsteil muss der z-Gradient umgepolt und maximiert werden. Die anderen Shim-Parameter bleiben unverändert. 
 Um die Diffusionskonstante zu messen wird der A-Puls auf $\SI{90}{\degree}$ und der B-Puls auf $\SI{180}{\degree}$ eingestellt.
-Die Anzahl der Pulsewiederholungen von B ist $N=1$. Die Periodendauer
+Die Anzahl der Pulsewiederholungen von B ist $N=1$. Die Periodendauer wird wieder auf $P=3T_{\text{1}}\approx \SI{6.0}{\second}$ 
+eingestellt.
+Es wird wieder die Spannungsamplitude in abhängigkeit des Pulsabstandes $\tau$ gemessen.
+Die gemessenen Daten sind in Tabelle \ref{tab:Diff_messung} aufgelistet. 
+\begin{table}
+  \centering
+  \caption{Messdaten für die Bestimmung der Diffusionskonstante.}
+  \label{tab:Diff_messung}
+  \begin{tabular}{c c}
+    \toprule
+    $\tau$\,/\,$\SI{}{\second}$&$U$\,/\,$\SI{}{\volt}$\\
+    $\num{0.0002}$&$\num{1.16250}$\\
+    $\num{0.0010}$&$\num{1.19375}$\\
+    $\num{0.0050}$&$\num{1.11875}$\\
+    $\num{0.0100}$&$\num{0.70625}$\\
+    $\num{0.0133}$&$\num{0.34375}$\\
+    $\num{0.0140}$&$\num{0.28750}$\\
+    $\num{0.0150}$&$\num{0.20000}$\\
+    $\num{0.0160}$&$\num{0.16875}$\\
+    $\num{0.0170}$&$\num{0.12500}$\\
+    $\num{0.0180}$&$\num{0.08750}$\\
+    $\num{0.0115}$&$\num{0.52500}$\\
+    $\num{0.0060}$&$\num{1.00625}$\\
+    $\num{0.0075}$&$\num{0.96250}$\\
+    $\num{0.0085}$&$\num{0.88750}$\\
+    $\num{0.0138}$&$\num{0.33125}$\\
+    $\num{0.0122}$&$\num{0.41250}$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
