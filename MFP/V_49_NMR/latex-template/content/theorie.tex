@@ -1,4 +1,54 @@
+\section{Zielsetzung}
+\label{sec:Zielsetzung}
+
+In diesem Versuch soll die Diffusionskonstante von Wasser experimentell bestimt werden,
+indem eine Probe bezüglich ihrer Spinausrichtung unter einem Hochfrequenzfeld untersucht
+wird. 
+
 \section{Theorie}
 \label{sec:Theorie}
 
+\subsection{Magnetisierung}
+\label{sec:Magnetisierung}
+
+Wird ein äußeres Magnetfeld $\vec{B}_{\text{0}} = B_{\text{0}} \vec{e}_{\text{B}}$
+um die Probe angelegt, führt dies zu einer
+Aufspaltung der Kernspinzustände in $m = 2S+1$ Unterniveaus, wobei $S$ die Spinquantenzahl
+und $m$ magnetische Quantenzahl darstellt. Für Protonen ($S=\frac{1}{2}$) ergibt sich  unter
+der Annahme $m\gamma B_{\text{0}} \ll k_{\text{B}}T$ in linearer Näherung die 
+$z$-Komponente der Kernspinpolarisation als 
+\begin{equation}
+    \left< I_{\text{z}} \right> = - \frac{\hbar^2 \gamma B_0}{4 k_{\text{B}} T}.
+    \label{eq1}
+\end{equation}
+Hierbei ist $\hbar$ das reduzierte Planck´sche Wirkungsquantum, $\gamma$ das 
+gyromagnetische Verhältnis des Kerns, $k_{B}$ die Boltzmannkonstante und $T$ die 
+Temperatur. Für den Erwartungswert der makroskopischen Magnetisierung folgt dann 
+\begin{equation}
+    M_0 = \frac{1}{4} \mu_0 \gamma^2 N \frac{\hbar^2 B_0}{k_\text{B} T},
+    \label{eq2}
+\end{equation}
+wobei $\mu_{\text{0}}$ die permeabilität des Vakuums und $N$ die Anzahl der 
+magnetischen Momente pro Volumeneinheit beschreibt. 
+Die Präzession der Momente um $\vec{B}_{\text{0}}$ kann mittels der Larmorfrequenz 
+\begin{equation}
+    \omega_{\text{L}}= \gamma B_{\text{0}}
+    \label{eq3}
+\end{equation}
+beschrieben werden.
+Nach Abschalten von $\vec{B}_{\text{0}}$ bewegen sich die Momente wieder zurück in 
+ihre Ausgangslagen (Relaxation). 
+Dabei werden die Spin-Gitter-Relaxationszeit $T_{\text{1}}$ 
+(parallel zu $\vec{B}_{\text{0}}$) und Spin-Spin-Relaxationszeit $T_{\text{2}}$
+(senkrecht zu $\vec{B}_{\text{0}}$) unterschieden.
+Zur Beschreibung der zeitlichen Entwicklung der Magnetisierung $\vec{M}$ einer Probe 
+werden die Bloch-Gleichungen verwendet 
+\begin{equation}
+    \frac{d \vec{M}}{dt} 
+    = \gamma \vec{M} \times \vec{B}_{\text{0}} 
+    - \vec{e}_{\text{x}} \frac{M_{\text{x}}}{T_{\text{2}}} 
+    - \vec{e}_{\text{y}} \frac{M_{\text{y}}}{T_{\text{2}}} 
+    - \vec{e}_{\text{z}} \frac{M_{\text{z}}-M_{\text{0}}}{T_{\text{1}}}.
+  \label{eq4}
+\end{equation}
 \cite{sample}
