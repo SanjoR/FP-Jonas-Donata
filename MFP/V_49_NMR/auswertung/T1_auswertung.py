@@ -35,8 +35,13 @@ print ("M0 = -2M1: ",-2*b)
 
 print("T1:", T1)
 
-plt.plot(x_plot,exp_fit(x_plot,*params),"b-")
-plt.plot(Tau,A,"rx")
+plt.plot(x_plot,exp_fit(x_plot,*params),"b-", label = "Fit")
+plt.plot(Tau,A,"rx" ,label = "Messdaten")
+plt.xlabel(r"$\tau$ / s")
+plt.ylabel(r"U / V ")
+plt.legend(loc = "best")
+plt.grid()
 #plt.yscale("log")
 #plt.xscale("log")T1 = unp.ufloat(-1/params[1]
+plt.savefig("../latex-template/figure/T1_fit.pdf")
 plt.show()

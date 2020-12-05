@@ -46,9 +46,21 @@ print("M1: ",M1)
 print("T2: ",T)
 
 plt.figure()
-plt.plot(t,V1,label="V1")
+plt.plot(t,V1,label="Osziloskop Daten")
+
 #plt.plot(t,V2,label="V2")
-plt.plot(t_peaks,V1_peaks,"rx")
-plt.plot(x_plot,exp_fit(x_plot,*params))
+plt.plot(t_peaks,V1_peaks,"rx",label="Peaks")
+plt.xlabel("t / s")
+plt.ylabel("U / V")
+plt.plot(x_plot,exp_fit(x_plot,*params),label = "Fit")
 plt.legend(loc="best")
+plt.savefig("../latex-template/figure/T2_Data_fit.pdf")
 plt.show()
+
+
+print()
+for i in t_peaks:
+    print(i)
+print()
+for i in V1_peaks:
+    print(i)
