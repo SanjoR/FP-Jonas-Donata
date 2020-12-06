@@ -1,7 +1,7 @@
 \section{Zielsetzung}
 \label{sec:Zielsetzung}
 
-In diesem Versuch soll die Diffusionskonstante von Wasser experimentell bestimt werden,
+In diesem Versuch soll die Diffusionskonstante von Wasser experimentell bestimmt werden,
 indem eine Probe bezüglich ihrer Spinausrichtung unter einem Hochfrequenzfeld untersucht
 wird. 
 
@@ -14,24 +14,7 @@ wird.
 Wird ein äußeres Magnetfeld $\vec{B}_{\text{0}} = B_{\text{0}} \vec{e}_{\text{B}}$
 um die Probe angelegt, führt dies zu einer
 Aufspaltung der Kernspinzustände in $m = 2S+1$ Unterniveaus, wobei $S$ die Spinquantenzahl
-und $m$ magnetische Quantenzahl darstellt. 
-%Für Protonen ($S=\frac{1}{2}$) ergibt sich  unter
-%der Annahme $m\gamma B_{\text{0}} \ll k_{\text{B}}T$ in linearer Näherung die 
-%$z$-Komponente des Kernspins als 
-%\begin{equation}
-%    \left< I_{\text{z}} \right> = - \frac{\hbar^2 \gamma B_0}{4 k_{\text{B}} T}.
-%    \label{eq1}
-%\end{equation}
-%Hierbei ist $\hbar$ das reduzierte Planck´sche Wirkungsquantum, $\gamma$ das 
-%gyromagnetische Verhältnis des Kerns, $k_{B}$ die Boltzmannkonstante und $T$ die 
-%Temperatur. 
-%Für den Erwartungswert der makroskopischen Magnetisierung folgt dann 
-%\begin{equation}
-%    M_0 = \frac{1}{4} \mu_0 \gamma^2 N \frac{\hbar^2 B_0}{k_\text{B} T},
-%    \label{eq2}
-%\end{equation}
-%wobei $\mu_{\text{0}}$ die permeabilität des Vakuums und $N$ die Anzahl der 
-%magnetischen Momente pro Volumeneinheit beschreibt. 
+und $m$ die magnetische Quantenzahl darstellt. 
 Die Präzession der Momente um $\vec{B}_{\text{0}}$ kann mittels der Larmorfrequenz 
 $\omega_{\text{L}}= \gamma B_{\text{0}}$
 beschrieben werden.
@@ -55,19 +38,13 @@ werden die Bloch-Gleichungen verwendet
 \label{sec:Hochfrequenzfeld}
 
 Um die magnetischen Momente aus ihrer Ruhelage auszulenken wird ein Hochfrequenzfeld  
-$\vec{B}_{\text{H}} = 2 \vec{B}_{\text{1}} \cos{\omega t}$ ($\vec{B}_{\text{1}} 
-\perp \vec{e}_{\text{B}}$) anglegt.
-%sodass die Komponenten durch 
-%\begin{align}
-%    B_{\text{x}} = B_{\text{1}} \cos{\omega t} \qquad B_{\text{y}} = B_{\text{1}} \sin{\omega t}
-%    \label{eq5}
-%\end{align}
-%gegeben sind. 
+$\vec{B}_{\text{H}} = 2 \vec{B}_{\text{1}} \cos{(\omega t)}$ ($\vec{B}_{\text{1}} 
+\perp \vec{e}_{\text{B}}$) angelegt.
 Die Lösung der Bloch-Gleicheungen vereinfacht sich durch Transformation 
 in ein mit der Frequenz $\omega$ um $\vec{B}_{\text{0}}$ rotierendes 
-Koordinatensystem. $\sphericalangle\!\left(\vec{M}, \vec{B}_1\right) = \SI{90}{\degree}$
+Koordinatensystem. 
 Das äußere Magnetfeld transformiert sich dann zu 
-$\vec{B}_\text{eff} = \vec{B}_0 + \vec{B}_1 + \frac{\vec{\omega}}{\gamma}$.
+$\vec{B}_{\text{eff}} = \vec{B}_{\text{0}} + \vec{B}_{\text{1}} + \frac{\vec{\omega}}{\gamma}$.
 Das Einschalten eines Hochfrequenzfeldes für die Zeit 
 \begin{equation}
     \Delta t_{\text{90}} = \frac{\pi}{2 \gamma B_{\text{1}}}
@@ -75,12 +52,83 @@ Das Einschalten eines Hochfrequenzfeldes für die Zeit
 \end{equation}
 während $\vec{B}_{\text{eff}} = \vec{B}_{\text{1}}$ und 
 $\sphericalangle\!\left(\vec{M}, \vec{B}_1\right) = \SI{90}{\degree}$ gilt, 
-realisiert eine Drehung der Magnetierung von der $z$- in die $y$-Richtung
-(90°-Puls). Analoges gilt für einen 180°-Puls.
+realisiert eine Drehung der Magnetisierung von der $z$- in die $y$-Richtung
+(90°-Puls). Analoges gilt für einen 180°-Puls ( von $z$- in $-z$-Richtung).
+Unter dem freien Induktionszerfall (FID) wird die Präzession der Magnetisierung 
+senkrecht zu $\vec{B}_{\text{0}}$ und die anschließende Relaxation zurück in die 
+Ruhelage nach einer Auslenkung um 90° verstanden. Ursächlich für den FID ist die 
+Inhomogenität eines real erzeugten Magnetfeldes mit der 
+Relaxationszeit $T_{\Delta \text{B}}$ und die
+Wechselwirkung mit den magnetischen Momenten der Nachbarkerne und -schalen. 
+Dadurch werden die Spins schließlich dephasiert und die transversale Magentisierung 
+zerfällt. Die Gesamtrelaxationszeit ergibt sich als
+\begin{equation}
+    T^*_{2} = \frac{1}{T^{-1}_{2} + T^{-1}_{\text{\Delta B}}}.
+\end{equation}
 
+\subsection{Spin-Echo, Carr-Purcell und Meiboom-Gill Methode}
+\label{sec:SpinEchoVerfahren}
 
-\subsection{freier Induktionszerfall}
-\label{sec:Induktionszerfall}
+Während der Dephasierung nach einem initialen 90°-Puls
+rotieren die Spins mit größerer Larmourfrequenz im Uhrzeigersinn.
+Die Spins mit kleinerer Larmorfrequenz jedoch in die entgegengesetzte Richtung.
+Nach der Zeit $\tau \ll T_{\text{\Delta B}}$ wird ein 180°-Puls auf die Probe 
+gerichtet, sodass die Spins wieder aufeinander zulaufen. Es entsteht das 
+sogenannte Hahn-Echo, d.h. eine transversale Magnetisierung in
+entgegengesetzter Richtung nach der Zeit $2\tau$. 
+Die Höhe des Spin-Echos kann über den Zusammenhang 
+\begin{equation}
+    M_{\text{y}}(t) = M_{\text{0}} \exp \left( - \frac{t}{T_{\text{2}}} \right)
+    \label{eq5}
+\end{equation}
+bestimmt werden.
+Um mehrere Echos in einer Messung aufnehmen zu können, werden in der Carr-Purcell 
+Methode (CPM) mehrere 180°-Pulse hintereinander mit Abstand $2\tau$ gesendet, sodass 
+eine Fokussierung der transversalen Magnetisierung erzeugt wird. Ist die Einstellung 
+der 180°-Pulse zu ungenau, wird die Magnetisierung in der $x$-$y$-Ebene zu klein,
+weil die Spins nicht genau in diese Ebene hinein gedreht werden, sodass eine 
+aussagekräftige Bestimmung von $T_{\text{2}}$ nicht möglich ist.
+Die Meiboom-Gill Methode (MGM) umgeht diese Problematik, indem sie die 180°-Pulse
+gegen die initialen 90°-Pulse um 90° phasenverschoben aussendet. Das führt zu einer 
+Drehung der Spins um die $y$-Achse anstelle der $x$-Achse , sodass Fehler aufgrund 
+von ugenauen 180°-Pulseinstellungen durch den folgenden PPuls wieder 
+ausgeglichen werden können.
 
+\subsection{Spinrelaxation einer Flüssigkeit}
+\label{sec:Spinrelaxation}
 
-\cite{sample}
+Für Flüssigkeiten müssen die Bloch´schen Gleichungen durch einen Diffusionsterm ergänzt 
+werden, da die Brown´sche Molekularbewegung ein zeitlich veränderliches 
+Magnetfeld erzeugt. Sie sind dann durch  
+\begin{equation}
+  \frac{\partial M}{\partial t} =
+  \underbrace{\gamma \left(\vec{M} \times \vec{B}\right)}_{\text{Präzession}}
+  \underbrace{- \frac{M_\text{x} \vec{x} + M_\text{y} \vec{y}}{T_2}
+  - \frac{\left(M_\text{z} - M_0\right) \vec{z}}{T_1}}_{\text{Relaxation}}
+  \underbrace{+ \left(\vec{x} + \vec{y} + \vec{z}\right) D\:\Delta M}_{\text{Diffusion}}
+  \label{eq6}
+\end{equation}
+gegeben. Aufgrund dieser Bedingungen muss Geichung \ref{eq5} angepasst werden und 
+unter der Annahme eines innerhalb der Probe konstanten Feldgradienten $G$ ergibt  
+sich \ref{eq5} zu
+\begin{equation}
+  M_\text{y}\!\left(t\right) = M_0
+  \exp\!\left(- \frac{t}{T_2}\right)
+  \exp\!\left(- \frac{t}{T_\text{D}}\right)
+  \label{eq7}
+\end{equation}
+wobei $T_{\text{D}} = \frac{3}{D \gamma^2 G^2 \tau^2}$ mit der Diffusionskonstante $D$.
+CPM und MGM können für $T_{\text{D}} \gg T_{\text{2}}$ weiterhin verwendet werden, 
+wogegen bei der Betrachtung der Amplitude des ersten Spin-Echso beachtet werden 
+muss, dass $t=2\tau$ gilt.
+Zur Bestimmung von $T_{\text{1}}$ wird zunächst ein 180°-Puls (Spinrichtung: 
+$\vec{z} \rightarrow -\vec{z}$) und nach $\tau$ ein 90°-Puls ausgesendet, 
+woraufhin die Spins in der $x$-$y-$Ebene präzidieren. Für die Magnetisierung in 
+$\vec{z}$-Richtung gilt dann
+\begin{equation}
+  M_\text{z}\!\left(\tau\right) =
+  M_0 \left(1 - 2 \exp\!\left[-\frac{\tau}{T_1}\right]\right).
+  \label{eq8}
+\end{equation}
+
+\cite{theo1}
