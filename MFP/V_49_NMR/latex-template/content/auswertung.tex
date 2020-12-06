@@ -57,7 +57,7 @@ Die gemessenen Daten sind in Tabelle \ref{tab:T1_Data} aufgelistet.
 An die Daten aus Tabelle \ref{tab:T1_Data} wird die Funktion 
 \begin{equation}
   \label{eq:Fit_Funktion_T1T2}
-  U(\tau)= U_{\text{0}} \exp{-\frac{\tau}{-T_{\text{1}}}} + U_{\text{1}}
+  U(\tau)= U_{\text{0}} \exp{\left(-\frac{\tau}{T_{\text{1}}}\right)} + U_{\text{1}}
 \end{equation}
 angepasst.
 Die Fitparameter sind
@@ -152,14 +152,14 @@ soll ist die Abbildung \ref{fig:CPM}.
 \FloatBarrier
 \subsection{Diffusionsmessung}
 Bei diesem Versuchsteil muss der z-Gradient umgepolt und maximiert werden. Die anderen Shim-Parameter bleiben unverändert. 
-Um die Diffusionskonstante zu messen wird der A-Puls auf $\SI{90}{\degree}$ und der B-Puls auf $\SI{180}{\degree}$ eingestellt.
+Um den Diffusionskoeffizenten zu messen wird der A-Puls auf $\SI{90}{\degree}$ und der B-Puls auf $\SI{180}{\degree}$ eingestellt.
 Die Anzahl der Pulsewiederholungen von B ist $N=1$. Die Periodendauer wird wieder auf $P=3T_{\text{1}}\approx \SI{6.0}{\second}$ 
 eingestellt.
 Es wird wieder die Spannungsamplitude in abhängigkeit des Pulsabstandes $\tau$ gemessen.
 Die gemessenen Daten sind in Tabelle \ref{tab:Diff_messung} aufgelistet. 
 \begin{table}
   \centering
-  \caption{Messdaten für die Bestimmung der Diffusionskonstante.}
+  \caption{Messdaten für die Bestimmung des Diffusionskoeffizenten.}
   \label{tab:Diff_messung}
   \begin{tabular}{c c}
     \toprule
@@ -183,3 +183,53 @@ Die gemessenen Daten sind in Tabelle \ref{tab:Diff_messung} aufgelistet.
     \bottomrule
   \end{tabular}
 \end{table}
+An die Messdaten aus Tabelle \ref{tab:Diff_messung} wird die Funktion
+\begin{equation}
+  U(\tau)=U_{\text{0}} \exp{\left(-\frac{2\tau}{T_{\text{2}}}\right)}\exp{\left(-\frac{\tau^3}{T_{\text{D}}}\right)}+U_{\text{1}}
+\end{equation}
+angepasst.
+Hierbei ist $T_{\text{2}}$ keiner der Fitparameter, sondern es wird der vorher bestimmte Wert verwendet.
+Die Fitparameter sind
+\begin{align*}
+  U_{\text{0}}=&\SI{51}{\volt}\\
+  T_{\text{D}} =& \SI{-57341}{\second}\\
+  U_{\text{1}}=&\SI{-49}{\volt}.
+\end{align*}
+Da das Fitprogramm die Funktion schlecht optimieren konnte, können keine Unsicherheiten angegeben werden. Daher sind 
+die daraus berechneten Werte auf fehlerhaft.
+Um den Fit und die Messdaten zu überprüfen wird die Funktionen 
+\begin{equation}
+  \ln{\left(M(\tau)\right)}-2\frac{\tau}{T_{2}}
+\end{equation}
+gegen $\tau^3$ aufgetragen, dabei soll ein linearer Zusammenhang entstehen. Abgebildet ist das in Abbildung \ref{fig:Diff_fit}.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth,keepaspectratio]{figure/Diff_plot.pdf}
+  \caption{Plot zur Überprüfung der Messdaten um den Diffusionskoeffizenten zu bestimmen.}
+  \label{fig:Diff_fit}
+\end{figure}
+Mit der Parameter $T_{\text{D}}$ kann der Diffusionskoeffizent bestimmt werden. Hierfür wird der zweite Exponent der Formel \eqref{eq7}
+nach D umgestellt. Um die Gradientenstärke G zu bestimmen, wird zunächst eine Fouriertransformation angewendet.
+\FloatBarrier
+\begin{figure}
+  \centering
+  \includegraphics[width = \textwidth,keepaspectratio]{figure/Fouriertrafo.pdf}
+  \caption{Der Echopuls und die Fouriertransformation.}
+\end{figure}
+\FloatBarrier
+Mit der Fouriertransformation kann der Wert $d_{\text{f}} = \SI{13324}{\hertz}$ bestimmt werden.
+Daraus kann die Gradientenstärke und damit der Diffusionskoeffizent bestimmt werden
+\begin{equation*}
+  G=\frac{2\pi d_{\text{f}}}{\gamma d} \implies D = -\frac{3}{2} \frac{1}{T_{\text{D}} \left(\frac{2\pi d_{\text{f}}}{d}\right)^2}=\SI{6.6e-20}{\square\meter\per\second}.
+\end{equation*}
+Der Wert $d=\SI{4.4}{\milli\meter}$ kann an der Probe abgelesen werden.
+Mithilfe des Diffusionskoeffizenten und der Viskosität $\eta = \SI{0.001}{\pascal\second}$ kann der Molekülradius bestimmt werden. 
+\begin{equation*}
+  r=\frac{k_{\text{B}}T}{D6\pi \eta} = \SI{2.97}{\meter}
+\end{equation*}
+Dieses Ergebnis ist offensichtlich falsch.
+Der Radius der bestimmt wird, indem eine hexagonale dichte Kugelpackung angenommen wird, beträgt 
+\begin{equation*}
+  r_{\text{hcp}} = \left(\frac{m_{\ce{H20}}\cdot 0,74}{\frac{4}{3}\pi \rho}\right)= \SI{1.74e-10}{\meter}.
+\end{equation*}
+Hierbei wird berücksichtigt, dass eine hexagonale dichte Kugelpackung 74\% des Raumes ausfüllt.
