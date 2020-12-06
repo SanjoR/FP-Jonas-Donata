@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'lit.bib.blg'
+[79] biber:322> INFO - === So Dez  6, 2020, 18:55:58
+[219] Utils.pm:320> ERROR - Cannot find 'lit.bib.bcf'!
+[219] Biber.pm:132> INFO - ERRORS: 1
