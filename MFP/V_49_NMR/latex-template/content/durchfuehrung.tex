@@ -13,16 +13,6 @@ In der Spule selbst wird das Hochfrequenzfeld $\vec{B}_{\text{1}}$ erzeugt.
 An die Spule ist ein Empfänger angeschlossen, der in der Lage ist, das Induktionssignal 
 welches durch die Präzession der Magnetisierung hervorgerufen wird, zu messen.
 Das empfangene Signal kann daraufhin auf einem Oszilloskop sichtbar gemacht werden.
-%Der reale Versuchsaufbau wurde mit einer Teachspin-Apparatur \ref{fig1} 
-%durchgeführt.
-%\begin{figure}
-%  \centering
-% \includegraphics[width=.7\textwidth]{images/teachspin.pdf}
-%  \caption{Links im Bild sind die Polschuhe um die Spule verbaut, während
-%  die Einstellungen der Messungsparamter an der Apparatur rechts vorgnommen 
-% werden können \cite{anleitung}.}
-%  \label{fig1}
-%\end{figure}
 
 \subsection{Justage und Temperaturmessung}
 \label{sec:Justage}
@@ -37,9 +27,78 @@ Zunächst werden die Gradientenspulen auf die Werte
     z^2 = -2.4
 \end{align}
 eingestellt. Bei diesen Werten wird das Magnetfeld so homogen wie möglich.
-Die Frequenz wird auf $\SI{21,71585}{\mega\hertz}$ eingestellt,
+Die Frequenz wird auf $\SI{21.71585}{\mega\hertz}$ eingestellt,
 da bei diesem Wert die Signalschwingungen am geringsten sind. Die Phase wird auf 
 -130° eingestellt, sodass fast nur Signal im Realteil erscheint.
-Da sich die Pulslängen zwischen dem ersten Puls A und dem zweiten Puls B 
-um den Faktor 2 unterscheiden müssen (siehe Abblidung \ref{fig}) wird A auf 
-$\SI{2,7}{\micro\second}$ und B auf $\SI{5}{\micro\second}$ eingestellt.
+Da sich die Pulslängen zwischen dem ersten 90°-Puls und dem zweiten 180°-Puls
+um den Faktor 2 unterscheiden müssen wird die 
+erste Pulslänge auf $\SI{2.7}{\micro\second}$ und die Zweite auf 
+$\SI{5}{\micro\second}$ eingestellt.
+Die Periode, also die Zeit für welche sich die 180°-Pulse wiederholen sollen,
+wird auf $\SI{0.5}{\second}$ eingestellt.
+Danach wird mit einem Thermoelement die Temperatur in der Spule gemessen.
+Sie beträgt $22.2$° Celsius \cite{anleitung}.
+
+\subsection{\texorpdfstring{$T_1$}{T1}-Messung}
+\label{sec:T1Messung}
+
+Zunächst wird die erste Pulslänge A auf $\SI{5}{\micro\second}$ eingestellt.
+Die zweite Pulslänge B wird auf $\SI{2.7}{\micro\second}$ eingestellt.
+Jetzt soll die Anzahl der B-Pulse $1$ sein und die Periode $\SI{10}{\second}$
+betragen. Dabei ist zu beachten, dass bei einem Abstand von $\tau = \SI{1}{\second}$
+zwischen dem A und B Puls die Periodenlänge um $\tau$ erhöht werden muss.
+Jetzt wird eine Messreihe von 25 Wertepaaren aufgenommen. 
+$\tau$ wird ausgehend von dem Wert $\SI{0.0001}{\second}$ bis zu einem Wert von 
+$\SI{3.5}{\second}$ erhöht, wobei die Amplitude des FID nach dem 90°-Puls
+notiert wird.
+Die Wertepaare werden danach mit der Funktion 
+\begin{equation}
+    M(\tau) = M_{\text{0}} \exp{\left(-\frac{\tau}{T_{\text{1}}} \right)} + M_{\text{1}}
+    \label{fit1}
+\end{equation}
+gefittet, wobei $M_{\text{1}} = M(\tau_{\text{max}})$ und
+$M_{\text{0}} = M(\tau_{\text{min}}) - M_{\text{1}}$
+Jetzt kann $T_{\text{1}}$ abgelesen werden
+\cite{anleitung}. 
+
+\subsection{\texorpdfstring{$T_2$}{T2}-Messung}
+\label{sec:T2Messung}
+
+Zur Bestimmung von $T_{\text{2}}$ wird A auf $\SI{2.7}{\micro\second}$ und B auf
+$\SI{5}{\micro\second}$ eingestellt. Die B-Pulse sollen 100-fach wiederholt werden.
+Die Periode wird auf das Dreifache von $T_{\text{1}}$ eingestellt.
+Außerdem muss Puls A gegen Puls B um 90° phasenverschoben werden. Der Pulsabstand wird 
+auf $\tau = \SI{0.0119}{\second}$ eingestellt. Bei diesem Wert liegt die höhe 
+des 100. Echomaximums bei etwa einem Drittel des 1. Echomaximums.
+Daraufhin wird ein Bild des Signals aufgenommen und sowohl als .png- als auch als 
+.csv-Datei gespeichert. Danach wird ein Fit wie in Gleichung \ref{fit1} 
+an die Höhe der Peaks gelegt,
+wobei $T_{\text{1}}$ durch $T_{\text{2}}$ ersetzt wird.
+Jett wird die Phasenverschiebung aufgehoben und es wird eine weiteres Bild des 
+Signals sowohl als .png- als auch als .csv-Datei aufgenommen \cite{anleitung}.
+
+\subsection{Diffusionsmessung}
+\label{Diffusionsmessung}
+
+Als erstes muss der Gradient umgepolt und dann auf den maximalen Wert gedreht werden.
+Die Einstellungen der A- und B-Pulse, sowie die Periode werden nicht verändert. 
+Allerdings wird die Anzahl der B-Pulse wieder auf 1 reduziert.
+Jetzt werden 16 Wertepaare aufgenommen, wobei $\tau$ wieder von 
+$\SI{0.0001}{\second}$ ausgehend erhöht wird, bis es den Wert $\SI{0.0122}{\second}$
+angenommen hat. Dabei werden die die zugehörigen Amplituden der Echos notiert.
+Das Echo bei $\tau = \SI{0.0004}{\second}$ wird als .csv-Datei gespeichert.
+Die Messdaten werden danach als $\ln{(M(\tau))}- \frac{2\tau}{T_{\text{2}}}$
+gegen $\tau^3$ geplottet.
+Jetzt kann der Parameter $T_{\text{D}}$ bestimmt werden. Dazu wird zunächst ein linearer 
+Plot der Echoamplituden erstellt und angepasst. In der Fitfunktion 
+\begin{equation}
+    M(\tau) = M_{\text{0}} \exp{\left( -\frac{2\tau}{T_{\text{2}}} \right)} \exp{\left( -\frac{\tau^3}{T_{\text{D}}} \right)} + M_{\text{1}}
+    \label{fit2}
+\end{equation}
+wird der
+zuvor bestimmte Wert für $T_{\text{2}}$ verwendet. Aus $T_{\text{D}}$ wird kann 
+dann die Diffusionskonstante bestimmt werden.
+Zur Abschätzung des Gradienten wird mittels einer Fouriertransformaion der 
+Amplitudenwerte das zugehörige Spektrum ermittelt. Dabei wird der Signalkanal des 
+Echos als Realteil betrachtet und der erste Punkt des Imaginärteils muss 0 sein,
+während die Amplitude des ersten Realteilspunkt halbiert wird \cite{anleitung}. 
