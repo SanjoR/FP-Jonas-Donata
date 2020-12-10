@@ -1,8 +1,9 @@
+\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
 
 \subsection{Justage der Apperatur}
-Um ein möglichst homogenes Magnetfeld einzustellen werden die Shim-Parameter auf 
+Um ein möglichst homogenes Magnetfeld zu erzeugen, werden die Shim-Parameter auf 
 \begin{align*}
   x =& \num{-1.0}\\
   y =& \num{-5.0}\\
@@ -10,13 +11,13 @@ Um ein möglichst homogenes Magnetfeld einzustellen werden die Shim-Parameter au
   z^2 =& \num{-2.4}
 \end{align*}
 eingestellt.
-Die Lamor-Frequenz wird auf $\omega_{\text{L}} = \SI{21.71585}{\mega\hertz}$ eingestellt.
+Die Lamorfrequenz wird auf $\omega_{\text{L}} = \SI{21.71585}{\mega\hertz}$ eingestellt.
 Die Pulslänge für einen $\SI{90}{\degree}$ Puls wird als $t_{\text{90}}=\SI{2.7}{\micro\second}$ bestimmt.
 Für den $\SI{180}{\degree}$ Puls beträgt die Pulslänge $t_{\text{180}}=\SI{5}{\micro\second}$, dass passt mit der 
 Annahme überein, dass diese Pulslänge doppelt so lang sein soll. Die Temperatur an der Stelle der Probe beträgt $\SI{22.2}{\celsius}$.
 
 \subsection{Bestimmung der Relaxationszeit $T_{\text{1}}$}
-Für die Bestimmung der Relaxationszeit wird die Spannung in abhängigkeit des Pulsabstandes $\tau$ gemessen.
+Für die Bestimmung der Relaxationszeit wird die Spannung in Abhängigkeit des Pulsabstandes $\tau$ gemessen.
 Die gemessenen Daten sind in Tabelle \ref{tab:T1_Data} aufgelistet.
 \begin{table}
   \centering
@@ -140,13 +141,13 @@ Die Fitparameter sind
 Mit der Carr-Purcell-Methode hätte die Relaxationszeit $T_{\text{2}}$ auch bestimmt werden können, wenn die Pulslänge 
 für den $\SI{180}{\degree}$-Puls exakt eingestellt wäre. Da dies aber nicht der Fall ist, kommt er zu einem systematischen
 Fehler, dadurch würde die damit bestimmte Relaxationszeit fehlerhaft sein.
-Dieser Fehler hebt sich bei der vorherigen Meiboom-Gill-Methode durch die Phasenverschiebung weg.
+Dieser Fehler hebt sich bei der vorherigen Meiboom-Gill-Methode durch die Phasenverschiebung auf.
 Das Bild mit dem $T_{\text{2}}$ bestimmt werden 
 soll ist die Abbildung \ref{fig:CPM}. 
 \begin{figure}
   \centering
   \includegraphics[width = \textwidth,keepaspectratio]{../Bilder/scope_2.png}
-  \caption{Bild des Oszilloskopen für die Carr-Purcell-Methode.}
+  \caption{Bild des Oszilloskops für die Carr-Purcell-Methode.}
   \label{fig:CPM}
 \end{figure}
 \FloatBarrier
@@ -155,7 +156,7 @@ Bei diesem Versuchsteil muss der z-Gradient umgepolt und maximiert werden. Die a
 Um den Diffusionskoeffizenten zu messen wird der A-Puls auf $\SI{90}{\degree}$ und der B-Puls auf $\SI{180}{\degree}$ eingestellt.
 Die Anzahl der Pulsewiederholungen von B ist $N=1$. Die Periodendauer wird wieder auf $P=3T_{\text{1}}\approx \SI{6.0}{\second}$ 
 eingestellt.
-Es wird wieder die Spannungsamplitude in abhängigkeit des Pulsabstandes $\tau$ gemessen.
+Es wird wieder die Spannungsamplitude in Abhängigkeit des Pulsabstandes $\tau$ gemessen.
 Die gemessenen Daten sind in Tabelle \ref{tab:Diff_messung} aufgelistet. 
 \begin{table}
   \centering
@@ -188,7 +189,7 @@ An die Messdaten aus Tabelle \ref{tab:Diff_messung} wird die Funktion
   U(\tau)=U_{\text{0}} \exp{\left(-\frac{2\tau}{T_{\text{2}}}\right)}\exp{\left(-\frac{\tau^3}{T_{\text{D}}}\right)}+U_{\text{1}}
 \end{equation}
 angepasst.
-Hierbei ist $T_{\text{2}}$ keiner der Fitparameter, sondern es wird der vorher bestimmte Wert verwendet.
+Hierbei ist $T_{\text{2}}$ keiner der Fitparameter, stattdessen wird der vorher bestimmte Wert verwendet.
 Die Fitparameter sind
 \begin{align*}
   U_{\text{0}}=&\SI{51}{\volt}\\
@@ -196,7 +197,7 @@ Die Fitparameter sind
   U_{\text{1}}=&\SI{-49}{\volt}.
 \end{align*}
 Da das Fitprogramm die Funktion schlecht optimieren konnte, können keine Unsicherheiten angegeben werden. Daher sind 
-die daraus berechneten Werte auf fehlerhaft.
+die daraus berechneten Werte fehlerhaft.
 Um den Fit und die Messdaten zu überprüfen wird die Funktionen 
 \begin{equation}
   \ln{\left(M(\tau)\right)}-2\frac{\tau}{T_{2}}
@@ -208,7 +209,7 @@ gegen $\tau^3$ aufgetragen, dabei soll ein linearer Zusammenhang entstehen. Abge
   \caption{Plot zur Überprüfung der Messdaten um den Diffusionskoeffizenten zu bestimmen.}
   \label{fig:Diff_fit}
 \end{figure}
-Mit der Parameter $T_{\text{D}}$ kann der Diffusionskoeffizent bestimmt werden. Hierfür wird der zweite Exponent der Formel \eqref{eq7}
+Mit der Parameter $T_{\text{D}}$ kann der Diffusionskoeffizient bestimmt werden. Hierfür wird der zweite Exponent der Formel \eqref{eq7}
 nach D umgestellt. Um die Gradientenstärke G zu bestimmen, wird zunächst eine Fouriertransformation angewendet.
 \FloatBarrier
 \begin{figure}
@@ -218,18 +219,18 @@ nach D umgestellt. Um die Gradientenstärke G zu bestimmen, wird zunächst eine 
 \end{figure}
 \FloatBarrier
 Mit der Fouriertransformation kann der Wert $d_{\text{f}} = \SI{13324}{\hertz}$ bestimmt werden.
-Daraus kann die Gradientenstärke und damit der Diffusionskoeffizent bestimmt werden
+Daraus kann die Gradientenstärke und damit der Diffusionskoeffizient bestimmt werden
 \begin{equation*}
   G=\frac{2\pi d_{\text{f}}}{\gamma d} \implies D = -\frac{3}{2} \frac{1}{T_{\text{D}} \left(\frac{2\pi d_{\text{f}}}{d}\right)^2}=\SI{6.6e-20}{\square\meter\per\second}.
 \end{equation*}
 Der Wert $d=\SI{4.4}{\milli\meter}$ kann an der Probe abgelesen werden.
-Mithilfe des Diffusionskoeffizenten und der Viskosität $\eta = \SI{0.001}{\pascal\second}$ kann der Molekülradius bestimmt werden. 
+Mithilfe des Diffusionskoeffizienten und der Viskosität $\eta = \SI{0.001}{\pascal\second}$ kann der Molekülradius bestimmt werden. 
 \begin{equation*}
   r=\frac{k_{\text{B}}T}{D6\pi \eta} = \SI{2.97}{\meter}
 \end{equation*}
 Dieses Ergebnis ist offensichtlich falsch.
-Der Radius der bestimmt wird, indem eine hexagonale dichte Kugelpackung angenommen wird, beträgt 
+Der Radius der bestimmt wird, indem eine hexagonale dichteste Kugelpackung angenommen wird, beträgt 
 \begin{equation*}
   r_{\text{hcp}} = \left(\frac{m_{\ce{H20}}\cdot 0,74}{\frac{4}{3}\pi \rho}\right)= \SI{1.74e-10}{\meter}.
 \end{equation*}
-Hierbei wird berücksichtigt, dass eine hexagonale dichte Kugelpackung 74\% des Raumes ausfüllt.
+Hierbei wird berücksichtigt, dass eine hexagonal dichteste Kugelpackung 74\% des Raumes ausfüllt.
