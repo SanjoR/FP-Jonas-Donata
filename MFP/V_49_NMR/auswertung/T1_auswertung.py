@@ -8,14 +8,18 @@ Tau,A = np.genfromtxt("../Data/T1_Messung.txt", unpack = True)
 
 print(Tau)
 print()
-
+#
 A[Tau>2] = -A[Tau>2] 
-print(A)
 
-A *= -1
 
-def exp_fit(x,amp,m,b):
-    return ( amp*np.exp(-m*x) +b )
+
+#A *= -1
+
+for i in A :
+    print(i)
+
+def exp_fit(tau,M0,T1):
+    return (M0* (1-2*np.exp(-tau/T1))  )
 
 
 params,cov_matrix = curve_fit(exp_fit,Tau,A)
@@ -24,15 +28,15 @@ x_plot = np.linspace(Tau.min(),Tau.max(),1000)
 
 errors = np.sqrt(np.diag(cov_matrix))
 
-amp = ufloat(params[0], errors[0])
-b = ufloat(params[2], errors[2])
-m = ufloat(params[1],errors[1])
+M0 = ufloat(params[0], errors[0])
+T1 = ufloat(params[1], errors[1])
 
-T1 = 1/m
-print("M0: ", amp )
-print("M1: ", b)
-print ("M0 = -2M1: ",-2*b)
 
+#T1 = 1/m
+#print("M0: ", amp )
+#print("M1: ", b)
+#print ("M0 = -2M1: ",-2*b)
+print("M0:", M0)
 print("T1:", T1)
 
 plt.plot(x_plot,exp_fit(x_plot,*params),"b-", label = "Fit")
