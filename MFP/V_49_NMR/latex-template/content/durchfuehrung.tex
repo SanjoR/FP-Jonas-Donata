@@ -51,12 +51,12 @@ Jetzt wird eine Messreihe von 25 Wertepaaren aufgenommen.
 $\tau$ wird ausgehend von dem Wert $\SI{0.0001}{\second}$ bis zu einem Wert von 
 $\SI{3.5}{\second}$ erhöht, wobei die Amplitude des FID nach dem 90°-Puls
 notiert wird.
-Die Wertepaare werden danach mit der Funktion 
-\begin{equation}
-    M(\tau) = M_{\text{0}} \exp{\left(-\frac{\tau}{T_{\text{1}}} \right)} + M_{\text{1}}
-    \label{fit1}
-\end{equation}
-gefittet, wobei $M_{\text{1}} = M(\tau_{\text{max}})$ und
+Die Wertepaare werden danach mit der Funktion \eqref{eq8}
+%\begin{equation}
+%    M(\tau) = M_{\text{0}} \exp{\left(-\frac{\tau}{T_{\text{1}}} \right)} + M_{\text{1}}
+%   \label{fit1}
+%\end{equation}
+gefittet, wobei %$M_{\text{1}} = M(\tau_{\text{max}})$ und
 $M_{\text{0}} = M(\tau_{\text{min}}) - M_{\text{1}}$ gilt.
 Jetzt kann $T_{\text{1}}$ abgelesen werden
 \cite{anleitung}. 
