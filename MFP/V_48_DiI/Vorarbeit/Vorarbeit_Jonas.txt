@@ -1,0 +1,49 @@
+Ziel des Versuchs:
+    Bestimmung der Relaxationszeit, mithilfe von der Aktivierungsenergie und der charakteristischen Relaxationszeit
+
+1.
+    a) Was ist ein Ionenkristall?
+        Regelmäßige räumliche Anordnung von Anionen (negativ geladenes Ion) und Kation
+        (positiv geladenes Ion) einens homogenen Stoffes im festzustand.
+
+        Kaliumbromid:
+            - Kalium-Salz des Bromwasserstoffs
+            - Kubisches Kristallsystem (flächenzentirert)
+            - K+ (Kalium) Br- (Brom) vom Bromwasserstoff
+
+        Cäsiumiodid:
+            - Cs+ (Cäsium) I- (Iod)
+            - Kubisch raumzentriert
+        
+        Ein Ionkristall ist ein Kristall aus zwei unterschiedlich geladenen Stoffen.
+
+
+    b) Was sind Dipole in Ionenkristallen?
+        - Ein Dipol ist eine Anordnung von zwei gegensätzlichen Ladungen (z.B. elektrisch) daher nach Außen neutral
+        - Im Ionenkristall alternierend positiv negative Ladung -> Dotierung mit zweifach geladenen Ionen führt zu 
+            Entstehung einer Kation-Leerstelle für Ladungsneutralität -> Dipol zwischen Leerstelle und Dotierung
+
+    c) siehe b)
+
+    d) Wie ist die Orientierung von Dipolen bei Raumtemperatur verteilt? 
+        Abstand von zweifach geladenen Ionen und Kationen-Leerstellen gibt Richtung des Dipols an, durch 
+        Gitterstruktur nur diskrete Richtungen möglich. Richtungsänderung nur durch Leerstellendiffusion möglich 
+
+    e) Was ist die Aktivierungsenergie W und die Relaxationszeit τ(T) eines Dipols?
+        Aktivierungsenergie muss überwunden werden für Leerstellendiffusion (materialabhängig)
+        Wenn die Dipole durch ein E-Feld ausgerichtet werden, wird eine gewisse Zeit (Relaxationszeit) benötigt, bis 
+        die Dipole wieder statistisch (unter der Bedingung der diskreten Richtungen) verteilt sind
+
+
+
+2. Ursache für den Depolarisationsstrom.
+    Dipole werden polarisiert und die Polarisation durch kühlen beibehalten. durch erhizten bekommen die Dipole 
+    genügend Energie um sich neu auszurichten (In energetisch besten Zustand) dafür müssen Ladungsträger diffundieren -> 
+    das erzeugt einen Strom
+
+
+3. Was trägt zum messbaren Strom neben der Dipolrelaxation bei?
+    Die Temperatur, da über diese bestimmt werden kann welcher Bruchteil der Dipole im Mittel in Feldrichtung zeigen
+
+
+4.  
