@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  24 JAN 2021 14:57
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  25 JAN 2021 18:54
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.088 seconds
+luaotfload | main : initialization completed in 0.094 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2329,364 +2329,1796 @@ eneric/fonts/otl/lmmono12-regular.luc)
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
- (./main.toc
-Language ngerman not found in language.dat.lua)
+ (./main.toc)
 \tf@toc=\write5
 
 \openout5 = main.toc
  [2
 
-] (./content/theorie.tex
-Overfull \hbox (22.69774pt too wide) in paragraph at lines 8--10
-\TU/lmr/m/n/10.95 mit Strontium-Ionen dotiertert Kalium-Bromid Kristall verwend
-et und seine materialspezifische
+]
+(./content/theorie.tex(load luc: /home/donata/.texlive2017/texmf-var/luatex-cach
+e/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/donata/.texlive2017/te
+xmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
+Overfull \hbox (2.14525pt too wide) in paragraph at lines 4--10
+\TU/lmr/m/n/10.95 Ionenkristalle Caesiumiodid und Kaliumbromid. Dafür wird die
+ Relaxationszeit $\TU/LatinModernMath(1)/m/n/10.95 𝜏(𝑇, 𝑊, 𝜏[])$
  []
 
 
-LaTeX Warning: File `img/Dipol.png' not found on input line 19.
+Overfull \hbox (8.5349pt too wide) in paragraph at lines 24--32
+\TU/lmr/m/n/10.95 kubische Struktur besitzen, die um eine Gitterkonstante in ei
+ne Raumrichtung gegeneinander
+ []
 
 
-! Package luatex.def Error: File `img/Dipol.png' not found: using draft setting
+Overfull \hbox (16.05711pt too wide) in paragraph at lines 35--43
+\TU/lmr/m/n/10.95 Strontiumiodid zweifach positiv geladene Strontiumionen enth
+ält, entstehen Kaliumleerstellen,
+ []
+
+
+Overfull \hbox (31.31783pt too wide) in paragraph at lines 35--43
+\TU/lmr/m/n/10.95 die mit der zusätzlichen positiven Ladung einen Dipol bilden
+, damit die Gesamtladungsneutralität
+ []
+
+
+Overfull \hbox (9.12233pt too wide) in paragraph at lines 49--61
+\TU/lmr/m/n/10.95 eine materialspezifische, thermische Energie überschritten w
+ird. Sie wird Aktivierungsenergie
+ []
+
+[3] [4]
+Overfull \hbox (0.94032pt too wide) in paragraph at lines 135--140
+[]\TU/lmr/m/n/10.95 approximiert werden kann. Aus diesem Ergebnis kann schlie
+ßlich die Aktivierungsenergie
+ []
+
+
+LaTeX Warning: Reference `1' on page 5 undefined on input line 158.
+
+
+Overfull \hbox (29.07939pt too wide) in paragraph at lines 158--160
+[]\TU/lmr/m/n/10.95 bringen. Wenn $\TU/LatinModernMath(1)/m/n/10.95 𝜏(𝑇)$
+ \TU/lmr/m/n/10.95 durch Gleichung [] ersetzt wird kann schließlich die Aktivi
+erungsenergie
+ []
+
+) (./content/durchfuehrung.tex
+! Missing $ inserted.
+<inserted text> 
+$
+l.16 -60^
+       C erhitzt bis eine Temperatur von 57°C überschritten wird.
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.19 
+   
+? 
+Missing character: There is no ü (U+00FC) in font cmmi10!
+Missing character: There is no ä (U+00E4) in font cmmi10!
+
+Overfull \hbox (54.8556pt too wide) in paragraph at lines 6--19
+\TU/lmr/m/n/10.95 Zu Beginn des Versuches wird die Kaliumbromidplatte, welche s
+ich zwischen den Plattenkondensatoren
+ []
+
+
+Overfull \hbox (349.76556pt too wide) in paragraph at lines 6--19
+\TU/lmr/m/n/10.95 von -60$[][]\TU/LatinModernMath(1)/m/n/10.95 𝑒𝑟ℎ𝑖
+𝑡𝑧𝑡𝑏𝑖𝑠𝑒𝑖𝑛𝑒𝑇𝑒𝑚𝑝𝑒𝑟𝑎𝑡𝑢
+𝑟𝑣𝑜𝑛57°𝐶𝑏𝑒𝑟𝑠𝑐ℎ𝑟𝑖𝑡𝑡𝑒𝑛𝑤
+𝑖𝑟𝑑.𝑊ℎ𝑟𝑒𝑛𝑑𝑑𝑒𝑠𝑠𝑒𝑛𝑤𝑒𝑟𝑑
+𝑒𝑛𝑎𝑙𝑙𝑒30𝑠𝑑𝑖𝑒𝑊𝑒𝑟𝑡𝑒𝑝𝑎𝑎𝑟
+𝑒𝑇𝑒𝑚𝑝𝑒𝑟𝑎𝑡𝑢𝑟𝑢𝑛𝑑𝐷𝑒𝑝𝑜𝑙
+𝑎𝑟𝑖𝑠𝑎𝑡𝑖𝑜𝑛𝑠𝑠𝑡𝑟𝑜𝑚𝑎𝑢𝑓𝑔
+𝑒𝑛𝑜𝑚𝑚𝑒𝑛.$ 
+ []
+
+[5]) (./content/auswertung.tex
+
+LaTeX Warning: Citation 'py-uncertainties' on page 6 undefined on input line 13.
+
+
+
+Overfull \hbox (45.24304pt too wide) in paragraph at lines 11--14
+\TU/lmr/m/n/10.95 Gaußscher Fehlerfortpflanzungen mit Hilfe des \TU/lmtt/m/n/1
+0.95 python\TU/lmr/m/n/10.95 -Paketes \TU/lmtt/m/n/10.95 uncertainties \TU/lmr/
+m/n/10.95 [[]]
+ []
+
+
+LaTeX Warning: File `build/plots/cleaned_data-set1.pdf' not found on input line 
+34.
+
+
+! Package luatex.def Error: File `build/plots/cleaned_data-set1.pdf' not found:
+ using draft setting.
+
+See the luatex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...inewidth]{build/plots/cleaned_data-set1.pdf}
+                                                  
+? 
+
+LaTeX Warning: File `build/plots/cleaned_data-set2.pdf' not found on input line 
+40.
+
+
+! Package luatex.def Error: File `build/plots/cleaned_data-set2.pdf' not found:
+ using draft setting.
+
+See the luatex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...inewidth]{build/plots/cleaned_data-set2.pdf}
+                                                  
+? 
+(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
+roman7-regular.luc)
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 47.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 47.
+
+
+! LaTeX Error: File `data/data-set1.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: main.tex
+(./main.tex (./header.tex
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \documentclass
+                [
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \usepackage
+             {scrhack}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage
+              [aux]{rerunfilecheck}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \usepackage
+              {amsmath}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \usepackage
+              {amssymb}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \usepackage
+              {mathtools}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \usepackage
+              {fontspec}
+? 
+
+Package typearea Warning: \typearea used at group level 3.
+(typearea)                Using \typearea inside any group, e.g.
+(typearea)                environments, math mode, boxes, etc. may result in
+(typearea)                many type setting problems.
+(typearea)                You should move the command \typearea
+(typearea)                outside all groups on input line 30.
+
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 30.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 30.
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \usepackage
+              {polyglossia}
+? 
+
+Package polyglossia Warning: gloss-german.ldf is already loaded! on input line 3
+4.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \setmainlanguage{german}
+                           
+? 
+Language ngerman not found in language.dat.lua
+Language ngerman not found in language.dat.lua
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \usepackage
+              [
+? 
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
+.................................................
+luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+ with language dflt
+luaotfload | aux : no font with id 26
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(4)' created for font 'Latin Modern Math' with
+. options
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=9.314265-},{Size=6.566215-9.314265,Font=Latin
+. Modern Math,Style=MathScript},{Size=-6.566215,Font=Latin Modern
+. Math,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+. }].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <9.314265->"LatinModernMath:mode=base;script=math;language=DFLT;"<6.566215-9.3
+14265>"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-6.566215>"
+LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \__um_luatex_copy_fontdimens: 
+.................................................
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/LatinModernMath(1)/m/n --> TU/LatinModernMath(4)/m/n 
+on input line 50.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/LatinModernMath(1)/bx/n --> TU/LatinModernMath(4)/bx/
+n on input line 50.
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
+.................................................
+luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+ with language dflt
+luaotfload | aux : no font with id 26
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(5)' created for font 'Latin Modern Math' with
+. options
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=9.314265-},{Size=6.566215-9.314265,Font=Latin
+. Modern Math,Style=MathScript},{Size=-6.566215,Font=Latin Modern
+. Math,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+. },Scale=1.00001,FontAdjustment={\fontdimen 8\font =7.41315pt\relax
+. \fontdimen 9\font =4.31429pt\relax \fontdimen 10\font =4.86179pt\relax
+. \fontdimen 11\font =7.51169pt\relax \fontdimen 12\font =3.77774pt\relax
+. \fontdimen 13\font =3.97484pt\relax \fontdimen 14\font =3.97484pt\relax
+. \fontdimen 15\font =3.16454pt\relax \fontdimen 16\font =2.70464pt\relax
+. \fontdimen 17\font =2.70464pt\relax \fontdimen 18\font =2.73749pt\relax
+. \fontdimen 19\font =2.18999pt\relax \fontdimen 22\font =2.73749pt\relax
+. \fontdimen 20\font =0pt\relax \fontdimen 21\font =0pt\relax }].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <9.314265->s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;"<6
+.566215-9.314265>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT
+;+ssty=0;"<-6.566215>s*[1.00001]"LatinModernMath:mode=base;script=math;language=
+DFLT;+ssty=1;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \__um_luatex_copy_fontdimens: \fontdimen 8\font =7.41315pt\relax \fontdimen
+. 9\font =4.31429pt\relax \fontdimen 10\font =4.86179pt\relax \fontdimen
+. 11\font =7.51169pt\relax \fontdimen 12\font =3.77774pt\relax \fontdimen
+. 13\font =3.97484pt\relax \fontdimen 14\font =3.97484pt\relax \fontdimen
+. 15\font =3.16454pt\relax \fontdimen 16\font =2.70464pt\relax \fontdimen
+. 17\font =2.70464pt\relax \fontdimen 18\font =2.73749pt\relax \fontdimen
+. 19\font =2.18999pt\relax \fontdimen 22\font =2.73749pt\relax \fontdimen
+. 20\font =0pt\relax \fontdimen 21\font =0pt\relax 
+.................................................
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  TU/LatinModernMath(2)/m/n --> TU/LatinModernMath(5)/m/n 
+on input line 50.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  TU/LatinModernMath(2)/bx/n --> TU/LatinModernMath(5)/bx/
+n on input line 50.
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
+.................................................
+luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+ with language dflt
+luaotfload | aux : no font with id 26
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LatinModernMath(6)' created for font 'Latin Modern Math' with
+. options
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=9.314265-},{Size=6.566215-9.314265,Font=Latin
+. Modern Math,Style=MathScript},{Size=-6.566215,Font=Latin Modern
+. Math,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+. },Scale=0.99999,FontAdjustment={\fontdimen 8\font =0.43799pt\relax
+. \fontdimen 9\font =2.18999pt\relax \fontdimen 10\font =1.82864pt\relax
+. \fontdimen 11\font =1.21544pt\relax \fontdimen 12\font =6.56999pt\relax
+. \fontdimen 13\font =0pt\relax }].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <9.314265->s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;"<6
+.566215-9.314265>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT
+;+ssty=0;"<-6.566215>s*[0.99999]"LatinModernMath:mode=base;script=math;language=
+DFLT;+ssty=1;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \__um_luatex_copy_fontdimens: \fontdimen 8\font =0.43799pt\relax \fontdimen
+. 9\font =2.18999pt\relax \fontdimen 10\font =1.82864pt\relax \fontdimen
+. 11\font =1.21544pt\relax \fontdimen 12\font =6.56999pt\relax \fontdimen
+. 13\font =0pt\relax 
+.................................................
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  TU/LatinModernMath(3)/m/n --> TU/LatinModernMath(6)/m/n 
+on input line 50.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  TU/LatinModernMath(3)/bx/n --> TU/LatinModernMath(6)/bx/
+n on input line 50.
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
 .
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.53 
+   
+? 
+luaotfload | aux : font no 45 (nil) does not define feature smcp for script math
+ with language dflt
+luaotfload | aux : no font with id 45
+luaotfload | aux : font no 46 (nil) does not define feature smcp for script math
+ with language dflt
+luaotfload | aux : no font with id 46
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'XITSMath(2)' created for font 'XITS Math' with options
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=9.314265-},{Size=6.566215-9.314265,Font=XITS
+. Math,Style=MathScript},{Size=-6.566215,Font=XITS
+. Math,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+. }].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <9.314265->"XITSMath:mode=base;script=math;language=DFLT;"<6.566215-9.314265>"
+XITSMath:mode=base;script=math;language=DFLT;+ssty=0;"<-6.566215>"XITSMath:mode=
+base;script=math;language=DFLT;+ssty=1;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \__um_luatex_copy_fontdimens: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"XITSMath/B:mode=base;script=math;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. and font adjustment code:
+. \__um_luatex_copy_fontdimens: 
+.................................................
+sym__um_fam3=mathgroup8
+! You can't use `relax' after advance.
+<recently read> c@v@normal 
+           
+l.54 \setmathfont{XITS Math}[range={scr, bfscr}]
+                                              
+? 
+! You can't use `relax' after advance.
+<recently read> c@v@bold 
+         
+l.54 \setmathfont{XITS Math}[range={scr, bfscr}]
+                                              
+? 
+LaTeX Font Info:    Overwriting symbol font `_um_fam3' in version `ormal'
+(Font)                  U/lmss/m/n --> U/XITSMath(2)/m/n on input line 54.
+LaTeX Font Info:    Overwriting symbol font `_um_fam3' in version `ormal'
+(Font)                  U/XITSMath(2)/m/n --> U/XITSMath(2)/m/n on input line 54
+.
+LaTeX Font Info:    Overwriting symbol font `_um_fam3' in version `old'
+(Font)                  U/XITSMath(2)/m/n --> U/XITSMath(2)/bx/n on input line 5
+4.
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.56 
+   
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \usepackage
+              [
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \usepackage
+              [
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \usepackage
+              [autostyle]{csquotes}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \usepackage
+              {xfrac}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \usepackage
+              {float}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \usepackage
+              [
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 \usepackage
+              {pdflscape}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \usepackage
+              [
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.96 ]
+    {caption}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \usepackage
+              {subcaption}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \usepackage
+               {graphicx}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \usepackage
+               {grffile}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 \usepackage
+               {booktabs}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \usepackage
+               {microtype}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \usepackage
+               [
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \addbibresource
+                   {lit.bib}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \addbibresource
+                   {programme.bib}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \usepackage
+               [
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \usepackage
+               {bookmark}
+? 
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \usepackage
+               [shortcuts]{extdash}
+? 
+)
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \begin{document}
+                   
+? 
+Runaway argument?
+14.4@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC.
+
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.14 \thispagestyle
+                 {empty}
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.14 \thispagestyle
+                 {empty}
+? 
+! Missing } inserted.
+<inserted text> 
+}
+l.14 \thispagestyle
+                 {empty}
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.14 \thispagestyle
+                 {empty}
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.14 \thispagestyle
+                 {empty}
+? 
+! Extra }, or forgotten endgroup.
+\maketitle ...ar}[t]{c} @author end {tabular}par }
+                                                  }vskip 1.5em {usekomafont ...
+l.14 \thispagestyle
+                 {empty}
+? 
+! Extra }, or forgotten endgroup.
+\maketitle ...r}[t]{c} @author end {tabular}par }}
+                                                  vskip 1.5em {usekomafont {...
+l.14 \thispagestyle
+                 {empty}
+? 
+
+! LaTeX Error: begin{tabular} on input line 14 ended by end{center}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \thispagestyle
+                 {empty}
+? 
+
+! LaTeX Error: begin{center} on input line 14 ended by end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \thispagestyle
+                 {empty}
+? 
+! Missing } inserted.
+<inserted text> 
+}
+l.14 \thispagestyle
+                 {empty}
+? 
+! Missing } inserted.
+<inserted text> 
+}
+l.14 \thispagestyle
+                 {empty}
+? 
+Package tocbasic Info: character protrusion at toc deactivated on input line 15.
+
+(./main.toc)
+tf@toc=write6
+
+\openout6 = main.toc
+ (./content/theorie.tex
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.10 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.10 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.10 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.10 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.32 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.32 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.32 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.32 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.43 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.43 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.43 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.43 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.61 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.61 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.61 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.61 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.66 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.66 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.66 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.66 
+   
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.66 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.82 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.82 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.82 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.82 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.86 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.86 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.86 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.86 
+   
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.86 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.89 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.89 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.89 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.89 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.93 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.93 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.93 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.93 
+   
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.93 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.95 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.95 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.95 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.95 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.99 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.99 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.99 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.99 
+   
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.99 
+   
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.106 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.106 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.106 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.106 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.106 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.110 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.110 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.110 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.110 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.114 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.114 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.114 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.114 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.114 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.120 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.120 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.120 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.120 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.120 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.123 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.123 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.123 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.123 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.127 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.127 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.127 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.127 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.127 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.134 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.134 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.134 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.134 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.134 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.140 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.140 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.140 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.140 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.144 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.144 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.144 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.144 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.144 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.146 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.146 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.146 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.146 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.150 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.150 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.150 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.150 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.150 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.157 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.157 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.157 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.157 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.157 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.160 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.160 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.160 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.160 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.165 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.165 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.165 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.165 
+    
+? 
+! Display math should end with $$.
+<to be read again> 
+par 
+l.165 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.168 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.168 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.168 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.168 
+    
+? 
+) (./content/durchfuehrung.tex
+! Missing $ inserted.
+<inserted text> 
+$
+l.16 -60^
+       C erhitzt bis eine Temperatur von 57°C überschritten wird.
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.19 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.19 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.19 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.19 
+   
+? 
+) (./content/auswertung.tex
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.10 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.10 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.10 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.10 
+   
+? 
+
+LaTeX Warning: Citation 'py-uncertainties' on page 1 undefined on input line 13.
+
+
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.61 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.61 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.61 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.61 
+   
+? 
+
+LaTeX Warning: Reference `sub:berechnung_der_aktivierungsenergie_w_' on page 1 u
+ndefined on input line 64.
+
+
+LaTeX Warning: Reference `eqn:approx' on page 1 undefined on input line 65.
+
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.95 
+   
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.95 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.95 
+   
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.95 
+   
+? 
+Runaway argument?
+T$ durchgeführt. Hierbei ist $F(T)$ wie in Gleichung ref {eqn:integrETC.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.144 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.144 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.144 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.144 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.155 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.155 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.155 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.155 
+    
+? 
+Runaway argument?
+10.95@nil try@load@fontshape expandafter ifx csname curr@fontshape endcsname ETC
+.
+! Paragraph ended before split@name was complete.
+<to be read again> 
+par 
+l.176 
+    
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.176 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.176 
+    
+? 
+! Missing endgroup inserted.
+<inserted text> 
+endgroup 
+l.176 
+    
+? 
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178   \centering
+                
+? 
+
+LaTeX Warning: File `plot.pdf' not found on input line 179.
+
+
+! Package luatex.def Error: File `plot.pdf' not found: using draft setting.
 
 See the luatex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 ...graphics[width=0.5\linewidth]{img/Dipol.png}
-                                                  
+l.179   \includegraphics{plot.pdf}
+                                
 ? 
-(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
-roman8-regular.luc)(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/g
-eneric/fonts/otl/lmroman5-regular.luc) [3]
-Overfull \hbox (20.3008pt too wide) in paragraph at lines 44--49
-\TU/lmr/m/n/10.95 beschrieben werden kann. Anschließend wird die Probe auf ein
-e Temperatur $\TU/LatinModernMath(1)/m/n/10.95 𝑇[]$ \TU/lmr/m/n/10.95 herunt
-ergekühlt
- []
+) (./content/diskussion.tex)
 
+! LaTeX Error: begin{equation} on input line 161 ended by end{document}.
 
-LaTeX Warning: File `img/pol_strom.PNG' not found on input line 56.
-
-
-! Package luatex.def Error: File `img/pol_strom.PNG' not found: using draft set
-ting.
-
-See the luatex.def package documentation for explanation.
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 ...cs[width = 0.5\linewidth]{img/pol_strom.PNG}
-                                                  
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.62     j(t) = y(T_\mathrm
-                         {P}) p \frac{\mathrm{d}N}{\mathrm{d}t} \qquad,
-? 
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.63 \end{equation}
+l.25 \end{document}
                  
 ? 
-! Missing } inserted.
-<inserted text> 
-}
-l.63 \end{equation}
-                 
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.64 wobei $y(T_\mathrm
-                     {P})$ den Anteil $y$ bei der Polarisationstemperatur $T...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.64 wobei $y(T_\mathrm{P})$
-                           den Anteil $y$ bei der Polarisationstemperatur $T...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.64 ...$ bei der Polarisationstemperatur $T_\mathrm
-                                                  {P}$, $p$ das Dipolmoment ...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.64 ...i der Polarisationstemperatur $T_\mathrm{P}$
-                                                  , $p$ das Dipolmoment und ...
-? 
-[4]
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.66 ...} ergibt sich für den Ausdruck $y(T_\mathrm
-                                                  {P}) p$
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.66 ...t sich für den Ausdruck $y(T_\mathrm{P}) p$
-                                                  
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.68     y(T_\mathrm
-                  {P}) p = \frac{p^2 E}{3 k_\mathrm{B} T_\mathrm{P}} \qquad .
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.68 ... = \frac{p^2 E}{3 k_\mathrm{B} T_\mathrm{P}}
-                                                   \qquad .
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.68 ... = \frac{p^2 E}{3 k_\mathrm{B} T_\mathrm{P}}
-                                                   \qquad .
-? 
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.69 \end{equation}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.69 \end{equation}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.69 \end{equation}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.69 \end{equation}
-                 
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.77     N = N_\mathrm
-                    {P} \exp{ \left( - \frac{ 1 }{ b } \int_{T_0}^T \frac{ \...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.78 \end{equation*}
-                  
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.79 mit $N_\mathrm
-                 {P}$ als Zahl der zu Beginn des Aufheizens vorhandenen orie...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.79 mit $N_\mathrm{P}$
-                      als Zahl der zu Beginn des Aufheizens vorhandenen orie...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.82 ...frac{ p^2 E }{ 3 k_\mathrm{B} T_\mathrm{P} }
-                                                   \frac{ N_\mathrm{P} }{ \t...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.82 ...frac{ p^2 E }{ 3 k_\mathrm{B} T_\mathrm{P} }
-                                                   \frac{ N_\mathrm{P} }{ \t...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.82 ...\mathrm{P} } \frac{ N_\mathrm{P} }{ \tau_0 }
-                                                   \exp{ \left( - \frac{ 1 }...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.82 ...\mathrm{P} } \frac{ N_\mathrm{P} }{ \tau_0 }
-                                                   \exp{ \left( - \frac{ 1 }...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.82 ...\exp{ \left( - \frac{ W }{ k_\mathrm{B} T' }
-                                                   \right) \mathrm{d}T' } \r...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.82 ...left( - \frac{ W }{ k_\mathrm{B} T' } \right
-                                                  ) \mathrm{d}T' } \right) }...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.82 ...} \exp{ \left( -\frac{ W }{ k_\mathrm{B} T }
-                                                   \right) } \label{j_t}
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.82 ... \left( -\frac{ W }{ k_\mathrm{B} T } \right
-                                                  ) } \label{j_t}
-? 
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.83 \end{equation}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.83 \end{equation}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.83 \end{equation}
-                 
-? 
-(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
-roman6-regular.luc)
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 85.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 85.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 85.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 85.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 85.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 85.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 85.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 85.
-
-
-Overfull \hbox (0.1051pt too wide) in paragraph at lines 88--89
-\TU/lmr/m/n/10.95 Es werden zwei verschiedene Ansätze zur Berechnung der Aktiv
-ierungsenergie $\TU/LatinModernMath(1)/m/n/10.95 𝑊$ \TU/lmr/m/n/10.95 berech
-net. 
- []
-
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.92 ... \exp{ \left( - \frac{ W }{ k_\mathrm{B} T }
-                                                   \right )} \approx 0 \qquad ,
-
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.92 ...\left( - \frac{ W }{ k_\mathrm{B} T } \right
-                                                   )} \approx 0 \qquad ,
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.97 ...frac{ p^2 E }{ 3 k_\mathrm{B} T_\mathrm{P} }
-                                                   \frac{ N_\mathrm{P} }{ \t...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.97 ...frac{ p^2 E }{ 3 k_\mathrm{B} T_\mathrm{P} }
-                                                   \frac{ N_\mathrm{P} }{ \t...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.97 ...\mathrm{P} } \frac{ N_\mathrm{P} }{ \tau_0 }
-                                                   \exp{ \left( - \frac{ W }...
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.97 ...\mathrm{P} } \frac{ N_\mathrm{P} }{ \tau_0 }
-                                                   \exp{ \left( - \frac{ W }...
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.97 ...} \exp{ \left( - \frac{ W }{ k_\mathrm{B} T}
-                                                   \right ) }
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.97 ... \left( - \frac{ W }{ k_\mathrm{B} T} \right
-                                                   ) }
-? 
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.98 \end{equation}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.98 \end{equation}
-                 
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.98 \end{equation}
-                 
-? 
-! Missing { inserted.
-<to be read again> 
-\__um_group_begin: 
-l.119      \frac{ W }{ k_\mathrm{B} T }
-                                      = \ln{ \left( \frac{ \int_{T}^\infty j...
-? 
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.120 \end{equation}
-                  
-? 
-! Missing } inserted.
-<inserted text> 
-}
-l.120 \end{equation}
-                  
-? 
-[5]) (./content/durchfuehrung.tex) (./content/auswertung.tex)
-(./content/diskussion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
- (./main.aux
+(./main.aux
 Language ngerman not found in language.dat.lua)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
@@ -2695,49 +4127,193 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 1EBDB8D2BEC192C4303A7AE1E105B521;6899
-(rerunfilecheck)             After:  AFFE9BB55CEE97C7108864483C38293A;7371.
+(rerunfilecheck)             Before: 7C842C543E24BD0A05E1585BDFCAB273;7747
+(rerunfilecheck)             After:  90EB528AFDD8CA360D66F69940650F2D;10352.
 
 Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: E4FD8AD1A9728C2009B225169F2FAF9B;854
-(rerunfilecheck)             After:  C3ADEC6CB65C6AC3DE1EEEB86FE479E8;918.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  3D0CD35E117E299B9D2594585C52A908;692.
+
+Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.toc':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  3D0CD35E117E299B9D2594585C52A908;692.
 
 LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please rerun LaTeX.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
-)
+
+Overfull \hbox (841.64496pt too wide) in paragraph at lines 59--25
+ []TU/lmr/m/n/10.95 BKM@entryid=10,dest=73656374696F6E2E37,srcline=1,srcfile=2E
+2F636F6E74656E742F7468656F7269652E7465785C3337365C3337375C3030305A5C303030695C3
+03030655C3030306C5C303030735C303030655C303030745C3030307A5C303030755C3030306E5C
+30303067 
+ []
+
+
+Overfull \hbox (615.08652pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=11,dest=73656374696F6E2E38,srcline=11,srcfile=2E2
+F636F6E74656E742F7468656F7269652E7465785C3337365C3337375C303030545C303030685C30
+3030655C3030306F5C303030725C303030695C30303065 
+ []
+
+
+Overfull \hbox (1709.31747pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=12,dest=73756273656374696F6E2E382E31,srcline=21,s
+rcfile=2E2F636F6E74656E742F7468656F7269652E7465785C3337365C3337375C303030445C30
+3030695C303030705C3030306F5C3030306C5C303030655C3030305C3034305C303030695C30303
+06E5C3030305C3034305C303030495C3030306F5C3030306E5C303030655C3030306E5C3030306B
+5C303030725C303030695C303030735C303030745C303030615C3030306C5C3030306C5C3030306
+5 
+ []
+
+
+Overfull \hbox (2217.81213pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=13,dest=73756273656374696F6E2E382E32,srcline=46,s
+rcfile=2E2F636F6E74656E742F7468656F7269652E7465785C3337365C3337375C303030445C30
+3030695C303030705C3030306F5C3030306C5C303030705C3030306F5C3030306C5C303030615C3
+03030725C303030695C303030735C303030615C303030745C303030695C3030306F5C3030306E5C
+3030305C3034305C303030755C3030306E5C303030645C3030305C3034305C3030302D5C3030307
+25C303030655C3030306C5C303030615C303030785C303030615C303030745C303030695C303030
+6F5C3030306E 
+ []
+
+
+Overfull \hbox (2261.20297pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=14,dest=73756273656374696F6E2E382E33,srcline=74,s
+rcfile=2E2F636F6E74656E742F7468656F7269652E7465785C3337365C3337375C303030425C30
+3030655C303030725C303030655C303030635C303030685C3030306E5C303030755C3030306E5C3
+03030675C3030305C3034305C303030645C303030655C303030725C3030305C3034305C30303041
+5C3030306B5C303030745C303030695C303030765C303030695C303030655C303030725C3030307
+55C3030306E5C303030675C303030735C303030655C3030306E5C303030655C303030725C303030
+675C303030695C30303065 
+ []
+
+
+Overfull \hbox (989.19649pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=15,dest=73656374696F6E2E39,srcline=1,srcfile=2E2F
+636F6E74656E742F64757263686675656872756E672E7465785C3337365C3337375C303030445C3
+03030755C303030725C303030635C303030685C303030665C3030305C3337345C303030685C3030
+30725C303030755C3030306E5C30303067 
+ []
+
+
+Overfull \hbox (1003.03424pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=16,dest=73656374696F6E2E3130,srcline=4,srcfile=2E
+2F636F6E74656E742F64757263686675656872756E672E7465785C3337365C3337375C303030315
+C3030302E5C3030305C3034305C3030304D5C303030655C303030735C303030735C303030725C30
+3030655C303030695C303030685C30303065 
+ []
+
+
+Overfull \hbox (1008.39975pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=17,dest=73656374696F6E2E3131,srcline=21,srcfile=2
+E2F636F6E74656E742F64757263686675656872756E672E7465785C3337365C3337375C30303032
+5C3030302E5C3030305C3034305C3030304D5C303030655C303030735C303030735C303030725C3
+03030655C303030695C303030685C30303065 
+ []
+
+
+Overfull \hbox (821.08438pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=18,dest=73656374696F6E2E3132,srcline=1,srcfile=2E
+2F636F6E74656E742F61757377657274756E672E7465785C3337365C3337375C303030415C30303
+0755C303030735C303030775C303030655C303030725C303030745C303030755C3030306E5C3030
+3067 
+ []
+
+
+Overfull \hbox (2158.24413pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=19,dest=73756273656374696F6E2E31322E31,srcline=62
+,srcfile=2E2F636F6E74656E742F61757377657274756E672E7465785C3337365C3337375C3030
+30415C303030705C303030705C303030725C3030306F5C303030785C303030695C3030306D5C303
+030615C303030745C303030695C303030765C303030655C3030305C3034305C303030415C303030
+755C303030735C303030675C3030306C5C303030655C303030695C303030635C303030685C30303
+0735C303030725C303030655C303030635C303030685C3030306E5C303030755C3030306E5C3030
+3067 
+ []
+
+
+Overfull \hbox (2309.32631pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=20,dest=73756273656374696F6E2E31322E32,srcline=96
+,srcfile=2E2F636F6E74656E742F61757377657274756E672E7465785C3337365C3337375C3030
+30415C303030755C303030735C303030675C3030306C5C303030655C303030695C303030635C303
+030685C303030735C303030725C303030655C303030635C303030685C3030306E5C303030755C30
+30306E5C303030675C3030305C3034305C3030306D5C303030695C303030745C3030305C3034305
+C303030495C3030306E5C303030745C303030655C303030675C303030725C303030615C30303074
+5C303030695C3030306F5C3030306E 
+ []
+
+
+Overfull \hbox (836.23677pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=21,dest=73656374696F6E2E3133,srcline=146,srcfile=
+2E2F636F6E74656E742F61757377657274756E672E7465785C3337365C3337375C303030445C303
+030695C303030735C3030306B5C303030755C303030735C303030735C303030695C3030306F5C30
+30306E 
+ []
+
+
+Overfull \hbox (829.37962pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=22,dest=73656374696F6E2E3134,srcline=1,srcfile=2E
+2F636F6E74656E742F6469736B757373696F6E2E7465785C3337365C3337375C303030445C30303
+0695C303030735C3030306B5C303030755C303030735C303030735C303030695C3030306F5C3030
+306E 
+ []
+
+
+Overfull \hbox (619.23944pt too wide) in paragraph at lines 59--25
+ TU/lmr/m/n/10.95 BKM@entryid=23,dest=73656374696F6E2A2E37,srcline=23,srcfile=2
+E2F6D61696E2E7465785C3337365C3337375C3030304C5C303030695C303030745C303030655C30
+3030725C303030615C303030745C303030755C30303072 
+ []
+
+! You can't use `end' in internal vertical mode.
+<recently read> @@end 
+      
+l.25 \end{document}
+                 
+? X
+
 
 Here is how much of LuaTeX's memory you used:
- 41413 strings out of 494480
- 100000,1648299 words of node,token memory allocated
- 659 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 25 attribute, 77 glue_spec, 25 attr
-ibute_list, 1 write nodes
-   avail lists: 1:1,2:450,3:115,4:15,5:220,6:1345,7:403,8:84,9:320,10:8,11:5
- 44266 multiletter control sequences out of 65536+600000
- 175 fonts using 64314263 bytes
- 61i,10n,104p,8833b,3048s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
-f/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/ope
-ntype/public/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype/public/lm/
-lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.o
-tf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/t
-exmf/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/
-opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/opentype/pu
-blic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
-12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></us
-r/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (6 pages, 59766 bytes).
+ 41782 strings out of 494480
+ 125006,1648299 words of node,token memory allocated 103028 words of node memory still in use:
+   400 hlist, 16 vlist, 37 rule, 2 adjust, 22 disc, 107 local_par, 2 dir, 93 mat
+h, 2003 glue, 668 kern, 328 penalty, 91 margin_kern, 12458 glyph, 694 attribute,
+ 98 glue_spec, 694 attribute_list, 2 temp, 122 if_stack, 47 write, 5 pdf_start_l
+ink, 5 pdf_end_link, 22 pdf_dest, 5 pdf_action nodes
+   avail lists: 1:5,2:48,4:2,5:23,7:18,8:95,10:17
+ 44435 multiletter control sequences out of 65536+600000
+ 220 fonts using 81749919 bytes
+ 61i,18n,104p,8833b,5736s stack positions out of 5000i,500n,10000p,200000b,100000s
 
-PDF statistics: 194 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 131072)
- 81 words of extra memory for PDF output out of 10000 (max. 100000000)
+warning  (pdf backend): unreferenced destination with name 'section.6'
+
+warning  (pdf backend): unreferenced destination with name 'section.5'
+
+warning  (pdf backend): unreferenced destination with name 'cite.0@sample'
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
+fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype/p
+ublic/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/opentype/public/lm-ma
+th/latinmodern-math.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regu
+lar.otf></usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf></u
+sr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/
+fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/
+public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12
+-bold.otf>
+Output written on main.pdf (5 pages, 46775 bytes).
+
+PDF statistics: 157 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 131072)
+ 73 words of extra memory for PDF output out of 10000 (max. 100000000)
 

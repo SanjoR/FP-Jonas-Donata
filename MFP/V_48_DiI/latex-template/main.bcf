@@ -1924,11 +1924,10 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">V48</bcf:citekey>
-    <bcf:citekey order="2">V48</bcf:citekey>
-    <bcf:citekey order="3">V48</bcf:citekey>
-    <bcf:citekey order="4">V48</bcf:citekey>
-    <bcf:citekey order="5">sample</bcf:citekey>
+    <bcf:citekey order="1">sample</bcf:citekey>
+    <bcf:citekey order="2">py-uncertainties</bcf:citekey>
+    <bcf:citekey order="3">sample</bcf:citekey>
+    <bcf:citekey order="4">py-uncertainties</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

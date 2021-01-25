@@ -1,13 +1,10 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {german}
-\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Grundlagen}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Dipolentstehung in Ionenkristallen}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Richtung des Dipols}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Messverfahren}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Berechnung der Aktivierungsenergie $W$}{5}{subsection.2.4}
-\contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
-\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}
-\contentsline {section}{\numberline {5}Diskussion}{6}{section.5}
-\contentsline {section}{\nonumberline Literatur}{6}{section*.4}
+boolfalse {citerequest}boolfalse {citetracker}boolfalse {pagetracker}boolfalse {backtracker}relax 
+defcounter {refsection}{0}relax 
+select@language {german}
+contentsline {section}{numberline {1}Zielsetzung}{3}{section.1}
+contentsline {section}{numberline {2}Theorie}{3}{section.2}
+contentsline {subsection}{numberline {2.1}Dipole in Ionenkristalle}{3}{subsection.2.1}
+contentsline {subsection}{numberline {2.2}Dipolpolarisation und -relaxation}{3}{subsection.2.2}
+contentsline {subsection}{numberline {2.3}Berechnung der Aktivierungsenergie}{4}{subsection.2.3}
+contentsline {section}{numberline {3}Durchführung}{5}{section.3}
+contentsline {section}{numberline {4}1. Messreihe}{5}{section.4}
