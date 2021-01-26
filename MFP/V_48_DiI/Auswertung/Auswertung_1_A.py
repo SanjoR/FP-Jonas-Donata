@@ -12,8 +12,6 @@ T,I = np.genfromtxt("../Data/Data_A.txt", unpack = True, dtype = float)
 
 
 
-
-
 T = T+273
 
 
@@ -46,9 +44,12 @@ params_untergrund,cov_ma_untergrund = curve_fit(Untergrund,T_U_R,I_U_R, p0=(0.00
 
 errors_untergrund = np.sqrt(np.diag(cov_ma_untergrund))
 
-for i in range(len(params_untergrund)):
-    print(sys.argv[1], params_untergrund[i],errors_untergrund[i])
+par_err_unter = unp.uarray(params_untergrund, errors_untergrund)
 
+print("Untergrund : A,B")
+for i in par_err_unter:
+    print(i)
+print()
 
 
 
@@ -68,12 +69,11 @@ def j(T,Amp,W):
 params, cov_ma = curve_fit(j,T_Fit,np.log(I_Cor_Fit*10**-11), p0 = (-25, 0))
 errors = np.sqrt(np.diag(cov_ma))
 
-print()
-for i in range(len(params)):
-    if i == 1:
-        print(6.242*10**18*params[i],6.242*10**18*errors[i])  
-    else:  
-        print(params[i],errors[i])
+par_err = unp.uarray(params, errors)
+par_err[1]*= 6.242*10**18
+print("Params: Amp,W")
+for i in par_err:
+    print(i)
 
 
 
@@ -94,7 +94,7 @@ plt.grid()
 plt.xlabel("Temperatur in K")
 plt.ylabel("I in pA")
 plt.legend(loc ="best")
-plt.show()
+#plt.show()
 plt.close()
 
 
@@ -105,4 +105,89 @@ plt.plot(1/x_plot,j(x_plot,*params),"r-",label = "Fit")
 plt.grid()
 #plt.yscale("log")
 plt.legend(loc="best")
+#plt.show()
+plt.close()
+
+
+
+#benötigt I_Cor und T
+
+mask4 = np.logical_and(T<270,T>230)
+
+T_int = T[mask4]
+I_Cor_int = I_Cor[mask4] * 10**-11
+T_not_int = T[~mask4]
+I_Cor_not_int = I_Cor[~mask4] * 10 **-11
+
+
+index = np.argwhere(I_Cor_int == I_Cor_int.max())
+
+
+plt.figure()
+plt.plot(T_int,I_Cor_int,"bx")
+plt.plot(T_not_int,I_Cor_not_int,"rx")
 plt.show()
+plt.close()
+
+
+
+def Num_int(Temp):
+    integral= 0
+    for i in range(len(T_int)):
+        if i !=0:
+            if T_int[i]> Temp:
+                integral += (T_int[i]-T_int[i-1]) * (I_Cor_int[i-1]+I_Cor_int[i])/2
+                #print(integral)
+    return(integral)
+
+
+F = []
+
+def lin_fit(T,A,B):
+    return((A/const.k)*1/T  + B)
+
+for i in range(len(T_int)):
+    F = np.append(F,Num_int(T_int[i])/I_Cor_int[i])
+
+
+while 0.0 in F:
+    F = F[:-1]
+    T_int=T_int[:-1]
+
+params_int,cov_ma_int = curve_fit(lin_fit,T_int,np.log(F))
+
+
+errors_int = np.sqrt(np.diag(cov_ma_int))
+
+par_int_err = unp.uarray(params_int, errors_int)
+par_int_err[0]*=6.242*10**18
+
+print()
+print("Params int : W,B")
+for i in par_int_err:
+
+    print(i)
+
+x_plot= np.linspace(T_int.min(),T_int.max(),1000)
+
+plt.figure()
+plt.plot(1/T_int,np.log(F),"bx")
+plt.plot(1/x_plot,lin_fit(x_plot,*params_int), "r-")
+plt.show()
+
+
+
+b = 2 #Kelvin pro minute
+
+b *= 1/60
+
+def tau_0(W):
+    return( const.k*T_int[index]**2 / (W*b) * unp.exp(-W/(const.k*T_int[index]))) 
+
+#const.k*T_int[index]**2 / (params_int[0]*6.242*10**18*b) *
+print(params_int[0]*6.242*10**18/(const.k*T_int[index]))
+print(np.exp(-params_int[0]*6.242*10**18/(const.k*T_int[index])))
+print()
+print("Approx verfahren: ", tau_0(par_err[1]/ 6.242*10**18))
+print()
+print("Integrations verfahren: ", tau_0(par_int_err[0]/ 6.242*10**18))
