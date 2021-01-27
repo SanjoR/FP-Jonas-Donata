@@ -13,7 +13,11 @@ T,I = np.genfromtxt("../Data/Data_A.txt", unpack = True, dtype = float)
 
 
 T = T+273
-
+print(T.max(),T.min())
+print(np.std(np.diff(T)))
+for i in I:
+    print(i)
+print(len(T))
 
 
 

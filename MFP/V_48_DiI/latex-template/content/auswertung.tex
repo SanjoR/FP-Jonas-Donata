@@ -1,5 +1,216 @@
 \section{Auswertung}
 \label{sec:auswertung}
+In diesem Versuch werden zwei Temperatur-Strom-Kurven mit unterschiedlichen Heizraten $b$ analysiert.
+Messreihe A hat eine Heizrate von $b_{\text{A}}=\SI{2}{\kelvin\per\minute}$ und es wurde in dem Temperaturbereich
+$T\in\left[\SI{213.1}{\kelvin},\SI{330.3}{\kelvin}\right]$ gemessen. Für Messreihe B beträgt die Heizrate
+$b_{\text{B}}=\SI{1}{\kelvin\per\minute}$ und der vermessene Temperaturbereich ist $T\in\left[\SI{232.7}{\kelvin},\SI{289.6}{\kelvin}\right]$.
+In beiden Fällen ist Kaliumbromid $\ce{KBr}$ der verwendete Kristall. Die Messdaten sind in Tabellen \ref{tab:Messdaten_roh}
+abgebildet. 
+\newpage
+\begin{table}
+    \centering
+    \caption{Temperatur und Strom für Messreihe A und B, bei A wurden halbminütig und bei B jede Minute ein Datenpaar aufgezeichnet.}
+    \label{tab:Messdaten_roh}
+    \begin{tabular}{c c c c c}
+        \toprule
+        &\multicolumn{2}{c}{Messreihe A}&\multicolumn{2}{c}{Messreihe B}\\
+        Zeit $t \,/\,\SI{}{\minute}$&Temperatur $T \,/\,\SI{}{\kelvin}$ &Strom $I \,/\,\SI{e-11}{\ampere}$&Temperatur $T \,/\,\SI{}{\kelvin}$ &Strom $I \,/\,\SI{e-11}{\ampere}$\\
+        \midrule
+        $\num{0.0}$&$\num{213.1}$&$\num{0.08}$&$\num{232.7}$&$\num{0.1}$\\
+        $\num{0.5}$&$\num{215.3}$&$\num{0.1}$&-&-\\
+        $\num{1.0}$&$\num{217.3}$&$\num{0.08}$&$\num{234.5}$&$\num{0.13}$\\
+        $\num{1.5}$&$\num{218.1}$&$\num{0.09}$&-&-\\
+        $\num{2.0}$&$\num{219.0}$&$\num{0.08}$&$\num{235.5}$&$\num{0.15}$\\
+        $\num{2.5}$&$\num{219.8}$&$\num{0.09}$&-&-\\
+        $\num{3.0}$&$\num{220.4}$&$\num{0.08}$&$\num{236.3}$&$\num{0.16}$\\
+        $\num{3.5}$&$\num{221.4}$&$\num{0.07}$&-&-\\
+        $\num{4.0}$&$\num{222.3}$&$\num{0.07}$&$\num{237.3}$&$\num{0.19}$\\
+        $\num{4.5}$&$\num{223.1}$&$\num{0.07}$&-&-\\
+        $\num{5.0}$&$\num{224.6}$&$\num{0.07}$&$\num{238.4}$&$\num{0.21}$\\
+        $\num{5.5}$&$\num{225.5}$&$\num{0.07}$&-&-\\
+        $\num{6.0}$&$\num{226.2}$&$\num{0.07}$&$\num{239.6}$&$\num{0.25}$\\
+        $\num{6.5}$&$\num{227.1}$&$\num{0.08}$&-&-\\
+        $\num{7.0}$&$\num{228.0}$&$\num{0.08}$&$\num{240.6}$&$\num{0.28}$\\
+        $\num{7.5}$&$\num{228.9}$&$\num{0.08}$&-&-\\
+        $\num{8.0}$&$\num{230.0}$&$\num{0.09}$&$\num{241.5}$&$\num{0.31}$\\
+        $\num{8.5}$&$\num{231.2}$&$\num{0.08}$&-&-\\
+        $\num{9.0}$&$\num{231.2}$&$\num{0.08}$&$\num{242.4}$&$\num{0.35}$\\
+        $\num{9.5}$&$\num{232.1}$&$\num{0.11}$&-&-\\
+        $\num{10.0}$&$\num{233.0}$&$\num{0.12}$&$\num{243.4}$&$\num{0.39}$\\
+        $\num{10.5}$&$\num{233.9}$&$\num{0.13}$&-&-\\
+        $\num{11.0}$&$\num{234.7}$&$\num{0.14}$&$\num{244.4}$&$\num{0.44}$\\
+        $\num{11.5}$&$\num{235.5}$&$\num{0.15}$&-&-\\
+        $\num{12.0}$&$\num{236.2}$&$\num{0.16}$&$\num{245.4}$&$\num{0.49}$\\
+        $\num{12.5}$&$\num{237.0}$&$\num{0.16}$&-&-\\
+        $\num{13.0}$&$\num{238.0}$&$\num{0.2}$&$\num{246.4}$&$\num{0.54}$\\
+        $\num{13.5}$&$\num{239.0}$&$\num{0.22}$&-&-\\
+        $\num{14.0}$&$\num{239.9}$&$\num{0.25}$&$\num{247.3}$&$\num{0.59}$\\
+        $\num{14.5}$&$\num{240.7}$&$\num{0.28}$&-&-\\
+        $\num{15.0}$&$\num{241.5}$&$\num{0.31}$&$\num{248.2}$&$\num{0.63}$\\
+        $\num{15.5}$&$\num{242.5}$&$\num{0.35}$&-&-\\
+        $\num{16.0}$&$\num{243.8}$&$\num{0.41}$&$\num{249.1}$&$\num{0.67}$\\
+        $\num{16.5}$&$\num{244.8}$&$\num{0.46}$&-&-\\
+        $\num{17.0}$&$\num{245.7}$&$\num{0.53}$&$\num{249.9}$&$\num{0.67}$\\
+        $\num{17.5}$&$\num{246.5}$&$\num{0.59}$&-&-\\
+        $\num{18.0}$&$\num{247.4}$&$\num{0.65}$&$\num{250.7}$&$\num{0.73}$\\
+        $\num{18.5}$&$\num{248.4}$&$\num{0.72}$&-&-\\
+        $\num{19.0}$&$\num{249.5}$&$\num{0.82}$&$\num{251.5}$&$\num{0.75}$\\
+        $\num{19.5}$&$\num{250.5}$&$\num{0.92}$&-&-\\
+        $\num{20.0}$&$\num{251.5}$&$\num{1.05}$&$\num{252.3}$&$\num{0.75}$\\
+        $\num{20.5}$&$\num{252.4}$&$\num{1.1}$&-&-\\
+        $\num{21.0}$&$\num{253.2}$&$\num{1.2}$&$\num{253.2}$&$\num{0.76}$\\
+        $\num{21.5}$&$\num{254.0}$&$\num{1.3}$&-&-\\
+        $\num{22.0}$&$\num{254.9}$&$\num{1.35}$&$\num{254.2}$&$\num{0.76}$\\
+        $\num{22.5}$&$\num{255.9}$&$\num{1.45}$&-&-\\
+        $\num{23.0}$&$\num{257.1}$&$\num{1.55}$&$\num{255.2}$&$\num{0.75}$\\
+        $\num{23.5}$&$\num{258.2}$&$\num{1.65}$&-&-\\
+        $\num{24.0}$&$\num{259.2}$&$\num{1.65}$&$\num{256.5}$&$\num{0.78}$\\
+        $\num{24.5}$&$\num{259.8}$&$\num{1.66}$&-&-\\  
+        \bottomrule                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    \end{tabular}
+\end{table}
+\begin{table}
+    \centering
+    \begin{tabular}{c c c c c}
+        \toprule
+&\multicolumn{2}{c}{Messreihe A}&\multicolumn{2}{c}{Messreihe B}\\
+Zeit $t \,/\,\SI{}{\minute}$&Temperatur $T \,/\,\SI{}{\kelvin}$ &Strom $I \,/\,\SI{e-11}{\ampere}$&Temperatur $T \,/\,\SI{}{\kelvin}$ &Strom $I \,/\,\SI{e-11}{\ampere}$\\
+\midrule
+        $\num{25.0}$&$\num{260.5}$&$\num{1.55}$&$\num{257.5}$&$\num{0.75}$\\
+        $\num{25.5}$&$\num{261.2}$&$\num{1.5}$&-&-\\
+        $\num{26.0}$&$\num{262.0}$&$\num{1.4}$&$\num{258.3}$&$\num{0.69}$\\
+        $\num{26.5}$&$\num{262.8}$&$\num{1.3}$&-&-\\
+        $\num{27.0}$&$\num{263.7}$&$\num{1.25}$&$\num{259.0}$&$\num{0.62}$\\
+        $\num{27.5}$&$\num{264.7}$&$\num{1.15}$&-&-\\
+        $\num{28.0}$&$\num{265.6}$&$\num{1.1}$&$\num{260.0}$&$\num{0.59}$\\
+        $\num{28.5}$&$\num{266.6}$&$\num{1.0}$&-&-\\
+        $\num{29.0}$&$\num{267.7}$&$\num{0.95}$&$\num{261.3}$&$\num{0.55}$\\
+        $\num{29.5}$&$\num{268.8}$&$\num{0.86}$&-&-\\
+        $\num{30.0}$&$\num{269.7}$&$\num{0.8}$&$\num{262.2}$&$\num{0.49}$\\
+        $\num{30.5}$&$\num{270.5}$&$\num{0.73}$&-&-\\
+        $\num{31.0}$&$\num{271.2}$&$\num{0.67}$&$\num{262.8}$&$\num{0.43}$\\
+        $\num{31.5}$&$\num{272.3}$&$\num{0.64}$&-&-\\
+        $\num{32.0}$&$\num{273.2}$&$\num{0.63}$&$\num{263.5}$&$\num{0.38}$\\
+        $\num{32.5}$&$\num{274.3}$&$\num{0.64}$&-&-\\
+        $\num{33.0}$&$\num{275.4}$&$\num{0.65}$&$\num{264.5}$&$\num{0.36}$\\
+        $\num{33.5}$&$\num{276.6}$&$\num{0.67}$&-&-\\
+        $\num{34.0}$&$\num{277.4}$&$\num{0.68}$&$\num{265.5}$&$\num{0.34}$\\
+        $\num{34.5}$&$\num{278.0}$&$\num{0.67}$&-&-\\
+        $\num{35.0}$&$\num{278.7}$&$\num{0.67}$&$\num{266.2}$&$\num{0.32}$\\
+        $\num{35.5}$&$\num{279.5}$&$\num{0.69}$&-&-\\
+        $\num{36.0}$&$\num{280.6}$&$\num{0.71}$&$\num{267.0}$&$\num{0.31}$\\
+        $\num{36.5}$&$\num{281.7}$&$\num{0.75}$&-&-\\
+        $\num{37.0}$&$\num{282.7}$&$\num{0.78}$&$\num{268.0}$&$\num{0.31}$\\
+        $\num{37.5}$&$\num{283.6}$&$\num{0.8}$&-&-\\
+        $\num{38.0}$&$\num{284.3}$&$\num{0.81}$&$\num{269.0}$&$\num{0.32}$\\
+        $\num{38.5}$&$\num{285.1}$&$\num{0.82}$&-&-\\
+        $\num{39.0}$&$\num{286.0}$&$\num{0.84}$&$\num{269.6}$&$\num{0.32}$\\
+        $\num{39.5}$&$\num{286.9}$&$\num{0.86}$&-&-\\
+        $\num{40.0}$&$\num{287.9}$&$\num{0.89}$&$\num{270.4}$&$\num{0.32}$\\
+        $\num{40.5}$&$\num{289.0}$&$\num{0.94}$&-&-\\
+        $\num{41.0}$&$\num{290.1}$&$\num{1.0}$&$\num{271.5}$&$\num{0.335}$\\
+        $\num{41.5}$&$\num{291.0}$&$\num{1.0}$&-&-\\
+        $\num{42.0}$&$\num{291.7}$&$\num{1.0}$&$\num{272.3}$&$\num{0.34}$\\
+        $\num{42.5}$&$\num{292.2}$&$\num{1.05}$&-&-\\
+        $\num{43.0}$&$\num{293.2}$&$\num{1.05}$&$\num{273.2}$&$\num{0.35}$\\
+        $\num{43.5}$&$\num{294.2}$&$\num{1.05}$&-&-\\
+        $\num{44.0}$&$\num{295.1}$&$\num{1.11}$&$\num{274.2}$&$\num{0.365}$\\
+        $\num{44.5}$&$\num{296.1}$&$\num{1.11}$&-&-\\
+        $\num{45.0}$&$\num{297.1}$&$\num{1.15}$&$\num{275.2}$&$\num{0.385}$\\
+        $\num{45.5}$&$\num{297.8}$&$\num{1.2}$&-&-\\
+        $\num{46.0}$&$\num{298.6}$&$\num{1.25}$&$\num{276.2}$&$\num{0.4}$\\
+        $\num{46.5}$&$\num{299.4}$&$\num{1.3}$&-&-\\
+        $\num{47.0}$&$\num{300.3}$&$\num{1.35}$&$\num{277.1}$&$\num{0.41}$\\
+        $\num{47.5}$&$\num{301.3}$&$\num{1.4}$&-&-\\
+        $\num{48.0}$&$\num{302.3}$&$\num{1.5}$&$\num{278.0}$&$\num{0.425}$\\
+        $\num{48.5}$&$\num{303.3}$&$\num{1.6}$&-&-\\
+        $\num{49.0}$&$\num{304.3}$&$\num{1.7}$&$\num{279.0}$&$\num{0.442}$\\
+        $\num{49.5}$&$\num{305.0}$&$\num{1.75}$&-&-\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\begin{table}
+    \centering
+    \begin{tabular}{c c c c c}
+        \toprule
+&\multicolumn{2}{c}{Messreihe A}&\multicolumn{2}{c}{Messreihe B}\\
+Zeit $t \,/\,\SI{}{\minute}$&Temperatur $T \,/\,\SI{}{\kelvin}$ &Strom $I \,/\,\SI{e-11}{\ampere}$&Temperatur $T \,/\,\SI{}{\kelvin}$ &Strom $I \,/\,\SI{e-11}{\ampere}$\\
+\midrule
+        $\num{50.0}$&$\num{305.9}$&$\num{1.75}$&$\num{280.0}$&$\num{0.46}$\\
+        $\num{50.5}$&$\num{306.6}$&$\num{1.95}$&-&-\\
+        $\num{51.0}$&$\num{307.5}$&$\num{2.0}$&$\num{280.9}$&$\num{0.47}$\\
+        $\num{51.5}$&$\num{308.4}$&$\num{2.1}$&-&-\\
+        $\num{52.0}$&$\num{309.4}$&$\num{2.25}$&$\num{281.9}$&$\num{0.49}$\\
+        $\num{52.5}$&$\num{310.3}$&$\num{2.35}$&-&-\\
+        $\num{53.0}$&$\num{311.3}$&$\num{2.5}$&$\num{282.9}$&$\num{0.515}$\\
+        $\num{53.5}$&$\num{312.2}$&$\num{2.6}$&-&-\\
+        $\num{54.0}$&$\num{313.2}$&$\num{2.75}$&$\num{283.9}$&$\num{0.525}$\\
+        $\num{54.5}$&$\num{314.2}$&$\num{2.85}$&-&-\\
+        $\num{55.0}$&$\num{315.1}$&$\num{2.95}$&$\num{284.9}$&$\num{0.55}$\\
+        $\num{55.5}$&$\num{316.0}$&$\num{3.1}$&-&-\\
+        $\num{56.0}$&$\num{316.8}$&$\num{3.1}$&$\num{286.0}$&$\num{0.575}$\\
+        $\num{56.5}$&$\num{317.8}$&$\num{3.2}$&-&-\\
+        $\num{57.0}$&$\num{318.7}$&$\num{3.2}$&$\num{287.1}$&$\num{0.615}$\\
+        $\num{57.5}$&$\num{319.7}$&$\num{3.2}$&-&-\\
+        $\num{58.0}$&$\num{320.5}$&$\num{3.2}$&$\num{288.7}$&$\num{0.63}$\\
+        $\num{58.5}$&$\num{321.3}$&$\num{3.1}$&-&-\\
+        $\num{59.0}$&$\num{322.2}$&$\num{3.1}$&$\num{289.6}$&$\num{0.645}$\\
+        $\num{59.5}$&$\num{323.0}$&$\num{3.0}$&-&-\\
+        $\num{60.0}$&$\num{323.9}$&$\num{2.9}$&-&-\\
+        $\num{60.5}$&$\num{324.7}$&$\num{2.8}$&-&-\\
+        $\num{61.0}$&$\num{325.5}$&$\num{2.6}$&-&-\\
+        $\num{61.5}$&$\num{326.3}$&$\num{2.5}$&-&-\\
+        $\num{62.0}$&$\num{327.1}$&$\num{2.3}$&-&-\\
+        $\num{62.5}$&$\num{327.9}$&$\num{2.15}$&-&-\\
+        $\num{63.0}$&$\num{328.8}$&$\num{2.0}$&-&-\\
+        $\num{63.5}$&$\num{329.5}$&$\num{1.8}$&-&-\\
+        $\num{64.0}$&$\num{330.3}$&$\num{1.65}$&-&-\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Auswertung,Kevin}
 Es werden in diesem Versuch zwei Messreihen mit unterschiedlicher Heizrate
 $b$ durchgeführt. Zunächst müssen die Messwerte von Untergründen bereinigt
 werden, auf die im Folgenden eingegangen wird.

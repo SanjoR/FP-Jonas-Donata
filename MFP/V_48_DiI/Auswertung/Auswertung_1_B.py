@@ -16,6 +16,18 @@ T,I = np.genfromtxt("../Data/Data_B.txt", unpack = True)
 
 T = T+273
 
+print(T.max(),T.min())
+print(np.std(np.diff(T)))
+
+print()
+for i in range(129):
+    if i*0.5 < len(T):
+        if i %2 == 0:
+            print(I[int(i*0.5)])
+        else:
+            print("-")
+    else:
+        print("-")
 
 
 
