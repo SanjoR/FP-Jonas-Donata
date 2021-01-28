@@ -16,19 +16,6 @@ T,I = np.genfromtxt("../Data/Data_B.txt", unpack = True)
 
 T = T+273
 
-print(T.max(),T.min())
-print(np.std(np.diff(T)))
-
-print()
-for i in range(129):
-    if i*0.5 < len(T):
-        if i %2 == 0:
-            print(I[int(i*0.5)])
-        else:
-            print("-")
-    else:
-        print("-")
-
 
 
 mask = np.logical_or(T<236, T>267)
@@ -93,18 +80,20 @@ x_plot = np.linspace(T_U.min(),T_U.max(),1000)
 
 plt.figure()
 #plt.plot(T,I,"bx")
-plt.plot(T_U,I_U,"rx", label ="Messdaten Untergrund")
-plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
+#plt.plot(T_U,I_U,"rx", label ="Messdaten Untergrund")
+#plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
 #plt.plot(T,I_Cor)
 plt.plot(T_U,I_U_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
 plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
-plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
+#plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
 
 plt.grid()
 plt.xlabel("Temperatur in K")
-plt.ylabel("I in pA")
+plt.ylabel(r"I in A$\times 10^{-11}$")
 plt.legend(loc ="best")
-#plt.show()
+#plt.savefig("../latex-template/figure/Untergrundfit_B.pdf")
+plt.savefig("../latex-template/figure/Messdate_rein_B.pdf")
+plt.show()
 plt.close()
 
 

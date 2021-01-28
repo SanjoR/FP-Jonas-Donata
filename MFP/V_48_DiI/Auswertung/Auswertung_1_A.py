@@ -13,11 +13,6 @@ T,I = np.genfromtxt("../Data/Data_A.txt", unpack = True, dtype = float)
 
 
 T = T+273
-print(T.max(),T.min())
-print(np.std(np.diff(T)))
-for i in I:
-    print(i)
-print(len(T))
 
 
 
@@ -85,20 +80,22 @@ for i in par_err:
 x_plot = np.linspace(T_U_R.min(),T_U_R.max(),1000)
 
 plt.figure()
-plt.plot(T_U_R,I_U_R,"rx", label ="Messdaten Untergrund")
-#plt.plot(T_U_N,I_U_N,"kx", label ="Messdaten Untergrund")
-plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
-plt.plot(T,I_Cor)
-#plt.plot(T_U_R,I_U_R_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
+#plt.plot(T_U_R,I_U_R,"rx", label ="Messdaten Untergrund")
+#plt.plot(T_U_N,I_U_N,"kx")
+#plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
+#plt.plot(T,I_Cor)
+plt.plot(T_U_R,I_U_R_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
 #plt.plot(T_U_N,I_U_N_Cor,"k*", label ="Messdaten Untergrund bereinigt")
-#plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
-plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
+plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
+#plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
 
 plt.grid()
 plt.xlabel("Temperatur in K")
-plt.ylabel("I in pA")
+plt.ylabel(r"I in A$\times 10^{-11}$")
 plt.legend(loc ="best")
-#plt.show()
+plt.savefig("../latex-template/figure/Messdate_rein_A.pdf")
+#plt.savefig("../latex-template/figure/Untergrund_A.pdf")
+plt.show()
 plt.close()
 
 
