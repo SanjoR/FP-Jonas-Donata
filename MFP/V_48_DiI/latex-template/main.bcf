@@ -1929,7 +1929,11 @@
     <bcf:citekey order="3">Muccillo</bcf:citekey>
     <bcf:citekey order="4">Becker</bcf:citekey>
     <bcf:citekey order="5">sample</bcf:citekey>
-    <bcf:citekey order="6">py-uncertainties</bcf:citekey>
+    <bcf:citekey order="6">sample</bcf:citekey>
+    <bcf:citekey order="7">sample</bcf:citekey>
+    <bcf:citekey order="8">sample</bcf:citekey>
+    <bcf:citekey order="9">sample</bcf:citekey>
+    <bcf:citekey order="10">py-uncertainties</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

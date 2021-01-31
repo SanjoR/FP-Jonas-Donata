@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  28 JAN 2021 12:05
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  31 JAN 2021 14:50
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.104 seconds
+luaotfload | main : initialization completed in 0.088 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2399,112 +2399,182 @@ Overfull \hbox (29.07939pt too wide) in paragraph at lines 156--158
 erungsenergie
  []
 
-) (./content/durchfuehrung.tex
-Overfull \hbox (54.8556pt too wide) in paragraph at lines 9--22
+) (./content/durchfuehrung.tex [5]
+<figure/AufbauFoto.png, id=92, 581.17125pt x 575.90157pt>
+File: figure/AufbauFoto.png Graphic file (type png)
+<use figure/AufbauFoto.png>
+Package luatex.def Info: figure/AufbauFoto.png  used on input line 15.
+(luatex.def)             Requested size: 334.60571pt x 331.57141pt.
+
+Overfull \hbox (16.85188pt too wide) in paragraph at lines 21--40
+[]\TU/lmr/m/n/10.95 Die Beschriftung der Bestandteile des Aufbaus sind in Abbil
+dung []1[] dargestellt. Hauptbauteil
+ []
+
+[6<./figure/AufbauFoto.png>]
+<figure/AufbauSkizze.png, id=106, 727.21687pt x 402.00188pt>
+File: figure/AufbauSkizze.png Graphic file (type png)
+<use figure/AufbauSkizze.png>
+Package luatex.def Info: figure/AufbauSkizze.png  used on input line 43.
+(luatex.def)             Requested size: 334.60571pt x 184.97217pt.
+
+Overfull \hbox (54.8556pt too wide) in paragraph at lines 52--71
 \TU/lmr/m/n/10.95 Zu Beginn des Versuches wird die Kaliumbromidplatte, welche s
 ich zwischen den Plattenkondensatoren
  []
 
-[5]) (./content/auswertung.tex
-<figure/Untergrund_A.pdf, id=92, 462.52798pt x 346.89601pt>
+
+Overfull \hbox (3.10622pt too wide) in paragraph at lines 52--71
+\TU/lmr/m/n/10.95 befindet, mit Hilfe des Heizstroms auf $[] []$ erhitzt. Danac
+h wird an die Kondensatorplatten
+ []
+
+[7<./figure/AufbauSkizze.png>]) (./content/auswertung.tex
+<figure/Untergrund_A.pdf, id=118, 462.52798pt x 346.89601pt>
 File: figure/Untergrund_A.pdf Graphic file (type pdf)
 <use figure/Untergrund_A.pdf>
 Package luatex.def Info: figure/Untergrund_A.pdf  used on input line 19.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
-<figure/Untergrundfit_B.pdf, id=93, 462.52798pt x 346.89601pt>
+<figure/Untergrundfit_B.pdf, id=119, 462.52798pt x 346.89601pt>
 File: figure/Untergrundfit_B.pdf Graphic file (type pdf)
 <use figure/Untergrundfit_B.pdf>
 Package luatex.def Info: figure/Untergrundfit_B.pdf  used on input line 26.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
- [6] [7<./figure/Untergrund_A.pdf>] [8<./figure/Untergrundfit_B.pdf>]
+ [8] [9<./figure/Untergrund_A.pdf>] [10<./figure/Untergrundfit_B.pdf>]
 Overfull \hbox (11.53719pt too wide) in paragraph at lines 46--49
 []\TU/lmr/m/n/10.95 Um die Messreihe vom Untergrund zu bereinigen, werden von d
 en gemessenen Stromwerten
  []
 
-<figure/Messdate_rein_A.pdf, id=210, 462.52798pt x 346.89601pt>
+<figure/Messdate_rein_A.pdf, id=236, 462.52798pt x 346.89601pt>
 File: figure/Messdate_rein_A.pdf Graphic file (type pdf)
 <use figure/Messdate_rein_A.pdf>
 Package luatex.def Info: figure/Messdate_rein_A.pdf  used on input line 52.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
-<figure/Messdate_rein_B.pdf, id=211, 462.52798pt x 346.89601pt>
+<figure/Messdate_rein_B.pdf, id=237, 462.52798pt x 346.89601pt>
 File: figure/Messdate_rein_B.pdf Graphic file (type pdf)
 <use figure/Messdate_rein_B.pdf>
 Package luatex.def Info: figure/Messdate_rein_B.pdf  used on input line 58.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
-[9<./figure/Messdate_rein_A.pdf>] [10<./figure/Messdate_rein_B.pdf>]
+[11<./figure/Messdate_rein_A.pdf>] [12<./figure/Messdate_rein_B.pdf>]
+<figure/LinFit_W_A.pdf, id=349, 462.52798pt x 346.89601pt>
+File: figure/LinFit_W_A.pdf Graphic file (type pdf)
+<use figure/LinFit_W_A.pdf>
+Package luatex.def Info: figure/LinFit_W_A.pdf  used on input line 78.
+(luatex.def)             Requested size: 418.25555pt x 313.70679pt.
+(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
+roman7-regular.luc)
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 79.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 79.
+<figure/LinFit_W_B.pdf, id=350, 462.52798pt x 346.89601pt>
+File: figure/LinFit_W_B.pdf Graphic file (type pdf)
+<use figure/LinFit_W_B.pdf>
+Package luatex.def Info: figure/LinFit_W_B.pdf  used on input line 84.
+(luatex.def)             Requested size: 418.25555pt x 313.70679pt.
+ [13<./figure/LinFit_W_A.pdf>] [14<./figure/LinFit_W_B.pdf>]
+<figure/Integralverfahren_A.pdf, id=477, 462.52798pt x 346.89601pt>
+File: figure/Integralverfahren_A.pdf Graphic file (type pdf)
+<use figure/Integralverfahren_A.pdf>
+Package luatex.def Info: figure/Integralverfahren_A.pdf  used on input line 115.
 
-LaTeX Warning: Reference `??' on page 11 undefined on input line 65.
+(luatex.def)             Requested size: 418.25555pt x 313.70679pt.
+<figure/Integralverfahren_B.pdf, id=478, 462.52798pt x 346.89601pt>
+File: figure/Integralverfahren_B.pdf Graphic file (type pdf)
+<use figure/Integralverfahren_B.pdf>
+Package luatex.def Info: figure/Integralverfahren_B.pdf  used on input line 121.
 
+(luatex.def)             Requested size: 418.25555pt x 313.70679pt.
+ [15]
+[16<./figure/Integralverfahren_A.pdf>] [17<./figure/Integralverfahren_B.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+[][]|\TU/lmr/m/n/10 Fitparameter der Ausgleichsgraden für die Bestimmung der
+ []
 
-Overfull \hbox (1.62622pt too wide) in paragraph at lines 95--101
+(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
+roman6-regular.luc)
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 141.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 8.00012pt on input line 141.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.00009pt on input line 141.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 141.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 7.99988pt on input line 141.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 5.99991pt on input line 141.
+
+Overfull \hbox (1.62622pt too wide) in paragraph at lines 168--174
 \TU/lmr/m/n/10.95 Es werden in diesem Versuch zwei Messreihen mit unterschiedli
 cher Heizrate $\TU/LatinModernMath(1)/m/n/10.95 𝑏$ \TU/lmr/m/n/10.95 durchge
 führt.
  []
 
 
-Overfull \hbox (45.24304pt too wide) in paragraph at lines 102--105
+Overfull \hbox (45.24304pt too wide) in paragraph at lines 175--178
 \TU/lmr/m/n/10.95 Gaußscher Fehlerfortpflanzungen mit Hilfe des \TU/lmtt/m/n/1
 0.95 python\TU/lmr/m/n/10.95 -Paketes \TU/lmtt/m/n/10.95 uncertainties \TU/lmr/
 m/n/10.95 [[]]
  []
 
 
-LaTeX Warning: Reference `fig:data-a' on page 11 undefined on input line 111.
+LaTeX Warning: Reference `fig:data-a' on page 18 undefined on input line 184.
 
 
-LaTeX Warning: Reference `fig:data-b' on page 11 undefined on input line 111.
+LaTeX Warning: Reference `fig:data-b' on page 18 undefined on input line 184.
 
 
-LaTeX Warning: Reference `tab:data1' on page 11 undefined on input line 118.
+LaTeX Warning: Reference `tab:data1' on page 18 undefined on input line 191.
 
 
-LaTeX Warning: Reference `tab:data2' on page 11 undefined on input line 119.
+LaTeX Warning: Reference `tab:data2' on page 18 undefined on input line 192.
 
 
-LaTeX Warning: Reference `sub:berechnung_der_aktivierungsenergie_w_' on page 11 
-undefined on input line 130.
+LaTeX Warning: Reference `sub:berechnung_der_aktivierungsenergie_w_' on page 18 
+undefined on input line 203.
 
 
-LaTeX Warning: Reference `eqn:approx' on page 11 undefined on input line 131.
+LaTeX Warning: Reference `eqn:approx' on page 18 undefined on input line 204.
 
 
-LaTeX Warning: Reference `fig:fit_approx_set2' on page 11 undefined on input lin
-e 134.
+LaTeX Warning: Reference `fig:fit_approx_set2' on page 18 undefined on input lin
+e 207.
+
+[18]
+
+LaTeX Warning: Reference `fig:fit_approx_set1' on page 19 undefined on input lin
+e 216.
 
 
-LaTeX Warning: Reference `fig:fit_approx_set1' on page 11 undefined on input lin
-e 143.
+LaTeX Warning: Reference `fig:fit_approx_set2' on page 19 undefined on input lin
+e 217.
 
 
-LaTeX Warning: Reference `fig:fit_approx_set2' on page 11 undefined on input lin
-e 144.
+LaTeX Warning: Reference `eqn:integrate' on page 19 undefined on input line 227.
 
 
-LaTeX Warning: Reference `eqn:integrate' on page 11 undefined on input line 154.
+
+LaTeX Warning: Reference `fig:integrate_fit1' on page 19 undefined on input line
+ 243.
 
 
-[11]
+LaTeX Warning: Reference `fig:integrate_fit2' on page 19 undefined on input line
+ 243.
 
-LaTeX Warning: Reference `fig:integrate_fit1' on page 12 undefined on input line
- 170.
-
-
-LaTeX Warning: Reference `fig:integrate_fit2' on page 12 undefined on input line
- 170.
-
-[12]
-Overfull \hbox (5.63217pt too wide) in paragraph at lines 182--189
+[19]
+Overfull \hbox (5.63217pt too wide) in paragraph at lines 255--262
 \TU/lmr/m/n/10.95 liefern unterscheiden sich jedoch um einen Faktor (approximat
 ive Methode) beziehungsweise
  []
 
 
-LaTeX Warning: Reference `fig:_tau_test' on page 13 undefined on input line 193.
+LaTeX Warning: Reference `fig:_tau_test' on page 20 undefined on input line 266.
 
 
-) (./content/diskussion.tex [13]
+) (./content/diskussion.tex [20]
 Overfull \hbox (29.0187pt too wide) in paragraph at lines 8--65
  [][] 
  []
@@ -2525,7 +2595,7 @@ Overfull \hbox (29.0187pt too wide) in paragraph at lines 128--164
  [][] 
  []
 
-) [14] [15] [16]
+) [21] [22] [23]
 Overfull \hbox (22.78221pt too wide) in paragraph at lines 23--23
 \TU/lmr/m/n/10.95 durch Quadrupol‐Wechselwirkung“. In: \TU/lmr/m/it/10.95 B
 erichte der Bundesengesellschaft für physikalische
@@ -2538,7 +2608,7 @@ uates; Ionic Thermoconductivity
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[17
+[24
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
@@ -2546,15 +2616,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
 Language ngerman not found in language.dat.lua)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 8E16C33B884CDAEF8675AC081E24E29D;12858
-(rerunfilecheck)             After:  83BE302F4F5CAA49E452F2D3598B3CDC;12955.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 0DE361003F4145F80940571B6476BD27;17217.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 995849C0950D6AB151CCFC9600D9A603;1585.
+(rerunfilecheck)             Checksum: 00B9029D5DBA95C6E436DCA3BE28F2C9;1783.
+
 
 LaTeX Warning: There were undefined references.
 
@@ -2564,30 +2630,30 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41742 strings out of 494480
- 125009,1648299 words of node,token memory allocated
- 707 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 31 attribute, 80 glue_spec, 31 attr
+ 41944 strings out of 494480
+ 125007,1648299 words of node,token memory allocated
+ 715 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 33 attribute, 80 glue_spec, 33 attr
 ibute_list, 1 write nodes
-   avail lists: 1:11,2:9166,3:598,4:37,5:234,6:2796,7:5865,8:173,9:2419,10:7,11:
-4
- 44517 multiletter control sequences out of 65536+600000
- 208 fonts using 77282351 bytes
- 61i,22n,104p,8833b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:8,2:9166,3:624,4:36,5:240,6:2795,7:5865,8:173,9:2419,10:9,11:4
+
+ 44639 multiletter control sequences out of 65536+600000
+ 253 fonts using 94703991 bytes
+ 61i,22n,104p,8833b,3075s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype
 /public/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype/public/lm-math/
 latinmodern-math.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.o
-tf></usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/sh
-are/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/
+tf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/t
+exmf/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/
 opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/opentype/pu
 blic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
 12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></us
 r/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (17 pages, 138283 bytes).
+Output written on main.pdf (24 pages, 1177336 bytes).
 
-PDF statistics: 487 PDF objects out of 1000 (max. 8388607)
- 281 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 784 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 72 named destinations out of 1000 (max. 131072)
+ 161 words of extra memory for PDF output out of 10000 (max. 100000000)
 
