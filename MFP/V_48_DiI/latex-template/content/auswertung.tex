@@ -62,10 +62,83 @@ und \ref{fig:Messdaten_bereinigt_B} zu sehen.
 \FloatBarrier
 
 \subsection{Niedertemperatur Approximation}
-Um die Aktivierungsenergie $W$ zu ermittelt, wird die Gleichung \eqref{??} verwendet.
-Dafür werden die bereinigten Messdaten im Bereich  
-
-
+Um die Aktivierungsenergie $W$ zu ermittelt, wird die Gleichung \eqref{eq2} verwendet.
+Dafür werden die bereinigten Messdaten der Messreihe A im Bereich $T_{\text{A}}\in \left[\SI{232.2}{\kelvin},\SI{253.2}{\kelvin}\right]$
+und für Messreihe B im Bereich von $T_{\text{B}}\in \left[\SI{232.7}{\kelvin},\SI{250.7}{\kelvin}\right]$ logarithmiert und gegen $\frac{1}{T}$ aufgetragen.
+Dazu wird eine lineare Ausgleichsgrade 
+\begin{equation*}
+    \text{ln}\left(I(T)\right) = \frac{-W}{k_{\text{{B}}}} \frac{1}{T} +\beta
+\end{equation*}
+angepasst. Hierbei ist der Fitparameter $W$ die Aktivierungsenergie des Kristalls.
+Die logarithmiert Messdaten und die Ausgleichsgrade sind in den Abbildungen \ref{fig:Lin_fit_W_A} und \ref{fig:Lin_fit_W_B}
+abgebildet.
+\FloatBarrier
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{figure/LinFit_W_A.pdf}
+    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie $W$ mit hilfe der Messreihe A.}
+    \label{fig:Lin_fit_W_A}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{figure/LinFit_W_B.pdf}
+    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie $W$ mit hilfe der Messreihe B.}
+    \label{fig:Lin_fit_W_B}
+\end{figure}
+\FloatBarrier
+Die Fitparameter sind in Tabelle \ref{tab:Niedertemperatur_approx_fit_params} abgebildet.
+\begin{table}
+    \centering
+    \caption{Fitparameter der linearen Ausgleichsgraden der beiden Messreihen.}
+    \label{tab:Niedertemperatur_approx_fit_params}
+    \begin{tabular}{c c c c}
+        \toprule
+        Messreihe & $\beta \,/\, \ln(\SI{e-11}{\ampere})$&$W \,/\,\SI{}{\joule}$&$W \,/\,\SI{}{\milli\eV}$\\
+        \midrule
+        A&$\num{14.4(7)}$&$\num{1.383(23)e-19}$&$\num{863(14)}$\\
+        B&$\num{19.7(34)}$&$\num{1.57(11)e-19}$&$\num{980(70)}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\subsection{Integrationsverfahren}
+Bei dieser Methode wird die Aktivierungsenergie mithilfe der Gleichung \eqref{eq3}  bestimmt.
+Das Integral aus Gleichung \eqref{eq3} wird numerisch mithilfe der Trapezregel bestimmt.
+An die ermittelten Daten wird eine lineare Ausgleichsgrade der Form 
+\begin{equation*}
+    \ln{ \left( \frac{ \int_{T}^\infty j(T') \mathrm{d}T' }{ b j(T) \tau_{\text{0}} } \right) } = \frac{W}{k_{\text{{B}}}} \frac{1}{T} +\beta
+\end{equation*}
+angepasst. Der Fitparameter $W$ ist die Aktivierungsenergie.
+Die Messdaten und die Fits sind in den Abbildungen \ref{fig:Integralverfahren_A} und \ref{fig:Integralverfahren_B} abgebildet.
+\FloatBarrier
+\begin{figure}
+    \centering
+    \includegraphics[width= \textwidth,keepaspectratio]{figure/Integralverfahren_A.pdf}
+    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie mithilfe der Integrationsverfahrens für Messreihe A.}
+    \label{fig:Integralverfahren_A}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width= \textwidth,keepaspectratio]{figure/Integralverfahren_B.pdf}
+    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie mithilfe der Integrationsverfahrens für Messreihe B.}
+    \label{fig:Integralverfahren_B}
+\end{figure}
+\FloatBarrier
+Die Fitparameter der Ausgleichsgraden aus denn Abbildungen \ref{fig:Integralverfahren_A} und \ref{fig:Integralverfahren_B} sind 
+in Tabelle \ref{tab:Fit_params_integtal} aufgelistet.
+\begin{table}
+    \centering
+    \caption{Fitparameter der Ausgleichsgraden für die Bestimmung der Aktivierungsenergie mithilfe des Integrationsverfahrens.}
+    \label{tab:Fit_params_integtal}
+    \begin{tabular}{c c c c}
+        \toprule
+        Messreihe&$\beta \,/\, \ln(\SI{e-11}{\ampere})$&$W \,/\,\SI{}{\joule}$&$W \,/\,\SI{}{\milli\eV}$\\
+        \midrule
+        A&$\num{-41.6(14)}$&$\num{1.56(5)e-19}$&$\num{971(30)}$\\
+        B&$\num{-43.6(23)}$&$\num{1.59(8)e-19}$&$\num{990(50)}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\subsection{Bestimmung der Relaxationszeit \texorpdfstring{$\tau_{0}$}{T1}}
 
 
 

@@ -68,31 +68,33 @@ params, cov_ma = curve_fit(j,T_Fit,np.log(I_Cor_Fit*10**-11), p0 = (-25, 0))
 errors = np.sqrt(np.diag(cov_ma))
 
 par_err = unp.uarray(params, errors)
-par_err[1]*= 6.242*10**18
+#par_err[1]*= 6.242*10**18
+
+print("Tfit:",T_Fit.min(),T_Fit.max())
 print("Params: Amp,W")
 for i in par_err:
     print(i)
 
-
+print(par_err[1]*6.242*10**18)
 
 
 x_plot = np.linspace(T_U.min(),T_U.max(),1000)
 
 plt.figure()
 #plt.plot(T,I,"bx")
-#plt.plot(T_U,I_U,"rx", label ="Messdaten Untergrund")
-#plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
+plt.plot(T_U,I_U,"rx", label ="Messdaten Untergrund")
+plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
 #plt.plot(T,I_Cor)
-plt.plot(T_U,I_U_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
-plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
+#plt.plot(T_U,I_U_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
+#plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
 #plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
 
 plt.grid()
-plt.xlabel("Temperatur in K")
-plt.ylabel(r"I in A$\times 10^{-11}$")
+plt.xlabel("Temperatur / K")
+plt.ylabel(r"I / A$\times 10^{-11}$")
 plt.legend(loc ="best")
-#plt.savefig("../latex-template/figure/Untergrundfit_B.pdf")
-plt.savefig("../latex-template/figure/Messdate_rein_B.pdf")
+plt.savefig("../latex-template/figure/Untergrundfit_B.pdf")
+#plt.savefig("../latex-template/figure/Messdate_rein_B.pdf")
 plt.show()
 plt.close()
 
@@ -100,11 +102,14 @@ plt.close()
 x_plot = np.linspace(T_Fit.min(),T_Fit.max(),1000)
 plt.figure()
 plt.plot(1/T_Fit,np.log(I_Cor_Fit*10**-11), "bx",label="Niedertemperaturbereich")
-plt.plot(1/x_plot,j(x_plot,*params),"r-",label = "Fit")
+plt.plot(1/x_plot,j(x_plot,*params),"r-",label = "Ausgleichsgrade")
 plt.grid()
 ##plt.yscale("log")
+plt.xlabel(r"inverse  Temperatur / $K^{-1}$")
+plt.ylabel(r"ln(I) / ln(A$\times 10^{-11})$")
 plt.legend(loc="best")
-#plt.show()
+plt.savefig("../latex-template/figure/LinFit_W_B.pdf")
+plt.show()
 plt.close()
 
 #benötigt I_Cor und T
@@ -156,10 +161,12 @@ params_int,cov_ma_int = curve_fit(lin_fit,T_int,np.log(F))
 errors_int = np.sqrt(np.diag(cov_ma_int))
 
 par_int_err = unp.uarray(params_int, errors_int)
-par_int_err[0]*=6.242*10**18
+#par_int_err[0]*=6.242*10**18
 
 print()
+
 print("Params int : W,B")
+print(par_int_err[0]*6.242*10**18)
 for i in par_int_err:
 
     print(i)
@@ -167,10 +174,14 @@ for i in par_int_err:
 x_plot= np.linspace(T_int.min(),T_int.max(),1000)
 
 plt.figure()
-plt.plot(1/T_int,np.log(F),"bx")
-plt.plot(1/x_plot,lin_fit(x_plot,*params_int), "r-")
+plt.plot(1/T_int,np.log(F),"bx",label="Messdaten")
+plt.plot(1/x_plot,lin_fit(x_plot,*params_int), "r-",label="Ausgleichsgrade")
+plt.grid()
+plt.xlabel(r"inverse  Temperatur / $K^{-1}$")   
+plt.ylabel(r"ln(I) / ln(A$\times 10^{-11}$)")
+plt.legend(loc="best")
+plt.savefig("../latex-template/figure/Integralverfahren_B.pdf")
 plt.show()
-
 
 b = 1 #Kelvin pro minute
 

@@ -58,43 +58,45 @@ I_U_R_Cor = I_U_R - Untergrund(T_U_R,*params_untergrund)
 I_Cor = I - Untergrund(T,*params_untergrund)
 I_Cor_Fit = I_Cor[mask3]
 
-def j(T,Amp,W):
-    return Amp* np.exp(-W/(const.k *T))
+#def j(T,Amp,W):
+#    return Amp* np.exp(-W/(const.k *T))
 
 
 def j(T,Amp,W):
     return Amp+ 1/T * (-W/const.k)
 
+
+print("Tfit:",T_Fit.min(),T_Fit.max())
 params, cov_ma = curve_fit(j,T_Fit,np.log(I_Cor_Fit*10**-11), p0 = (-25, 0))
 errors = np.sqrt(np.diag(cov_ma))
 
 par_err = unp.uarray(params, errors)
-par_err[1]*= 6.242*10**18
+#par_err[1]*= 6.242*10**18
 print("Params: Amp,W")
 for i in par_err:
     print(i)
 
-
+print(par_err[1]*6.242*10**18)
 
 
 x_plot = np.linspace(T_U_R.min(),T_U_R.max(),1000)
 
 plt.figure()
-#plt.plot(T_U_R,I_U_R,"rx", label ="Messdaten Untergrund")
-#plt.plot(T_U_N,I_U_N,"kx")
-#plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
+plt.plot(T_U_R,I_U_R,"rx", label ="Messdaten Untergrund")
+plt.plot(T_U_N,I_U_N,"kx")
+plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
 #plt.plot(T,I_Cor)
-plt.plot(T_U_R,I_U_R_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
+#plt.plot(T_U_R,I_U_R_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
 #plt.plot(T_U_N,I_U_N_Cor,"k*", label ="Messdaten Untergrund bereinigt")
-plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
+#plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
 #plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
 
 plt.grid()
-plt.xlabel("Temperatur in K")
-plt.ylabel(r"I in A$\times 10^{-11}$")
+plt.xlabel("Temperatur / K")
+plt.ylabel(r"I / A$\times 10^{-11}$")
 plt.legend(loc ="best")
-plt.savefig("../latex-template/figure/Messdate_rein_A.pdf")
-#plt.savefig("../latex-template/figure/Untergrund_A.pdf")
+#plt.savefig("../latex-template/figure/Messdate_rein_A.pdf")
+plt.savefig("../latex-template/figure/Untergrund_A.pdf")
 plt.show()
 plt.close()
 
@@ -102,11 +104,15 @@ plt.close()
 x_plot = np.linspace(T_Fit.min(),T_Fit.max(),1000)
 plt.figure()
 plt.plot(1/T_Fit,np.log(I_Cor_Fit*10**-11), "bx",label="Niedertemperaturbereich")
-plt.plot(1/x_plot,j(x_plot,*params),"r-",label = "Fit")
+plt.plot(1/x_plot,j(x_plot,*params),"r-",label = "Ausgleichsgrade")
 plt.grid()
+
+plt.xlabel(r"inverse  Temperatur / $K^{-1}$")   
+plt.ylabel(r"ln(I) / ln(A$\times 10^{-11}$)")
 #plt.yscale("log")
 plt.legend(loc="best")
-#plt.show()
+plt.savefig("../latex-template/figure/LinFit_W_A.pdf")
+plt.show()
 plt.close()
 
 
@@ -161,10 +167,11 @@ params_int,cov_ma_int = curve_fit(lin_fit,T_int,np.log(F))
 errors_int = np.sqrt(np.diag(cov_ma_int))
 
 par_int_err = unp.uarray(params_int, errors_int)
-par_int_err[0]*=6.242*10**18
+#par_int_err[0]*=6.242*10**18
 
-print()
+print(par_int_err[0]*6.242*10**18)
 print("Params int : W,B")
+print()
 for i in par_int_err:
 
     print(i)
@@ -172,8 +179,13 @@ for i in par_int_err:
 x_plot= np.linspace(T_int.min(),T_int.max(),1000)
 
 plt.figure()
-plt.plot(1/T_int,np.log(F),"bx")
-plt.plot(1/x_plot,lin_fit(x_plot,*params_int), "r-")
+plt.plot(1/T_int,np.log(F),"bx",label="Messdaten")
+plt.plot(1/x_plot,lin_fit(x_plot,*params_int), "r-",label="Ausgleichsgrade")
+plt.grid()
+plt.xlabel(r"inverse  Temperatur / $K^{-1}$")   
+plt.ylabel(r"ln(I) / ln(A$\times 10^{-11}$)")
+plt.legend(loc="best")
+plt.savefig("../latex-template/figure/Integralverfahren_A.pdf")
 plt.show()
 
 
