@@ -1,12 +1,12 @@
 \section{Zielsetzung}
 \label{sec:Zielsetzung}
 
-Das Ziel dieses Versuches ist die Untersuchung der Dipolrelaxation der 
-strontiumdotierten Ionenkristalle Caesiumiodid und Kaliumbromid.
+Das Ziel dieses Versuches ist die Untersuchung der Dipolrelaxation eines
+strontiumdotierten Ionenkristalls aus Kaliumbromid.
 Dafür wird die Relaxationszeit $\tau(T,W,\tau_{\text{0}})$ der Dipole in den 
 Kristallen bestimmt. Die Temperatur $T$ wird während des Versuches gemessen,
 wogegen die Aktivierungsenergie $W$ und die charakteristische Relaxationszeit $\tau_{0}$
-über den ebenfalls gemessenen Depolarisationsstrom berechnet werden können
+über den ebenfalls gemessenen Depolarisationsstrom berechnet werden können.
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -16,9 +16,9 @@ Werden die Dipole der Kristalle durch ein äußeres elektrisches Feld aus ihrer
 Gleichgewichtslage ausgelenkt, benötigen sie eine Zeit um sich nach Abschalten des 
 elektrischen Feldes wieder in ihre Ausgangslage zurück zubewegen. Der Übergang 
 vom ausgelenkten Zustand zurück in den Ruhezustand wird als Relaxationsprozess 
-bezeichnet. Die Dauer wird Relaxationszeit genannt.
+bezeichnet. Die Dauer dieses Prozesses wird Relaxationszeit genannt.
 
-\subsection{Dipole in Ionenkristalle}
+\subsection{Dipole in Ionenkristallen}
 \label{sec:Ionenkristalle}
 
 Dieser Versuch wird an dem  Ionenkristalle Kaliumbromid durchgeführt.
@@ -27,19 +27,16 @@ und Kationen aufgebaut zu sein.
 Kaliumbromid besitzt eine einfach kubische Kristallstruktur,
 da die Kaliumkationen (\ce{K}: $4s^1$ $\to$ \ce{K+}: $3p^6$) und die Bromanionen 
 (\ce{Br}: $4p^5$ $\to$ \ce{Br-}: $4p^6$)
-jeweils eine flächenzentriet kubische Struktur besitzen, die 
+jeweils eine flächenzentriert kubische Struktur besitzen, die 
 um eine Gitterkonstante in eine Raumrichtung gegeneinander verschoben sind.
 Dadurch ist das Kriterium der abwechselnden Kationen-Anionen-Anordnung 
-erfüllt. Ein solcher Ionenkristall ist durch diese regelmäßige Ionenanrdnung nach außen
+erfüllt. Ein solcher Ionenkristall ist durch diese regelmäßige Ionenanordnung nach außen
 elektrisch neutral. Um die Enstehung von Dipolen im Kristall zu ermöglichen wird 
 die Probe mit einem Anteil von 0,005\% mit 
 Stromtiumiodid (\ce{Sr++}: $4p^6$ , \ce{I-}: $5p^6$) dotiert. Da Strontiumiodid zweifach positiv 
 geladene Strontiumionen enthält, entstehen Kaliumleerstellen, die mit der 
 zusätzlichen positiven Ladung einen Dipol bilden, damit die Gesamtladungsneutralität des
 Kristalls aufrechterhalten werden kann. 
-Ein Ionenkristall besteht aus alternierend negativ und positiv geladenen Ionen und ist nach außen somit neutral.
-Wird ein solcher Kristall mit zweichfach geladenen Ionen dotiert entstehen Kationen-Leerstellen um die Ladungsneutralität aufrechtzuerhalten (Abb. \ref{fig:dipol}). 
-
 
 \subsection{Dipolpolarisation}
 \label{sec:Dipolpolarisation}
@@ -76,7 +73,7 @@ Um die Aktivierungsenergie zu bestimmen können zwei Ansätze verwendet werden,
 wobei beide den Depolarisationsstrom beinhalten.
 Der erste Ansatz wird über die Depolarisationsstromdichte
 geführt. Dabei wird zunächst davon ausgegangen, dass diejenigen Dipole $y(T)$, die 
-sich durch ein angelgtes elektrisches Feld ausgreichtet haben durch 
+sich durch ein angelgtes elektrisches Feld ausgerichtet haben durch 
 
 \begin{equation*}
     y(T) = \frac{p E}{3 k_{\text{B}} T} 
@@ -113,8 +110,8 @@ Die konstante Temperaturänderung ist definiert als
 Für den Depolarisationsstrom ergibt sich somit die Gleichung 
 
 \begin{equation}
-    \label{eq:j_T}
     j(T) = \frac{ p^{2} E }{ 3 k_{\mathrm{B}} T_{\mathrm{P}} } \frac{ N_{\mathrm{P}} }{ \tau_{\text{0}} } \exp{ \left( - \frac{ 1 }{ b \tau_{\text{0}} } \int_{T_{\text{0}}}^T \exp{ \left( - \frac{ W }{ k_{\mathrm{B}} T' } \right) \mathrm{d}T' } \right) } \exp{ \left( -\frac{ W }{ k_{\mathrm{B}} T } \right) } 
+    \label{eq:j_T}
 \end{equation}
 
 wobei dieser Ausdruck für $T_{\text{0}} \approx T$ aufgrund des 
@@ -147,18 +144,18 @@ gegeben, wobei sie einen Strom durch den Probenquerschnitt $F$ erzeugt und daher
     \frac{\mathrm{d}P}{\mathrm{d}t} = \frac{j(t)}{F} \qquad.
 \end{equation*}
 
-geschrieben werden kann.
+formuliert werden kann.
 Somit lassen sich die oberen Gleichungen auf die Form 
 
 \begin{equation*}
     \tau(T) = \frac{ \int_{T}^\infty j(T') \mathrm{d}T' }{ b j(T) } 
 \end{equation*}
 
-bringen. Wenn $\tau(T)$ durch Gleichung \eqref{1} ersetzt wird kann 
-schließlich die Aktivierungsenergie aus der Form 
+bringen. Wenn $\tau(T)$ durch Gleichung \eqref{eq1} ersetzt wird, kann 
+die Aktivierungsenergie schließlich mit der Gleichung
 
 \begin{equation}
-    \frac{ W }{ k_{\mathrm{B}} T } = \ln{ \left( \frac{ \int_{T}^\infty j(T') \mathrm{d}T' }{ b j(T) \tau_{\text{0}} } \right) }
+    W = \ln{ \left( \frac{ \int_{T}^\infty j(T') \mathrm{d}T' }{ b j(T) \tau_{\text{0}} } \right) }k_{\mathrm{B}} T
     \label{eq3}
 \end{equation}
 
