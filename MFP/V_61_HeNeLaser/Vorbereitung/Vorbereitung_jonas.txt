@@ -1,0 +1,81 @@
+Komponenten: Was sind die drei grundlegenden Komponenten des Lasers?
+
+                verstärkendes Medium
+                Energiepumpe: Blitzlampe/anderer Laser 
+                    erzeugt im Lasermedium von thermischen Gleichgewicht abweichende Besetzung der Energieniveaus (wenige viel besetzte Niveaus)
+                Resonator:
+                    Lich von durch die Pumpe aktivierter Atome durch selektiver optischer Rückkopplung verstärken
+
+             Was definiert die Wellenlänge eines Laser?
+                Der Energieunterschied der Zustände des aktiven Mediums
+
+
+Aktives Medium: Diskutieren Sie die wichtigsten Prozesse in dem aktiven
+Medium (Absorption, Stimulierte Emission und Spontane Emission).
+Diskutieren Sie den Zusammenhang zwischen der Verstärkung des Lichtes und
+der Besetzungsinversion im aktiven Medium
+    
+            Absorption: Bei der Absorption geben die Photonen ihre Energie an das Medium ab. Es gibt einen verstärkenden 
+                        Effekt, wenn die Absorptionsrate geringer ist als die Stimulierte Emissionsrate
+            Stimulierte Emission: nicht spontane Emission, das heißt sie wird durch anderes Photon ausgelöst
+            Spontane Emission: Aussendung eines Photons ohne äußere Einflüsse
+
+            Besetzungsinversion: Die Besetzungsdichte des höher energetischen Zustandes ist größer als die 
+                                 Besetzungsdichte des des nieder energetischen Zustandes. Dadruch isr die induzierte
+                                 Emissionsrate höher als die Absorptionsrate
+
+
+Pumpschemen: Warum ist ein Zwei-Niveau Laser nicht möglich? Welcher
+Übergang ist für die rote Linie des He-Ne-Lasers verantwortlich? Wie wird der
+Besetzungsinversion erreicht?
+
+            Zwei-Niveau-Laser: aus berechnungen folgt das immer N1>N2
+            
+            Roter Übergang: Laserübergang im Neon-Atom : 5s^1P_1 -> 3p^3P_2 (3s2->2p4)
+
+            Erreichen der Besetzungsinversion: Stöße mit Heliumatomen (Stöße 2. Art : He* + Ne -> He + Ne* + delE)
+
+
+Optische Resonator und Stabilität des Resonators: Berechnen Sie den
+Stabilitätsparameter g1∙g2 als Funktion der Resonatorlänge L für mindestens
+zwei Resonatoren und stellen Sie das Ergebnis graphisch dar. Die verfügbaren
+Spiegelkonfigurationen finden Sie in der Tabelle 1. Welcher Resonatorabstand
+kann maximal erreicht werden?
+
+            siehe skript 
+            L = b1 (für eins plan das andere gekrümmt mit Krümmungsradius b1)
+
+
+Longitudinale und transversale Moden im Resonator: Beschreiben Sie den
+Intensitätsverlauf in der Ebene senkrecht zur Ausbreitungsrichtung für TEM00
+und TEM01 Moden. Erklären Sie den Begriff der “Modenblende”. Was ist der
+Unterschied zwischen longitudinalen und transversalen Moden? 
+
+            senkrecht Ausbreitungsrichtung TEM00: hat in der Mitte des ein Maximum und flacht gaußförmig zu den Enden hin ab
+            senkrecht Ausbreitungsrichtung TEM01: hat in der Mitte ein Nulldurchgang und zwei maxima auf halben weg nach außen 
+            Modenblende: unterdrückt unerwünschte transversale Moden
+            Eine Mode ist eine Eigenschwingung der unterschied zwischen longitudinalen und transversal ist, dass bei 
+            longitudinal die Schwingungsrichtung gleich der Ausbreitungsrichtung ist und bei transversal steht die Schwingungsrichtung
+            senkrecht auf der Ausbreitungsrichtung
+
+
+Multimode- und Singlemode-Laserbetrieb: Beschreiben Sie die Verbreiterung
+des optischen Übergangs in Gas durch den Doppler Effekt. Wie groß ist die
+Verbreitung für den Neonübergang? Beschreiben Sie das Modenspektrum
+(Frequenzspektrum) für den Laser mit typischen Resonatorlängen L = 1.5 m.
+Wie funktioniert die Modenselektion mit Hilfe des Fabry-Perot Etalon?
+
+            Verbreiterung des optischen Übergangs: 
+            Modenspektrum: Im gleichen Abstand verteilte Intensitätsmaxima welche gaußförmig verteilt sind 
+            Fabry-Perot Etalon: Optischer Resonator aus zwei semipermeablen Spiegeln 
+                                Lichtstrahl wird nur dann transmittiert, wenn Resonanzbedingung erfüllt 
+                                manche Spektralbereiche nahezu komplett ausgelöscht, durch destruktive/konstruktivr Interferenz
+
+
+Polarisation des Lasers: Der untersuchte Laser ist mit Brewster-Fenstern
+ausgestattet, die am Ende der Laserrohre befestigt sind. Welche Rolle spielen
+die Brewster-Fenster? Was ist die resultierende Polarisation des Lasers?
+
+            Brewster-Fenster: Fensterflächen stehen im Brewster-Winkel zur optischen Achse -> parallel zur Einfallsebene polarisiertes 
+            Licht wird nicht reflektiert -> rausfiltern dieser Polarisation
+            Der Laser ist parallel zur Einfallsebene polarisiert
