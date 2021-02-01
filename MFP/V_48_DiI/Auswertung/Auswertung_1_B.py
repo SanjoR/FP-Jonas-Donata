@@ -87,7 +87,7 @@ plt.plot(T_S,I_S,"bx", label ="Messdaten Signal")
 #plt.plot(T,I_Cor)
 #plt.plot(T_U,I_U_Cor,"r*", label ="Messdaten Untergrund bereinigt ")
 #plt.plot(T_S,I_S_Cor,"b*", label ="Messdaten Signal bereinigt")
-#plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
+plt.plot(x_plot,Untergrund(x_plot,*params_untergrund),"r-",label = "Untergrundfit")
 
 plt.grid()
 plt.xlabel("Temperatur / K")
@@ -191,6 +191,42 @@ def tau_0(W):
     return( const.k*T_int[index]**2 / (W*b) * unp.exp(-W/(const.k*T_int[index])) )
 
 print()
-print("Approx verfahren: ", tau_0(par_err[1]/ 6.242*10**18))
+print(par_err[1])
+print("Approx verfahren: ", tau_0(par_err[1]))
 print()
-print("Integrations verfahren: ", tau_0(par_int_err[0]/ 6.242*10**18))
+print(par_int_err[0])
+print("Integrations verfahren: ", tau_0(par_int_err[0]))
+
+
+W_approx = par_err[1]
+tau_0_approx = tau_0(par_err[1])[0][0]
+
+W_int = par_int_err[0]
+tau_0_int = tau_0(par_int_err[0])[0][0]
+
+def tau(T,tau_V,W_V):
+    return(tau_V*unp.exp(W_V/(const.k * T)))
+
+
+x_plot = np.linspace(T.min(),T.max(),1000)
+print(x_plot.min(),x_plot.max())
+approx_value = []
+approx_std = []
+
+int_value = []
+int_std = []
+
+for i in x_plot:
+    approx_value = np.append(approx_value,tau(i,tau_0_approx,W_approx).n)
+    approx_std = np.append(approx_std,tau(i,tau_0_approx,W_approx).s)
+
+    int_value = np.append(int_value,tau(i,tau_0_int,W_int).n)
+    int_std = np.append(int_std,tau(i,tau_0_int,W_int).s)
+plt.close()
+plt.figure()
+plt.plot(x_plot,approx_value,label="Approximationsverfahren")
+plt.plot(x_plot,int_value,label="Integrationsverfahren")
+plt.grid()
+plt.legend(loc = "best")
+plt.savefig("../latex-template/figure/tau_verlauf_B.pdf")
+plt.show()

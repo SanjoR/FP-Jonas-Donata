@@ -142,13 +142,29 @@ in Tabelle \ref{tab:Fit_params_integtal} aufgelistet.
 Um die Relaxationszeit $\tau_{0}$ zu bestimmen wird die Funktion \eqref{eq:j_T} nach der Temperatur abgeleitet und 
 die Temperatur bei Strommaximum eingesetzt und gleich Null gesetzt.
 \begin{gather*}
-    \left.\frac{\text{d}j(T)}{\text{d}T}\right|_{T_{\text{max}}}= =0\\
+    \left.\frac{\text{d}j(T)}{\text{d}T}\right|_{T_{\text{max}}}=0\\
     \implies \tau_0 = \frac{k_{\text{B}}T_{\text{max}}^2}{Wb}\exp{\left(-\frac{W}{k_{\text{B}}T_{\text{max}}}\right)}
 \end{gather*}
-
-
-
-
+$\tau_0$ wird mit den vorher bestimmten Ergebnissen der verschiedenen Methoden bestimmt.
+Die verschiedenen $\tau_0$-Werte sind in Tabelle \ref{tab:tau_0} aufgelistet.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{$\tau_0$-Werte der beiden Messreihen für die zwei Methoden der Bestimmung der Aktivierungsenergie.}
+    \label{tab:tau_0}
+    \begin{tabular}{c c c}
+        \toprule
+        Messreihe&$\tau_0\,/\,\SI{}{\second}$ (Approximationsverfahren)&$\tau_0\,/\,\SI{}{\second}$ (Integrationsverfahren)\\
+        \midrule
+        A&$\num{2.8(18)e-15}$&$\num{2.0(27)e-17}$\\
+        B&$\num{8(30)e-18}$&$\num{4(9)e-18}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+Die Unsicherheiten sind sehr groß im Vergleich mit den bestimmten Werten, darauf wird in der Diskussion eingegangen.
+Mit den $\tau_0$- und den $W$-Werten kann der Verlauf $\tau(T)$ dargestellt werden.
+Diese sind in Abbildung \ref{fig:tau_verlauf_A} und \ref{fig:tau_verlauf_B} zu sehen.
 
 
 
