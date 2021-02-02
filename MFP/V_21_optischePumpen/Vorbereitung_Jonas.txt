@@ -1,0 +1,64 @@
+Zur welchen Klasse der Materialien zählt das Rubidium?
+    Alkalimetall (ein Elektron zu viel für edelgaskonfig)
+
+Quantenzahlen von Rubidium im Grundzustand:
+    5^2S_1/2 => L=0 , S=1/2 , J=1/2 , I = 5/2 
+    Grundzustand F = 2
+    erster angeregter Zustand F = 3
+
+
+Welche Aufspaltungen entstehen durch das äußere Magnetfeld bei den 2S1/2
+und 2P1/2 Niveaus?
+    S-Zustände spalten sich nicht auf 
+    P-Zustand in zwei unterniveaus
+
+Wovon hängt die Zeemanaufspaltung ab ?
+    delE=Bohrsches Magneton x Landefaktor x B
+
+
+Welche Auswahlregeln gibt es für einen elektrischen Dipolübergang zwischen
+den beiden 2S1/2 und 2P1/2 Niveaus?
+    del l = +/-1 
+    del m = 0,+/-1
+
+    zirkular Polarisiertes Licht macht del m = +/- 1
+
+    Stimulierte Emission ist durch eine anregung (z.B. Photon)
+    Spontane Emission ist ohne äußere Einflüsse
+    Je größer die Frequenz, desto mehr Energie wird benötigt  
+
+Welcher Zustand stellt sich bei der kontinuierlichen Beleuchtung mit zirkular
+polarisierten Licht ein?
+    nur Übergänge mit del mF = +1 werden angeregt, daher werden bei 87Rb nur mF=2 und 85Rb mF=3 nicht angeregt.
+    Da die angeregten Zustände wieder zurückfallen sammeln sich alle Elektronen mit mF =2 oder 3 an
+
+Was bedeutet optisches Pumpen?
+    Optisches Pumpen beschreibt einen Vorgang, bei dem die Besetzungszahl von Hüllenelektronen in einem oder mehreren Zuständen stark angehoben werden
+    (Besetzungsinversion)
+
+Wie sieht dabei der zeitliche Verlauf der Intensität des transmittierten Lichtes?
+    Es nähert sich einem sättigungs Wert an.
+
+Welche Auswahlregeln gibt es für magnetische Dipolübergänge?
+    del J = 0,+/- 1
+    del mJ = 0,+/- 1
+    del l = 0
+    del n = 0
+    Wenn del S = 0 dann del L = 0
+
+ Was passiert
+in dem optisch gepumpten System, wenn durch die RF-Feld-Frequenz
+(Hochfrequenz) f gegebene Energie ( ERF=hf ) der Zeeman Energie ( Δ EZ)
+entspricht?
+Selber Effekt wie rotationsrichtung ändern -> es wird immer in eine anderen Zustand gepumpt
+Absorptionsverhalten:
+Erst starker Anstieg dann Exponentieler Abfall
+
+Messung der Energieaufspaltung hängt von Landefaktor ab
+
+Was passiert mit der transmittierten Lichtintensität bei null Magnetfeld?
+    es wird minimal
+
+
+
+
