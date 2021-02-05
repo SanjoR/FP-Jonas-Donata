@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:auswertung}
 In diesem Versuch werden zwei Temperatur-Strom-Kurven mit unterschiedlichen Heizraten $b$ analysiert.
-Messreihe A hat eine Heizrate von $b_{\text{A}}=\SI{2}{\kelvin\per\minute}$ und es wurde in dem Temperaturbereich
+Messreihe A hat eine Heizrate von $b_{\text{A}}=\SI{2}{\kelvin\per\minute}$ und es wird in dem Temperaturbereich
 $T\in\left[\SI{213.1}{\kelvin},\SI{330.3}{\kelvin}\right]$ gemessen. Für Messreihe B beträgt die Heizrate
 $b_{\text{B}}=\SI{1}{\kelvin\per\minute}$ und der vermessene Temperaturbereich ist $T\in\left[\SI{232.7}{\kelvin},\SI{289.6}{\kelvin}\right]$.
 In beiden Fällen ist Kaliumbromid $\ce{KBr}$ der verwendete Kristall. Die Messdaten sind in Tabelle \ref{tab:Messdaten_roh}
@@ -12,18 +12,18 @@ Um den Untergrund zu bestimmen wird die Exponentialfunktion
     I_{\text{U}}(T) = C\cdot\exp\left(D\cdot  T\right)
 \end{equation}
 an die Messdaten vor und nach dem Peak gefittet.
-Die Messdaten und die Fits sind in Abbildung \ref{fig:Untergrund_A} und \ref{fig:Untergrund_B} abgebildet.
+Die Messdaten und die Fits sind in Abbildung \ref{fig:Untergrund_A} und \ref{fig:Untergrund_B} dargestellt.
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[width =\textwidth, keepaspectratio]{figure/Untergrund_A.pdf}
-    \caption{Messdaten und Untergrundfit für Messreihe A, hierbei können die Messdaten nach dem zweiten Peak nicht für die 
-    Bestimmung des untergrundes verwendet werden.}
+    \includegraphics[width =0.8\textwidth, keepaspectratio]{figure/Untergrund_A.pdf}
+    \caption{Messdaten und Untergrundfit für Messreihe A. Hierbei können die Messdaten nach dem zweiten Peak nicht für die 
+    Bestimmung des Untergrundes verwendet werden.}
     \label{fig:Untergrund_A}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width =\textwidth, keepaspectratio]{figure/Untergrundfit_B.pdf}
+    \includegraphics[width =0.8\textwidth, keepaspectratio]{figure/Untergrundfit_B.pdf}
     \caption{Messdaten und Untergrundfit für Messreihe B.}
     \label{fig:Untergrund_B}
 \end{figure}
@@ -43,29 +43,29 @@ Die Fitparameter sind in der Tabelle \ref{tab:Fit_params_untergrund} aufgelistet
     \end{tabular}
 \end{table}
 \FloatBarrier
-Um die Messreihe vom Untergrund zu bereinigen, werden von den gemessenen Stromwerten der Wert der Untergrundfunktion 
-zu der dazugehörigen Temperatur subtrahiert. Die bereinigten Messwerte sind in Abbildung \ref{fig:Messdaten_bereinigt_A}
+Um die Messreihe vom Untergrund zu bereinigen, werden von den gemessenen Stromwerten die Werte der Untergrundfunktion subtrahiert.
+Die bereinigten Messwerte sind in Abbildung \ref{fig:Messdaten_bereinigt_A}
 und \ref{fig:Messdaten_bereinigt_B} zu sehen.
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio]{figure/Messdate_rein_A.pdf}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{figure/Messdate_rein_A.pdf}
     \caption{Vom Untergrund bereinigte Messdaten der Messreihe A.}
     \label{fig:Messdaten_bereinigt_A}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio]{figure/Messdate_rein_B.pdf}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{figure/Messdate_rein_B.pdf}
     \caption{Vom Untergrund bereinigte Messdaten der Messreihe B.}
     \label{fig:Messdaten_bereinigt_B}
 \end{figure}
 \FloatBarrier
 
-\subsection{Niedertemperatur Approximation}
-Um die Aktivierungsenergie $W$ zu ermittelt, wird die Gleichung \eqref{eq2} verwendet.
+\subsection{Niedertemperaturapproximation}
+Um die Aktivierungsenergie $W$ zu ermittelt, wird Gleichung \eqref{eq2} verwendet.
 Dafür werden die bereinigten Messdaten der Messreihe A im Bereich $T_{\text{A}}\in \left[\SI{232.2}{\kelvin},\SI{253.2}{\kelvin}\right]$
 und für Messreihe B im Bereich von $T_{\text{B}}\in \left[\SI{232.7}{\kelvin},\SI{250.7}{\kelvin}\right]$ logarithmiert und gegen $\frac{1}{T}$ aufgetragen.
-Dazu wird eine lineare Ausgleichsgrade 
+Dazu wird eine lineare Ausgleichsgerade 
 \begin{equation*}
     \text{ln}\left(I(T)\right) = \frac{-W}{k_{\text{{B}}}} \frac{1}{T} +\beta
 \end{equation*}
@@ -75,21 +75,21 @@ abgebildet.
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio]{figure/LinFit_W_A.pdf}
-    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie $W$ mit hilfe der Messreihe A.}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{figure/LinFit_W_A.pdf}
+    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie $W$ mit Hilfe der Messreihe A.}
     \label{fig:Lin_fit_W_A}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio]{figure/LinFit_W_B.pdf}
-    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie $W$ mit hilfe der Messreihe B.}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{figure/LinFit_W_B.pdf}
+    \caption{Messdaten und lineare Ausgleichsgerade für die Bestimmung der Aktivierungsenergie $W$ mit Hilfe der Messreihe B.}
     \label{fig:Lin_fit_W_B}
 \end{figure}
 \FloatBarrier
 Die Fitparameter sind in Tabelle \ref{tab:Niedertemperatur_approx_fit_params} abgebildet.
 \begin{table}
     \centering
-    \caption{Fitparameter der linearen Ausgleichsgraden der beiden Messreihen.}
+    \caption{Fitparameter der linearen Ausgleichsgeraden der beiden Messreihen.}
     \label{tab:Niedertemperatur_approx_fit_params}
     \begin{tabular}{c c c c}
         \toprule
@@ -100,10 +100,11 @@ Die Fitparameter sind in Tabelle \ref{tab:Niedertemperatur_approx_fit_params} ab
         \bottomrule
     \end{tabular}
 \end{table}
+\newpage
 \subsection{Integrationsverfahren}
-Bei dieser Methode wird die Aktivierungsenergie mithilfe der Gleichung \eqref{eq3}  bestimmt.
-Das Integral aus Gleichung \eqref{eq3} wird numerisch mithilfe der Trapezregel bestimmt.
-An die ermittelten Daten wird eine lineare Ausgleichsgrade der Form 
+Bei dieser Methode wird die Aktivierungsenergie mithilfe von Gleichung \eqref{eq3}  bestimmt.
+Das Integral aus Gleichung \eqref{eq3} wird numerisch mittels der Trapezregel bestimmt.
+An die ermittelten Daten wird eine lineare Ausgleichsgerade der Form 
 \begin{equation*}
     \ln{ \left( \frac{ \int_{T}^\infty j(T') \mathrm{d}T' }{ b j(T) \tau_{\text{0}} } \right) } = \frac{W}{k_{\text{{B}}}} \frac{1}{T} +\beta
 \end{equation*}
@@ -112,22 +113,22 @@ Die Messdaten und die Fits sind in den Abbildungen \ref{fig:Integralverfahren_A}
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[width= \textwidth,keepaspectratio]{figure/Integralverfahren_A.pdf}
-    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie mithilfe der Integrationsverfahrens für Messreihe A.}
+    \includegraphics[width= 0.8\textwidth,keepaspectratio]{figure/Integralverfahren_A.pdf}
+    \caption{Messdaten und lineare Ausgleichsgerade für die Bestimmung der Aktivierungsenergie mithilfe des Integrationsverfahrens für Messreihe A.}
     \label{fig:Integralverfahren_A}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width= \textwidth,keepaspectratio]{figure/Integralverfahren_B.pdf}
-    \caption{Messdaten und lineare Ausgleichsgrade für die Bestimmung der Aktivierungsenergie mithilfe der Integrationsverfahrens für Messreihe B.}
+    \includegraphics[width= 0.8\textwidth,keepaspectratio]{figure/Integralverfahren_B.pdf}
+    \caption{Messdaten und lineare Ausgleichsgerade für die Bestimmung der Aktivierungsenergie mithilfe des Integrationsverfahrens für Messreihe B.}
     \label{fig:Integralverfahren_B}
 \end{figure}
 \FloatBarrier
-Die Fitparameter der Ausgleichsgraden aus denn Abbildungen \ref{fig:Integralverfahren_A} und \ref{fig:Integralverfahren_B} sind 
+Die Fitparameter der Ausgleichsgeraden aus denn Abbildungen \ref{fig:Integralverfahren_A} und \ref{fig:Integralverfahren_B} sind 
 in Tabelle \ref{tab:Fit_params_integtal} aufgelistet.
 \begin{table}
     \centering
-    \caption{Fitparameter der Ausgleichsgraden für die Bestimmung der Aktivierungsenergie mithilfe des Integrationsverfahrens.}
+    \caption{Fitparameter der Ausgleichsgeraden für die Bestimmung der Aktivierungsenergie mithilfe des Integrationsverfahrens.}
     \label{tab:Fit_params_integtal}
     \begin{tabular}{c c c c}
         \toprule
@@ -138,9 +139,10 @@ in Tabelle \ref{tab:Fit_params_integtal} aufgelistet.
         \bottomrule
     \end{tabular}
 \end{table}
+\newpage
 \subsection{Bestimmung der Relaxationszeit \texorpdfstring{$\tau_{0}$}{T1}}
 Um die Relaxationszeit $\tau_{0}$ zu bestimmen wird die Funktion \eqref{eq:j_T} nach der Temperatur abgeleitet und 
-die Temperatur bei Strommaximum eingesetzt und gleich Null gesetzt.
+die Temperatur beim Strommaximum eingesetzt und gleich Null gesetzt.
 \begin{gather*}
     \left.\frac{\text{d}j(T)}{\text{d}T}\right|_{T_{\text{max}}}=0\\
     \implies \tau_0 = \frac{k_{\text{B}}T_{\text{max}}^2}{Wb}\exp{\left(-\frac{W}{k_{\text{B}}T_{\text{max}}}\right)}
@@ -150,7 +152,7 @@ Die verschiedenen $\tau_0$-Werte sind in Tabelle \ref{tab:tau_0} aufgelistet.
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{$\tau_0$-Werte der beiden Messreihen für die zwei Methoden der Bestimmung der Aktivierungsenergie.}
+    \caption{$\tau_0$-Werte der beiden Messreihen für die zwei Methoden zur Bestimmung der Aktivierungsenergie.}
     \label{tab:tau_0}
     \begin{tabular}{c c c}
         \toprule
@@ -162,19 +164,20 @@ Die verschiedenen $\tau_0$-Werte sind in Tabelle \ref{tab:tau_0} aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
-Die Unsicherheiten sind sehr groß im Vergleich mit den bestimmten Werten, darauf wird in der Diskussion eingegangen.
+Die Unsicherheiten sind sehr groß im Vergleich zu den bestimmten Werten, darauf wird in der Diskussion eingegangen.
 Mit den $\tau_0$- und den $W$-Werten kann der Verlauf $\tau(T)$ dargestellt werden.
 Diese sind in Abbildung \ref{fig:tau_verlauf_A} und \ref{fig:tau_verlauf_B} zu sehen.
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[width = \textwidth , keepaspectratio]{figure/tau_verlauf_A.pdf}
+    \includegraphics[width = 0.8\textwidth , keepaspectratio]{figure/tau_verlauf_A.pdf}
     \caption{Verlauf der Relaxationszeit für die Messreihe A.}
     \label{fig:tau_verlauf_A}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width = \textwidth , keepaspectratio]{figure/tau_verlauf_B.pdf}
+    \includegraphics[width = 0.8\textwidth , keepaspectratio]{figure/tau_verlauf_B.pdf}
     \caption{Verlauf der Relaxationszeit für die Messreihe B.}
     \label{fig:tau_verlauf_B}
 \end{figure}
+\clearpage

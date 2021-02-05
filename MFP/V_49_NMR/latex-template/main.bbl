@@ -19,6 +19,45 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Quelle_8}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e2996ac910248723d7f791948ab99d70}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=41b5d163e02c5c2d0f8578b409bafdb7}{%
+           family={Hazlewood},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a6e019f47b57695490a118aa00110f0f}{%
+           family={Nichols},
+           familyi={N\bibinitperiod},
+           given={B.\bibnamedelimi L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=d60dbe1541bb8440cc8e86a71ba9ad6a}{%
+           family={Rorschach},
+           familyi={R\bibinitperiod},
+           given={H.\bibnamedelimi E.},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f4169fd887042de25584e19f610ee7c}
+      \strng{fullhash}{f59cbe8c5f262deecd368670cf8673d5}
+      \strng{bibnamehash}{8f4169fd887042de25584e19f610ee7c}
+      \strng{authorbibnamehash}{8f4169fd887042de25584e19f610ee7c}
+      \strng{authornamehash}{8f4169fd887042de25584e19f610ee7c}
+      \strng{authorfullhash}{f59cbe8c5f262deecd368670cf8673d5}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Spin Echo Studies on Cellular Water}
+      \field{year}{1972}
+      \verb{doi}
+      \verb https://doi.org/10.1038/235170a0
+      \endverb
+    \endentry
     \entry{anleitung}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%

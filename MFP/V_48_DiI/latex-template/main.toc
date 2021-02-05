@@ -8,18 +8,15 @@
 \contentsline {subsection}{\numberline {2.3}Berechnung der Aktivierungsenergie}{4}{subsection.2.3}
 \contentsline {section}{\numberline {3}Durchführung}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Versuchsaufbau}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}1. Messreihe}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}2. Messreihe}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Bestimmung des Untergrundes}{8}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Niedertemperatur Approximation}{13}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Integrationsverfahren}{15}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Bestimmung der Relaxationszeit $\mittau _{0}$}{18}{subsection.4.4}
-\contentsline {section}{\numberline {5}Auswertung,Kevin}{18}{section.5}
-\contentsline {subsection}{\numberline {5.1}Approximative Ausgleichsrechnung}{19}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Ausgleichsrechnung mit Integration}{19}{subsection.5.2}
-\contentsline {section}{\numberline {6}Diskussion}{20}{section.6}
-\contentsline {section}{\numberline {7}Diskussion}{20}{section.7}
-\contentsline {subsection}{\numberline {7.1}Niedertemperatur Approximation}{20}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Integrationsverfahren}{20}{subsection.7.2}
-\contentsline {section}{\nonumberline Literatur}{25}{section*.18}
+\contentsline {subsection}{\numberline {3.2}Messreihe: 1}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Messreihe: 2}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Bestimmung des Untergrundes}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Niedertemperaturapproximation}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Integrationsverfahren}{14}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Bestimmung der Relaxationszeit $\mittau _{0}$}{16}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Niedertemperaturapproximation}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Integrationsverfahren}{18}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Bestimmung der Relaxationszeit $\mittau _{0}$}{18}{subsection.5.3}
+\contentsline {section}{\nonumberline Literatur}{22}{section*.21}
