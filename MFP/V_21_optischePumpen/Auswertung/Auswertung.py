@@ -48,12 +48,22 @@ params_err_1 = unp.uarray(params_1,errors_1)
 params_err_2 = unp.uarray(params_2,errors_2)
 
 print("params_1")
+n=0
 for i in params_err_1:
-    print(i)
+    if n ==1: 
+        print(i*10**6)
+    else:
+        print(i)
+    n+=1
 print()
 print("params_2")
+n=0
 for i in params_err_2:
-    print(i)
+    if n ==1: 
+        print(i*10**6)
+    else:
+        print(i)
+    n+=1
 
 x_plot= np.linspace(Freq.min(),Freq.max(),100)
 print()
@@ -62,7 +72,7 @@ plt.figure()
 plt.plot(Freq/1000,B_1*10**6,"rx",label="Peak 1 Messdaten")
 plt.plot(Freq/1000,B_2*10**6,"bx",label="Peak 2 Messdaten")
 plt.plot(x_plot/1000,linear_fit(x_plot,*params_1)*10**6,"r-",label= "Fit 1")
-plt.plot(x_plot/1000,linear_fit(x_plot,*params_2)*10**6,"r-",label= "Fit 2")
+plt.plot(x_plot/1000,linear_fit(x_plot,*params_2)*10**6,"b-",label= "Fit 2")
 plt.xlabel(r"f / kHz")
 plt.ylabel(r"B / µT")
 plt.grid()
@@ -78,3 +88,15 @@ print("g_F_2: ", g_F_2)
 print()
 print("I_1: ",0.5*(2.0023/g_F_1 -1))
 print("I_2: ",0.5*(2.0023/g_F_2 -1))
+
+print((ufloat(22,9)+ufloat(24,6))/2)
+
+print()
+print("Peak2/peak1")
+print(1/(119.76/221.94))
+print()
+print("Lit:", 72.168/27.835)
+
+s = (ufloat(22,9)+ufloat(24,6))/2
+l= 20
+print(())
