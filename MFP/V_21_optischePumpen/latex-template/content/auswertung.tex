@@ -1,9 +1,60 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-
-\begin{figure}
+Bei diesem Versuch soll der Kernspin, die Landé-Faktoren und das Verhältnis von $\ce{^85Rb}$ und $\ce{^87Rb}$ ermittelt 
+werden. Zusätzlich kann die Horizontalkomponente des Erdmagnetfelds bestimmt werden. Die dafür benötigten Daten sind in 
+Tabelle \ref{tab:Messdaten_roh} aufgelistet.
+\FloatBarrier
+\begin{table}
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
+  \caption{Messdaten für die Bestimmung des Kernspins, die Landé-Faktoren und des Erdmagnetfelds.}
+  \label{tab:Messdaten_roh}
+  \begin{tabular}{c c c c c}
+    \toprule
+    Frequenz / $\SI{}{\kilo\hertz}$&Sweep Peak 1&Sweep Peak 2&Horizontal Peak 1&Horizontal Peak 2\\
+    \midrule
+    $\num{100}$&$\num{5.49}$&$\num{6.68}$&$\num{13.8}$&$\num{13.8}$\\
+    $\num{200}$&$\num{6.01}$&$\num{8.36}$&$\num{13.86}$&$\num{13.86}$\\
+    $\num{300}$&$\num{5.43}$&$\num{8.97}$&$\num{13.92}$&$\num{13.92}$\\
+    $\num{400}$&$\num{3.79}$&$\num{8.47}$&$\num{14.02}$&$\num{14.02}$\\
+    $\num{500}$&$\num{2.64}$&$\num{8.54}$&$\num{14.10}$&$\num{14.10}$\\
+    $\num{600}$&$\num{1.86}$&$\num{8.98}$&$\num{14.26}$&$\num{14.26}$\\
+    $\num{700}$&$\num{1.37}$&$\num{3.64}$&$\num{14.22}$&$\num{14.36}$\\
+    $\num{800}$&$\num{3.76}$&$\num{3.73}$&$\num{14.36}$&$\num{14.44}$\\
+    $\num{900}$&$\num{2.55}$&$\num{7.30}$&$\num{14.30}$&$\num{14.44}$\\
+    $\num{1000}$&$\num{4.94}$&$\num{4.71}$&$\num{14.30}$&$\num{14.58}$\\
+    \bottomrule
+  \end{tabular}
+\end{table} 
+\FloatBarrier
+Die Messdaten aus Tabelle \ref{tab:Messdaten_roh} müssen zunächst in eine Stromstärke umgerechnet werden. Die Sweepeinstellung 
+muss mit dem Wert $\SI{0.1}{\ampere}$ und die Horizontaleinstellung mit $\SI{0.3}{\ampere}$ multipliziert werden um eine Stromstärke
+zu erhalten. Bei der Horizontalkomponente ist ein Offset von $\num{13.8}$ vorhanden, daher muss dieser Wert von den Daten 
+subtrahiert werden. Um aus den Stromstärken ein $B$-Wert zu erhalten muss die Formel 
+\begin{equation*}
+  B=\mu_0\frac{8\cdot N \cdot I}{\sqrt{125}R}
+\end{equation*}
+angewendet werden. Die Sweep- und Horizontalwerte müssen zum gesamt $B$-Wert addiert werden. Die Stromstärken und die 
+$B$-Werte sind in Tabelle \ref{tab:Messdaten} zu sehen.
+\begin{table}
+  \centering
+  \caption{Stromstärken und Magnetfeldstärke in abhängigkeit der Frequenz.}
+  \label{tab:Messdaten}
+  \begin{tabular}{c c c c c c c}
+    \toprule
+    &\multicolumn{3}{c}{Peak 1}&\multicolumn{3}{c}{Peak 2}\\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+    $f\,/\,\SI{}{\kilo\hertz}$&$I_{\text{sweep}}\,/\,\SI{}{\ampere}$&$I_{\text{horizontal}}\,/\,\SI{}{\ampere}$&$B\,/\,\SI{}{\micro\tesla}$&$I_{\text{sweep}}\,/\,\SI{}{\ampere}$&$I_{\text{horizontal}}\,/\,\SI{}{\ampere}$&$B\,/\,\SI{}{\micro\tesla}$\\
+    \midrule
+    $\num{100}$ &$\num{0.549}$&$\num{0.0}$  &$\num{33.1}$&$\num{0.668}$&$\num{0.0}$&$\num{40.3}$\\
+    $\num{200}$ &$\num{0.601}$&$\num{0.018}$&$\num{52.1}$&$\num{0.836}$&$\num{0.018}$&$\num{66.2}$\\
+    $\num{300}$ &$\num{0.543}$&$\num{0.036}$&$\num{64.3}$&$\num{0.897}$&$\num{0.036}$&$\num{85.7}$\\
+    $\num{400}$ &$\num{0.379}$&$\num{0.066}$&$\num{80.8}$&$\num{0.847}$&$\num{0.066}$&$\num{109.0}$\\
+    $\num{500}$ &$\num{0.264}$&$\num{0.089}$&$\num{94.9}$&$\num{0.854}$&$\num{0.09}$&$\num{130.5}$\\
+    $\num{600}$ &$\num{0.186}$&$\num{0.138}$&$\num{132.2}$&$\num{0.898}$&$\num{0.138}$&$\num{175.2}$\\
+    $\num{700}$ &$\num{0.137}$&$\num{0.126}$&$\num{118.8}$&$\num{0.364}$&$\num{0.168}$&$\num{169.3}$\\
+    $\num{800}$ &$\num{0.376}$&$\num{0.168}$&$\num{170.0}$&$\num{0.373}$&$\num{0.192}$&$\num{190.9}$\\
+    $\num{900}$ &$\num{0.255}$&$\num{0.15}$ &$\num{146.9}$&$\num{0.73}$&$\num{0.192}$&$\num{212.4}$\\
+    $\num{1000}$&$\num{0.494}$&$\num{0.15}$ &$\num{161.4}$&$\num{0.471}$&$\num{0.234}$&$\num{233.6}$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
