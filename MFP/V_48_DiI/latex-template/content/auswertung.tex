@@ -145,39 +145,45 @@ Um die Relaxationszeit $\tau_{0}$ zu bestimmen wird die Funktion \eqref{eq:j_T} 
 die Temperatur beim Strommaximum eingesetzt und gleich Null gesetzt.
 \begin{gather*}
     \left.\frac{\text{d}j(T)}{\text{d}T}\right|_{T_{\text{max}}}=0\\
+    \frac{\text{d}j(T)}{\text{d}T} = \frac{p^2E}{3k_{\text{B}}T_{\text{P}}}\frac{N_{\text{P}}}{\tau_0}
+    \exp{\left(-\frac{1}{b\tau_0} \int^T_{T_0} \exp{\left(\frac{-W}{k_{\text{B}T'}}\right)}\text{d}T'\right)}\cdot\\
+    \left(\frac{-1}{b\tau_0} \exp{\left(\frac{-W}{k_\text{B}T}\right)}\exp{\left(\frac{-W}{k_\text{B}T}\right)}\right.\\
+    \left.+\exp{\left(\frac{-W}{k_\text{B}T}\right)}\frac{W}{k_{\text{B}}T^2}\right)\\
     \implies \tau_0 = \frac{k_{\text{B}}T_{\text{max}}^2}{Wb}\exp{\left(-\frac{W}{k_{\text{B}}T_{\text{max}}}\right)}
 \end{gather*}
-$\tau_0$ wird mit den vorher bestimmten Ergebnissen der verschiedenen Methoden bestimmt.
-Die verschiedenen $\tau_0$-Werte sind in Tabelle \ref{tab:tau_0} aufgelistet.
+Um $\tau_0$ zu bestimmen wird zunächst die Aktivierungsenergiewerte der einzelnen Messreihen gemittelt. Damit 
+werden zwei $\tau_0$-Werte bestimmt, welche für den $\tau$-Verlauf gemittelt werden. Die gemittelten $W$-Werte und die 
+damit bestimmten $\tau_0$-Werte sind in Tabelle \ref{tab:Mittelwerte} aufgelistet.
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{$\tau_0$-Werte der beiden Messreihen für die zwei Methoden zur Bestimmung der Aktivierungsenergie.}
-    \label{tab:tau_0}
+    \caption{Gemittelte Aktivierungsenergien und die dazugehörigen $\tau_0$-Werte.}
+    \label{tab:Mittelwerte}
     \begin{tabular}{c c c}
         \toprule
-        Messreihe&$\tau_0\,/\,\SI{}{\second}$ (Approximationsverfahren)&$\tau_0\,/\,\SI{}{\second}$ (Integrationsverfahren)\\
+        Messreihe&$\overline{W} \,/\,\SI{}{\joule}$&$\tau_0 \,/\,\SI{}{\second}$\\
         \midrule
-        A&$\num{2.8(18)e-15}$&$\num{2.0(27)e-17}$\\
-        B&$\num{8(30)e-18}$&$\num{4(9)e-18}$\\
+        A&$\num{1.472(28)e-19}$&$\num{2.2(18)e-16}$\\
+        B&$\num{1.58(7)e-19}$&$\num{0.6(11)e-17}$\\
         \bottomrule
     \end{tabular}
 \end{table}
 \FloatBarrier
-Die Unsicherheiten sind sehr groß im Vergleich zu den bestimmten Werten, darauf wird in der Diskussion eingegangen.
-Mit den $\tau_0$- und den $W$-Werten kann der Verlauf $\tau(T)$ dargestellt werden.
-Diese sind in Abbildung \ref{fig:tau_verlauf_A} und \ref{fig:tau_verlauf_B} zu sehen.
+Die Unsicherheiten der $\tau_0$-Werte werden mit der Gaußschen Fehlerfortpflanzung ermittelt.
+Die Unsicherheiten lässt sich mit der Gleichung 
+\begin{align*}
+    \sigma_{\tau_0} =& \sqrt{\left(\frac{\partial \tau_0}{\partial W}\cdot \sigma_{\text{W}}\right)^2}\\
+    =&\sqrt{\left(\frac{k_{\text{B}}T_{\text{max}}^2}{b} \frac{-1}{W^2}\exp{\left(\frac{-W}{k_{\text{B}} T}\right)}\right.}\\ &\overline{\left.+ \frac{k_{\text{B}}T_{\text{max}}^2}{b} \frac{1}{W} \exp{\left(\frac{-W}{k_{\text{B}} T}\right)} \frac{-1}{k_{\text{B}T}} \right)^2}\sigma_{\text{W}}\\
+    =&\frac{k_{\text{B}}T_{\text{max}}^2}{bW}\exp{\left(\frac{-W}{k_{\text{B}} T_{\text{max}}}\right)}\left(\frac{1}{W}+ \frac{1}{k_{\text{B}}T_{\text{max}}}\right)\sigma_{\text{W}}
+\end{align*}
+bestimmen.
+Um den $\tau$-Verlauf darzustellen, werden die $W$-Werte und die $\tau_0$-Werte gemittelt. Die gemittelten 
+Werte entsprechen $\overline{W}=\SI{1.53(4)e-19}{\joule}$ und $\overline{\tau_{0}} = \SI{1.1(9)e-16}{\second}$.
+Der damit bestimmte $\tau(T)$-Verlauf ist in Abbildung \ref{fig:tauvonT} abgebildet.
 \FloatBarrier
 \begin{figure}
     \centering
-    \includegraphics[width = 0.8\textwidth , keepaspectratio]{figure/tau_verlauf_A.pdf}
-    \caption{Verlauf der Relaxationszeit für die Messreihe A.}
-    \label{fig:tau_verlauf_A}
+    \includegraphics[width = \textwidth, keepaspectratio]{figure/Tau_verlauf.pdf}
+    \caption{$\tau(T)$-Verteilung mit den gemittelten Werten.}
+    \label{fig:tauvonT}
 \end{figure}
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.8\textwidth , keepaspectratio]{figure/tau_verlauf_B.pdf}
-    \caption{Verlauf der Relaxationszeit für die Messreihe B.}
-    \label{fig:tau_verlauf_B}
-\end{figure}
-\clearpage

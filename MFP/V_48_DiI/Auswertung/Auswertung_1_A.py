@@ -108,7 +108,7 @@ plt.plot(1/x_plot,j(x_plot,*params),"r-",label = "Ausgleichsgrade")
 plt.grid()
 
 plt.xlabel(r"inverse  Temperatur / $K^{-1}$")   
-plt.ylabel(r"ln(I) / ln(A$\times 10^{-11}$)")
+plt.ylabel(r"ln(I/$I_0$), $I_0=10^{-11}A$")
 #plt.yscale("log")
 plt.legend(loc="best")
 plt.savefig("../latex-template/figure/LinFit_W_A.pdf")
@@ -183,7 +183,7 @@ plt.plot(1/T_int,np.log(F),"bx",label="Messdaten")
 plt.plot(1/x_plot,lin_fit(x_plot,*params_int), "r-",label="Ausgleichsgrade")
 plt.grid()
 plt.xlabel(r"inverse  Temperatur / $K^{-1}$")   
-plt.ylabel(r"ln(I) / ln(A$\times 10^{-11}$)")
+plt.ylabel(r"ln(I/$I_0$), $I_0=10^{-11}A$")
 plt.legend(loc="best")
 plt.savefig("../latex-template/figure/Integralverfahren_A.pdf")
 #plt.show()
@@ -193,6 +193,8 @@ plt.savefig("../latex-template/figure/Integralverfahren_A.pdf")
 b = 2 #Kelvin pro minute
 
 b *= 1/60
+
+
 
 def tau_0(W):
     return( const.k*T_int[index]**2 / (W*b) * unp.exp(-W/(const.k*T_int[index]))) 
@@ -239,3 +241,6 @@ plt.grid()
 plt.legend(loc = "best")
 plt.savefig("../latex-template/figure/tau_verlauf_A.pdf")
 plt.show()
+print()
+print("T_int[index]:",T_int[index])
+print()
