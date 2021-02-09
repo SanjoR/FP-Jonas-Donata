@@ -10,7 +10,6 @@ import scipy.constants as const
 L_Peaks = np.genfromtxt("../Data/Stabi_konkav_konkav.txt", unpack = True)
 
 
-print(L_Peaks)
 
 L = L_Peaks[:1,][0] /100
 L_Peaks = np.delete(L_Peaks,(0),axis=0)
@@ -21,27 +20,23 @@ Peaks_4 = L_Peaks[:,3]
 print()
 print("Länge : 73cm")
 for i in range(len(Peaks_1)):
-    print()
-    print(const.c*(i+1) /(2*L[0])/10**6, Peaks_1[i])
+    print(round(const.c*(i+1) /(2*L[0])/10**6,1), Peaks_1[i])
 
 
 print()
 print("Länge : 84.8cm")
 for i in range(len(Peaks_2)):
-    print()
-    print(const.c*(i+1) /(2*L[1])/10**6, Peaks_2[i])
+    print(round(const.c*(i+1) /(2*L[1])/10**6,1), Peaks_2[i])
 
-    print()
+print()
 print("Länge : 135cm")
 for i in range(len(Peaks_3)):
-    print()
-    print(const.c*(i+1) /(2*L[2])/10**6, Peaks_3[i])
+    print(round(const.c*(i+1) /(2*L[2])/10**6,1), Peaks_3[i])
 
 print()
 print("Länge : 176.3cm")
 for i in range(len(Peaks_4)):
-    print()
-    print(const.c*(i+1) /(2*L[3])/10**6, Peaks_4[i])
+    print(round(const.c*(i+1) /(2*L[3])/10**6,1), Peaks_4[i])
 
 
 
@@ -86,33 +81,37 @@ axis[0,0].plot(x_plot_1,y_plot_1,"r-",label="Theoriegrade L = 73.0cm")
 axis[0,0].plot(x_plot_1,linear(x_plot_1,*params_1),"r--", label ="Ausgleichsgrade L = 73.0cm")
 axis[0,0].plot(x_plot_1, Peaks_1,"rx",label="Messdaten L= 73.0cm")
 axis[0,0].grid()
-axis[0,0].set_ylabel(r"$\nu$ / MHz")
-axis[0,0].legend(loc="best")
+axis[0,0].set_title("L=730mm")
+axis[0,0].set_ylabel(r"f / MHz")
+#axis[0,0].legend(loc="best")
 
 axis[0,1].plot(x_plot_2,y_plot_2,"g-",label="Theoriegrade L = 84.8cm")
 axis[0,1].plot(x_plot_2,linear(x_plot_2,*params_2),"g--", label ="Ausgleichsgrade L = 84.8cm")
 axis[0,1].plot(x_plot_2, Peaks_2,"gx",label="Messdaten L= 84.8cm")
+axis[0,1].set_title("L=848mm")
 axis[0,1].grid()
-axis[0,1].legend(loc="best")
+#axis[0,1].legend(loc="best")
 
 axis[1,0].plot(x_plot_3,y_plot_3,"b-",label="Theoriegrade L = 135.0cm")
 axis[1,0].plot(x_plot_3,linear(x_plot_3,*params_3),"b--", label ="Ausgleichsgrade L = 135.0cm")
 axis[1,0].plot(x_plot_3, Peaks_3,"bx",label="Messdaten L= 135.0cm")
-axis[1,0].set_ylabel(r"$\nu$ / MHz")
+axis[1,0].set_ylabel(r"f / MHz")
 axis[1,0].set_xlabel(r"n")
+axis[1,0].set_title("L=1350mm")
 axis[1,0].grid()
-axis[1,0].legend(loc="best")
+#axis[1,0].legend(loc="best")
 
 axis[1,1].plot(x_plot_4,y_plot_4,"k-",label="Theoriegrade L = 176.3cm")
 axis[1,1].plot(x_plot_4,linear(x_plot_4,*params_4),"k--", label ="Ausgleichsgrade L = 176.3cm")
 axis[1,1].plot(x_plot_4, Peaks_4,"kx",label="Messdaten L= 176.3cm")
+axis[1,1].set_title("L=1763mm")
 axis[1,1].set_xlabel(r"n")
 axis[1,1].grid()
-axis[1,1].legend(loc="best")
+#axis[1,1].legend(loc="best")
 
 #plt.xlabel("n")
 #plt.ylabel(r"$\nu$ / MHz")
-
+plt.savefig("../latex-template/figure/Multimode.pdf")
 plt.show()
 
 
