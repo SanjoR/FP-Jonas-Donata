@@ -1,0 +1,107 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=788175f7c5138edd10411cbe774c0e38}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{788175f7c5138edd10411cbe774c0e38}
+      \strng{fullhash}{788175f7c5138edd10411cbe774c0e38}
+      \strng{bibnamehash}{788175f7c5138edd10411cbe774c0e38}
+      \strng{authorbibnamehash}{788175f7c5138edd10411cbe774c0e38}
+      \strng{authornamehash}{788175f7c5138edd10411cbe774c0e38}
+      \strng{authorfullhash}{788175f7c5138edd10411cbe774c0e38}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optical Pumping}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.phas.ubc.ca/~phys409/manuals/Optical_Pumping-CalTech.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.phas.ubc.ca/~phys409/manuals/Optical_Pumping-CalTech.pdf
+      \endverb
+    \endentry
+    \entry{RbVorkommen}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1109ab5e776b2aa9424e427fbe4b8433}{%
+           family={Jaeck},
+           familyi={J\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1109ab5e776b2aa9424e427fbe4b8433}
+      \strng{fullhash}{1109ab5e776b2aa9424e427fbe4b8433}
+      \strng{bibnamehash}{1109ab5e776b2aa9424e427fbe4b8433}
+      \strng{authorbibnamehash}{1109ab5e776b2aa9424e427fbe4b8433}
+      \strng{authornamehash}{1109ab5e776b2aa9424e427fbe4b8433}
+      \strng{authorfullhash}{1109ab5e776b2aa9424e427fbe4b8433}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Daten und Eigenschaften des Isotops Rb-87}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.internetchemie.info/isotop.php?Kern=Rb-87
+      \endverb
+      \verb{url}
+      \verb https://www.internetchemie.info/isotop.php?Kern=Rb-87
+      \endverb
+    \endentry
+    \entry{1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7d0f9bdd605e0277b2ef34215d7b8b09}{%
+           family={Pfeiler},
+           familyi={P\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{7d0f9bdd605e0277b2ef34215d7b8b09}
+      \strng{fullhash}{7d0f9bdd605e0277b2ef34215d7b8b09}
+      \strng{bibnamehash}{7d0f9bdd605e0277b2ef34215d7b8b09}
+      \strng{authorbibnamehash}{7d0f9bdd605e0277b2ef34215d7b8b09}
+      \strng{authornamehash}{7d0f9bdd605e0277b2ef34215d7b8b09}
+      \strng{authorfullhash}{7d0f9bdd605e0277b2ef34215d7b8b09}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quanten, Atome, Kerne, Teilchen}
+      \field{year}{2017}
+      \field{dateera}{ce}
+    \endentry
+  \enddatalist
+  \missing{??}
+\endrefsection
+\endinput
+
