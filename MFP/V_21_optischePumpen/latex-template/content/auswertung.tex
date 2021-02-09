@@ -1,12 +1,12 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Bei diesem Versuch soll der Kernspin, die Landé-Faktoren und das Verhältnis von $\ce{^85Rb}$ und $\ce{^87Rb}$ ermittelt 
-werden. Zusätzlich kann die Horizontalkomponente des Erdmagnetfelds bestimmt werden. Die dafür benötigten Daten sind in 
+Bei diesem Versuch sollen der Kernspin, die Landé-Faktoren und das Verhältnis von $\ce{^85Rb}$ und $\ce{^87Rb}$ ermittelt 
+werden. Zusätzlich kann die Horizontalkomponente des Erdmagnetfeldes bestimmt werden. Die dafür benötigten Daten sind in 
 Tabelle \ref{tab:Messdaten_roh} aufgelistet.
 \FloatBarrier
 \begin{table}
   \centering
-  \caption{Messdaten für die Bestimmung des Kernspins, die Landé-Faktoren und des Erdmagnetfelds.}
+  \caption{Messdaten für die Bestimmung des Kernspins, der Landé-Faktoren und des Erdmagnetfeldes.}
   \label{tab:Messdaten_roh}
   \begin{tabular}{c c c c c}
     \toprule
@@ -29,17 +29,17 @@ Tabelle \ref{tab:Messdaten_roh} aufgelistet.
 \end{table} 
 \FloatBarrier
 Die Messdaten aus Tabelle \ref{tab:Messdaten_roh} müssen zunächst in eine Stromstärke umgerechnet werden. Die Sweepeinstellung 
-muss mit dem Wert $\SI{0.1}{\ampere}$ und die Horizontaleinstellung mit $\SI{0.3}{\ampere}$ multipliziert werden um eine Stromstärke
+muss mit dem Wert $\SI{0.1}{\ampere}$ und die Horizontaleinstellung mit $\SI{0.3}{\ampere}$ multipliziert werden, um eine Stromstärke
 zu erhalten. Bei der Horizontalkomponente ist ein Offset von $\num{13.8}$ vorhanden, daher muss dieser Wert von den Daten 
-subtrahiert werden. Um aus den Stromstärken ein $B$-Wert zu erhalten muss die Formel 
+subtrahiert werden. Um aus den Stromstärken einen $B$-Wert zu erhalten, muss die Formel 
 \begin{equation*}
   B=\mu_0\frac{8\cdot N \cdot I}{\sqrt{125}R}
 \end{equation*}
-angewendet werden. Die Sweep- und Horizontalwerte müssen zum gesamt $B$-Wert addiert werden. Die Stromstärken und die 
-$B$-Werte sind in Tabelle \ref{tab:Messdaten} zu sehen.
+angewendet werden. Die Sweep- und Horizontalwerte müssen zum Gesamt-$B$-Wert addiert werden. Die Stromstärken und die 
+$B$-Werte sind in Tabelle \ref{tab:Messdaten} abgebildet.
 \begin{table}
   \centering
-  \caption{Stromstärken und Magnetfeldstärke in abhängigkeit der Frequenz.}
+  \caption{Stromstärken und Magnetfeldstärke in Abhängigkeit der Frequenz.}
   \label{tab:Messdaten}
   \begin{tabular}{c c c c c c c}
     \toprule
@@ -61,7 +61,7 @@ $B$-Werte sind in Tabelle \ref{tab:Messdaten} zu sehen.
   \end{tabular}
 \end{table}
 \FloatBarrier
-Die Magnetfeldstärke wird gegen die Frequenz aufgetragen und es wird eine lineare Ausgleichsgrade
+Die Magnetfeldstärke wird gegen die Frequenz aufgetragen und es wird eine lineare Ausgleichsgerade
 \begin{equation*}
   \label{eq:lin_fit}
   f(B)=a\cdot B + b
@@ -73,20 +73,20 @@ Mithilfe der Aufspaltung des Zeemaneffekts kann der Landé-Faktor bestimmt werde
   \implies a = \frac{g_{\text{F}} \mu_{\text{B}}}{h} \\
   \implies g_{\text{F}} = \frac{h}{a\mu_{\text{B}}}
 \end{gather*}
-Der y-Achsenabschnitt $b$ kann mit dem Erdmagnetfeld gleichgesetzt werden. Die lineare Ausgleichsgrade ist zusammen mit 
-den Messdaten in Abbildung \ref{fig:Fit_Messdaten} abgebildet.
+Der y-Achsenabschnitt $b$ kann mit dem Erdmagnetfeld gleichgesetzt werden. Die lineare Ausgleichsgerade ist zusammen mit 
+den Messdaten in Abbildung \ref{fig:Fit_Messdaten} dargestellt.
 \FloatBarrier
 \begin{figure}
   \centering
-  \includegraphics[width = \textwidth,keepaspectratio]{figure/Messdaten_Fit.pdf}
-  \caption{Messdaten und Ausgleichsgrade für die Bestimmung der Landé-Faktoren und des Erdmagnetfelds.}
+  \includegraphics[width = 0.7\textwidth,keepaspectratio]{figure/Messdaten_Fit.pdf}
+  \caption{Messdaten und Ausgleichsgerade für die Bestimmung der Landé-Faktoren und des Erdmagnetfeldes.}
   \label{fig:Fit_Messdaten}
 \end{figure}
 \FloatBarrier
-Die Fitparameter der Ausgleichsgraden aus Abbildung \ref{fig:Fit_Messdaten} sind in Tabelle \ref{tab:FitParams} aufgelistet.
+Die Fitparameter der Ausgleichsgeraden aus Abbildung \ref{fig:Fit_Messdaten} sind in Tabelle \ref{tab:FitParams} aufgelistet.
 \begin{table}
   \centering
-  \caption{Fitparameter der beiden Ausgleichsgraden.}
+  \caption{Fitparameter der beiden Ausgleichsgeraden.}
   \label{tab:FitParams}
   \begin{tabular}{c c c}
     \toprule
@@ -98,10 +98,10 @@ Die Fitparameter der Ausgleichsgraden aus Abbildung \ref{fig:Fit_Messdaten} sind
   \end{tabular}
 \end{table}
 \FloatBarrier
-Die Erdmagnetfeldstären können zu dem Wert $b=\SI{23(5)}{\micro\tesla}$ gemittelt werden. Der Theoriewert von $b_{\text{theo}}=\SI{20}{\micro\tesla}$
-liegt in der Unsicherheit des experimentell bestimmten Werts. 
+Die Erdmagnetfeldstärken können zu dem Wert $b=\SI{23(5)}{\micro\tesla}$ gemittelt werden. Der Theoriewert von $b_{\text{theo}}=\SI{20}{\micro\tesla}$
+liegt in der Unsicherheit des experimentell bestimmten Wertes. 
 Die aus der Steigung bestimmten Landé-Faktoren betragen $g_{\text{F1}}=\num{0.47(5)}$ und $g_{\text{F2}} = \num{0.335(15)}$.
-Um aus den Landé-Faktoren den Kernspin zu bestimmen wird die Gleichung \ref{karina_jan_gleichung_2} nach $I$ umgestellt.
+Um aus den Landé-Faktoren den Kernspin zu bestimmen, wird die Gleichung \ref{eq1} nach $I$ umgestellt.
 \begin{equation*}
   I=J=\left(\frac{g_{\text{J}}}{g_{\text{F}}}-1\right)
 \end{equation*}
@@ -113,14 +113,15 @@ Die bestimmten Werte betragen
 Die Theoriewerte sind $I_1 = \frac{3}{2}= \num{1.5}$ und $I_2 = \frac{5}{2}=\num{2.5}$, diese liegen innerhalb der Unsicherheiten der
 experimentell bestimmten Werte.
 \subsection{Isotopenverhältnis}
-Um Das Isotopenverhältnis zu bestimmen werden die Amplituden der Peaks bei $f= \SI{100}{\kilo\hertz}$ bestimmt.
-Dafür wird das Programm Inkscape \cite{??} verwendet. Die Amplituden aus Abbildung \ref{fig:Isotopenverhältnis} 
+Um das Isotopenverhältnis zu bestimmen, werden die Amplituden der Peaks bei $f= \SI{100}{\kilo\hertz}$ bestimmt.
+Dafür wird das Programm Inkscape verwendet. Die Amplituden aus Abbildung \ref{fig:Isotopenverhältnis} 
 betragen $P_{1} = \SI{119.76}{px}$ und $P_{2} = \SI{221.94}{px}$. Das Verhältnis ist dann $\frac{P_2}{P_1} = \num{1.85}$.
 Der Literaturwert beträgt $\frac{\num{72.168}}{\num{27.835}} = \num{2.59}$.
 \FloatBarrier
 \begin{figure}
   \centering
-  \includegraphics[width = \textwidth,keepaspectratio]{figure/Oszibild.pdf}
+  \includegraphics[width = 0.7\textwidth,keepaspectratio]{figure/Oszibild.pdf}
   \caption{Typische Aufnahme bei $f=\SI{100}{\kilo\hertz}$, für die Bestimmung des Isotopenverhältnisses.}
   \label{fig:Isotopenverhältnis}
 \end{figure}
+\newpage

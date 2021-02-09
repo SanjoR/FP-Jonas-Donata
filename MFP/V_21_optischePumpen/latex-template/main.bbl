@@ -47,6 +47,27 @@
       \verb https://www.phas.ubc.ca/~phys409/manuals/Optical_Pumping-CalTech.pdf
       \endverb
     \endentry
+    \entry{3}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optisches Pumpen}
+      \field{year}{2020}
+    \endentry
     \entry{RbVorkommen}{online}{}
       \name{author}{1}{}{%
         {{hash=1109ab5e776b2aa9424e427fbe4b8433}{%
@@ -101,7 +122,6 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
-  \missing{??}
 \endrefsection
 \endinput
 

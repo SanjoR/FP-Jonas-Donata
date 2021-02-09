@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  8 FEB 2021 13:02
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  9 FEB 2021 17:30
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.086 seconds
+luaotfload | main : initialization completed in 0.091 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2249,15 +2249,7 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
-(./main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                ??
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 11.
 Package biblatex Info: Reference segment=0 on input line 11.
 \AtBeginShipoutBox=\box58
@@ -2353,21 +2345,7 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 3.8171pt on input line 24.
 
-Overfull \hbox (1.54613pt too wide) in paragraph at lines 26--38
-\TU/lmr/m/n/10.95 gegeben. In dieser Gleichung beschreibt $\TU/LatinModernMath(
-1)/m/n/10.95 𝑊[]$ \TU/lmr/m/n/10.95 die Energien der Zustände, $\TU/LatinMo
-dernMath(1)/m/n/10.95 𝑔[]$ \TU/lmr/m/n/10.95 die Landefaktoren
- []
-
-
-Overfull \hbox (32.90288pt too wide) in paragraph at lines 26--38
-\TU/lmr/m/n/10.95 und $\TU/LatinModernMath(1)/m/n/10.95 𝑇$ \TU/lmr/m/n/10.95
- die Temperatur. Das in diesem Versuch betrachtete Gas besteht aus den Rubidium
-iosotopen
- []
-
-
-Overfull \hbox (7.81076pt too wide) in paragraph at lines 41--74
+Overfull \hbox (7.81076pt too wide) in paragraph at lines 40--73
 \TU/lmr/m/n/10.95 Jeder Zustand eines Fermions im Atom kann durch spezifische Q
 uantenzahlen charakterisiert
  []
@@ -2378,8 +2356,27 @@ Overfull \hbox (0.32541pt too wide) in paragraph at lines 108--118
 ufspaltung von Spektrallinien
  []
 
+
+Overfull \hbox (30.53844pt too wide) in paragraph at lines 108--118
+\TU/lmr/m/n/10.95 Atombestandteile zu erklären. Diese Wechselwirkung führt zu
+ Verschiebungen der Energieniveaus,
+ []
+
+
+Overfull \hbox (13.5472pt too wide) in paragraph at lines 108--118
+\TU/lmr/m/n/10.95 bzw. in eine Aufspaltung eines ursprünglichen Niveaus in ein
+e bestimmte Anzahl äquidistanter
+ []
+
+
+Overfull \hbox (23.53294pt too wide) in paragraph at lines 108--118
+\TU/lmr/m/n/10.95 mit Gesamtdrehimpuls $\TU/LatinModernMath(1)/m/n/10.95 𝐽$ 
+\TU/lmr/m/n/10.95 in $\TU/LatinModernMath(1)/m/n/10.95 𝑚[] = −𝐽, ..., 
+𝐽$ \TU/lmr/m/n/10.95 Unterniveaus aufgespalten, deren Energiedifferenzen 
+ []
+
 [4]
-<figure/Zeemanniveaus.pdf, id=71, 1204.5pt x 834.11626pt>
+<figure/Zeemanniveaus.pdf, id=77, 1204.5pt x 834.11626pt>
 File: figure/Zeemanniveaus.pdf Graphic file (type pdf)
 <use figure/Zeemanniveaus.pdf>
 Package luatex.def Info: figure/Zeemanniveaus.pdf  used on input line 134.
@@ -2392,11 +2389,23 @@ er
 
 [5<./figure/Zeemanniveaus.pdf>]
 Overfull \hbox (8.36613pt too wide) in paragraph at lines 155--186
-\TU/lmr/m/n/10.95 geben [[]3[]]. Für $[][][][]Rb$ bedeutet das (siehe Abbildun
+\TU/lmr/m/n/10.95 geben [[]4[]]. Für $[][][][]Rb$ bedeutet das (siehe Abbildun
 g []1[]), dass Elektronen auf allen Unterniveaus
  []
 
-) (./content/durchfuehrung.tex) (./content/auswertung.tex [6]
+[6]) (./content/durchfuehrung.tex
+<figure/Aufbau.pdf, id=102, 847.66687pt x 484.81125pt>
+File: figure/Aufbau.pdf Graphic file (type pdf)
+<use figure/Aufbau.pdf>
+Package luatex.def Info: figure/Aufbau.pdf  used on input line 11.
+(luatex.def)             Requested size: 418.25555pt x 239.21664pt.
+ [7<./figure/Aufbau.pdf>] [8])
+(./content/auswertung.tex
+Overfull \hbox (3.93332pt too wide) in paragraph at lines 3--6
+\TU/lmr/m/n/10.95 und $[][][][]Rb$ ermittelt werden. Zusätzlich kann die Horiz
+ontalkomponente des Erdmagnetfeldes
+ []
+
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
@@ -2413,13 +2422,13 @@ Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
- [7]
-<figure/Messdaten_Fit.pdf, id=106, 462.52798pt x 346.89601pt>
+[9]
+<figure/Messdaten_Fit.pdf, id=132, 462.52798pt x 346.89601pt>
 File: figure/Messdaten_Fit.pdf Graphic file (type pdf)
 <use figure/Messdaten_Fit.pdf>
 Package luatex.def Info: figure/Messdaten_Fit.pdf  used on input line 81.
-(luatex.def)             Requested size: 418.25555pt x 313.70679pt.
- [8] [9<./figure/Messdaten_Fit.pdf>]
+(luatex.def)             Requested size: 292.7776pt x 219.59369pt.
+ [10]
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
@@ -2444,27 +2453,38 @@ Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-
-
-LaTeX Warning: Reference `karina_jan_gleichung_2' on page 10 undefined on input 
-line 104.
-
-<figure/Oszibild.pdf, id=160, 1606.0pt x 1204.5pt>
+ [11<./figure/Messdaten_Fit.pdf>]
+<figure/Oszibild.pdf, id=191, 1606.0pt x 1204.5pt>
 File: figure/Oszibild.pdf Graphic file (type pdf)
 <use figure/Oszibild.pdf>
 Package luatex.def Info: figure/Oszibild.pdf  used on input line 123.
-(luatex.def)             Requested size: 418.25555pt x 313.6956pt.
+(luatex.def)             Requested size: 292.7776pt x 219.5759pt.
 (load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
 roman7-regular.luc)
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00008pt on input line 124.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 124.
-) (./content/diskussion.tex [10] [11<./figure/Oszibild.pdf>])(load luc: /home/do
-nata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular
-.luc)
+ [12<./figure/Oszibild.pdf>]) (./content/diskussion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--18
+
+ []
+
+
+Overfull \hbox (2.58582pt too wide) in paragraph at lines 3--18
+\TU/lmr/m/n/10.95 Vorkommens ist. Aus diesem Ergebnis kann geschlossen werden, 
+dass die Probe angereichert
+ []
+
+[13])(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/o
+tl/lmromancaps10-regular.luc)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [12]
+ [14]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./main.aux
 Language ngerman not found in language.dat.lua)
@@ -2475,35 +2495,25 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 957D7D690E3C00AAAA1704E80C3F0C3F;7774
-(rerunfilecheck)             After:  BBB0F46E0A2976DD8BEB6BD1FBCAD04D;8372.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: E9413093205EA19EF87CFD695C0272FA;896
-(rerunfilecheck)             After:  6CA5385E962D258A6E3C5BACBCAD508D;961.
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
+(rerunfilecheck)             Before: 3FC15A55278D6A6200B9193C28DE7B3F;9620
+(rerunfilecheck)             After:  ED1DF220BF23548C71EA9335AE12EE67;9680.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 5DC2276DA5D5F43AC05638B501C1DCE1;1119.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 41915 strings out of 494480
+ 41932 strings out of 494480
  100000,1648299 words of node,token memory allocated
  690 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 31 attribute, 76 glue_spec, 31 attr
 ibute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:1,2:2472,3:217,4:49,5:347,6:3611,7:1604,8:73,9:640,10:17,11:3
- 44606 multiletter control sequences out of 65536+600000
- 320 fonts using 120768519 bytes
- 61i,22n,104p,8833b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:2,2:2454,3:219,4:47,5:351,6:3683,7:1595,8:72,9:638,10:18,11:7
+ 44614 multiletter control sequences out of 65536+600000
+ 320 fonts using 120770647 bytes
+ 61i,22n,104p,8833b,3067s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/ope
 ntype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/
@@ -2515,10 +2525,10 @@ pe/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmr
 oman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.
 otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/tex
 mf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (12 pages, 398252 bytes).
+Output written on main.pdf (14 pages, 467910 bytes).
 
-PDF statistics: 307 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 131072)
- 89 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 340 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 131072)
+ 105 words of extra memory for PDF output out of 10000 (max. 100000000)
 
