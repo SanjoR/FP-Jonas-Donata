@@ -1,0 +1,145 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=59654c899d48eff28a4d8063e886fb5f}{%
+           family={Demtröder},
+           familyi={D\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{fullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{bibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorbibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authornamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorfullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Laserspektroskopie 1 (Grundlagen)}
+      \field{year}{2011}
+    \endentry
+    \entry{sample}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{V61 Helium-Neon-Laser}
+      \field{year}{2020}
+    \endentry
+    \entry{TEMmoden}{online}{}
+      \name{author}{1}{}{%
+        {{hash=47168d763f475913a27e80377aaf952b}{%
+           family={DrBob},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{47168d763f475913a27e80377aaf952b}
+      \strng{fullhash}{47168d763f475913a27e80377aaf952b}
+      \strng{bibnamehash}{47168d763f475913a27e80377aaf952b}
+      \strng{authorbibnamehash}{47168d763f475913a27e80377aaf952b}
+      \strng{authornamehash}{47168d763f475913a27e80377aaf952b}
+      \strng{authorfullhash}{47168d763f475913a27e80377aaf952b}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Laguerre-gaussian}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/w/index.php?curid=4008320
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/w/index.php?curid=4008320
+      \endverb
+    \endentry
+    \entry{3}{book}{}
+      \name{author}{1}{}{%
+        {{hash=632ce58cf062e369486379491f75f9f5}{%
+           family={Jahns},
+           familyi={J\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oldenbourg-Verlag}%
+      }
+      \strng{namehash}{632ce58cf062e369486379491f75f9f5}
+      \strng{fullhash}{632ce58cf062e369486379491f75f9f5}
+      \strng{bibnamehash}{632ce58cf062e369486379491f75f9f5}
+      \strng{authorbibnamehash}{632ce58cf062e369486379491f75f9f5}
+      \strng{authornamehash}{632ce58cf062e369486379491f75f9f5}
+      \strng{authorfullhash}{632ce58cf062e369486379491f75f9f5}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Photonik (Grundlagen, Komponenten und Systeme)}
+      \field{year}{2001}
+    \endentry
+    \entry{2}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9bf75fbd9754d878336452998b12a787}{%
+           family={Joachim\bibnamedelima Eichler},
+           familyi={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Jürgen\bibnamedelima Eichler},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{9bf75fbd9754d878336452998b12a787}
+      \strng{fullhash}{9bf75fbd9754d878336452998b12a787}
+      \strng{bibnamehash}{9bf75fbd9754d878336452998b12a787}
+      \strng{authorbibnamehash}{9bf75fbd9754d878336452998b12a787}
+      \strng{authornamehash}{9bf75fbd9754d878336452998b12a787}
+      \strng{authorfullhash}{9bf75fbd9754d878336452998b12a787}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Laser (Bauformen, Strahlführung, Anwendungen)}
+      \field{year}{2015}
+    \endentry
+  \enddatalist
+  \missing{??}
+\endrefsection
+\endinput
+

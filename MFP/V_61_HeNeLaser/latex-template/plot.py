@@ -1,21 +1,27 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
+x = np.linspace(0, 350, 10000)
+y = ( 1 - x/140)*(1-x/280)
 
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
+
+plt.figure()
+plt.plot(x, y)
+
+plt.xlabel(r"d")
+plt.ylabel(r"g")
+plt.legend(loc='best')
+plt.savefig("d_quad.pdf")
+plt.show()
+plt.close()
+x = np.linspace(0, 350, 10000)
+y = 1-x/280
+
+plt.plot(x, y)
+
+plt.xlabel(r"d")
+plt.ylabel(r"g")
 plt.legend(loc='best')
 
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+plt.savefig('dlin.pdf')
 
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/plot.pdf')

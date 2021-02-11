@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Prinzip eines Helium-Neon-Lasers}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Stabilität eines optischen Resonators}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Resonatormoden}{6}{subsection.2.3}
+\contentsline {section}{\numberline {3}Durchführung}{7}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Überprüfung der Stabilitätbedingung und Untersuchung des Multimodenbetriebs}{8}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Untersuchung des Multimodenbetriebs}{8}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Beobachtung der TEM-Moden}{10}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Beobachtung der $\text {TEM}_{00}$-Mode}{10}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Beobachtung der $\text {TEM}_{01}$-Mode}{11}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Bestimmung der Polarisation}{14}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Bestimmung der Wellenlänge}{16}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{17}{section.5}
+\contentsline {section}{\nonumberline Literatur}{17}{section*.17}
