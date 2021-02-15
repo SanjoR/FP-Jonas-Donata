@@ -1,0 +1,62 @@
+import numpy as np
+from uncertainties import ufloat
+import uncertainties.unumpy as unp
+
+s2= np.sqrt(2)
+
+A = np.matrix([[0,s2,0,s2,0,0,0,0,0],
+               [0,0,s2,0,s2,0,s2,0,0],
+               [0,0,0,0,0,s2,0,s2,0],
+               [1,1,1,0,0,0,0,0,0],
+               [0,0,0,1,1,1,0,0,0],
+               [0,0,0,0,0,0,1,1,1],
+               [0,s2,0,0,0,s2,0,0,0],
+               [s2,0,0,0,s2,0,0,0,s2],
+               [0,0,0,s2,0,0,0,s2,0],
+               [0,0,1,0,0,1,0,0,1],
+               [0,1,0,0,1,0,0,1,0],
+               [1,0,0,1,0,0,1,0,0]
+               ])
+I_01= 10396/126.44
+I_02= 14398/117.9
+I_03= 12927/119.6
+
+I1_s= 300/126.44
+I2_s= 247/117.9
+I3_s= 271/119.6
+
+
+I_01_u=ufloat(I_01,I1_s)
+I_02_u=ufloat(I_02,I2_s)
+I_03_u=ufloat(I_03,I3_s)
+
+I_0 = np.matrix([I_01,I_02,I_01,I_03,I_03,I_03,I_01,I_02,I_01,I_03,I_03,I_03])
+
+I_0_s = np.array([I1_s,I2_s,I1_s,I3_s,I3_s,I3_s,I1_s,I2_s,I1_s,I3_s,I3_s,I3_s])
+
+I_1 = 4984 /300 
+I_2 = 5069 /300 
+I_3 = 7662/300
+I_1s =(157 /300)
+I_2s =(109 /300)
+I_3s =(142 /300)
+
+I_1_u = ufloat(I_1,I_1s)
+I_2_u = ufloat(I_2,I_2s)
+I_3_u = ufloat(I_3,I_3s)
+
+I = np.matrix([I_1,I_2,I_1,I_3,I_3,I_3,I_1,I_2,I_1,I_3,I_3,I_3])
+
+
+I_s = np.array([I_1s,I_2s,I_1s,I_3s,I_3s,I_3s,I_1s,I_2s,I_1s,I_3s,I_3s,I_3s])
+
+
+print()
+print(np.log(I_01/I_1)/(2*np.sqrt(2)) )
+print(np.log(I_02/I_2)/(3*np.sqrt(2)) )
+print(np.log(I_03/I_3)/(3) )
+
+print()
+print(unp.log(I_01_u/I_1_u)/(2*np.sqrt(2)) )
+print(unp.log(I_02_u/I_2_u)/(3*np.sqrt(2)) )
+print(unp.log(I_03_u/I_3_u)/(3) )
