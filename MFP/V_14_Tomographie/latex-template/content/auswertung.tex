@@ -1,13 +1,13 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Eine Leermessung ist in Abbildung \ref{fig:Leer} zu sehen. Die Comptonkante und der Photopeak liegen bei $C\approx \SI{}{\kilo\eV}$ und 
-$P\approx\SI{}{\kilo\eV}$.
-%\begin{figure}
-%    \centering
-%    \includegraphics[]{figure/Leermessung.pdf}
-%    \caption{Spektrum des $\ce{^137Cs}$-Strahler ohne Würfel.}
-%    \label{fig:Leer}
-%\end{figure}
+Eine Leermessung ist in Abbildung \ref{fig:Leer} zu sehen. Die Comptonkante und der Photopeak liegen bei $C\approx \SI{478}{\kilo\eV}$ und 
+$P\approx\SI{662}{\kilo\eV}$ \cite{Lit_Wert_Comp}.
+\begin{figure}
+    \centering
+    \includegraphics[]{figure/Leer.pdf}
+    \caption{Spektrum des $\ce{^137Cs}$-Strahler ohne Würfel.}
+    \label{fig:Leer}
+\end{figure}
 \subsection{Bestimmung der Absorptionskoeffizienten}
 Um die Absorptionskoeffizienten zu bestimmen müssen zunächst die $I_0$-Werte bestimmt werden. 
 Hierfür wird der Würfel 1 genommen, der nur aus der Aluminiumhülle besteht. Es werden drei 
@@ -86,13 +86,33 @@ Für den Mittelwert aus Tabelle \ref{tab:Absorptionskoeffizienten_1_2} wird der 
 darauf wird in der Diskussion eingegangen.
 \subsection{Würfel 4}
 Die Absorptionskoeffizienten $\mu_{\text{j}}$ werden für Würfel 4 mit der Gleichung \eqref{??}[Gleichung für $\mu$] bestimmt.
-Die Elemente der diagonalen Gewichtsmatrix $V$ werden mithilfe der gaußschen Fehlerfortpflanzung bestimmt.
+Die Elemente der diagonalen Gewichtsmatrix $W$ werden mithilfe der gaußschen Fehlerfortpflanzung bestimmt.
 \begin{equation*}
-    V_{\text{jj}}= \sqrt{\left(\frac{\sigma_{I_0}}{I_0}\right)^2+ \left(\frac{\sigma_{I_j}}{I_j}\right)}
+    W_{\text{jj}}= \left(\sqrt{\left(\frac{\sigma_{I_0}}{I_0}\right)^2+ \left(\frac{\sigma_{I_j}}{I_j}\right)^2}\right)^{-1}
 \end{equation*}
 Die Messdaten für die Bestimmung der Absorptionskoeffizienten sind in Tabelle \ref{tab:Messdaten_Würfel4} aufgelistet.
-\FLoatBarrier
+\FloatBarrier
 \begin{table}
     \centering
-    \caption{Messdaten und die damit bestimmten Elemente der Gewichtsmatrix für die Bestimmung der Absorptionskoeffizienten des Würfels 4.}
+    \caption{Messdaten und die damit bestimmten Elemente der Gewichtsmatrix für die Bestimmung der Absorptionskoeffizienten des Würfels 4, jede Ausrichtung wurde $\SI{300}{\second}$ lang gemessen. Die Ausrichtungen sind wie in Abbildung \ref{fig:??}[Schematische abbidlung der Ausrichtung]}
+    \label{tab:Messdaten_Würfel4}
+    \begin{tabular}{c c c c}
+        \toprule
+        Ausrichtung $j$&$C$&$I\,/\,\SI{}{1\per\second}$&$W_{\text{jj}}$\\
+        \midrule
+        $\num{1}$&$\num{24609}$&$\num{82.0}$ &$\num{32.2}$\\
+        $\num{2}$&$\num{16380}$&$\num{54.6}$ &$\num{44.6}$\\
+        $\num{3}$&$\num{25913}$&$\num{86.4}$ &$\num{32.5}$\\
+        $\num{4}$&$\num{16964}$&$\num{56.5}$ &$\num{38.6}$\\
+        $\num{5}$&$\num{17465}$&$\num{58.2}$ &$\num{39.1}$\\
+        $\num{6}$&$\num{14876}$&$\num{49.6}$ &$\num{35.7}$\\
+        $\num{7}$&$\num{21195}$&$\num{70.6}$ &$\num{31.2}$\\
+        $\num{8}$&$\num{16389}$&$\num{54.6}$ &$\num{43.6}$\\
+        $\num{9}$&$\num{23458}$&$\num{78.2}$ &$\num{31.7}$\\
+        $\num{10}$&$\num{12895}$&$\num{43.0}$&$\num{32.4}$\\
+        $\num{11}$&$\num{15569}$&$\num{51.9}$&$\num{36.9}$\\
+        $\num{12}$&$\num{17778}$&$\num{59.3}$&$\num{39.4}$\\
+        \bottomrule
+    \end{tabular}
 \end{table}
+\FloatBarrier
