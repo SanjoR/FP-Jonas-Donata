@@ -3,7 +3,7 @@
 
 Das Ziel dieses Versuches ist die Untersuchung der Dipolrelaxation eines
 strontiumdotierten Ionenkristalls aus Kaliumbromid.
-Dafür wird die Relaxationszeit $\tau(T,W,\tau_{\text{0}})$ der Dipole in den 
+Dafür wird die Relaxationszeit $\tau(T)$ der Dipole in den 
 Kristallen bestimmt. Die Temperatur $T$ wird während des Versuches gemessen,
 wogegen die Aktivierungsenergie $W$ und die charakteristische Relaxationszeit $\tau_{0}$
 über den ebenfalls gemessenen Depolarisationsstrom berechnet werden können.
@@ -14,7 +14,7 @@ wogegen die Aktivierungsenergie $W$ und die charakteristische Relaxationszeit $\
 Die Dipolrelaxation wird in diesem Versuch an Ionenkristallen beobachtet.
 Werden die Dipole der Kristalle durch ein äußeres elektrisches Feld aus ihrer 
 Gleichgewichtslage ausgelenkt, benötigen sie eine Zeit um sich nach Abschalten des 
-elektrischen Feldes wieder in ihre Ausgangslage zurück zubewegen. Der Übergang 
+elektrischen Feldes wieder in ihre Ausgangslage zurück zu bewegen. Der Übergang 
 vom ausgelenkten Zustand zurück in den Ruhezustand wird als Relaxationsprozess 
 bezeichnet. Die Dauer dieses Prozesses wird Relaxationszeit genannt.
 
@@ -28,15 +28,29 @@ Kaliumbromid besitzt eine einfach kubische Kristallstruktur,
 da die Kaliumkationen (\ce{K}: $4s^1$ $\to$ \ce{K+}: $3p^6$) und die Bromanionen 
 (\ce{Br}: $4p^5$ $\to$ \ce{Br-}: $4p^6$)
 jeweils eine flächenzentriert kubische Struktur besitzen, die 
-um eine Gitterkonstante in eine Raumrichtung gegeneinander verschoben sind.
+um eine halbe Gitterkonstante in eine Raumrichtung gegeneinander verschoben sind.
 Dadurch ist das Kriterium der abwechselnden Kationen-Anionen-Anordnung 
-erfüllt. Ein solcher Ionenkristall ist durch diese regelmäßige Ionenanordnung nach außen
-elektrisch neutral. Um die Enstehung von Dipolen im Kristall zu ermöglichen, wird 
+erfüllt. Ein entsprechender Ionenkristall ist durch diese regelmäßige Ionenanordnung nach außen
+elektrisch neutral. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{figure/Dipol.pdf}
+    \caption{Auf dieser Abbildung ist die Leerstellendiffusion aufgrund der 
+    Dotierung von Cäsiumiodid mit Strontiumiodid dargestellt. Analoges gilt für 
+    Kaliumbromid, wenn es mit Strontiumiodid dotiert wurde, da ebenfalls abwechselnd
+    einfach geladene Kationen und Anionen die undotierte Gitterstruktur bilden. Der Vektor 
+    $\vec{P}$ zeigt dabei die Ausrichtung der Dipole an, die durch eine Leerstelle und
+    ein Strontiumion entstehen. \cite{2015}}
+    \label{abb}
+\end{figure}
+Um die Enstehung von Dipolen im Kristall zu ermöglichen, wird 
 die Probe mit einem Anteil von 0,005\% mit 
-Stromtiumiodid (\ce{Sr++}: $4p^6$ , \ce{I-}: $5p^6$) dotiert. Da Strontiumiodid zweifach positiv 
+Strontiumiodid (\ce{Sr++}: $4p^6$ , \ce{I-}: $5p^6$) dotiert. Da Strontiumiodid zweifach positiv 
 geladene Strontiumionen enthält, entstehen Kaliumleerstellen, die mit der 
 zusätzlichen positiven Ladung einen Dipol bilden, damit die Gesamtladungsneutralität des
-Kristalls aufrechterhalten werden kann. 
+Kristalls aufrechterhalten werden kann. Dieses Verhalten ist in Abbildung \ref{abb}
+dargestellt.
+\FloatBarrier
 
 \subsection{Dipolpolarisation}
 \label{sec:Dipolpolarisation}
@@ -44,9 +58,9 @@ Kristalls aufrechterhalten werden kann.
 Die Dipole, welche sich aus den Strontiumkationen und den Leerstellen ergeben, 
 sind entsprechend ihrer Position im Gitter ausgerichtet. Da nur diskrete 
 Gitterplätze möglich sind, ist auch die Richtungsverteilung der Dipole bei 
-Raumtemperatur statistisch diskret verteilt. Eine Richtungänderung der 
+Raumtemperatur statistisch diskret verteilt. Eine Richtungsänderung der 
 Dipole ist durch Leerstellendiffusion möglich, wenn eine materialspezifische, 
-thermische Energie überschritten wird. Sie wird Aktivierungsenergie $W$ genannt. 
+thermische Aktivierungsenergie $W$ überschritten wird.
 Die Anzahl der Dipole deren Energie ausreichend zur Diffusion ist, ist durch die 
 Boltzmann-Verteilung gegeben. Das heißt, wenn die spezifische Aktivierungsenergie 
 überschritten wird  (Umgebungstemperatur muss ausreichend hoch sein), dann bewegen sich 
@@ -63,7 +77,15 @@ wird mit steigender Temperatur kleiner. Die Bewegung der Ladungsträger während
 Relaxation führt zu einem Strom innerhalb des Kristalls, welcher 
 Depolarisationsstrom genannt wird. Dieser kann mit Strom durch
 weitere bewegliche Ladungsträger (z.B. aufgrund von Störstellen) überlagert werden
-(Untergrund).
+(Untergrund). Die Stromkurve ist in der folgenden Abbildung dargestellt.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{figure/pol_strom.pdf}
+    \caption{In dieser Graphik ist der Verlauf der Depolarisationsstromkurve
+    abgebildet \cite{2015}.}
+    \label{abb2}
+\end{figure}
+\FloatBarrier
 
 
 \subsection{Berechnung der Aktivierungsenergie}
@@ -99,8 +121,8 @@ Eine Integration dieses Ausdrucks führt dann auf
     N = N_{\mathrm{P}} \exp{ \left( - \frac{ 1 }{ b } \int_{T_0}^T \frac{ \mathrm{d}T' }{ \tau(T') } \right )}
 \end{equation*}
 
-wobei $N_{\text{P}}$ die Anzahl der bereits zu Beginn des Relaxationsprozesses,
-entsprechend des Gleichgewichtszustandes orientierten Dipole darstellt.
+wobei $N_{\text{P}}$ die Anzahl der zu Beginn des Relaxationsprozesses
+orientierten Dipole darstellt.
 Die konstante Temperaturänderung ist definiert als
 
 \begin{equation*}
@@ -130,7 +152,7 @@ weiter zu
 
 approximiert werden kann.
 Aus diesem Ergebnis kann schließlich die Aktivierungsenergie $W$ abgeleitet werden.
-Eine weitere Möglichkeit zur Bestimmung von $W$ liegt in einem Ansatz der über 
+Eine weitere Möglichkeit zur Bestimmung von $W$ liegt in einem Ansatz, der über 
 die Polarisation $P$ geführt wird.
 Die zeitliche Ableitung der Polarisation ist als
 
@@ -138,10 +160,10 @@ Die zeitliche Ableitung der Polarisation ist als
     \frac{\mathrm{d}P}{\mathrm{d}t} = - \frac{ P(t) }{ \tau(T(t))}
 \end{equation*}
 
-gegeben, wobei sie einen Strom durch den Probenquerschnitt $F$ erzeugt und daher auch als
+gegeben, wobei sie einen Strom $I(t)$ durch den Probenquerschnitt $F$ erzeugt und daher auch als
 
 \begin{equation*}
-    \frac{\mathrm{d}P}{\mathrm{d}t} = \frac{j(t)}{F} \qquad.
+    \frac{\mathrm{d}P}{\mathrm{d}t} = \frac{I(t)}{F} \qquad.
 \end{equation*}
 
 formuliert werden kann.

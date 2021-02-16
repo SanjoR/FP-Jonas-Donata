@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  3 FEB 2021 16:33
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  16 FEB 2021 13:39
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.092 seconds
+luaotfload | main : initialization completed in 0.095 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -520,6 +520,18 @@ Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 2.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip61
@@ -639,7 +651,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count196
 \LT@p@ftn=\toks21
 )
-Class scrartcl Info: longtable captions redefined on input line 21.
+Class scrartcl Info: longtable captions redefined on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
@@ -876,7 +888,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 30.
+(typearea)              on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/polyglossia/polyglossia.sty
 Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and Lua
@@ -1068,9 +1080,9 @@ r/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /home/donata
 . 
 . Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
 .................................................
-luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+luaotfload | aux : font no 27 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 26
+luaotfload | aux : no font with id 27
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1093,9 +1105,9 @@ _um_luatex_copy_fontdimens:
 . 
 . Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
 .................................................
-luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+luaotfload | aux : font no 27 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 26
+luaotfload | aux : no font with id 27
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1118,23 +1130,23 @@ odernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-7>"LatinModernMath:mode
 . \__um_luatex_copy_fontdimens: 
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 50.
+(Font)              `operators' in the math version `normal' on input line 52.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line 
-50.
+52.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 50.
+(Font)              `operators' in the math version `bold' on input line 52.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/bx/n on input lin
-e 50.
+e 52.
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
 .................................................
-luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+luaotfload | aux : font no 27 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 26
+luaotfload | aux : no font with id 27
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1171,23 +1183,23 @@ e=9.475-},{Size=7-9.475,Font=Latin
 . 20\font =0pt\relax \fontdimen 21\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 50.
+(Font)              `symbols' in the math version `normal' on input line 52.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input line
- 50.
+ 52.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 50.
+(Font)              `symbols' in the math version `bold' on input line 52.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/bx/n on input lin
-e 50.
+e 52.
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
 .................................................
-luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+luaotfload | aux : font no 27 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 26
+luaotfload | aux : no font with id 27
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1216,33 +1228,33 @@ e=9.475-},{Size=7-9.475,Font=Latin
 . 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 50
+(Font)              `largesymbols' in the math version `normal' on input line 52
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input line
- 50.
+ 52.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 50.
+(Font)              `largesymbols' in the math version `bold' on input line 52.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/bx/n on input lin
-e 50.
+e 52.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 50.
+(Font)              scaled to size 10.95015pt on input line 52.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.67863pt on input line 50.
+(Font)              scaled to size 7.67863pt on input line 52.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.45398pt on input line 50.
+(Font)              scaled to size 5.45398pt on input line 52.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 50.
+(Font)              scaled to size 10.94983pt on input line 52.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.6784pt on input line 50.
+(Font)              scaled to size 7.6784pt on input line 52.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.45381pt on input line 50.
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+(Font)              scaled to size 5.45381pt on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/x
@@ -1250,12 +1262,12 @@ its-math.luc)
 \g__fontspec_family_XITSMath_int=\count277
 (load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/xi
 ts-mathbold.luc)
-luaotfload | aux : font no 45 (nil) does not define feature smcp for script math
- with language dflt
-luaotfload | aux : no font with id 45
 luaotfload | aux : font no 46 (nil) does not define feature smcp for script math
  with language dflt
 luaotfload | aux : no font with id 46
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script math
+ with language dflt
+luaotfload | aux : no font with id 47
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1284,16 +1296,16 @@ base;script=math;language=DFLT;+ssty=1;"
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line 
-54.
+56.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/bx/n on input line
- 54.
-luaotfload | aux : font no 45 (nil) does not define feature smcp for script math
- with language dflt
-luaotfload | aux : no font with id 45
+ 56.
 luaotfload | aux : font no 46 (nil) does not define feature smcp for script math
  with language dflt
 luaotfload | aux : no font with id 46
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script math
+ with language dflt
+luaotfload | aux : no font with id 47
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1322,10 +1334,10 @@ TSMath:mode=base;script=math;language=DFLT;+ss01;+ssty=1;"
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line 
-55.
+57.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/bx/n on input line
- 55.
+ 57.
  (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2017/11/26 v2.7k A comprehensive (SI) units package
 
@@ -1731,7 +1743,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box60
 )
-Package scrhack Info: loading float hack on input line 79.
+Package scrhack Info: loading float hack on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2017/09/07 v3.24 KOMA-Script package (hacking package float)
@@ -2050,7 +2062,7 @@ File: biblatex.cfg
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 127.
+(scrhack)             need that hack, on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -2162,7 +2174,11 @@ Package biblatex Info: ... file 'german.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 ) (./main.aux
-Language ngerman not found in language.dat.lua)
+Language ngerman not found in language.dat.lua
+
+LaTeX Warning: Label `abb2' multiply defined.
+
+)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -2352,16 +2368,26 @@ Language ngerman not found in language.dat.lua)
 \openout5 = main.toc
  [2
 
-] (./content/theorie.tex(load luc: /home/donata/.texlive2017/texmf-var/luatex-ca
-che/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/donata/.texlive2017/
-texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
+] (./content/theorie.tex
 Overfull \hbox (1.7057pt too wide) in paragraph at lines 4--10
 \TU/lmr/m/n/10.95 Das Ziel dieses Versuches ist die Untersuchung der Dipolrelax
 ation eines strontiumdotierten
  []
 
+(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
+roman8-regular.luc)(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/g
+eneric/fonts/otl/lmroman5-regular.luc)
+<figure/Dipol.pdf, id=62, 585.68813pt x 415.5525pt>
+File: figure/Dipol.pdf Graphic file (type pdf)
+<use figure/Dipol.pdf>
+Package luatex.def Info: figure/Dipol.pdf  used on input line 37.
+(luatex.def)             Requested size: 250.95587pt x 178.05635pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 43.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 43.
 
-Overfull \hbox (0.14476pt too wide) in paragraph at lines 24--40
+Overfull \hbox (0.14476pt too wide) in paragraph at lines 24--53
 \TU/lmr/m/n/10.95 ($[]$: $\TU/LatinModernMath(1)/m/n/10.95 4𝑠[]$ $→$ $[][]
 []$\TU/lmr/m/n/10.95 : $\TU/LatinModernMath(1)/m/n/10.95 3𝑝[]$\TU/lmr/m/n/10
 .95 ) und die Bromanionen ($[]$: $\TU/LatinModernMath(1)/m/n/10.95 4𝑝[]$ $
@@ -2369,55 +2395,42 @@ Overfull \hbox (0.14476pt too wide) in paragraph at lines 24--40
 lmr/m/n/10.95 ) jeweils eine flächenzentriert
  []
 
-
-Overfull \hbox (8.5349pt too wide) in paragraph at lines 24--40
-\TU/lmr/m/n/10.95 kubische Struktur besitzen, die um eine Gitterkonstante in ei
-ne Raumrichtung gegeneinander
- []
-
-
-Overfull \hbox (9.12233pt too wide) in paragraph at lines 44--56
-\TU/lmr/m/n/10.95 eine materialspezifische, thermische Energie überschritten w
-ird. Sie wird Aktivierungsenergie
- []
-
-[3] [4]
-Overfull \hbox (0.94032pt too wide) in paragraph at lines 131--136
+[3]
+<figure/pol_strom.pdf, id=73, 576.65437pt x 436.63126pt>
+File: figure/pol_strom.pdf Graphic file (type pdf)
+<use figure/pol_strom.pdf>
+Package luatex.def Info: figure/pol_strom.pdf  used on input line 83.
+(luatex.def)             Requested size: 250.95587pt x 190.01967pt.
+ [4<./figure/Dipol.pdf>] [5<./figure/pol_strom.pdf>]
+Overfull \hbox (0.94032pt too wide) in paragraph at lines 153--158
 []\TU/lmr/m/n/10.95 approximiert werden kann. Aus diesem Ergebnis kann schlie
 ßlich die Aktivierungsenergie
  []
 
-[5]) (./content/durchfuehrung.tex
-<figure/AufbauFoto.png, id=91, 581.17125pt x 575.90157pt>
+[6]) (./content/durchfuehrung.tex
+<figure/AufbauFoto.png, id=113, 581.17125pt x 575.90157pt>
 File: figure/AufbauFoto.png Graphic file (type png)
 <use figure/AufbauFoto.png>
 Package luatex.def Info: figure/AufbauFoto.png  used on input line 13.
-(luatex.def)             Requested size: 334.60571pt x 331.57141pt.
-
-Overfull \hbox (36.59625pt too wide) in paragraph at lines 19--38
-\TU/lmr/m/n/10.95 Hauptbauteil der Apparatur ist der Rezipient, ein Plattenkond
-ensator mit der Kaliumbromidplatte
- []
-
-[6<./figure/AufbauFoto.png>]
-<figure/AufbauSkizze.png, id=106, 727.21687pt x 402.00188pt>
+(luatex.def)             Requested size: 376.42744pt x 373.02223pt.
+ [7<./figure/AufbauFoto.png>]
+<figure/AufbauSkizze.png, id=127, 727.21687pt x 402.00188pt>
 File: figure/AufbauSkizze.png Graphic file (type png)
 <use figure/AufbauSkizze.png>
-Package luatex.def Info: figure/AufbauSkizze.png  used on input line 41.
+Package luatex.def Info: figure/AufbauSkizze.png  used on input line 42.
 (luatex.def)             Requested size: 418.25555pt x 231.21675pt.
- [7<./figure/AufbauSkizze.png>] [8])
-(./content/auswertung.tex
-<figure/Untergrund_A.pdf, id=122, 462.52798pt x 346.89601pt>
+ [8<./figure/AufbauSkizze.png>] [9]) (./content/auswertung.tex
+<figure/Untergrund_A.pdf, id=143, 462.52798pt x 346.89601pt>
 File: figure/Untergrund_A.pdf Graphic file (type pdf)
 <use figure/Untergrund_A.pdf>
 Package luatex.def Info: figure/Untergrund_A.pdf  used on input line 19.
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
-<figure/Untergrundfit_B.pdf, id=123, 462.52798pt x 346.89601pt>
+<figure/Untergrundfit_B.pdf, id=144, 462.52798pt x 346.89601pt>
 File: figure/Untergrundfit_B.pdf Graphic file (type pdf)
 <use figure/Untergrundfit_B.pdf>
 Package luatex.def Info: figure/Untergrundfit_B.pdf  used on input line 26.
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
- [9<./figure/Untergrund_A.pdf>]
+ [10<./figure/Untergrund_A.pdf>]
 Overfull \hbox (11.53719pt too wide) in paragraph at lines 46--49
 []\TU/lmr/m/n/10.95 Um die Messreihe vom Untergrund zu bereinigen, werden von d
 en gemessenen Stromwerten
@@ -2429,53 +2442,49 @@ Overfull \hbox (5.30472pt too wide) in paragraph at lines 46--49
  Messwerte sind in Abbildung
  []
 
-<figure/Messdate_rein_A.pdf, id=185, 462.52798pt x 346.89601pt>
+<figure/Messdate_rein_A.pdf, id=206, 462.52798pt x 346.89601pt>
 File: figure/Messdate_rein_A.pdf Graphic file (type pdf)
 <use figure/Messdate_rein_A.pdf>
 Package luatex.def Info: figure/Messdate_rein_A.pdf  used on input line 52.
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
-<figure/Messdate_rein_B.pdf, id=186, 462.52798pt x 346.89601pt>
+<figure/Messdate_rein_B.pdf, id=207, 462.52798pt x 346.89601pt>
 File: figure/Messdate_rein_B.pdf Graphic file (type pdf)
 <use figure/Messdate_rein_B.pdf>
 Package luatex.def Info: figure/Messdate_rein_B.pdf  used on input line 58.
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
-[10<./figure/Untergrundfit_B.pdf>] [11<./figure/Messdate_rein_A.pdf><./figure/Me
+[11<./figure/Untergrundfit_B.pdf>] [12<./figure/Messdate_rein_A.pdf><./figure/Me
 ssdate_rein_B.pdf>]
-<figure/LinFit_W_A.pdf, id=347, 462.52798pt x 346.89601pt>
+<figure/LinFit_W_A.pdf, id=368, 462.52798pt x 346.89601pt>
 File: figure/LinFit_W_A.pdf Graphic file (type pdf)
 <use figure/LinFit_W_A.pdf>
 Package luatex.def Info: figure/LinFit_W_A.pdf  used on input line 78.
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
 (load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
 roman7-regular.luc)
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 79.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 79.
-<figure/LinFit_W_B.pdf, id=348, 462.52798pt x 346.89601pt>
+<figure/LinFit_W_B.pdf, id=369, 462.52798pt x 346.89601pt>
 File: figure/LinFit_W_B.pdf Graphic file (type pdf)
 <use figure/LinFit_W_B.pdf>
 Package luatex.def Info: figure/LinFit_W_B.pdf  used on input line 84.
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
- [12<./figure/LinFit_W_A.pdf>] [13<./figure/LinFit_W_B.pdf>]
-<figure/Integralverfahren_A.pdf, id=477, 462.52798pt x 346.89601pt>
+ [13<./figure/LinFit_W_A.pdf>] [14<./figure/LinFit_W_B.pdf>]
+<figure/Integralverfahren_A.pdf, id=505, 462.52798pt x 346.89601pt>
 File: figure/Integralverfahren_A.pdf Graphic file (type pdf)
 <use figure/Integralverfahren_A.pdf>
 Package luatex.def Info: figure/Integralverfahren_A.pdf  used on input line 116.
 
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
-<figure/Integralverfahren_B.pdf, id=478, 462.52798pt x 346.89601pt>
+<figure/Integralverfahren_B.pdf, id=506, 462.52798pt x 346.89601pt>
 File: figure/Integralverfahren_B.pdf Graphic file (type pdf)
 <use figure/Integralverfahren_B.pdf>
 Package luatex.def Info: figure/Integralverfahren_B.pdf  used on input line 122.
 
 (luatex.def)             Requested size: 334.60571pt x 250.96649pt.
- [14<./figure/Integralverfahren_A.pdf>]
+ [15<./figure/Integralverfahren_A.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 131--131
 [][]|\TU/lmr/m/n/10 Fitparameter der Ausgleichsgeraden für die Bestimmung der
  []
 
-[15<./figure/Integralverfahren_B.pdf>](load luc: /home/donata/.texlive2017/texmf
+[16<./figure/Integralverfahren_B.pdf>](load luc: /home/donata/.texlive2017/texmf
 -var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 12.00018pt on input line 143.
@@ -2489,42 +2498,42 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 7.99988pt on input line 143.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 5.99991pt on input line 143.
-<figure/tau_verlauf_A.pdf, id=606, 462.52798pt x 346.89601pt>
-File: figure/tau_verlauf_A.pdf Graphic file (type pdf)
-<use figure/tau_verlauf_A.pdf>
-Package luatex.def Info: figure/tau_verlauf_A.pdf  used on input line 173.
-(luatex.def)             Requested size: 334.60571pt x 250.96649pt.
-<figure/tau_verlauf_B.pdf, id=607, 462.52798pt x 346.89601pt>
-File: figure/tau_verlauf_B.pdf Graphic file (type pdf)
-<use figure/tau_verlauf_B.pdf>
-Package luatex.def Info: figure/tau_verlauf_B.pdf  used on input line 179.
-(luatex.def)             Requested size: 334.60571pt x 250.96649pt.
- [16<./figure/tau_verlauf_A.pdf>] [17<./figure/tau_verlauf_B.pdf>]) (./content/
-diskussion.tex
-[18
+<figure/Tau_verlauf.pdf, id=638, 462.52798pt x 346.89601pt>
+File: figure/Tau_verlauf.pdf Graphic file (type pdf)
+<use figure/Tau_verlauf.pdf>
+Package luatex.def Info: figure/Tau_verlauf.pdf  used on input line 186.
+(luatex.def)             Requested size: 418.25555pt x 313.70679pt.
+)
+(./content/diskussion.tex [17] [18<./figure/Tau_verlauf.pdf>]
+Overfull \hbox (30.56271pt too wide) in paragraph at lines 26--32
+\TU/lmr/m/n/10.95 Der mit den gemittelten $\TU/LatinModernMath(1)/m/n/10.95 
+𝑊$\TU/lmr/m/n/10.95 -Werten bestimmte Mittelwert von $\TU/LatinModernMath(1)
+/m/n/10.95 𝜏[]$ \TU/lmr/m/n/10.95 beträgt $[] \TU/LatinModernMath(1)/m/n/10
+.95 = [] []$\TU/lmr/m/n/10.95 .
+ []
 
-]
-Overfull \hbox (29.0187pt too wide) in paragraph at lines 37--94
+[19]
+Overfull \hbox (29.0187pt too wide) in paragraph at lines 39--96
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 157.60951pt on input line 94.
+LaTeX Warning: Float too large for page by 157.60951pt on input line 96.
 
 
-Overfull \hbox (29.0187pt too wide) in paragraph at lines 97--154
+Overfull \hbox (29.0187pt too wide) in paragraph at lines 99--156
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 123.60951pt on input line 154.
+LaTeX Warning: Float too large for page by 123.60951pt on input line 156.
 
 
-Overfull \hbox (29.0187pt too wide) in paragraph at lines 157--193
+Overfull \hbox (29.0187pt too wide) in paragraph at lines 159--195
  [][] 
  []
 
-) [19] [20] [21]
+) [20] [21] [22]
 Overfull \hbox (22.78221pt too wide) in paragraph at lines 23--23
 \TU/lmr/m/n/10.95 durch Quadrupol‐Wechselwirkung“. In: \TU/lmr/m/it/10.95 B
 erichte der Bundesengesellschaft für physikalische
@@ -2537,7 +2546,7 @@ uates; Ionic Thermoconductivity
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[22
+[23
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
@@ -2545,21 +2554,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
 Language ngerman not found in language.dat.lua)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 7B2539DDA50F738DE7E2B20499B1CECF;18818.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 4CA5F834D0602754744B52DB50DA68C3;1742.
 
 
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 56838844D4E35DE8C83D23D051CC4DAE;17594
-(rerunfilecheck)             After:  15B8FB013B600B510C2561A39354511E;17594.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: BEEF9AF0FE10F4AF5F0F32813057D034;1740
-(rerunfilecheck)             After:  097D3E4A63F5C63FDAA4C1BBE5A3EBB1;1740.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
@@ -2567,29 +2568,29 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41938 strings out of 494480
- 125009,1648299 words of node,token memory allocated
- 686 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 28 attribute, 80 glue_spec, 28 attr
+ 42004 strings out of 494480
+ 125007,1648299 words of node,token memory allocated
+ 699 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 29 attribute, 80 glue_spec, 29 attr
 ibute_list, 1 write nodes
-   avail lists: 1:6,2:9166,3:630,4:41,5:224,6:2671,7:5865,8:173,9:2419,10:9,11:3
-
- 44627 multiletter control sequences out of 65536+600000
- 253 fonts using 94703167 bytes
- 61i,22n,104p,8833b,3075s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:10,2:9167,3:621,4:39,5:221,6:2671,7:5865,8:173,9:2419,10:10,11
+:3
+ 44665 multiletter control sequences out of 65536+600000
+ 254 fonts using 94786259 bytes
+ 61i,22n,104p,8833b,3077s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/p
-ublic/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype/public/lm-math/la
-tinmodern-math.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.o
+f/fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype
+/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/opentype/public/lm/
+lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.o
 tf></usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/sh
 are/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf/f
 onts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/p
 ublic/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans
 10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (22 pages, 1196304 bytes).
+Output written on main.pdf (23 pages, 1228550 bytes).
 
-PDF statistics: 886 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 72 named destinations out of 1000 (max. 131072)
+PDF statistics: 863 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
+ 75 named destinations out of 1000 (max. 131072)
  153 words of extra memory for PDF output out of 10000 (max. 100000000)
 
