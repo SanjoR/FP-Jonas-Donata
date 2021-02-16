@@ -138,8 +138,35 @@
       \field{title}{Laser (Bauformen, Strahlführung, Anwendungen)}
       \field{year}{2015}
     \endentry
+    \entry{leifi}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3ac053220327693f02e94955c1d5eff1}{%
+           family={Stiftung},
+           familyi={S\bibinitperiod},
+           given={Joachim\bibnamedelima Hertz},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ac053220327693f02e94955c1d5eff1}
+      \strng{fullhash}{3ac053220327693f02e94955c1d5eff1}
+      \strng{bibnamehash}{3ac053220327693f02e94955c1d5eff1}
+      \strng{authorbibnamehash}{3ac053220327693f02e94955c1d5eff1}
+      \strng{authornamehash}{3ac053220327693f02e94955c1d5eff1}
+      \strng{authorfullhash}{3ac053220327693f02e94955c1d5eff1}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Helium-Neon-Laser}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/atomphysik/laser/versuche/helium-neon-laser
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/atomphysik/laser/versuche/helium-neon-laser
+      \endverb
+    \endentry
   \enddatalist
-  \missing{??}
 \endrefsection
 \endinput
 
