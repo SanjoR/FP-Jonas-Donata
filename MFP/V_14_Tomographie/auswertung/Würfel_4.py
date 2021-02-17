@@ -45,4 +45,31 @@ print()
 def mu(I_mat,V_mat):
     return (np.linalg.inv(A.T@V_mat@A)@(A.T@V@I_mat.T))
 
-print(mu(np.log(I_0/I_4),V))
+mu_exp = mu(np.log(I_0/I_4),V)
+
+for i in mu_exp:
+    print(round(i[0,0],3))
+print()
+
+mu_lit =np.array([0.211
+                 ,1.419
+                 ,0.606
+                 ,0.638
+                 ,0.121])
+Material = np.array(["Al","Pb","Fe","Messing","Delrin"])
+
+for i in mu_exp:
+    p = 10000
+    M = []
+    for n in range(len(mu_lit)):
+        p_n = np.abs(mu_lit[n]-i)/mu_lit[n]
+        if p_n < p:
+            p = p_n
+            M = Material[n]
+    print(round(100*p[0,0],1),M)
+
+print()
+for i in mu_exp:
+    print(np.around(100*(np.abs(mu_lit[4]-i)/mu_lit[4]),1)[0,0])
+
+

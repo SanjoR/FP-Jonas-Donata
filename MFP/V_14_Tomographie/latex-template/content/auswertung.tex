@@ -29,17 +29,17 @@ Die $I_0$-Werte sind in Tabelle \ref{tab:I_0} aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
-\subsection{Würfel 1 und 2}
-Die beiden Würfel 1 und 2 bestehen aus je einem Material, daher werden nur drei Werte gemessen.
+\subsubsection{Würfel 2 und 3}
+Die beiden Würfel 2 und 3 bestehen aus je einem Material, daher werden nur drei Werte gemessen.
 Die Messdaten sind in Tabelle \ref{tab:Würfel_1_2} aufgelistet.
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Messdaten für die Bestimmung der Absorptionskoeffizienten der Würfel 1 und 2.}
+    \caption{Messdaten für die Bestimmung der Absorptionskoeffizienten der Würfel 2 und 3.}
     \label{tab:Würfel_1_2}
     \begin{tabular}{c c c c c c c}
         \toprule
-        &\multicolumn{3}{c}{Würfel 1}&\multicolumn{3}{c}{Würfel 2}\\
+        &\multicolumn{3}{c}{Würfel 2}&\multicolumn{3}{c}{Würfel 3}\\
         \cmidrule(lr){2-4}\cmidrule(lr){5-7}
         Ausrichtung&$C$&$\Delta t \,/\,\SI{}{\second}$&$I \,/\,\SI{}{1\per\second}$&$C$&$\Delta t \,/\,\SI{}{\second}$&$I \,/\,\SI{}{1\per\second}$\\
         \midrule
@@ -65,11 +65,11 @@ Die berechneten Absorptionskoeffizienten der beiden Würfel sind in Tabelle \ref
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Absorptionskoeffizienten der Würfel 1 und 2, gemittelt und für jede einzelne Ausrichtung.}
+    \caption{Absorptionskoeffizienten der Würfel 2 und 3, gemittelt und für jede einzelne Ausrichtung.}
     \label{tab:Absorptionskoeffizienten_1_2}
     \begin{tabular}{c c c}
         \toprule
-        &Würfel 1&Würfel 2\\
+        &Würfel 2&Würfel 3\\
         \cmidrule(lr){2-2}\cmidrule(lr){3-3}
         Ausrichtung&$\mu \,/\,\SI{}{1\per\centi\meter}$&$\mu \,/\,\SI{}{1\per\centi\meter}$\\
         \midrule
@@ -83,9 +83,34 @@ Die berechneten Absorptionskoeffizienten der beiden Würfel sind in Tabelle \ref
 \end{table}
 \FloatBarrier
 Für den Mittelwert aus Tabelle \ref{tab:Absorptionskoeffizienten_1_2} wird der negative Wert nicht beachtet da dieser unphysikalisch ist,
-darauf wird in der Diskussion eingegangen.
-\subsection{Würfel 4}
-Die Absorptionskoeffizienten $\mu_{\text{j}}$ werden für Würfel 4 mit der Gleichung \eqref{??}[Gleichung für $\mu$] bestimmt.
+darauf wird in der Diskussion eingegangen. Um das Material der Würfel zu bestimmen, wird die relative Abweichung der Absorptionskoeffizienten zu 
+den vorgegebenen Materialien bestimmt. Die Absorptionskoeffizienten und die Abweichungen sind in Tabelle \ref{tab:Abweichung23}
+aufgelistet.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{Absorptionskoeffizienten der vorgegebenen Materialien und die relative Abweichung der Würfel zu jedem Material. Die 
+    Literaturwerte werden mithilfe der Quellen \cite{Massenkoef} und \cite{Dichte} ermittelt.}
+    \label{tab:Abweichung23}
+    \begin{tabular}{c c c c}
+        \toprule
+        &&Würfel 2& Würfel 3\\
+        \cmidrule(lr){3-3}\cmidrule(lr){4-4}
+        Material&$\mu_{\text{Lit}}\,/\,\SI{}{1\per\second}$&rel. Abweichung /\%&rel. Abweichung /\%\\
+        \midrule
+        $\ce{Al}$&$\num{0.211}$&$\num{138.9}$&$\num{84.5}$\\
+        $\ce{Pb}$&$\num{1.419}$&$\num{64.5}$&$\num{97.7}$\\
+        $\ce{Fe}$&$\num{0.606}$&$\num{16.8}$&$\num{94.6}$\\
+        Messing  &$\num{0.638}$&$\num{21.0}$&$\num{94.9}$\\ 
+        Delrin   &$\num{0.121}$&$\num{316.7}$&$\num{73.0}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+Wie an den Abweichung in Tabelle \ref{tab:Abweichung23} zu sehen ist wird Würfel 2 mit Eisen und Würfel 3 mit Delrin identifiziert. Auf die 
+Identifizierung wird in der Diskussion drauf eingegangen.
+\subsubsection{Würfel 4}
+Die Würfel aus Würfel 4 bestehen aus verschiedenen Materialien, daher wird die Gleichung \ref{mu}[Gleichung mit $\mu$] benötigt.
 Die Elemente der diagonalen Gewichtsmatrix $W$ werden mithilfe der gaußschen Fehlerfortpflanzung bestimmt.
 \begin{equation*}
     W_{\text{jj}}= \left(\sqrt{\left(\frac{\sigma_{I_0}}{I_0}\right)^2+ \left(\frac{\sigma_{I_j}}{I_j}\right)^2}\right)^{-1}
@@ -116,3 +141,30 @@ Die Messdaten für die Bestimmung der Absorptionskoeffizienten sind in Tabelle \
     \end{tabular}
 \end{table}
 \FloatBarrier
+Mit den Messdaten \ref{tab:Messdaten_Würfel4} und der Gleichung \ref{mu}[Gleichung mit $\mu$] können die 
+Absorptionskoeffizienten $\vec{\mu}$ bestimmt werden. Die Elemente von $\vec{\mu}$ sind in Tabelle \ref{tab:Würfel4_mu} 
+aufgelistet, sowie die niedrigste relative Abweichung zu den Literaturwerten der möglichen Stoffe. Da die 
+Würfel in Würfel 4 aus den Materialien von Würfel 2 und 3 bestehen soll, werden die Daten für Eisen und Delrin zusätlich angegeben.
+\FloatBarrier
+\begin{table}
+    \centering
+    \caption{Absorptionskoeffizienten der einzelnen Würfel in Würfel 4 und die relativen Abweichungen zu den Materialien. Die relative Abweichung (rel. Abw.) sind in \% angegeben.}
+    \label{tab:Würfel4_mu}
+    \begin{tabular}{c c c c c}
+        \toprule
+        Würfel $j$&$\mu_{\text{j}} \,/\,\SI{}{1\per\second}$&niedrigste rel. Abw. (Material)& rel. Abw. $\ce{Fe}$&rel. Abw. Delrin\\
+        \midrule
+        $\num{1}$ &$\num{0.137}$&$\num{13.5}$ (Delrin)&$\num{77.3}$&$\num{13.5}$\\
+        $\num{2}$ &$\num{0.119}$&$\num{1.6}$ (Delrin)&$\num{80.3}$&$\num{1.6}$\\
+        $\num{3}$ &$\num{0.269}$&$\num{27.6}$ (Al)&$\num{55.6}$&$\num{122.5}$\\
+        $\num{4}$ &$\num{0.063}$&$\num{47.7}$ (Delrin)&$\num{89.6}$&$\num{47.7}$\\
+        $\num{5}$ &$\num{0.206}$&$\num{2.5}$ (Al)&$\num{66.0}$&$\num{70.1}$\\
+        $\num{6}$ &$\num{0.081}$&$\num{33.3}$ (Delrin)&$\num{86.7}$&$\num{33.3}$\\
+        $\num{7}$ &$\num{0.225}$&$\num{6.5}$ (Al)&$\num{62.9}$&$\num{85.7}$\\
+        $\num{8}$ &$\num{0.064}$&$\num{47.5}$ (Delrin)&$\num{89.5}$&$\num{47.5}$\\
+        $\num{9}$ &$\num{0.359}$&$\num{40.8}$ (Fe)&$\num{40.8}$&$\num{196.6}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+Auf die Glaubwürdigkeit der Identifizierung wird in der Diskussion drauf eingegangen.

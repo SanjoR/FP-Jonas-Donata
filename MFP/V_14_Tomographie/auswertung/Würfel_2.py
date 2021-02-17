@@ -69,3 +69,23 @@ print()
 print((unp.log(I_01_u/I_1_u)/(2*np.sqrt(2)) 
 +unp.log(I_02_u/I_2_u)/(3*np.sqrt(2)) 
 +unp.log(I_03_u/I_3_u)/(3) )/3)
+
+
+mu = (unp.log(I_01_u/I_1_u)/(2*np.sqrt(2)) 
+    +unp.log(I_02_u/I_2_u)/(3*np.sqrt(2)) 
+    +unp.log(I_03_u/I_3_u)/(3) )/3
+
+mu = mu.n
+mu_lit =np.array([0.211
+                 ,1.419
+                 ,0.606
+                 ,0.638
+                 ,0.121])
+
+rel_Ab = np.abs(mu - mu_lit)/mu_lit
+print()
+for i in rel_Ab:
+    print(round(i*100,1))
+Material = np.array(["Al","Pb","Fe","Messing","Delrin"])
+print()
+print(Material[rel_Ab==rel_Ab.min()])
