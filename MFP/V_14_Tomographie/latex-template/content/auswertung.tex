@@ -14,7 +14,12 @@ $P\approx\SI{662}{\kilo\eV}$ \cite{Lit_Wert_Comp}.
 \subsection{Bestimmung der Absorptionskoeffizienten}
 
 Um die Absorptionskoeffizienten zu bestimmen, müssen zunächst die $I_0$-Werte bestimmt werden. 
-Hierfür wird der Würfel 1 genommen, der nur aus der Aluminiumhülle besteht. Es werden drei 
+Der eigentliche $I_0$-Wert wird bestimmt, indem der Inhalt des Photopeak einer Messung ohne 
+Absorbermaterial berechnet wird. Dafür wird ein Bereich um den Photopeak markiert und das Auswertungsprogramm summiert die einzelnen 
+Kanäle in dem Bereich auf.
+Dieser Bereich wird für die gesamte Messung nicht verändert. Um die Auswertung zu erleichtern wird in diesem Fall
+der $I_0$-Wert nicht mit einer Leermessung bestimmt, sondern mit der Aluminiumhülle, da diese für jeden 
+Würfel gleich ist. Es werden drei 
 verschiedene $I_0$-Werte gemessen( Diagonale $D$, Nebendiagonale $ND$ und seitenparallele Grade $SG$).
 Die $I_0$-Werte sind in Tabelle \ref{tab:I_0} aufgelistet.
 
@@ -98,7 +103,7 @@ Die berechneten Absorptionskoeffizienten der beiden Würfel sind in Tabelle \ref
 \FloatBarrier
 
 Für den Mittelwert aus Tabelle \ref{tab:Absorptionskoeffizienten_1_2} wird der negative Wert nicht beachtet, da dieser unphysikalisch ist,
-worauf wird in der Diskussion eingegangen wird. Um das Material der Würfel zu bestimmen, wird die relative Abweichung der Absorptionskoeffizienten zu 
+worauf in der Diskussion eingegangen wird. Um das Material der Würfel zu bestimmen, wird die relative Abweichung der Absorptionskoeffizienten zu 
 den vorgegebenen Materialien bestimmt. Die Absorptionskoeffizienten und die Abweichungen sind in Tabelle \ref{tab:Abweichung23}
 aufgelistet.
 
@@ -112,7 +117,7 @@ aufgelistet.
         \toprule
         &&Würfel 2& Würfel 3\\
         \cmidrule(lr){3-3}\cmidrule(lr){4-4}
-        Material&$\mu_{\text{Lit}}\,/\,\SI{}{1\per\second}$&rel. Abweichung /\%&rel. Abweichung /\%\\
+        Material&$\mu_{\text{Lit}}\,/\,\SI{}{1\per\centi\meter}$&rel. Abweichung /\%&rel. Abweichung /\%\\
         \midrule
         $\ce{Al}$&$\num{0.211}$&$\num{138.9}$&$\num{84.5}$\\
         $\ce{Pb}$&$\num{1.419}$&$\num{64.5}$&$\num{97.7}$\\
@@ -130,11 +135,12 @@ Identifizierung wird in der Diskussion drauf eingegangen.
 \subsubsection{Würfel 4}
 
 Die Teilwürfel aus Würfel 4 bestehen aus verschiedenen Materialien, daher wird die Gleichung \ref{eq6} benötigt.
-Die Elemente der diagonalen Gewichtsmatrix $W$ werden mithilfe der gauß´schen Fehlerfortpflanzung bestimmt.
+Die Elemente der diagonalen Gewichtsmatrix $W$ werden mithilfe der Gauß´schen Fehlerfortpflanzung bestimmt.
 
-\begin{equation*}
-    W_{\text{jj}}= \left(\sqrt{\left(\frac{\sigma_{I_0}}{I_0}\right)^2+ \left(\frac{\sigma_{I_j}}{I_j}\right)^2}\right)^{-1}
-\end{equation*}
+\begin{align*}
+    \sigma_{\text{j}}=& \left(\sqrt{\left(\frac{\sigma_{I_0}}{I_0}\right)^2+ \left(\frac{\sigma_{I_j}}{I_j}\right)^2}\right)\\
+    W_{\text{jj}}=& \sigma_{\text{j}}^{-1}
+\end{align*}
 
 Die Messdaten für die Bestimmung der Absorptionskoeffizienten sind in Tabelle \ref{tab:Messdaten_Würfel4} aufgelistet.
 
@@ -143,22 +149,22 @@ Die Messdaten für die Bestimmung der Absorptionskoeffizienten sind in Tabelle \
     \centering
     \caption{Messdaten und die damit bestimmten Elemente der Gewichtsmatrix für die Bestimmung der Absorptionskoeffizienten des Würfels 4. Jede Ausrichtung wurde $\SI{300}{\second}$ lang gemessen. Die Ausrichtungen sind analog zu Abbildung \ref{abb2} benannt und durchgeführt worden. }
     \label{tab:Messdaten_Würfel4}
-    \begin{tabular}{c c c c}
+    \begin{tabular}{c c c c c}
         \toprule
-        Ausrichtung $j$&$C$&$I\,/\,\SI{}{1\per\second}$&$W_{\text{jj}}$\\
+        Ausrichtung $j$&$C$&$I\,/\,\SI{}{1\per\second}$&$\sigma_{\text{j}}$&$W_{\text{jj}}$\\
         \midrule
-        $\num{1}$&$\num{24609}$&$\num{82.0}$ &$\num{32.2}$\\
-        $\num{2}$&$\num{16380}$&$\num{54.6}$ &$\num{44.6}$\\
-        $\num{3}$&$\num{25913}$&$\num{86.4}$ &$\num{32.5}$\\
-        $\num{4}$&$\num{16964}$&$\num{56.5}$ &$\num{38.6}$\\
-        $\num{5}$&$\num{17465}$&$\num{58.2}$ &$\num{39.1}$\\
-        $\num{6}$&$\num{14876}$&$\num{49.6}$ &$\num{35.7}$\\
-        $\num{7}$&$\num{21195}$&$\num{70.6}$ &$\num{31.2}$\\
-        $\num{8}$&$\num{16389}$&$\num{54.6}$ &$\num{43.6}$\\
-        $\num{9}$&$\num{23458}$&$\num{78.2}$ &$\num{31.7}$\\
-        $\num{10}$&$\num{12895}$&$\num{43.0}$&$\num{32.4}$\\
-        $\num{11}$&$\num{15569}$&$\num{51.9}$&$\num{36.9}$\\
-        $\num{12}$&$\num{17778}$&$\num{59.3}$&$\num{39.4}$\\
+        $\num{1}$&$\num{24609}$&$\num{82.0}$ &$\num{0.031}$&$\num{32.2}$\\
+        $\num{2}$&$\num{16380}$&$\num{54.6}$ &$\num{0.022}$&$\num{44.6}$\\
+        $\num{3}$&$\num{25913}$&$\num{86.4}$ &$\num{0.031}$&$\num{32.5}$\\
+        $\num{4}$&$\num{16964}$&$\num{56.5}$ &$\num{0.026}$&$\num{38.6}$\\
+        $\num{5}$&$\num{17465}$&$\num{58.2}$ &$\num{0.026}$&$\num{39.1}$\\
+        $\num{6}$&$\num{14876}$&$\num{49.6}$ &$\num{0.028}$&$\num{35.7}$\\
+        $\num{7}$&$\num{21195}$&$\num{70.6}$ &$\num{0.032}$&$\num{31.2}$\\
+        $\num{8}$&$\num{16389}$&$\num{54.6}$ &$\num{0.023}$&$\num{43.6}$\\
+        $\num{9}$&$\num{23458}$&$\num{78.2}$ &$\num{0.032}$&$\num{31.7}$\\
+        $\num{10}$&$\num{12895}$&$\num{43.0}$&$\num{0.031}$&$\num{32.4}$\\
+        $\num{11}$&$\num{15569}$&$\num{51.9}$&$\num{0.027}$&$\num{36.9}$\\
+        $\num{12}$&$\num{17778}$&$\num{59.3}$&$\num{0.025}$&$\num{39.4}$\\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -176,7 +182,7 @@ Würfel in Würfel 4 aus den Materialien von Würfel 2 und 3 bestehen soll, werd
     \label{tab:Würfel4_mu}
     \begin{tabular}{c c c c c}
         \toprule
-        Würfel $j$&$\mu_{\text{j}} \,/\,\SI{}{1\per\second}$&niedrigste rel. Abw. (Material)& rel. Abw. $\ce{Fe}$&rel. Abw. Delrin\\
+        Würfel $j$&$\mu_{\text{j}} \,/\,\SI{}{1\per\centi\meter}$&niedrigste rel. Abw. (Material)& rel. Abw. $\ce{Fe}$&rel. Abw. Delrin\\
         \midrule
         $\num{1}$ &$\num{0.137}$&$\num{13.5}$ (Delrin)&$\num{77.3}$&$\num{13.5}$\\
         $\num{2}$ &$\num{0.119}$&$\num{1.6}$ (Delrin)&$\num{80.3}$&$\num{1.6}$\\

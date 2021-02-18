@@ -38,8 +38,10 @@ I_4_s =  np.array([281,237,276,259,255,277,294,249,301,292,268,255])/300
 
 
 V = np.eye(12)/np.sqrt((I_0_s/I_0_T)**2 + (I_4_s/I_4_T)**2)
+print(V)
+print()
 for i in range(len(I_4_T)):
-    print(round(V[i,i],1))
+    print(round(V[i,i]**-1,3))
 
 print()
 def mu(I_mat,V_mat):
