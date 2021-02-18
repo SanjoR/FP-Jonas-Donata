@@ -2,29 +2,39 @@
 \label{sec:Durchführung}
 
 Der Aufbau dieses Versuches besteht neben der Strahlungsquelle aus einer Plattform auf der
-das zu untersuchende Medium positioniert werden kann. Dahinter befindet sich ein 
-Photomultiplier, der durch ein an einer Photodiode einfallendes Photon, ein ELektron 
-aussendet, welches zu Folgeelektroden beschleunigt wird und dort jeweils weitere Elektronenlawinen 
+das zu untersuchende Medium positioniert werden kann. 
+Strahlung, die das Medium durchqueren konnte, trifft auf einen Szintillationsdetektor.
+Er besteht aus einem Material, dem Szintillator, dessen Moleküle durch die 
+Gammastrahlung angeregt werden können und diese Energie in Form von Photonen abgeben.
+Die Intensität dieser Photonen ist proportional zur Intensität der Eingangsstrahlung .
+Daher befindet sich hinter dem Szintillator ein 
+Photomultiplier, der durch ein an einer Photodiode einfallendes Photon, ein Elektron 
+aussendet, welches aufgrund von Folgeelektroden beschleunigt wird und dort jeweils weitere Elektronenlawinen 
 auslösen kann. Diese werden dann als Stromsignal messbar. Das Signal wird daraufhin in 
-einen Multikanalalaysator gleitet, das das Signal einem Kanal zuordnet, sodass Stromimpulse 
+einen Multikanalalaysator gleitet, der das Signal einem Kanal zuordnet, sodass Spannungspulse
+(vorgeschalteter Diskriminator wandelt Strom in Spannung um) 
 pro Kanal gezählt werden.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\textwidth]{figure/Aufbau.pdf}
+	\includegraphics[width=0.6\textwidth]{figure/Aufbau.pdf}
 	\caption{Auf dieser Abbildung ist der Versuchsaufbau dargestellt \cite{sample}.}
 	\label{abb3}
 \end{figure}
 
-Die erste Messung wird ohne Medium durchgeführt. Die Intensität wird also für einen Zeitraum von 
-maximal $\SI{300}{\second}$
-aufgenommen. Danach wird ein leerer Würfel aus einer Aluminiumhülle vermessen. Dafür wird 
+Die erste Messung wird ohne Medium durchgeführt. Die Intensität wird  für einen Zeitraum von 
+$\SI{300}{\second}$
+aufgenommen, damit die relative statistische Unsicherheit dieses Zählexperiments auf
+unter 3\% sinkt.
+Danach wird ein leerer Würfel aus einer Aluminiumhülle vermessen. Dafür wird 
 zunächst ein Spektrum aufgenommen, bei dem die Gammastrahlung senkrecht auf einer 
 Würfelfläche ein- und austritt. Danach wird der Würfel gedreht, sodass der Strahl diagonal 
 durch den Würfel verläuft und daraufhin so, dass der Strahl die Nebendiagonale des 
 Würfels durchquert. Die selben Messungen werden danach für zwei weitere $\SI{3}{\centi\meter} \times \SI{3}{\centi\meter}$-Würfel 
 in einer Aluminiumhülle durchgeführt. Diese Würfel bestehen aus einem Innenmaterial, dass 
-über die Bestimmung des Absorptionkoeffizienten ermittelt werden soll. \\\\
+über die Bestimmung des Absorptionkoeffizienten ermittelt werden soll. 
+
+\newpage
 
 Für die letzte Messreihe wird ein Würfel vermessen, der  
 $\SI{1}{\centi\meter} \times \SI{1}{\centi\meter}$-Teilwürfel aus unterschiedlichem Material
@@ -41,7 +51,7 @@ In Abbildung \ref{abb2} sind die Verläufe der Strahlung dargestellt.
 \end{figure}
 
 Mit Hilfe der gemessenen Intensitäten können daraufhin auch für den letzten Würfel die 
-Materialien bestimmt werden. Dafür muss die Matrix $A$ (siehe Kapitel \ref{sec:Absorb}) 
+Materialien bestimmt werden. Dafür muss die Matrix $A$ (siehe Kapitel \ref{sec:Absorp}) 
 aufgestellt werden. Da die Teilwürfel alle Seitenlängen von 
 $\SI{1}{\centi\meter}$ haben, ist $A$ durch die Matrix 
 
