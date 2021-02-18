@@ -1,18 +1,23 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+
 Eine Leermessung ist in Abbildung \ref{fig:Leer} zu sehen. Die Comptonkante und der Photopeak liegen bei $C\approx \SI{478}{\kilo\eV}$ und 
 $P\approx\SI{662}{\kilo\eV}$ \cite{Lit_Wert_Comp}.
+
 \begin{figure}
     \centering
-    \includegraphics[]{figure/Leer.pdf}
+    \includegraphics[width=0.8\textwidth]{figure/Leer.pdf}
     \caption{Spektrum des $\ce{^137Cs}$-Strahler ohne Würfel.}
     \label{fig:Leer}
 \end{figure}
+
 \subsection{Bestimmung der Absorptionskoeffizienten}
-Um die Absorptionskoeffizienten zu bestimmen müssen zunächst die $I_0$-Werte bestimmt werden. 
+
+Um die Absorptionskoeffizienten zu bestimmen, müssen zunächst die $I_0$-Werte bestimmt werden. 
 Hierfür wird der Würfel 1 genommen, der nur aus der Aluminiumhülle besteht. Es werden drei 
-verschiedene $I_0$-Werte gemessen, für die Diagonale $D$, Nebendiagonale $ND$ und für die seitenparallele Grade $SG$.
+verschiedene $I_0$-Werte gemessen( Diagonale $D$, Nebendiagonale $ND$ und seitenparallele Grade $SG$).
 Die $I_0$-Werte sind in Tabelle \ref{tab:I_0} aufgelistet.
+
 \FloatBarrier
 \begin{table}
     \centering
@@ -29,9 +34,12 @@ Die $I_0$-Werte sind in Tabelle \ref{tab:I_0} aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
+
 \subsubsection{Würfel 2 und 3}
+
 Die beiden Würfel 2 und 3 bestehen aus je einem Material, daher werden nur drei Werte gemessen.
 Die Messdaten sind in Tabelle \ref{tab:Würfel_1_2} aufgelistet.
+
 \FloatBarrier
 \begin{table}
     \centering
@@ -50,18 +58,24 @@ Die Messdaten sind in Tabelle \ref{tab:Würfel_1_2} aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
+
 Mit den Gleichungen
+
 \begin{equation*}
     \mu_{\text{j}}= \frac{\log{\left(\frac{I_0}{I_\text{j}}\right)}}{d_{\text{j}}}
 \end{equation*} 
+
 und den Messdaten aus Tabelle \ref{tab:Würfel_1_2} und \ref{tab:I_0} können die Absorptionskoeffizienten bestimmt werden. 
 Die Weglängen $d_{\text{j}}$ betragen
+
 \begin{gather*}
     d_{D} =\frac{3}{\sqrt{2}}\SI{}{\centi\meter}\\
     d_{ND}=\frac{2}{\sqrt{2}}\SI{}{\centi\meter}\\
     d_{SG}=\SI{3}{\centi\meter}.
 \end{gather*}
+
 Die berechneten Absorptionskoeffizienten der beiden Würfel sind in Tabelle \ref{tab:Absorptionskoeffizienten_1_2} aufgelistet.
+
 \FloatBarrier
 \begin{table}
     \centering
@@ -82,10 +96,12 @@ Die berechneten Absorptionskoeffizienten der beiden Würfel sind in Tabelle \ref
     \end{tabular}
 \end{table}
 \FloatBarrier
-Für den Mittelwert aus Tabelle \ref{tab:Absorptionskoeffizienten_1_2} wird der negative Wert nicht beachtet da dieser unphysikalisch ist,
-darauf wird in der Diskussion eingegangen. Um das Material der Würfel zu bestimmen, wird die relative Abweichung der Absorptionskoeffizienten zu 
+
+Für den Mittelwert aus Tabelle \ref{tab:Absorptionskoeffizienten_1_2} wird der negative Wert nicht beachtet, da dieser unphysikalisch ist,
+worauf wird in der Diskussion eingegangen wird. Um das Material der Würfel zu bestimmen, wird die relative Abweichung der Absorptionskoeffizienten zu 
 den vorgegebenen Materialien bestimmt. Die Absorptionskoeffizienten und die Abweichungen sind in Tabelle \ref{tab:Abweichung23}
 aufgelistet.
+
 \FloatBarrier
 \begin{table}
     \centering
@@ -107,19 +123,25 @@ aufgelistet.
     \end{tabular}
 \end{table}
 \FloatBarrier
-Wie an den Abweichung in Tabelle \ref{tab:Abweichung23} zu sehen ist wird Würfel 2 mit Eisen und Würfel 3 mit Delrin identifiziert. Auf die 
+
+Wie an den Abweichungen in Tabelle \ref{tab:Abweichung23} zu sehen ist, wird Würfel 2 mit Eisen und Würfel 3 mit Delrin identifiziert. Auf die 
 Identifizierung wird in der Diskussion drauf eingegangen.
+
 \subsubsection{Würfel 4}
-Die Würfel aus Würfel 4 bestehen aus verschiedenen Materialien, daher wird die Gleichung \ref{mu}[Gleichung mit $\mu$] benötigt.
-Die Elemente der diagonalen Gewichtsmatrix $W$ werden mithilfe der gaußschen Fehlerfortpflanzung bestimmt.
+
+Die Teilwürfel aus Würfel 4 bestehen aus verschiedenen Materialien, daher wird die Gleichung \ref{eq6} benötigt.
+Die Elemente der diagonalen Gewichtsmatrix $W$ werden mithilfe der gauß´schen Fehlerfortpflanzung bestimmt.
+
 \begin{equation*}
     W_{\text{jj}}= \left(\sqrt{\left(\frac{\sigma_{I_0}}{I_0}\right)^2+ \left(\frac{\sigma_{I_j}}{I_j}\right)^2}\right)^{-1}
 \end{equation*}
+
 Die Messdaten für die Bestimmung der Absorptionskoeffizienten sind in Tabelle \ref{tab:Messdaten_Würfel4} aufgelistet.
+
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Messdaten und die damit bestimmten Elemente der Gewichtsmatrix für die Bestimmung der Absorptionskoeffizienten des Würfels 4, jede Ausrichtung wurde $\SI{300}{\second}$ lang gemessen. Die Ausrichtungen sind wie in Abbildung \ref{fig:??}[Schematische abbidlung der Ausrichtung]}
+    \caption{Messdaten und die damit bestimmten Elemente der Gewichtsmatrix für die Bestimmung der Absorptionskoeffizienten des Würfels 4. Jede Ausrichtung wurde $\SI{300}{\second}$ lang gemessen. Die Ausrichtungen sind analog zu Abbildung \ref{abb2} benannt und durchgeführt worden. }
     \label{tab:Messdaten_Würfel4}
     \begin{tabular}{c c c c}
         \toprule
@@ -141,14 +163,16 @@ Die Messdaten für die Bestimmung der Absorptionskoeffizienten sind in Tabelle \
     \end{tabular}
 \end{table}
 \FloatBarrier
-Mit den Messdaten \ref{tab:Messdaten_Würfel4} und der Gleichung \ref{mu}[Gleichung mit $\mu$] können die 
+
+Mit den Messdaten \ref{tab:Messdaten_Würfel4} und der Gleichung \ref{eq6} können die 
 Absorptionskoeffizienten $\vec{\mu}$ bestimmt werden. Die Elemente von $\vec{\mu}$ sind in Tabelle \ref{tab:Würfel4_mu} 
 aufgelistet, sowie die niedrigste relative Abweichung zu den Literaturwerten der möglichen Stoffe. Da die 
 Würfel in Würfel 4 aus den Materialien von Würfel 2 und 3 bestehen soll, werden die Daten für Eisen und Delrin zusätlich angegeben.
+
 \FloatBarrier
 \begin{table}
     \centering
-    \caption{Absorptionskoeffizienten der einzelnen Würfel in Würfel 4 und die relativen Abweichungen zu den Materialien. Die relative Abweichung (rel. Abw.) sind in \% angegeben.}
+    \caption{Absorptionskoeffizienten der einzelnen Würfel in Würfel 4 und die relativen Abweichungen zu den Materialien. Die relativen Abweichungen (rel. Abw.) sind in \% angegeben.}
     \label{tab:Würfel4_mu}
     \begin{tabular}{c c c c c}
         \toprule
@@ -167,4 +191,6 @@ Würfel in Würfel 4 aus den Materialien von Würfel 2 und 3 bestehen soll, werd
     \end{tabular}
 \end{table}
 \FloatBarrier
-Auf die Glaubwürdigkeit der Identifizierung wird in der Diskussion drauf eingegangen.
+
+Auf die Glaubwürdigkeit der Identifizierung wird in der Diskussion eingegangen.
+\newpage

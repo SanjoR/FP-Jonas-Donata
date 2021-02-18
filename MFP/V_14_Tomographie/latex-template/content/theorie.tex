@@ -4,7 +4,7 @@
 In diesem Versuch soll mittels Tomographie die Materialzusammensetzung eines Würfels
 bestimmt werden. Dafür wird der Würfel zunächst mit Gammaquanten bestrahlt, 
 während hinter ihm die Intensität der nicht absorbierten Strahlung gemessen werden 
-kann. Dann kann durch ABgleich mit bekannten Absorbtionskoeffizienten das Material bestimmt
+kann. Dann kann durch Abgleich mit bekannten Absorptionskoeffizienten das Material bestimmt
 werden.
 
 \section{Theorie}
@@ -12,11 +12,11 @@ werden.
 
 Das hier verwendete Verfahren der Tomographie bezeichnet allgemein die räumliche Darstellung 
 eines Körpers durch Schnittbilder bzw. Projektionen. In diesem Versuch kann eine 
-Tomographie realisiert werden indem das zu untersuchende Material mit Gammaquanten 
+Tomographie realisiert werden, indem das zu untersuchende Material mit Gammaquanten 
 bestrahlt wird. Dabei treten Wechselwirkungen zwischen der Strahlung und Materie auf, 
 sodass nur ein Teil der Strahlung hinter dem Medium detektiert werden kann. 
 Der absorbierte Strahlungsanteil ist materialspezifisch und kann über einen entsprechenden
-Absorbtionskoeffizienten bestimmt werden.
+Absorptionskoeffizienten bestimmt werden.
 
 \subsection{Strahlungsintensität}
 
@@ -24,7 +24,7 @@ Die verwendeten Gammastrahlen werden durch eine $\ce{137^55_Cs}$-Quelle emittier
 Dabei zerfällt $\ce{137^55_Cs}$ zunächst über einen $\beta^-$-Zerfall in  $\ce{137^56_Ba}$.
 94,6 \% des entstandenen $\ce{137^56_Ba}$ befinden sich in einem instabilen, angeregten 
 Zustand und emittieren ein Photon mit einer Energie von $\SI{662}{\kilo\eV}$, welches 
-somit als Gammaquant bezeichent werden kann. 
+somit als Gammaquant bezeichnet werden kann. 
 Der beschriebene Zerfall ist in der folgenden Abbildung dargestellt.
 
 \begin{figure}
@@ -45,17 +45,19 @@ da sie an ein Hüllenelektron übertragen wird, welches daraufhin mit einer
 entsprechenden kinetischen Energie frei werden kann. Das bedeutet die Energie des Photons 
 muss mindestens die Höhe der Bindungsenergie des ELektrons haben, um diese Form der 
 Wechselwirkung durchzuführen. Bis zu einer Energie von $\SI{100}{\kilo\eV}$ dominiert 
-der Photoeffekt, sodass in diesem Fall eher der Comptoneffekt überwiegt.
+der Photoeffekt, sodass in diesem Fall eher der Comptoneffekt als Primärwechselwirkung überwiegt.
 Dies ist bis zu einer Energie von $\SI{1}{\mega\eV}$ der Fall. Dabei wird ein Teil der 
-Photonenergie über inelastische Streuung an ein Elektron abgegeben. Bei einem 
-Streuwinkel von 180° findet somit der maximale Energieübertrag statt. Im Spektrum wird an 
+Photonenergie über inelastische Streuung an ein Elektron abgegeben.
+Allerdings muss gesagt werden, dass ein Photon nach mehrfachem Comptoneffekt immer 
+wahrscheinlicher auch einen Photoeffekt durchführt. Bei einem 
+Streuwinkel von 180° findet der maximale Energieübertrag statt. Im Spektrum wird an 
 dieser Stelle von der Comptonkante gesprochen. 
-Die INtensitätskurve zeigt außerdem ein Plateau am Anfang, welches aufgrund von 
+Die Intensitätskurve zeigt außerdem ein Plateau am Anfang, welches aufgrund von 
 Rückstreueffekten entstanden ist. Die Intensität der Strahlung die 
 nach Durchqueren des Materials noch vorhanden ist wird durch die Gleichung 
 
 \begin{equation}
-	I = I_0 \exp( \sum_i \mu_i d_i )
+	I = I_0 \exp \left( \sum_i \mu_i d_i \right)
 	\label{eq1}
 \end{equation}
 
@@ -66,22 +68,23 @@ $\ce{137^55_Cs}$-Strahler ist in der folgenden Abbildung dargestellt \cite{Kerne
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figure/Kurve.pdf}
+	\includegraphics[width=0.7\textwidth]{figure/Kurve.pdf}
 	\caption{In dieser Abbildung ist der Verlauf einer Intensitätenkurve für 
 	$\ce{137^55_Cs}$ dargestellt.}
 	\label{abbkurve}
 \end{figure}
+\FloatBarrier
 
 \subsection{Absorptionskoeffizienten}
 \label{sec:Absorp}
 
-Die materialspezifischen Absoprtionskoeffizienten können mit Gleichung \eqref{eq1} 
+Die materialspezifischen Absorptionskoeffizienten können mit Gleichung \eqref{eq1} 
 berechnet werden, da die Intensitäten gemessen werden und die Materialdicken bekannt sind.
 Daher ergibt sich durch umformen
 
 
 \begin{equation}
-	\sum_i \mu_i d_i  = \ln( \frac{I_0}{I_j} )
+	\sum_i \mu_i d_i  = \ln \left( \frac{I_0}{I_j} \right)
 	\label{eq2}
 \end{equation}
 
@@ -93,10 +96,10 @@ und in Matrixschreibweise
 	\label{eq3}
 \end{equation}
 
-woebi $A$ eine $n \times m$-Matrix ist, die die Weglängen durch bestimmte Materialien 
+wobei $A$ eine $n \times m$-Matrix ist, die die Weglängen durch bestimmte Materialien 
 enthält die bei einem zugehörigen Strahlengang passiert werden. $\vec{\mu}$ enthält die 
 passenden Absorptionskoeffizienten. Mit der Methode der kleinsten Quadrate kann 
-mit Gleichung \eqref{eq3} dder Zusammenhang 
+mit Gleichung \eqref{eq3} der Zusammenhang 
 
 
 \begin{equation}
@@ -122,7 +125,7 @@ Intensitäten definiert ist, sodass sich für $\vec{\mu}$ schließlich die Relat
 	\label{eq6}
 \end{equation}
 
-ergibt und die UNsicherheiten aufgrund der Poissonfehler eines Zählexperimentes durch
+ergibt und die Unsicherheiten aufgrund der Poissonfehler eines Zählexperimentes durch
 
 
 \begin{equation}
@@ -131,7 +134,7 @@ ergibt und die UNsicherheiten aufgrund der Poissonfehler eines Zählexperimentes
 \end{equation}
 
 gegeben sind \cite{Kerne}.
-
+\newpage
 
 
 

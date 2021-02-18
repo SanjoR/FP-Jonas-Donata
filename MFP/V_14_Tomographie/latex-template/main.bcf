@@ -1934,6 +1934,10 @@
     <bcf:citekey order="8">1</bcf:citekey>
     <bcf:citekey order="9">sample</bcf:citekey>
     <bcf:citekey order="10">Lit_Wert_Comp</bcf:citekey>
+    <bcf:citekey order="11">Massenkoef</bcf:citekey>
+    <bcf:citekey order="12">Dichte</bcf:citekey>
+    <bcf:citekey order="13">Massenkoef</bcf:citekey>
+    <bcf:citekey order="14">Dichte</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

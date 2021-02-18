@@ -1,18 +1,20 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[23] biber:313> INFO - === Mi Feb 17, 2021, 11:49:41
-[41] Biber.pm:371> INFO - Reading 'main.bcf'
-[97] Biber.pm:857> INFO - Found 4 citekeys in bib section 0
-[107] Biber.pm:3981> INFO - Processing section 0
-[117] Biber.pm:4154> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[117] bibtex.pm:1468> INFO - LaTeX decoding ...
-[122] bibtex.pm:1294> INFO - Found BibTeX data source 'lit.bib'
-[124] Utils.pm:169> WARN - Entry '1' (lit.bib): Invalid format '17,02,2021' of date field 'date' - ignoring
-[130] Utils.pm:169> WARN - Entry 'Lit_Wert_Comp' (lit.bib): Invalid format '16,02,2021' of date field 'date' - ignoring
-[139] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[139] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[139] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[139] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
-[145] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[146] bbl.pm:720> INFO - Output to main.bbl
-[147] Biber.pm:110> INFO - WARNINGS: 2
+[23] biber:313> INFO - === Mi Feb 17, 2021, 12:20:12
+[40] Biber.pm:371> INFO - Reading 'main.bcf'
+[89] Biber.pm:857> INFO - Found 6 citekeys in bib section 0
+[102] Biber.pm:3981> INFO - Processing section 0
+[110] Biber.pm:4154> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[112] bibtex.pm:1468> INFO - LaTeX decoding ...
+[116] bibtex.pm:1294> INFO - Found BibTeX data source 'lit.bib'
+[118] Utils.pm:169> WARN - Entry '1' (lit.bib): Invalid format '17,02,2021' of date field 'date' - ignoring
+[124] Utils.pm:169> WARN - Entry 'Lit_Wert_Comp' (lit.bib): Invalid format '16,02,2021' of date field 'date' - ignoring
+[125] Utils.pm:169> WARN - Entry 'Massenkoef' (lit.bib): Invalid format '16,02,2021' of date field 'date' - ignoring
+[125] Utils.pm:169> WARN - Entry 'Dichte' (lit.bib): Invalid format '16,02,2021' of date field 'date' - ignoring
+[135] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[135] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[135] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[135] Biber.pm:3815> INFO - No sort tailoring available for locale 'de-DE'
+[142] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[144] bbl.pm:720> INFO - Output to main.bbl
+[144] Biber.pm:110> INFO - WARNINGS: 4

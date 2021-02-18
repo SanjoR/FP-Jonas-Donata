@@ -41,6 +41,28 @@
       \endverb
       \warn{\item Entry 'Lit_Wert_Comp' (lit.bib): Invalid format '16,02,2021' of date field 'date' - ignoring}
     \endentry
+    \entry{Massenkoef}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html
+      \endverb
+      \verb{url}
+      \verb https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html
+      \endverb
+      \warn{\item Entry 'Massenkoef' (lit.bib): Invalid format '16,02,2021' of date field 'date' - ignoring}
+    \endentry
+    \entry{Dichte}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://www.hug-technik.com/inhalt/ta/metall.htm
+      \endverb
+      \verb{url}
+      \verb https://www.hug-technik.com/inhalt/ta/metall.htm
+      \endverb
+      \warn{\item Entry 'Dichte' (lit.bib): Invalid format '16,02,2021' of date field 'date' - ignoring}
+    \endentry
     \entry{sample}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
