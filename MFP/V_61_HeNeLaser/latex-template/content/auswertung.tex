@@ -27,6 +27,7 @@ Die Messdaten sind in Tabelle \ref{tab:Multimodenbetrieb} aufgelistet.
 \begin{table}
   \centering
   \caption{Messdaten für die Untersuchung des Multimodenbetriebs.}
+  \label{tab:Multimodenbetrieb}
   \begin{tabular}{c c c c c}
     \toprule
     &$d=\SI{730}{\milli\meter}$&$d=\SI{848}{\milli\meter}$&$d=\SI{1350}{\milli\meter}$&$d=\SI{1763}{\milli\meter}$\\
@@ -53,6 +54,7 @@ Die Messdaten, Ausgleichsgeraden und Theoriegeraden sind in Abbildung \ref{fig:M
   \centering
   \includegraphics[width = \textwidth, keepaspectratio]{figure/Multimode.pdf}
   \caption{Plots der verschiedenen Abstände um die Bedingung der Frequenzen zu überprüfen. Hierbei sind die Kreuze die Messdaten, die gestrichene Linie die Ausgleichsgerade und die durchgezogene Linie die Theoriegerade.}
+  \label{fig:Multimodenbetrieb}
 \end{figure}
 \FloatBarrier
 
@@ -173,23 +175,25 @@ so aufgenommenen Daten, sind in Tabelle \ref{tab:TEM01} aufgelistet.
 \end{table}
 \FloatBarrier
 
-In den Daten sind zwei Maxima zu erkennen, daher wird pro Maximum eine Gaußfunktion angepasst. Diese beiden Gaußfunktionen werden
-addiert um den Gesamtverlauf darzustellen.
+Der Intensitätsverlauf wird durch die Funktion
+\begin{equation*}
+  I(x)=\frac{A}{w^2}\left[H_{1}\left(\frac{\sqrt{2}x}{w}\right)\exp{\left(\frac{-x^2}{w^2}\right)}\right]
+\end{equation*}
+beschrieben. Hierbei ist $H_{1}$ das Hermite-Polynom ersten Grades.
 
 \FloatBarrier
 \begin{figure}
   \centering
-  \includegraphics[width = \textwidth, keepaspectratio]{figure/TEM01.pdf}
+  \includegraphics[width = \textwidth, keepaspectratio]{figure/TEM01_new.pdf}
   \caption{Gemessene Daten und Fitfunktion der $\text{TEM}_{10}$-Mode.}
 \end{figure}
 \FloatBarrier
 
-Die Fitparameter der beiden Funktionen sind 
+Die Fitparameter der Funktion sind 
 
 \begin{align*}
-G_{0 \text{links}}=&\SI{0.220(5)}{\micro\ampere}\quad &G_{0 \text{rechts}}=&\SI{0.536(20)}{\micro\ampere}\\
-\mu_{\text{links}} =& \SI{-7.45(8)}{\milli\meter}\quad &\mu_{\text{rechts}} =& \SI{7.97(17)}{\milli\meter}\\
-\sigma_{\text{links}} =& \SI{3.03(8)}{\milli\meter}\quad &\sigma_{\text{rechts}} =& \SI{3.57(19)}{\milli\meter}.
+  A=\SI{27(5)}{\square\per\milli\meter}\\
+  w=\SI{10.4(9)}{\milli\meter}.
 \end{align*}
 
 \subsection{Bestimmung der Polarisation}
@@ -285,13 +289,8 @@ Die Gitterabstände der beiden Gitter sind in der Tabelle \ref{tab:Gitterabstand
 
 Die gemessenen Positionen der Beugungsmaxima sind in der Tabelle \ref{tab:Maxposi} aufgelistet. Bei der Messung der 
 Beugungsmaxima von Gitter A war der Abstand von Schirm und Gitter $d=\SI{25}{\centi\meter}$ und bei Gitter B $d=\SI{5}{\centi\meter}$.
-Mit dem Gitterabstand $a$, der Position der Beugungsmaxima $b_{\text{n}}$ relativ zum Strahlmittelpunkt und dem Abstand $d$ kann mit der
-Gleichung 
-
-\begin{equation*}
-  \varphi_{\text{n}}=\arctan{\left(\frac{b_{\text{n}}}{d}\right)},\qquad \lambda = a\cdot\frac{\sin{\left(\varphi_{\text{n}}\right)}}{\text{n}}
-\end{equation*}
-
+Mit dem Gitterabstand $a$, der Position der Beugungsmaxima $b_{\text{n}}$ relativ zum Strahlmittelpunkt und dem Abstand $d$ kann mit den
+Gleichungen \eqref{eq:phi_n}
 die Wellenlänge $\lambda$ bestimmt werden. Die Winkel $\varphi_{\text{n}}$ und die Wellenlänge sind ebenfalls in Tabelle \ref{tab:Maxposi} aufgelistet.
 
 \FloatBarrier

@@ -9,22 +9,28 @@ berührt wurden. Die Konstellation mit den zwei konkaven Spiegeln ist einfacher 
 soweit überprüft werden konnte, wie es der Versuchsaufbau zulässt.
 
 \subsection{Multimodenbetrieb}
-Bei diesem Versuchsteil soll die Schwebung der Intensität untersucht werden. Da die Steigungen der Geraden, welche an die 
-Messdaten angepasst wurden, in der gleichen Größenordnung wie die theoretisch bestimmten Geraden liegt, kann damit die 
-Theorie bestätigt werden. Dass die Theoriewerte nicht in den Unsicherheiten der Steigungen liegen, kann daran liegen, dass
-die Unsicherheiten nur durch die Fitfunktion erzeugt werden. Die Unsicherheiten von der Längen- oder Frequenzmessung werden 
-nicht berücksichtigt, daher sind die Unsicherheiten der Steigung unterschätzt.
+Die Wellenlänge eines Lasers wird durch das aktive Medium bestimmt. Durch den Dopplereffekt kann die Wellenlänge variieren.
+Mit der mittleren Geschwindigkeit der Neon-Atome, welche aus der Maxwell-Boltzmann-Verteilung bestimmt werden kann, kann 
+die Breite des optischen Übergangs bestimmt werden. Bei einem Helium-Neon-Laser beträgt die Breite des optischen Übergangs $\SI{0.002}{\nano\meter}$.
+Mit einer Wellenlänge von $\lambda_{\text{lit}}=\SI{633}{\nano\meter}$ 
+\cite{leifi} kann eine Bandbreite von $\SI{1.5}{\giga\hertz}$ berechnet werden. In diesem Bereich kommt es zu Schwebungen,
+welche als Moden bezeichnet werden. Der Abstand der Moden kann über die Funktion $f=\frac{c}{2d}$ bestimmt werden. Das bedeutet, 
+dass bei einem größeren Abstand mehr Moden gemessen werden können. Über die Differenz der ersten und letzten Mode könnte die 
+Breite des optischen Übergang bestimmt werden. Bei einer Länge von $\SI{1}{\meter}$ ist der Abstand der Moden $\SI{0.15}{\giga\hertz}$
+und es müssten 10 Moden gemessen werden können. Da aber zum Beispiel bei einer Länge von $\SI{1.763}{\meter}$ nur sieben Moden gemessen werden konnten,
+sind die Frequenzdifferenzen zu niedrig um die Breite des optischen Übergangs zu bestimmen. Allerdings kann gezeigt werden, dass
+die gemessenen Moden einen Abstand von $\frac{c}{2d}$ aufweisen. Hierbei sind die Unsicherheiten der Messwerte unterschätzt, 
+da diese nur durch die Fitfunktion erzeugt werden. Die Unsicherheiten von der Längen- oder Frequenzmessung werden 
+nicht berücksichtigt.
 
 \subsection{TEM-Moden}
 Die Messung der TEM-Moden hat nicht gut funktioniert, da zu wenig Daten aufgenommen wurden, sodass Abweichungen 
 von der theoretisch erwarteten Kurve zu sehen sind. Die Abweichungen könnten mit mehr Statistik geringer werden. 
 Die $\text{TEM}_{00}$-Mode lässt sich mit einem Gaußfit beschreiben, dies folgt auch aus der Theorie. Die 
-$\text{TEM}_{10}$-Mode müsste sich mit einem Hermite-Polynom der ersten Ordnung multipliziert mit einer Gaußfunktion 
-beschreiben lassen. Durch die unterschiedlichen Maximalintensitäten links und rechts vom Mittelpunkt, lässt sich 
-eine entsprechende Funktion nicht an die Daten anpassen. Daher wurden an die beiden Maxima jeweils ein Gaußfit angepasst und die 
-Superposition gebildet. Da die Parameter der Gaußfunktion in der gleichen Größenordnung liegen und nur die Amplitude 
-abweicht, bestätigt das die Theorie. Nur das rechts vom Minimum generell höhere Intensitäten gemessen wurden, was auf einen systematischen
-Fehler hinweist.
+$\text{TEM}_{10}$-Mode wird mit einem Hermite-Polynom ersten Grades und einer Gaußfunktion beschrieben, welche beide 
+quadriert werden. So eine Funktion lässt sich auch an die Daten anpassen. Bei den Daten ist zu sehen, dass rechts 
+vom Mittelpunkt höhere Intensitäten gemessen wurden als links vom Mittelpunkt. Ein Grund dafür könnte eine nicht 
+exakt vertikale Ausrichtung des Drahtes sein. 
 
 \subsection{Polarisation}
 Die gemessene Verteilung der Polarisation stimmt mit der Theorie überein. Da das Intensitätsmaximum bei $\varphi=\SI{1.5}{\radian}\approx\SI{86}{\degree}$
