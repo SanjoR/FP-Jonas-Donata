@@ -77,34 +77,34 @@ y_plot_4 = a_4*x_plot_4
 
 
 fig, axis = plt.subplots(2,2 ,sharex = True , sharey = True)
-axis[0,0].plot(x_plot_1,y_plot_1,"r-",label="Theoriegrade L = 73.0cm")
-axis[0,0].plot(x_plot_1,linear(x_plot_1,*params_1),"r--", label ="Ausgleichsgrade L = 73.0cm")
-axis[0,0].plot(x_plot_1, Peaks_1,"rx",label="Messdaten L= 73.0cm")
+axis[0,0].plot(x_plot_1,y_plot_1,"r-",label="Theoriegrade d = 73.0cm")
+axis[0,0].plot(x_plot_1,linear(x_plot_1,*params_1),"r--", label ="Ausgleichsgrade d = 73.0cm")
+axis[0,0].plot(x_plot_1, Peaks_1,"rx",label="Messdaten d = 73.0cm")
 axis[0,0].grid()
-axis[0,0].set_title("L=730mm")
+axis[0,0].set_title("d = 730mm")
 axis[0,0].set_ylabel(r"f / MHz")
 #axis[0,0].legend(loc="best")
 
-axis[0,1].plot(x_plot_2,y_plot_2,"g-",label="Theoriegrade L = 84.8cm")
-axis[0,1].plot(x_plot_2,linear(x_plot_2,*params_2),"g--", label ="Ausgleichsgrade L = 84.8cm")
-axis[0,1].plot(x_plot_2, Peaks_2,"gx",label="Messdaten L= 84.8cm")
-axis[0,1].set_title("L=848mm")
+axis[0,1].plot(x_plot_2,y_plot_2,"g-",label="Theoriegrade d = 84.8cm")
+axis[0,1].plot(x_plot_2,linear(x_plot_2,*params_2),"g--", label ="Ausgleichsgrade d = 84.8cm")
+axis[0,1].plot(x_plot_2, Peaks_2,"gx",label="Messdaten d = 84.8cm")
+axis[0,1].set_title("d = 848mm")
 axis[0,1].grid()
 #axis[0,1].legend(loc="best")
 
-axis[1,0].plot(x_plot_3,y_plot_3,"b-",label="Theoriegrade L = 135.0cm")
-axis[1,0].plot(x_plot_3,linear(x_plot_3,*params_3),"b--", label ="Ausgleichsgrade L = 135.0cm")
-axis[1,0].plot(x_plot_3, Peaks_3,"bx",label="Messdaten L= 135.0cm")
+axis[1,0].plot(x_plot_3,y_plot_3,"b-",label="Theoriegrade d = 135.0cm")
+axis[1,0].plot(x_plot_3,linear(x_plot_3,*params_3),"b--", label ="Ausgleichsgrade d = 135.0cm")
+axis[1,0].plot(x_plot_3, Peaks_3,"bx",label="Messdaten d = 135.0cm")
 axis[1,0].set_ylabel(r"f / MHz")
 axis[1,0].set_xlabel(r"n")
-axis[1,0].set_title("L=1350mm")
+axis[1,0].set_title("d = 1350mm")
 axis[1,0].grid()
 #axis[1,0].legend(loc="best")
 
-axis[1,1].plot(x_plot_4,y_plot_4,"k-",label="Theoriegrade L = 176.3cm")
-axis[1,1].plot(x_plot_4,linear(x_plot_4,*params_4),"k--", label ="Ausgleichsgrade L = 176.3cm")
-axis[1,1].plot(x_plot_4, Peaks_4,"kx",label="Messdaten L= 176.3cm")
-axis[1,1].set_title("L=1763mm")
+axis[1,1].plot(x_plot_4,y_plot_4,"k-",label="Theoriegrade d = 176.3cm")
+axis[1,1].plot(x_plot_4,linear(x_plot_4,*params_4),"k--", label ="Ausgleichsgrade d = 176.3cm")
+axis[1,1].plot(x_plot_4, Peaks_4,"kx",label="Messdaten d = 176.3cm")
+axis[1,1].set_title("d = 1763mm")
 axis[1,1].set_xlabel(r"n")
 axis[1,1].grid()
 #axis[1,1].legend(loc="best")
@@ -148,3 +148,16 @@ for i in params_error_4:
     print(i)
 
 print("a in m/s*10**6")
+
+print()
+a = 633*10**-9
+def x(del_f):
+    return(a**2/2+np.sqrt(a**4 / 4 - 2*const.c/del_f))
+
+
+print(a**4 / 4 - 2*const.c/((Peaks_1[-1]-Peaks_1[0])*10**6))
+print()
+print(x((Peaks_1[-1]-Peaks_1[0])*10**6))
+print(x((Peaks_2[-1]-Peaks_2[0])*10**6))
+print(x((Peaks_3[-1]-Peaks_3[0])*10**6))
+print(x((Peaks_4[-1]-Peaks_4[0])*10**6))
