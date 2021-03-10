@@ -1935,6 +1935,7 @@
     <bcf:citekey order="9">sample</bcf:citekey>
     <bcf:citekey order="10">sample</bcf:citekey>
     <bcf:citekey order="11">leifi</bcf:citekey>
+    <bcf:citekey order="12">leifi</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

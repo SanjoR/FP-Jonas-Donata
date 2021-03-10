@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  12 FEB 2021 13:59
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2020.8.13)  9 MAR 2021 14:49
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.095 seconds
+luaotfload | main : initialization completed in 0.097 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2322,15 +2322,10 @@ eneric/fonts/otl/lmmono12-regular.luc)
 Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
  (./main.toc
-Language ngerman not found in language.dat.lua
-Overfull \hbox (14.2506pt too wide) in paragraph at lines 11--11
- [][] [][]\TU/lmr/m/n/10.95 Überprüfung der Stabilitätbedingung und Untersuc
-hung des Multimodenbetriebs[] []  
- []
-
-(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
-roman8-regular.luc)(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/g
-eneric/fonts/otl/lmroman5-regular.luc))
+Language ngerman not found in language.dat.lua(load luc: /home/donata/.texlive20
+17/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /hom
+e/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.
+luc))
 \tf@toc=\write5
 
 \openout5 = main.toc
@@ -2348,46 +2343,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--30
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--69
+Underfull \hbox (badness 10000) in paragraph at lines 41--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--69
-
- []
-
-
-Overfull \hbox (4.37003pt too wide) in paragraph at lines 41--69
+Overfull \hbox (4.37003pt too wide) in paragraph at lines 41--70
 \TU/lmr/m/n/10.95 Der verwendetet Helium-Neon-Laser ist ein Vier-Niveau-Laser, 
 wobei für die Energieniveaus
  []
 
 [3]
-<figure/d_quad.pdf, id=83, 409.62848pt x 327.20317pt>
+<figure/d_quad.pdf, id=84, 409.62848pt x 327.20317pt>
 File: figure/d_quad.pdf Graphic file (type pdf)
 <use figure/d_quad.pdf>
-Package luatex.def Info: figure/d_quad.pdf  used on input line 98.
+Package luatex.def Info: figure/d_quad.pdf  used on input line 104.
 (luatex.def)             Requested size: 250.95587pt x 200.45737pt.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 100.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 100.
 (load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
 roman7-regular.luc)
-<figure/dlin.pdf, id=86, 418.03488pt x 327.20317pt>
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 106.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 106.
+<figure/dlin.pdf, id=87, 418.03488pt x 327.20317pt>
 File: figure/dlin.pdf Graphic file (type pdf)
 <use figure/dlin.pdf>
-Package luatex.def Info: figure/dlin.pdf  used on input line 105.
+Package luatex.def Info: figure/dlin.pdf  used on input line 111.
 (luatex.def)             Requested size: 250.95587pt x 196.42825pt.
-<figure/TEMmoden.pdf, id=90, 1284.8pt x 963.6pt>
+<figure/TEMmoden.pdf, id=91, 1284.8pt x 963.6pt>
 File: figure/TEMmoden.pdf Graphic file (type pdf)
 <use figure/TEMmoden.pdf>
-Package luatex.def Info: figure/TEMmoden.pdf  used on input line 122.
+Package luatex.def Info: figure/TEMmoden.pdf  used on input line 128.
 (luatex.def)             Requested size: 250.95587pt x 188.20267pt.
  [4] [5<./figure/d_quad.pdf><./figure/dlin.pdf>]
 [6<./figure/TEMmoden.pdf>]) (./content/durchfuehrung.tex
-<figure/Aufbau.pdf, id=218, 681.29532pt x 236.38312pt>
+<figure/Aufbau.pdf, id=220, 681.29532pt x 236.38312pt>
 File: figure/Aufbau.pdf Graphic file (type pdf)
 <use figure/Aufbau.pdf>
 Package luatex.def Info: figure/Aufbau.pdf  used on input line 7.
@@ -2414,18 +2404,10 @@ Overfull \hbox (4.09978pt too wide) in paragraph at lines 4--7
 risation und Wellenlänge
  []
 
-
-LaTeX Warning: Reference `tab:Multimodenbetrieb' on page 8 undefined on input li
-ne 24.
-
-
-LaTeX Warning: Reference `fig:Multimodenbetrieb' on page 8 undefined on input li
-ne 49.
-
-<figure/Multimode.pdf, id=231, 462.52798pt x 346.89601pt>
+<figure/Multimode.pdf, id=235, 462.52798pt x 346.89601pt>
 File: figure/Multimode.pdf Graphic file (type pdf)
 <use figure/Multimode.pdf>
-Package luatex.def Info: figure/Multimode.pdf  used on input line 54.
+Package luatex.def Info: figure/Multimode.pdf  used on input line 55.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
 [8] [9<./figure/Multimode.pdf>]
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
@@ -2436,10 +2418,10 @@ Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-<figure/TEM00.pdf, id=280, 462.52798pt x 346.89601pt>
+<figure/TEM00.pdf, id=284, 462.52798pt x 346.89601pt>
 File: figure/TEM00.pdf Graphic file (type pdf)
 <use figure/TEM00.pdf>
-Package luatex.def Info: figure/TEM00.pdf  used on input line 129.
+Package luatex.def Info: figure/TEM00.pdf  used on input line 131.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
  [10]
 Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
@@ -2467,65 +2449,21 @@ Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
 Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
  [11<./figure/TEM00.pdf>]
-Overfull \hbox (5.11142pt too wide) in paragraph at lines 176--178
-[]\TU/lmr/m/n/10.95 In den Daten sind zwei Maxima zu erkennen, daher wird pro M
-aximum eine Gaußfunktion
- []
-
-
-Overfull \hbox (5.55812pt too wide) in paragraph at lines 176--178
-\TU/lmr/m/n/10.95 angepasst. Diese beiden Gaußfunktionen werden addiert um den
- Gesamtverlauf darzustellen. 
- []
-
-<figure/TEM01.pdf, id=339, 462.52798pt x 346.89601pt>
-File: figure/TEM01.pdf Graphic file (type pdf)
-<use figure/TEM01.pdf>
-Package luatex.def Info: figure/TEM01.pdf  used on input line 182.
+<figure/TEM01_new.pdf, id=343, 462.52798pt x 346.89601pt>
+File: figure/TEM01_new.pdf Graphic file (type pdf)
+<use figure/TEM01_new.pdf>
+Package luatex.def Info: figure/TEM01_new.pdf  used on input line 187.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
-[12] [13<./figure/TEM01.pdf>]
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman8-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-Missing character: There is no μ (U+03BC) in font [lmroman5-regular]:+tlig;!
-
-Overfull \hbox (35.83868pt too wide) in paragraph at lines 197--199
+ [12] [13<./figure/TEM01_new.pdf>]
+Overfull \hbox (35.83868pt too wide) in paragraph at lines 201--203
 \TU/lmr/m/n/10.95 Um die Polarisation zu messen, wird zwischen dem Auskoppelspi
 egel und dem Intensitätsmessgerät
  []
 
-<figure/Polarisation.pdf, id=399, 462.52798pt x 346.89601pt>
+<figure/Polarisation.pdf, id=395, 462.52798pt x 346.89601pt>
 File: figure/Polarisation.pdf Graphic file (type pdf)
 <use figure/Polarisation.pdf>
-Package luatex.def Info: figure/Polarisation.pdf  used on input line 246.
+Package luatex.def Info: figure/Polarisation.pdf  used on input line 250.
 (luatex.def)             Requested size: 418.25555pt x 313.70679pt.
 [14] [15<./figure/Polarisation.pdf>] [16] [17]) (./content/diskussion.tex
 [18] [19])(load luc: /home/donata/.texlive2017/texmf-var/luatex-cache/generic/fo
@@ -2542,17 +2480,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 04FBD03D8ECC5860AA2E8F8CB498AFB0;18342
-(rerunfilecheck)             After:  BD729DD0C00C72E0BE84C4CC7752EF55;18342.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: 1BEDEEB3DB089D76F1263C62EE07159D;1997
-(rerunfilecheck)             After:  4507B853AC5E0ACBF6272F48E25C4A82;1997.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 00CF3259CC1D78562B20A99DD023C683;18630
+(rerunfilecheck)             After:  92C70287CD2FBF99C7D2F799EE93EB9D;18712.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: E1B74F7A9E5D4AAB02E3B58FA5D754F8;1984.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -2562,15 +2493,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41486 strings out of 494480
+ 41993 strings out of 494480
  100000,1648299 words of node,token memory allocated
- 697 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 28 attribute, 78 glue_spec, 28 attr
+ 705 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 30 attribute, 78 glue_spec, 30 attr
 ibute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:1,2:1393,3:307,4:51,5:302,6:3344,7:1085,8:88,9:423,10:8,11:17
- 44296 multiletter control sequences out of 65536+600000
- 157 fonts using 56195495 bytes
- 61i,14n,104p,8833b,3068s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:1,2:1501,3:313,4:42,5:313,6:3555,7:1123,8:89,9:415,10:10,11:17
+
+ 44637 multiletter control sequences out of 65536+600000
+ 317 fonts using 117187863 bytes
+ 61i,25n,104p,8833b,3068s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/ope
 ntype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/
@@ -2581,10 +2513,10 @@ opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf/fonts/opentype/pu
 blic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
 12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></us
 r/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (20 pages, 1086869 bytes).
+Output written on main.pdf (20 pages, 1084524 bytes).
 
-PDF statistics: 642 PDF objects out of 1000 (max. 8388607)
- 385 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 131072)
+PDF statistics: 641 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 131072)
  169 words of extra memory for PDF output out of 10000 (max. 100000000)
 
